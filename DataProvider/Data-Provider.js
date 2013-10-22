@@ -2333,7 +2333,7 @@ WAF.EntityCollection.removeEntity = function(posInSet, options, userData)
 		var subpos = posInSet - priv.loadedElemsLength;
 		var entity = priv.addedElems[subpos];
 		var resev = { entityCollection: entityCollection, result:entityCollection};
-		if (entity == null || entity.getKey() == null) {
+		if (entity == null || entity.getKey() == null || options.removeReferenceOnly) {
 			priv.addedElems.splice(subpos, 1);
 			entityCollection.length--;
 			WAF.callHandler(false, null, resev, options, userData);			

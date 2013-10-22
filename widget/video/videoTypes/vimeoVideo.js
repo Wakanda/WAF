@@ -174,6 +174,10 @@
                 $(that.widget.containerNode).trigger('playing');
             });
             
+            this.iframe.addEvent('pause', function(e) {
+                $(that.widget.containerNode).trigger('paused');
+            });
+            
             console.log('bindEvents', this.iframe);
             this.iframe.addEvent('finish', function(e, data) {
                 $(that.widget.containerNode).trigger('ended');

@@ -20,7 +20,7 @@
 				reg: /watch\?v\=([\w-]+)\&*/
 			}
         ],
-
+        
         // Load Youtube API
         loadAPI: function() {
             this.apiLoading = true;
@@ -251,6 +251,7 @@
                         }
                     case YT.PlayerState.PAUSED:
                         that._clearCurrentTimeInt();
+                        $(that.widget.containerNode).trigger('paused');                        
                         // paused = true;
                     break;
                     
@@ -303,39 +304,39 @@
             
             switch (call) {
                 case 'pause':
-            this.paused = true;                    
-            this.iframe.pauseVideo();
+                    this.paused = true;
+                    this.iframe.pauseVideo();                    
                 break;
-        
+                
                 case 'play':
-            this.paused = false;
-            this.iframe.playVideo();
+                    this.paused = false;
+                    this.iframe.playVideo();                    
                 break;
-
+                
                 case 'stop':
-            this.paused = true;
-            // we need to stop duration timer as well
-            this._clearCurrentTimeInt();
-            this.iframe.stopVideo();
+                    this.paused = true;
+                    // we need to stop duration timer as well
+                    this._clearCurrentTimeInt();
+                    this.iframe.stopVideo();
                 break;
-        
+                
                 case 'seekTo':
                     secs = arguments[1];
                     this.iframe.seekTo(params['secs']);
                 break;
-        
+                
                 case 'togglePlay':
-            console.log('[YT] togglePlay()');
-            if (this.paused) {
-                this.play();
-            } else {
-                this.pause();
-            }            
+                    console.log('[YT] togglePlay()');
+                    if (this.paused) {
+                        this.play();
+                    } else {
+                        this.pause();
+                    }
                 break;
-        
+                
                 case 'loadVideoById':
                     this.config['data-video-start'] = params['start'] || this.config['data-video-start'];
-            
+                    
                     // if Youtube api hasn't been loaded, we load it and postpone the load event
                     if (!player.apiLoaded && !player.apiLoading) {
                         player.loadAPI();
@@ -343,31 +344,31 @@
                             that._api('loadVideoById', params);
                         });
                     } else if (!this.iframe) {
-                console.log('[YT] loadVideoById -> need to create Player first')
+                        console.log('[YT] loadVideoById -> need to create Player first')
                         this.config['data-video-sig'] = params['sig'];
-                
-                player.createPlayer(this.config, this.htmlObj, this.widget, this.sourceAtt).done(function(iframe) {
+                        
+                        player.createPlayer(this.config, this.htmlObj, this.widget, this.sourceAtt).done(function(iframe) {
                             console.log('[YT] oh oh... seems like the iframe is ready to communicate with us! let\'s call load with', params['sig']);
-                    
-                    that.htmlObj = $('#' + that.id);
-                    
-                    that.iframe = iframe;
-                    that._bindEvents();
-                    
-                    that.gotDuration = false;
+                            
+                            that.htmlObj = $('#' + that.id);
+                            
+                            that.iframe = iframe;
+                            that._bindEvents();
+                            
+                            that.gotDuration = false;
                         });
-            } else {            
-                this.gotDuration = false;
+                    } else {
+                        this.gotDuration = false;
                         this._loadOrCueVideoById(params['sig']);
-            }
+                    }
                 break;
-        
+                
                 case 'toggleMute':
-            if (this.iframe.isMuted()) {
-                this.iframe.unMute();                    
-            } else {
-                this.iframe.mute();
-            }        
+                    if (this.iframe.isMuted()) {
+                        this.iframe.unMute();                    
+                    } else {
+                        this.iframe.mute();
+                    }
                 break;
             
                 case 'mute':
@@ -394,8 +395,8 @@
         
         play: function() {
             this._api('play');
-        },
-        
+        },        
+
         stop: function() {
             this._api('stop');
         },
@@ -424,7 +425,7 @@
         mute: function() {
             this._api('mute');
         },
-        
+
         setVolume: function(vol) {
             this._api('setVolume', {
                 vol: vol

@@ -2200,6 +2200,9 @@ WAF.DataSourceEm.save = function(options, userData){
 			var source = this;
 			var onSave = function(event){
 				dsEvent.XHR = event.XHR;
+				if (!refreshOnly && (event.error == null || event.error.length == 0)) {
+					source._private.isNewElem = false;
+				}
 				event.userData.options.entity = entity;
 				event.userData.options.position = curElemPos;
 				event.userData.options.element = WAF.DataSourceEm.makeElement(source, entity);

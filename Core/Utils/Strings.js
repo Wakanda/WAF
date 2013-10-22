@@ -326,6 +326,8 @@ WAF.utils.formatNumber = function(value, xoptions)
 		if (ones == 0)
 		{
 			onePortion = "0";
+			if (number < 0)
+				onePortion = "-0";
 		}
 		else
 		{
@@ -345,7 +347,7 @@ WAF.utils.formatNumber = function(value, xoptions)
 
 				groupCount++;
 
-				if (groupCount == groupLength && i != 0)
+				if (groupCount == groupLength && i != 0 && oneText.charAt(i-1) !== '-')
 				{
 					onePortion = group + onePortion;
 					groupCount = 0;

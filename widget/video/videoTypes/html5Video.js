@@ -210,8 +210,6 @@
         _bindEvents: function() {
             var that = this;
             
-            console.log(this.videoTag);
-            
             $(this.videoTag).bind('durationchange', function(e, data) {
                 console.log('[HTML5] durationChange', e.target.duration);
                 $(that.widget.containerNode).trigger('durationChange', {duration: e.target.duration});
@@ -225,9 +223,15 @@
                 $(that.widget.containerNode).trigger('timeUpdate', {time: e.target.currentTime});
             });
             
-            $(this.videoTag).bind('playing', function(e) {
+            // NOTE: there is also a playing event which is supposed to be sent after playback started again after
+            // being paused/delayed by the lack of media data, but we won't send play event in that case
+            $(this.videoTag).bind('play', function(e) {
                 $(that.widget.containerNode).trigger('playing');
             });
+            
+            $(this.videoTag).bind('pause', function(e) {
+                $(that.widget.containerNode).trigger('paused');
+            });            
             
             $(this.videoTag).bind('ended', function(e) {
                 $(that.widget.containerNode).trigger('ended');

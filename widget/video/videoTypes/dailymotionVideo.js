@@ -127,7 +127,7 @@
         this.config['data-video-controls']          = config['data-video-controls']           == 'true' ? 0 : 1;
                 
         console.log('[DM] loading player with video ', config['data-video-sig'], 'to dom element ', this.htmlObj.attr('id'));
-
+    
         this.id = this.htmlObj.attr('id');    
     }
     
@@ -157,6 +157,10 @@
             this.iframe.addEventListener('playing', function(e) {
                 $(that.widget.containerNode).trigger('playing');
             });
+            
+            this.iframe.addEventListener('pause', function(e) {
+                $(that.widget.containerNode).trigger('paused');
+            });            
             
             this.iframe.addEventListener('ended', function(e) {
                 $(that.widget.containerNode).trigger('ended');
@@ -194,7 +198,7 @@
                 this.play();
             }
         },
-        
+
         _api: function(call, params) {
             var that = this;
             
@@ -206,40 +210,40 @@
 
             switch(call) {
                 case 'pause':
-            this.paused = true;                    
-            this.iframe.pause();
-                break;
-        
-                case 'play':
-            this.paused = false;
-            this.iframe.play();
+                    this.paused = true;                    
+                    this.iframe.pause();
                 break;
 
-                case 'stop':
-            // seems like dailymotion doesn't provide a stop call so we use pause instead
-            if (!this.iframe.paused) {
-                this.pause();
-            }
+                case 'play':
+                    this.paused = false;
+                    this.iframe.play();                    
                 break;
-        
+                
+                case 'stop':
+                    // seems like dailymotion doesn't provide a stop call so we use pause instead
+                    if (!this.iframe.paused) {
+                        this.pause();
+                    }
+                break;
+
                 case 'seekTo':
                     this.iframe.seek(params.secs);
                 break;
-        
+                    
                 case 'togglePlay':
-            console.log('[DM] togglePlay()');
-            if (this.paused) {
-                this.play();
-            } else {
-                this.pause();
-            }            
+                    console.log('[DM] togglePlay()');
+                    if (this.paused) {
+                        this.play();
+                    } else {
+                        this.pause();
+                    }
                 break;
-        
+                
                 case 'loadVideoById':        
                     this.config['data-video-start'] = params['start'] || this.config['data-video-start'];
-
+                    
                     console.log('[DM] loadVideoById', params['start'], this.config['data-video-start']);
-            
+        
                     // if Dailymotion api hasn't been loaded, we load it and postpone the load event
                     if (!player.apiLoaded && !player.apiLoading) {
                         player.loadAPI();
@@ -247,24 +251,24 @@
                             that._api('loadVideoById', params);
                         });
                     } else if (!this.iframe) {
-                console.log('[DM] loadVideoById -> need to create Player first')
+                        console.log('[DM] loadVideoById -> need to create Player first')
                         this.config['data-video-sig'] = params['sig'];
-                
-                player.createPlayer(this.config, this.htmlObj, this.widget, this.sourceAtt).done(function(iframe) {
+                        
+                        player.createPlayer(this.config, this.htmlObj, this.widget, this.sourceAtt).done(function(iframe) {
                             console.log('[DM] oh oh... seems like the iframe is ready to communicate with us! let\'s call load with', params['sig']);
-                    that.htmlObj = $('#' + that.id);
-                    that.iframe = iframe;
-                    that._bindEvents();
-                    
-                    that.gotDuration = false;
-                })
-            } else {
-                this.gotDuration = false;
-                // if the video is playing, calling load() will automatically play the video with dailymotion,
-                // even if autoplay has been set to 0 when loading the player
-                this.stop();
+                            that.htmlObj = $('#' + that.id);
+                            that.iframe = iframe;
+                            that._bindEvents();
+                            
+                            that.gotDuration = false;
+                        })
+                    } else {
+                        this.gotDuration = false;
+                        // if the video is playing, calling load() will automatically play the video with dailymotion,
+                        // even if autoplay has been set to 0 when loading the player
+                        this.stop();
                         this._loadOrCueVideoById(params['sig']);
-            }
+                    }                    
                 break;
                 
                 case 'toggleMute':
@@ -333,7 +337,7 @@
         getVolume: function() {
             return this._api('getVolume');
         },
-        
+            
         hide: function() {
             $(this.htmlObj).hide();
         },
