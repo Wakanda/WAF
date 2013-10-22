@@ -1,0 +1,90 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+/** 
+ * Widget button
+ *
+ * Includes button-specific rules of the Metal skin
+ *
+ * @style metal
+ * @link /walib/WAF/widget/css/widget.css
+ * @link /walib/WAF/widget/grid/css/widget-button.css
+ * @link /walib/WAF/widget/skin/metal/css/widget-skin-metal.css
+ * @colordef #......;
+ *
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section button container
+ * -------------------------------------------------------
+ */
+.metal.waf-button {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
+						inset 0 1px 0px rgba(255, 255, 255, 0.5);
+	        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
+						inset 0 1px 0px rgba(255, 255, 255, 0.5);
+	
+	-webkit-transition: background-color 0.2s ease-in-out,
+						-webkit-box-shadow 0.2s ease-in-out;
+	   -moz-transition: background-color 0.2s ease-in-out,
+						-moz-box-shadow 0.2s ease-in-out;
+	     -o-transition: background-color 0.2s ease-in-out,
+						box-shadow 0.2s ease-in-out;
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.6)), color-stop(0.4, rgba(255, 255, 255, 0.3)), color-stop(0.4, rgba(255, 255, 255, 0.2)), color-stop(1.0, rgba(255, 255, 255, 0)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 100%);
+	background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 100%);
+	background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 100%);
+	background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 100%);
+	background-image:         linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 100%);
+	
+	outline: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section button state
+ * -------------------------------------------------------
+ */
+.metal.waf-button.waf-state-hover,
+.metal.waf-button.waf-state-focus {
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+	   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4),
+						inset 0 1px 0px rgba(255, 255, 255, 0.5);
+	        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
+						inset 0 1px 0px rgba(255, 255, 255, 0.5);
+}
+.metal.waf-button.waf-state-active {
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+	   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
+						inset 0 1px 0px rgba(255, 255, 255, 0.5);
+	        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
+						inset 0 1px 0px rgba(255, 255, 255, 0.5);
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.2)), color-stop(0.4, rgba(0, 0, 0, 0.1)), color-stop(1.0, rgba(0, 0, 0, 0)));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 100%);
+	background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 100%);
+	background-image:     -ms-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 100%);
+	background-image:      -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 100%);
+	background-image:         linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 100%);
+}

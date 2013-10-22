@@ -1,0 +1,130 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+/** 
+ * Widget list
+ *
+ * Includes list-specific rules of the Cupertino skin
+ *
+ * @style cupertino
+ * @link /walib/WAF/widget/css/widget.css
+ * @link /walib/WAF/widget/popover/css/widget-popover.css
+ * @link /walib/WAF/widget/skin/cupertino/css/widget-skin-cupertino.css
+ *
+ */
+
+
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView container
+ * -------------------------------------------------------
+ */
+.cupertino.waf-popover  {
+	border: 1px solid #000;
+    
+	-webkit-border-radius: 11px;
+       -moz-border-radius: 11px;
+	        border-radius: 11px;
+
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #575757), color-stop(100%, #373737));
+    background-image: -webkit-linear-gradient(top,  #575757 0%, #373737 100%);
+    background-image:    -moz-linear-gradient(top,  #575757 0%, #373737 100%);
+    background-image:     -ms-linear-gradient(top,  #575757 0%, #373737 100%);
+    background-image:      -o-linear-gradient(top,  #575757 0%, #373737 100%);
+    background-image:         linear-gradient(top,  #575757 0%, #373737 100%);
+
+	-webkit-box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37), 0px 6px 18px 0px rgba(0, 0, 0, 0.95);
+	   -moz-box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37), 0px 6px 18px 0px rgba(0, 0, 0, 0.95);	
+            box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37), 0px 6px 18px 0px rgba(0, 0, 0, 0.95);
+ }
+
+.cupertino.waf-popover .waf-popover-body {
+	border: 1px solid #000;
+	
+	-webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+	        border-radius: 8px;
+	
+	background: #fff;
+
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.4),inset 1px 1px 4px 0px rgba(0, 0, 0, 0.66);
+       -moz-box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.4),inset 1px 1px 4px 0px rgba(0, 0, 0, 0.66);	
+            box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.4),inset 1px 1px 4px 0px rgba(0, 0, 0, 0.66);
+}
+
+.cupertino.waf-popover .waf-popover-header {
+    border: 0px;
+    
+    -webkit-border-radius: 10px 10px 0 0;
+       -moz-border-radius: 10px 10px 0 0;
+            border-radius: 10px 10px 0 0;
+
+	background: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.46)), color-stop(50%, rgba(255, 255, 255, 0.17)), color-stop(50%, rgba(255, 255, 255, 0.14)), color-stop(100%, rgba(255, 255, 255, 0)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:         linear-gradient(top, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+}
+.cupertino.waf-popover .waf-popover-header .waf-button {
+    background-color: rgb(65,105,222);
+}
+.cupertino.waf-popover .waf-popover-header .waf-richText {
+	color: #ffffff;
+	font-size: 18px;
+	text-shadow: #000 0 -1px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.cupertino.waf-popover .waf-popover-footer {
+    border: 0;
+    
+    -webkit-border-radius: 0 0 10px 10px;
+       -moz-border-radius: 0 0 10px 10px;
+            border-radius: 0 0 10px 10px;
+    
+    background: none;
+}
+.cupertino.waf-popover .waf-popover-footer .waf-button {
+	background-color: #777777;
+}
+
+.waf-popover .waf-popover-arrow span {
+	background: #575757;
+	border-left: 1px solid #000;
+	border-top: 1px solid #000;
+	-webkit-box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37);
+	box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37);
+}
+
+.waf-popover .waf-popover-arrow.waf-popover-arrow-bottom span,
+.waf-popover .waf-popover-arrow.waf-popover-arrow-right span {
+	background: #373737;
+}
+.waf-popover .waf-popover-arrow.waf-popover-arrow-bottom span {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.waf-popover .waf-popover-header + .waf-popover-arrow.waf-popover-arrow-top span,
+.waf-popover .waf-popover-header + .waf-popover-footer + .waf-popover-arrow.waf-popover-arrow-top span,
+.waf-popover .waf-popover-header + .waf-popover-footer + .waf-popover-body + .waf-popover-arrow.waf-popover-arrow-top span,
+.waf-popover .waf-popover-header + .waf-popover-body + .waf-popover-arrow.waf-popover-arrow-top span,
+.waf-popover .waf-popover-header + .waf-popover-body + .waf-popover-footer + .waf-popover-arrow.waf-popover-arrow-top span  {
+    background: #9a9a9a;
+}

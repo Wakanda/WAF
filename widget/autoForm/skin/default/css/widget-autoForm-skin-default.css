@@ -1,0 +1,121 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+/** 
+ * Widget autoForm
+ *
+ * Includes autoForm-specific rules of the metal skin
+ *
+ * @style Default
+ * @link /walib/WAF/widget/css/widget.css
+ * @link /walib/WAF/widget/skin/default/css/widget-skin-default.css
+ *
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section autoForm container
+ * -------------------------------------------------------
+ */
+.default.waf-autoForm {
+	border-width: 1px;
+	border-style: solid;
+	
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	    -ms-border-radius: 3px;
+	     -o-border-radius: 3px;
+	        border-radius: 3px;
+
+	box-shadow: 2px 2px 6px hsla(0, 0%, 0%, 0.2);
+}
+.default.waf-autoForm * {
+	font-size: 13px;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section autoForm header
+ * -------------------------------------------------------
+ */
+.default .waf-autoForm-header {
+	/*height: 25px;*/
+	height: 24px;
+	display: table;
+	width: 100%;
+}
+.default .waf-autoForm-header th {
+	/*height: 25px;*/
+	/*border-bottom-width: 1px;
+	border-bottom-style: solid;*/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#05000000', endColorstr='#2b000000');
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section autoForm body
+ * -------------------------------------------------------
+ */
+/* scrollbar dimensions
+.default .waf-autoForm-body::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+ thumb
+.default .waf-autoForm-body::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 6px;
+}
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section autoForm col
+ * -------------------------------------------------------
+ */
+.default.waf-autoForm .attribute-col {
+	border-right-width: 1px;
+	border-right-style: solid;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section autoForm footer
+ * -------------------------------------------------------
+ */
+.default .waf-autoForm-footer,
+.default .waf-autoForm-footer td {
+	height: 25px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#05000000', endColorstr='#2b000000');
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section queryForm footer
+ * -------------------------------------------------------
+ */
+.default.waf-queryForm .waf-widget-footer {
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, hsla(0, 0%, 0%, 0.2)), color-stop(0.32, hsla(0, 0%, 100%, 0.5)), color-stop(0.69, hsla(0, 0%, 100%, 1)));
+	background-image: -webkit-linear-gradient(bottom, hsla(0, 0%, 0%, 0.2) 0%, hsla(0, 0%, 100%, 0.5) 32%, hsla(0, 0%, 100%, 1) 69%);
+	background-image:    -moz-linear-gradient(bottom, hsla(0, 0%, 0%, 0.2) 0%, hsla(0, 0%, 100%, 0.5) 32%, hsla(0, 0%, 100%, 1) 69%);
+	background-image:     -ms-linear-gradient(bottom, hsla(0, 0%, 0%, 0.2) 0%, hsla(0, 0%, 100%, 0.5) 32%, hsla(0, 0%, 100%, 1) 69%);
+	background-image:      -o-linear-gradient(bottom, hsla(0, 0%, 0%, 0.2) 0%, hsla(0, 0%, 100%, 0.5) 32%, hsla(0, 0%, 100%, 1) 69%);
+	background-image:         linear-gradient(bottom, hsla(0, 0%, 0%, 0.2) 0%, hsla(0, 0%, 100%, 0.5) 32%, hsla(0, 0%, 100%, 1) 69%);
+}

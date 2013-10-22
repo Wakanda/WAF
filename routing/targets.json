@@ -1,0 +1,45 @@
+[
+   
+    {
+           "name"                   : "Tablet", 
+           "suffix"                 : "tablet",
+           "touch"                  : "true",
+           "resolution"             : "1024x768",
+           "background-landscape"   : "background-ipad-landscape.png",
+           "background-portrait"    : "background-ipad-portrait.png",
+           "rules"                  : [ 
+                                        { "include" : "iPad"},
+                                        { "include" : "Android" , "exclude" : "Mobile"},
+                                        { "include" : "GT"}, 
+                                        { "include" : "SCH"},
+                                        { "include" : "Xoom"},
+                                        { "include" : "Streak"}
+                                    ]
+    },
+    {
+            "name"                  : "Smartphone",
+            "suffix"                : "smartphone",
+            "touch"                 : "true",
+            "resolution"            : "320x480",
+            "background-landscape"  : "background-iphone-landscape.png",
+            "background-portrait"   : "background-iphone-portrait.png",
+            "rules"                 : [ 
+                                        { "include" : "iPhone"},
+                                        { "include" : ["Android" , "Mobile"] }, 
+                                        { "include" : "phone"}, 
+                                        { "include" : "Samsung Galaxy Note"}, 
+                                        { "include" : "Galaxy Nexus"}, 
+                                        { "include" : "Nexus One"},
+                                        { "include" : "DROID2"},
+                                        { "include" : "DROID"},
+                                        { "include" : "DROIDX"},
+                                        { "include" : "HTC Desire"},
+                                        { "include" : "ADR6300"},
+                                        { "include" : "myTouch"},
+                                        { "include" : "Desire"},
+                                        { "include" : "SonyEricssonX10i"},
+                                        { "include" : "E10i"},
+                                        { "include" : "SGH"} 
+                                    ]
+    }
+]

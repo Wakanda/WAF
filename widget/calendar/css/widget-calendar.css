@@ -1,0 +1,105 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+/**
+ * Widget textField
+ *
+ * Includes mandatory rules for the textField widget
+ *
+ * @link /walib/WAF/widget/css/widget.css
+ *
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-calendar {
+	border-width: 1px;
+	border-style: solid;
+	
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	    -ms-border-radius: 3px;
+	     -o-border-radius: 3px;
+	        border-radius: 3px;
+                
+           -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+              -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+                   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+	
+	resize: none;
+        background-color: #B9B9B9;
+}
+
+.waf-calendar .waf-calendar-field{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.waf-calendar .waf-calendar-field .waf-calendar-field-icon{
+    display: block;
+    position: absolute;
+    right: 0px; 
+    top: 0px; 
+    bottom: 0px;
+    cursor: pointer;
+}
+
+.waf-calendar .waf-calendar-field .waf-calendar-field-text{
+    position: absolute;
+    height: 100%;
+    width: 264px;
+}
+
+.waf-calendar .waf-calendar-field span {
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+        position: absolute;
+	text-align: center;
+}
+.waf-calendar .datepicker {
+	position: absolute;
+	bottom: 0 !important;
+        top : 0px !important; 
+        left: 0px !important;
+        right: 0px!important;
+}
+.waf-calendar .datepickerContainer,
+.waf-calendar .datepickerBorderT,
+.waf-calendar .datepickerBorderB,
+.waf-calendar .datepickerBorderL,
+.waf-calendar .datepickerBorderR,
+.waf-calendar .datepickerBorderTL,
+.waf-calendar .datepickerBorderTR,
+.waf-calendar .datepickerBorderBL,
+.waf-calendar .datepickerBorderBR {
+	background: transparent !important;
+}
+.waf-calendar .datepicker a:hover{
+	color: #b6f063;
+}
+
+.waf-calendar-acDescription{
+    color:#8D8D8D !important;
+    font-style : italic !important;
+}

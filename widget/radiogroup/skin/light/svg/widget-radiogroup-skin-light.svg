@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<g>
+	<path  class="waf-radio-icon-symbol-shadow" d="M8,5.333c1.47,0,2.666,1.196,2.666,2.667S9.47,10.667,8,10.667c-1.47,0-2.666-1.196-2.666-2.667
+		S6.53,5.333,8,5.333 M8,4.333C5.975,4.333,4.334,5.975,4.334,8S5.975,11.667,8,11.667S11.666,10.025,11.666,8S10.025,4.333,8,4.333
+		L8,4.333z"/>
+	<path class="waf-radio-icon-symbol" d="M8,11.167c-1.746,0-3.166-1.421-3.166-3.167S6.254,4.833,8,4.833c1.746,0,3.166,1.421,3.166,3.167
+		S9.746,11.167,8,11.167z"/>
+</g>
+</svg>

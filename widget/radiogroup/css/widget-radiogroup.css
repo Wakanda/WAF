@@ -1,0 +1,165 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+
+
+/**
+ * Widget radiogroup
+ *
+ * Includes mandatory rules for the radiogroup widget
+ *
+ * @link /walib/WAF/widget/css/widget.css
+ *
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section radiogroup container
+ * -------------------------------------------------------
+ */
+ .waf-radioGroup {
+	overflow: auto;
+ }
+
+/**
+ * -------------------------------------------------------
+ * @section radiogroup list
+ * -------------------------------------------------------
+ */
+.waf-radioGroup li {
+    position: relative;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section radio
+ * -------------------------------------------------------
+ */
+.waf-radioGroup .waf-radio {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.waf-radioGroup label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    padding-left: 30px;
+    
+    /* HERITED FROM RADIOGROUP */
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-align: inherit;
+    text-decoration: inherit;
+    color: inherit;
+    
+   text-overflow : ellipsis; 
+   white-space: nowrap;
+   
+}
+
+.waf-radioGroup .waf-radio input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: 0 none;
+	
+	/* this is needed by IE */
+	display: block;
+	opacity: 0.01;
+	
+	-webkit-appearance: none;
+	   -moz-appearance: checkbox-container;
+	    -ms-appearance: none;
+	        appearance: none;
+}
+
+.waf-radioGroup.waf-direction-horizontal .waf-radio-box, 
+.waf-radioGroup.waf-direction-vertical .waf-radio-box {
+    top: 50%;
+    left: 10px;
+}
+
+.waf-radioGroup.waf-direction-vertical li {
+    display : block;
+    width: 100%;
+}
+
+.waf-radioGroup.waf-direction-horizontal li {
+    display : block;
+    height: 100%;
+    float: left;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @subection radio radiobox
+ * -------------------------------------------------------
+ */
+ .waf-radioGroup .waf-radio .waf-radio-box {
+ 	position: relative;
+ 	width: 12px;
+	height: 12px;
+}
+
+/**
+ * -------------------------------------------------------
+ * @subection radio icon
+ * -------------------------------------------------------
+ */
+.waf-radioGroup .waf-radio .waf-radio-icon {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: -2px;
+    top: -2px;
+}
+.waf-radio-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+/**
+ * -------------------------------------------------------
+ * @subsubection radio icon state
+ * -------------------------------------------------------
+ */
+/*.waf-radio .waf-radio-icon {
+	display: none;
+}
+
+.waf-radio.waf-state-active .waf-radio-icon,
+.waf-radio.waf-state-selected .waf-radio-icon {
+	display: block;
+}*/
+.waf-radio .waf-radio-icon img {
+    display: none;
+}
+
+.waf-radio:not(.waf-state-hover):not(.waf-state-active):not(.waf-state-selected) .waf-radio-icon img.waf-radio-icon-default,
+.waf-radio.waf-state-hover .waf-radio-icon img.waf-radio-icon-hover,
+.waf-radio.waf-state-active .waf-radio-icon img.waf-radio-icon-active,
+.waf-radio.waf-state-selected .waf-radio-icon img.waf-radio-icon-selected {
+    display: block;
+}

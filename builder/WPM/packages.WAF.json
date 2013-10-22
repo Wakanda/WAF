@@ -1,0 +1,1547 @@
+[
+            
+            
+            {
+                "name" : "Desktop_Core",
+                "version" : "1.0.0",
+                "type" : "CORE",
+                "dependencies" : [
+                    { "name" : "Core/Native/Rest", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Core/Utils", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "DataProvider", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "DataSource", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Rpc", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Tags", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/JQuery", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/JQuerySVG", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/GRaphael", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/JQueryUI", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/Selectbox", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/Combobox", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/Beautytips", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/Notify", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/Widget", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Component/Component", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/Toolbar", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/Datepicker", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ]                
+            },
+            {
+                "name" : "Mobile_Core",
+                "version" : "1.0.0",
+                "type" : "CORE",
+                "dependencies" : [
+                    { "name" : "Core/Native/Rest", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Core/Utils", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "DataProvider", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "DataSource", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Rpc", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Tags", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/JQuery", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/JQueryUI", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/JQuerySVG", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/GRaphael", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/Selectbox", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/Mobile", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/Widget", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/Toolbar", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/Datepicker", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ]                
+            },
+            {
+                "name" : "Reporting_Core",
+                "version" : "1.0.0",
+                "type" : "CORE",
+                "dependencies" : [
+                    { "name" : "Core/Native/Rest", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Core/Utils", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "DataProvider", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "DataSource", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Rpc", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Tags", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/JQuery", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/JQuerySVG", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/GRaphael", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/JQueryUI", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/Selectbox", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/Combobox", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/Beautytips", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/Notify", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/Widget", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ]                
+            },
+            
+            
+            {
+                "name" : "Core/Native/Rest",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/Core/Native/Rest.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Core/Utils/Dates",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/Core/Utils/Dates.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Core/Utils/DebugTools",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/Core/Utils/DebugTools.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Core/Utils/Environment",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/Core/Utils/Environment.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Core/Utils/Strings",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/Core/Utils/Strings.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Core/Utils/Timers",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/Core/Utils/Timers.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Core/Utils",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "Core/Utils/Dates", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Core/Utils/DebugTools", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Core/Utils/Environment", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Core/Utils/Strings", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Core/Utils/Timers", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ]
+            },
+            {
+                "name" : "DataProvider",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/DataProvider/Data-Provider.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "DataSource/DataSource",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/DataSource/Data-Source.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "DataSource/Selection",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/DataSource/Selection.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "DataSource/ErrorHandling",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/DataSource/ErrorHandling.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "DataSource",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "DataSource/DataSource", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "DataSource/Selection", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "DataSource/ErrorHandling", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ]
+            },
+            {
+                "name" : "Rpc",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/rpc/Rpc.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Tags",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/Tags/taglib.js",
+                            "+/Tags/tags.js"
+                        ]
+                    }
+                }
+            },
+            
+            
+            {
+                "name" : "Lib/JQuery",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/lib/jquery/jquery.min.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Lib/JQueryUI",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/lib/jquery-ui/jquery-ui.min.js",
+                            "+/lib/jquery-ui/jquery-ui-i18n.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/lib/jquery-ui/themes/base/jquery.ui.core.css",
+                            "+/lib/jquery-ui/themes/base/jquery.ui.resizable.css",
+                            "+/lib/jquery-ui/themes/base/jquery.ui.selectable.css",
+                            "+/lib/jquery-ui/themes/base/jquery.ui.accordion.css",
+                            "+/lib/jquery-ui/themes/base/jquery.ui.autocomplete.css",
+                            "+/lib/jquery-ui/themes/base/jquery.ui.button.css",
+                            "+/lib/jquery-ui/themes/base/jquery.ui.dialog.css",
+                            "+/lib/jquery-ui/themes/base/jquery.ui.slider.css",
+                            "+/lib/jquery-ui/themes/base/jquery.ui.tabs.css",
+                            "+/lib/jquery-ui/themes/base/jquery.ui.datepicker.css",
+                            "+/lib/jquery-ui/themes/base/jquery.ui.progressbar.css",
+                            "+/lib/jquery-ui/themes/base/jquery.ui.theme.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Lib/JQuerySVG",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/lib/jquery.svg/jquery.svg.min.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Lib/Raphael",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/lib/raphael/raphael-min.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Lib/GRaphael",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "Lib/Raphael", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ],
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/lib/graphael/g.raphael-min.js",
+                            "+/lib/graphael/g.line-min.js",
+                            "+/lib/graphael/g.bar-min.js",
+                            "+/lib/graphael/g.pie-min.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Lib/Selectbox",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/lib/selectbox/jquery-selectbox.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/lib/selectbox/jquery-selectbox.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Lib/Combobox",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/lib/combobox/jquery-combobox.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Lib/Beautytips",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/lib/beautytips/beautytips.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/lib/beautytips/beautytips.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Lib/Notify",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/lib/notify/jquery.notify.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/lib/notify/ui.notify.css"
+                        ]
+                    }
+                }
+            },            
+            
+            
+            {
+                "name" : "Lib/Mobile",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/lib/mobile/iscroll/iscroll-lite.js",
+                            "+/lib/mobile/jquery.ui.ipad.altfix.js",
+                            "+/lib/mobile/mobiscroll/js/mobiscroll-1.5.3.min.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/lib/mobile/mobiscroll/css/mobiscroll-1.5.3.min.css"
+                        ]
+                    }
+                }
+            },
+        
+            
+            {
+                "name" : "Widget/Widget",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/widget.js"
+                        ]
+                    },
+                    "css" : {
+                        "desktop" : [
+                            "+/widget/css/widget.css",
+                            "+/widget/skin/default/css/widget-skin-default.css",
+                            "+/widget/skin/metal/css/widget-skin-metal.css",
+                            "+/widget/skin/light/css/widget-skin-light.css"
+                        ],
+                        "mobile" : [
+                            "+/widget/css/widget-mobile.css",
+                            "+/widget/skin/default/css/widget-skin-default.css",
+                            "+/widget/skin/metal/css/widget-skin-metal.css",
+                            "+/widget/skin/light/css/widget-skin-light.css",
+                            "+/widget/skin/cupertino/css/widget-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Component/Component",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/Component/Component.js"
+                        ]
+                    }
+                }
+            },
+            
+            
+            {
+                "name" : "Widget/Toolbar",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [          
+                            "+/widget/toolbar/widget-toolbar.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/Datepicker",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/calendar/js/datepicker.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/datepicker/skin/default/css/widget-datepicker-skin-default.css",
+                            "+/widget/datepicker/skin/metal/css/widget-datepicker-skin-metal.css",
+                            "+/widget/datepicker/skin/light/css/widget-datepicker-skin-light.css"
+                        ]
+                    }
+                }
+            },
+            
+            
+            {
+                "name" : "Widget/icon",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [     
+                            "+/widget/icon/widget-icon.js",
+                            "+/widget/icon/widget-icon-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/icon/css/widget-icon.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/button",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/button/widget-button.js",
+                            "+/widget/button/widget-button-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/button/css/widget-button.css",
+                            "+/widget/button/skin/default/css/widget-button-skin-default.css",
+                            "+/widget/button/skin/metal/css/widget-button-skin-metal.css",
+                            "+/widget/button/skin/light/css/widget-button-skin-light.css",
+                            "+/widget/button/skin/image/css/widget-button-skin-image.css"
+                        ],
+                        "mobile" : [
+                            "+/widget/button/skin/cupertino/css/widget-button-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/buttonImage",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "Widget/button", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ],
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/buttonImage/widget-buttonImage.js",
+                            "+/widget/buttonImage/widget-buttonImage-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/buttonImage/css/widget-buttonImage.css"
+                        ],
+                        "mobile" : [
+                            "+/widget/buttonImage/skin/cupertino/css/widget-buttonImage-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/checkbox",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/checkbox/widget-checkbox.js",
+                            "+/widget/checkbox/widget-checkbox-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/checkbox/css/widget-checkbox.css",
+                            "+/widget/checkbox/skin/default/css/widget-checkbox-skin-default.css",
+                            "+/widget/checkbox/skin/metal/css/widget-checkbox-skin-metal.css",
+                            "+/widget/checkbox/skin/light/css/widget-checkbox-skin-light.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/container",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/container/widget-container.js",
+                            "+/widget/container/widget-container-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/container/css/widget-container.css",
+                            "+/widget/container/skin/default/css/widget-container-skin-default.css",
+                            "+/widget/container/skin/metal/css/widget-container-skin-metal.css",
+                            "+/widget/container/skin/light/css/widget-container-skin-light.css"
+                        ],
+                        "mobile" : [
+                            "+/widget/container/skin/cupertino/css/widget-container-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/richText",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/richText/widget-richText.js",
+                            "+/widget/richText/widget-richText-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/richText/css/widget-richText.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/errorDiv",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/errorDiv/widget-errorDiv.js",
+                            "+/widget/errorDiv/widget-errorDiv-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/errorDiv/css/widget-errorDiv.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/dataGrid",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/dataGrid/widget-dataGrid.js",
+                            "+/widget/dataGrid/widget-dataGrid-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/dataGrid/css/widget-dataGrid.css",
+                            "+/widget/dataGrid/skin/default/css/widget-dataGrid-skin-default.css",
+                            "+/widget/dataGrid/skin/metal/css/widget-dataGrid-skin-metal.css",
+                            "+/widget/dataGrid/skin/light/css/widget-dataGrid-skin-light.css"
+                        ],
+                        "mobile" : [
+                            "+/widget/dataGrid/skin/cupertino/css/widget-dataGrid-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/queryForm",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/queryForm/widget-queryForm.js",
+                            "+/widget/queryForm/widget-queryForm-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/dataGrid/css/widget-dataGrid.css",
+                            "+/widget/dataGrid/skin/default/css/widget-dataGrid-skin-default.css",
+                            "+/widget/dataGrid/skin/metal/css/widget-dataGrid-skin-metal.css",
+                            "+/widget/dataGrid/skin/light/css/widget-dataGrid-skin-light.css"
+                        ],
+                        "mobile" : [
+                            "+/widget/dataGrid/skin/cupertino/css/widget-dataGrid-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/autoForm",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/autoForm/widget-autoForm.js",
+                            "+/widget/autoForm/widget-autoForm-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/autoForm/css/widget-autoForm.css",
+                            "+/widget/autoForm/skin/default/css/widget-autoForm-skin-default.css",
+                            "+/widget/autoForm/skin/metal/css/widget-autoForm-skin-metal.css",
+                            "+/widget/autoForm/skin/light/css/widget-autoForm-skin-light.css",
+                            "+/widget/autoForm/skin/roundy/css/widget-autoForm-skin-roundy.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/image",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/image/widget-image.js",
+                            "+/widget/image/widget-image-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/image/css/widget-image.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/label",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/label/widget-label.js",
+                            "+/widget/label/widget-label-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/label/css/widget-label.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/slider",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/slider/widget-slider.js",
+                            "+/widget/slider/widget-slider-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/slider/css/widget-slider.css",
+                            "+/widget/slider/skin/default/css/widget-slider-skin-default.css",
+                            "+/widget/slider/skin/metal/css/widget-slider-skin-metal.css",
+                            "+/widget/slider/skin/light/css/widget-slider-skin-light.css"
+                        ],
+                        "mobile" : [
+                            "+/widget/slider/skin/cupertino/css/widget-slider-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/textField",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/textField/widget-textField.js",
+                            "+/widget/textField/widget-textField-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/textField/css/widget-textField.css",
+                            "+/widget/textField/skin/default/css/widget-textField-skin-default.css",
+                            "+/widget/textField/skin/metal/css/widget-textField-skin-metal.css"
+                        ],
+                        "desktop" : [
+                            "+/widget/textField/skin/light/css/widget-textField-skin-light.css"
+                        ],
+                        "mobile" : [
+                            "+/widget/textField/skin/cupertino/css/widget-textField-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/googleMap",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/googleMap/widget-googleMap.js",
+                            "+/widget/googleMap/widget-googleMap-conf.js"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/yahooWeather",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/yahooWeather/widget-yahooWeather.js",
+                            "+/widget/yahooWeather/widget-yahooWeather-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/yahooWeather/css/widget-yahooWeather.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/progressBar",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [				
+                            "+/widget/progressBar/widget-progressBar.js",
+                            "+/widget/progressBar/widget-progressBar-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/progressBar/css/widget-progressBar.css",
+                            "+/widget/progressBar/skin/default/css/widget-progressBar-skin-default.css",
+                            "+/widget/progressBar/skin/metal/css/widget-progressBar-skin-metal.css",
+                            "+/widget/progressBar/skin/light/css/widget-progressBar-skin-light.css",
+                            "+/widget/progressBar/skin/roundy/css/widget-progressBar-skin-roundy.css"
+                        ],
+                        "mobile" : [
+                            "+/widget/progressBar/skin/cupertino/css/widget-progressBar-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/matrix",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [          
+                            "+/widget/matrix/widget-matrix.js",
+                            "+/widget/matrix/widget-matrix-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/matrix/css/widget-matrix.css"
+                        ],
+                        "desktop" : [
+                            "+/widget/matrix/skin/default/css/widget-matrix-skin-default.css",
+                            "+/widget/matrix/skin/metal/css/widget-matrix-skin-metal.css",
+                            "+/widget/matrix/skin/light/css/widget-matrix-skin-light.css"
+                        ],
+                        "mobile" : [
+                            "+/widget/matrix/skin/metal/css/widget-matrix-skin-metal-mobile.css",
+                            "+/widget/matrix/skin/cupertino/css/widget-matrix-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/combobox",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/combobox/widget-combobox.js",
+                            "+/widget/combobox/widget-combobox-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/combobox/css/widget-combobox.css",
+                            "+/widget/combobox/skin/default/css/widget-combobox-skin-default.css",
+                            "+/widget/combobox/skin/metal/css/widget-combobox-skin-metal.css",
+                            "+/widget/combobox/skin/light/css/widget-combobox-skin-light.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/radioGroup",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/radiogroup/widget-radiogroup.js",
+                            "+/widget/radiogroup/widget-radiogroup-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/radiogroup/css/widget-radiogroup.css",
+                            "+/widget/radiogroup/skin/default/css/widget-radiogroup-skin-default.css",
+                            "+/widget/radiogroup/skin/metal/css/widget-radiogroup-skin-metal.css",
+                            "+/widget/radiogroup/skin/light/css/widget-radiogroup-skin-light.css",
+                            "+/widget/radiogroup/skin/cupertino/css/widget-radiogroup-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/menuBar",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "Widget/menuItem", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ],
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/menubar/widget-menubar.js",
+                            "+/widget/menubar/widget-menubar-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/menubar/css/widget-menubar.css",
+                            "+/widget/menubar/skin/default/css/widget-menubar-skin-default.css",
+                            "+/widget/menubar/skin/metal/css/widget-menubar-skin-metal.css",
+                            "+/widget/menubar/skin/light/css/widget-menubar-skin-light.css"
+                        ],
+                        "mobile" : [
+                            "+/widget/menubar/skin/cupertino/css/widget-menubar-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/menuItem",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/menuitem/widget-menuitem.js",
+                            "+/widget/menuitem/widget-menuitem-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/menuitem/css/widget-menuitem.css",
+                            "+/widget/menuitem/skin/default/css/widget-menuitem-skin-default.css",
+                            "+/widget/menuitem/skin/metal/css/widget-menuitem-skin-metal.css",
+                            "+/widget/menuitem/skin/light/css/widget-menuitem-skin-light.css"
+                        ],
+                        "mobile" : [
+                            "+/widget/menuitem/skin/cupertino/css/widget-menuitem-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/login",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/login/widget-login.js",
+                            "+/widget/login/widget-login-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/login/css/widget-login.css",
+                            "+/widget/login/skin/default/css/widget-login-skin-default.css",
+                            "+/widget/login/skin/metal/css/widget-login-skin-metal.css",
+                            "+/widget/login/skin/light/css/widget-login-skin-light.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/component",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/component/widget-component-conf.js",
+                            "+/widget/component/widget-component.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/component/css/widget-component.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/chart",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/chart/widget-chart-conf.js",
+                            "+/widget/chart/widget-chart.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/chart/css/widget-chart.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/fileUpload",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "Widget/button", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/container", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ],
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/fileUpload/widget-fileUpload-conf.js",
+                            "+/widget/fileUpload/widget-fileUpload.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/fileUpload/css/widget-fileUpload.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/tabView",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "Widget/menuBar", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ],
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/tabview/widget-tabview.js",
+                            "+/widget/tabview/widget-tabview-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/tabview/css/widget-tabview.css",
+                            "+/widget/tabview/skin/default/css/widget-tabview-skin-default.css",
+                            "+/widget/tabview/skin/metal/css/widget-tabview-skin-metal.css",
+                            "+/widget/tabview/skin/light/css/widget-tabview-skin-light.css"
+                        ],
+                        "mobile" : [
+                            "+/widget/tabview/skin/cupertino/css/widget-tabview-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/dialog",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "Widget/button", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/container", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/image", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/richText", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ],
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/dialog/widget-dialog.js",
+                            "+/widget/dialog/widget-dialog-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/dialog/css/widget-dialog.css",
+                            "+/widget/dialog/skin/default/css/widget-dialog-skin-default.css",
+                            "+/widget/dialog/skin/metal/css/widget-dialog-skin-metal.css",
+                            "+/widget/dialog/skin/light/css/widget-dialog-skin-light.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/wysiwyg",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/dialog/widget-dialog.js",
+                            "+/widget/dialog/widget-dialog-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/dialog/css/widget-dialog.css",
+                            "+/widget/dialog/skin/default/css/widget-dialog-skin-default.css",
+                            "+/widget/dialog/skin/metal/css/widget-dialog-skin-metal.css",
+                            "+/widget/dialog/skin/light/css/widget-dialog-skin-light.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/frame",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/frame/widget-frame.js",
+                            "+/widget/frame/widget-frame-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/frame/css/widget-frame.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/video",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/video/widget-video.js",
+                            "+/widget/video/widget-video-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/video/css/widget-video.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/canvas",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/canvas/widget-canvas.js",
+                            "+/widget/canvas/widget-canvas-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/canvas/css/widget-canvas.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/calendar",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/calendar/widget-calendar.js",
+                            "+/widget/calendar/widget-calendar-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/calendar/css/widget-calendar.css",
+                            "+/widget/calendar/css/datepicker.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/googleMaps",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/googleMaps/widget-googleMaps.js",
+                            "+/widget/googleMaps/widget-googleMaps-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/googleMaps/css/widget-googleMaps.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/accordion",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "Widget/container", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/image", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/richText", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ],
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/accordion/widget-accordion.js",
+                            "+/widget/accordion/widget-accordion-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/accordion/css/widget-accordion.css",
+                            "+/widget/accordion/skin/default/css/widget-accordion-skin-default.css",
+                            "+/widget/accordion/skin/metal/css/widget-accordion-skin-metal.css",
+                            "+/widget/accordion/skin/light/css/widget-accordion-skin-light.css"
+                        ]
+                    }
+                }
+            },
+            
+            
+            {
+                "name" : "Widget/select",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/select/widget-select.js",
+                            "+/widget/select/widget-select-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/select/css/widget-select.css",
+                            "+/widget/select/skin/default/css/widget-select-skin-default.css",
+                            "+/widget/select/skin/metal/css/widget-select-skin-metal.css",
+                            "+/widget/select/skin/light/css/widget-select-skin-light.css",
+                            "+/widget/select/skin/cupertino/css/widget-select-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/switchbox",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/switchBox/widget-switchbox.js",
+                            "+/widget/switchBox/widget-switchbox-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/switchBox/css/widget-switchbox.css",
+                            "+/widget/switchBox/skin/cupertino/css/widget-switchBox-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/list",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "Widget/container", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/button", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/richText", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ],
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/list/widget-list.js",
+                            "+/widget/list/widget-list-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/list/css/widget-list.css",
+                            "+/widget/list/skin/cupertino/css/widget-list-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/popover",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "Widget/container", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ],
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/popover/widget-popover.js",
+                            "+/widget/popover/widget-popover-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/popover/css/widget-popover.css",
+                            "+/widget/popover/skin/cupertino/css/widget-popover-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+
+            {
+                "name" : "Widget/navigationView",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "Widget/container", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/button", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/richText", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ],
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/navigationView/widget-navigationView.js",
+                            "+/widget/navigationView/widget-navigationView-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/navigationView/css/widget-navigationView.css",
+                            "+/widget/navigationView/skin/cupertino/css/widget-navigationView-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+
+            {
+                "name" : "Widget/splitView",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "Widget/container", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/button", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/richText", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ],
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/splitView/widget-splitView.js",
+                            "+/widget/splitView/widget-splitView-conf.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/splitView/css/widget-splitView.css",
+                            "+/widget/splitView/skin/cupertino/css/widget-splitView-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/section",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "Widget/sectionNavigation", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ],
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/section/widget-section-conf.js",
+                            "+/widget/section/widget-section.js"
+                        ]
+                    },
+                    "css" : {
+                        "default" : [
+                            "+/widget/section/css/widget-section.css",
+                            "+/widget/section/skin/cupertino/css/widget-section-skin-cupertino.css"
+                        ]
+                    }
+                }
+            },
+            {
+                "name" : "Widget/sectionNavigation",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "files" : {
+                    "js" : {
+                        "default" : [
+                            "+/widget/sectionNavigation/widget-sectionNavigation-conf.js",
+                            "+/widget/sectionNavigation/widget-sectionNavigation.js"
+                        ]
+                    }
+                }
+            },
+            
+
+            {
+                "name" : "dataprovider",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "Core/Native/Rest", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Core/Utils/DebugTools", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Core/Utils/Environment", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Core/Utils/Strings", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Core/Utils/Dates", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "DataProvider", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "DataSource/Selection", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ]
+            },
+            {
+                "name" : "allmodules",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "Desktop_Core", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/icon", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/button", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/buttonImage", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/checkbox", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/switchbox", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/container", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/richText", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/errorDiv", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/dataGrid", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/autoForm", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/queryForm", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/image", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/label", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/slider", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/textField", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/googleMap", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/yahooWeather", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/progressBar", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/matrix", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/combobox", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/select", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/radioGroup", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/menuBar", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/menuItem", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/login", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/component", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/chart", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/fileUpload", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/tabView", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/dialog", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/wysiwyg", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/frame", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/video", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/canvas", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/calendar", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/googleMaps", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/accordion", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ]
+            },
+            {
+                "name" : "mobile",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "Mobile_Core", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/list", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/popover", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/icon", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/button", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/buttonImage", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/checkbox", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/switchbox", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/container", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/richText", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/errorDiv", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/dataGrid", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/autoForm", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/queryForm", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/image", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/label", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/slider", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/textField", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/googleMap", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/yahooWeather", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/progressBar", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/matrix", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/combobox", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/select", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/radioGroup", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/menuBar", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/menuItem", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/login", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/chart", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/fileUpload", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/navigationView", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/tabView", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/dialog", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/wysiwyg", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/frame", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/video", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/canvas", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/splitView", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/calendar", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/googleMaps", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/accordion", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/section", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ]
+            },
+            {
+                "name" : "reporting",
+                "version" : "1.0.0",
+                "type" : "WAF",
+                "dependencies" : [
+                    { "name" : "Core/Native/Rest", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Core/Utils", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Dataprovider", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "DataSource", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Rpc", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Tags", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/JQuery", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/JQueryUI", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/JQuerySVG", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/GRaphael", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/Selectbox", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Lib/Notify", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/Widget", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+                    { "name" : "Widget/richText", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+                ]
+            }
+            
+            
+            
+]

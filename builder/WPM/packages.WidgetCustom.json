@@ -1,0 +1,22 @@
+{
+    "name" : "myDevelopperName/infiniteCarousel",
+    "version" : "1.0.0",
+    "type" : "CustomWidget",
+    "dependencies" : [
+        { "name" : "Widget/container", "type" : "WAF", "version" : "1.0.0", "path" : ""},
+        { "name" : "Widget/image", "type" : "WAF", "version" : "1.0.0", "path" : ""}
+    ],
+    "files" : {
+        "js" : {
+            "default" : [
+                "+/myDevelopperName/infiniteCarousel/widget-infiniteCarousel-conf.js",
+                "+/myDevelopperName/infiniteCarousel/widget-infiniteCarousel.js"
+            ]
+        },
+        "css" : {
+            "default" : [
+                "+/myDevelopperName/infiniteCarousel/widget-infiniteCarousel.css"
+            ]
+        }
+    }
+}
