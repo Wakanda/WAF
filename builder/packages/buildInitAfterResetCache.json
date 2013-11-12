@@ -1,0 +1,9 @@
+{
+    "name": "waf-reset-build-cache?minifyCores=1",
+    "loadDependencies": [
+        {"id": "Desktop_Core"},
+        {"id": "Mobile_Core"},
+        {"id": "Reporting_Core"},
+        {"id": "Widget_V2"}
+    ]
+}

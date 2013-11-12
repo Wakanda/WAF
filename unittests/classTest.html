@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> Tests0</title>
+        <link rel="stylesheet" href="lib/mocha/mocha.css" />
+    </head>
+    <body>
+        <div id="mocha"></div>
+        <script src="lib/mocha/mocha.js"></script>
+        <script src="lib/chai/chai.js"></script>
+        <script>
+            mocha.ui('bdd'); 
+            mocha.reporter('html');
+        </script>
+        <script src="../waf-core/core.js"></script>
+        <script src="spec/classTest.js"></script>
+        <script>
+            if (window.mochaPhantomJS) { mochaPhantomJS.run(); }
+            else { mocha.run(); }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+/* 
+    Document   : widget-accordion-skin-light
+    Created on : Sep 3, 2012, 11:42:34 AM
+    Author     : Mac
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+
+.light.waf-widget .waf-container{
+	
+	-webkit-border-radius: 25px;
+	   -moz-border-radius: 25px;
+	    -ms-border-radius: 25px;
+	     -o-border-radius: 25px;
+	        border-radius: 25px;
+	border-color: #CCC;
+}
+
+.light.waf-accordion {
+	/*background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, hsla(0, 0%, 100%, 0)), color-stop(1, hsla(0, 0%, 100%, 0.5)));
+	background-image: -webkit-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.5) 100%);
+	background-image:    -moz-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.5) 100%);
+	background-image:     -ms-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.5) 100%);
+	background-image:      -o-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.5) 100%);
+	background-image:         linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.5) 100%);*/
+	
+	border: none;
+
+
+	
+	
+}
+
+
+.light.waf-widget .waf-container.accordion-section{
+	
+	-webkit-border-radius: 25px;
+	   -moz-border-radius: 25px;
+	    -ms-border-radius: 25px;
+	     -o-border-radius: 25px;
+	        border-radius: 25px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #CCC;
+	box-shadow: none;
+}
+
+
+.waf-widget .waf-container .light.accordion-header{
+
+/*background-color:#f5f5f5;*/
+
+	-webkit-border-radius: 25px;
+	   -moz-border-radius: 25px;
+	    -ms-border-radius: 25px;
+	     -o-border-radius: 25px;
+	        border-radius: 25px;
+	
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.6)), color-stop(0.4, rgba(255, 255, 255, 0.3)), color-stop(0.4, rgba(255, 255, 255, 0.2)), color-stop(1.0, rgba(255, 255, 255, 0)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 100%);
+	background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 100%);
+	background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 100%);
+	background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 100%);
+	background-image:         linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 100%);
+	background-image: -webkit-linear-gradient(top, white 0%, white 47%, #F2F2F2 51%, #F2F2F2 100%);
+	border-color: #ccc;
+	background-color:transparent;
+
+
+}
+
+.waf-widget .waf-container .light.accordion-content{
+
+	-webkit-border-radius: 25px;
+	   -moz-border-radius: 25px;
+	    -ms-border-radius: 25px;
+	     -o-border-radius: 25px;
+	        border-radius: 25px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #CCC;
+}
+

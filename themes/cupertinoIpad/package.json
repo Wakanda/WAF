@@ -1,0 +1,13 @@
+{
+    "name": "cupertinoIpad",
+    "author": "Wakanda",
+    "copyright": "GNU GPL v3, AGPL v3, Commercial",
+    "studio": {
+	    "label": "Cupertino Ipad", 	
+        "mobile": "true"
+    },	
+    "version": "1.0.0", 
+    "loadDependencies": [
+        {"id": "themes/cupertinoIpad/cupertinoIpad.css", "path": "WAF"}
+    ]
+}

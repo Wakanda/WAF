@@ -1,0 +1,13 @@
+{
+    "name": "lilac",
+    "author": "Wakanda",
+    "copyright": "GNU GPL v3, AGPL v3, Commercial",
+    "studio": {
+	    "label": "Lilac", 	
+        "mobile": "false"
+    },	
+    "version": "1.0.0", 
+    "loadDependencies": [
+        {"id": "themes/lilac/lilac.css", "path": "WAF"}
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "softGray",
+    "author": "Wakanda",
+    "copyright": "GNU GPL v3, AGPL v3, Commercial",
+    "studio": {
+        "label": "Soft gray",
+        "mobile": "false"
+    },
+    "version": "1.0.0",
+    "loadDependencies": [
+        {"id": "themes/softGray/softGray.css", "path": "WAF"}
+    ]
+}

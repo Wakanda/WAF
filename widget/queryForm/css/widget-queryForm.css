@@ -1,0 +1,546 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+/**
+ * Widget autoForm
+ *
+ * Includes mandatory rules for the autoForm widget
+ *
+ * @link /walib/WAF/widget/css/widget.css
+ *
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section autoForm container
+ * -------------------------------------------------------
+ */
+.waf-autoForm {
+	overflow: hidden;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.autoForm-filler
+{
+	display:none;
+}
+
+tr.autoForm-filler td
+{
+	height:0px;
+}
+
+table.autoForm-data {
+	width: 100%;
+	white-space: nowrap;
+}
+
+.autoForm-data .yui-ac-input
+{
+	position:relative;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section autoForm header
+ * -------------------------------------------------------
+ */
+.autoForm-title-col {
+	height: 23px;
+	padding: 0 5px;
+	background-position: 50% 50%;
+	
+	font-weight: bold;
+	
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select:none;
+	cursor: default;
+}
+
+/* pour les jquery panels : la title bar du panel */
+.waf-widget-panel.autoForm-panel .ui-dialog-titlebar
+{
+	height: 21px;
+	-moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+	padding: 5px 0 0 5px;
+	background-position: 50% 50%;
+	
+	font-weight: bold;
+	
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select:none;
+	cursor: default;
+}
+
+
+/* level 1 header */
+/*.autonomous .autoForm-title-col {
+	height: 27px;
+	-moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}*/
+
+.included .autoForm-title-col {
+	height: 23px;
+	-moz-border-radius: 0 0 0 0;
+	-webkit-border-radius: 0 0 0 0;
+	border-radius: 0 0 0 0;
+}
+
+
+.waf-widget-panel .autoForm-title-row 
+{
+	display: none;
+}
+
+.waf-widget-panel .included .autoForm-title-row 
+{
+	display: table-row;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section autoForm body
+ * -------------------------------------------------------
+ */
+.autoForm-data tbody td {
+	height: 25px;
+	vertical-align: top;
+}
+.autoForm-data tbody td > div {
+	position: relative;
+}
+.attribute-col {
+	font-weight: bold;
+	cursor: default;
+	
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select:none;
+
+}
+.attribute-div {
+	padding: 4px 20px 0 4px;
+}
+.attribute-rel {
+	cursor: pointer;
+}
+.attribute-rel {
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	display: block;
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: -32px -16px;
+	
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select:none;
+}
+.attribute-rel.expanded {
+	background-position: -64px -16px;
+}
+
+
+.value-div input {
+	display: block;
+	width: 100%;
+	height: 25px;
+	padding: 0 4px;
+	background-color: transparent;
+	margin: 0;
+	border: 0 none;
+	outline: none 0;
+	line-height: 25px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.value-div input[disabled] {
+	color: #808080;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section autoForm footer
+ * -------------------------------------------------------
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section Status
+ * -------------------------------------------------------
+ */
+.waf-status-right {
+	padding-right: 6px;
+}
+
+
+
+/**
+ * -------------------------------------------------------
+ * Overrriding jQuery UI styles
+ * 
+ * @section jQuery UI
+ * -------------------------------------------------------
+ */
+
+
+
+
+
+
+
+
+.autoForm-readonly
+{
+	color:Gray;
+}
+
+
+/* --------------------------------  query forms --------------------------------- */
+
+
+.oper-select
+{
+	-webkit-appearance: textfield;
+	-moz-appearance: textfield;
+	background-color: transparent;
+	border: 0 none;
+	outline: none;
+	
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	color: inherit;
+    text-align: inherit;
+}
+
+
+.oper-col
+{
+	font-weight:bold;
+}
+
+.autoForm-data.query-form tbody td
+{
+	vertical-align:middle;
+}
+
+.autoForm-data.query-form .attribute-div {
+	padding: 4px 4px 4px 4px;
+}
+
+
+
+
+/* ---------------------------------------- old stuff ----------------------------------------- */
+
+.AF_VerticalAlign 
+{
+	vertical-align:top;
+}
+
+.AF_autoGridGen
+{
+    position:relative;
+    height: 200px;
+    min-height: 150px;
+}
+.AF_mess
+{
+	width:0%;
+}
+.AF_messWrong
+{
+	width:50%;
+}
+.AF_ValueWrong
+{
+	width:50%;
+}
+
+.AF_markedWrong
+{
+	border:solid;
+	border-width:1px;
+	color:Red;
+}
+
+.AF_ErrorMessageWrong
+{
+	border:solid;
+	border-width:1px;
+	color:Red;
+}
+.AF_ErrorMessage
+{
+}
+.AF_InputError
+{
+	background:Yellow;
+}
+.AF_InputOK
+{
+}
+
+.AF_SliderWithTicks
+{
+	background:url("/walib/WAF/widget/autoForm/png/slider_with_ticks.gif") 5px 0 no-repeat !important; 
+}
+
+.AF_autoImage
+{
+    background:#D0D0D0;
+}
+
+.AF_ImageDiv
+{
+	border-style:solid;
+	border-width:1px;
+	border-color:Black;
+}
+
+.AF_Image
+{
+	border-style:solid;
+	border-width:1px;
+	border-color:Black;
+}
+
+
+/* new forms */
+/* ---------------------------------------------------------------------------------- */
+
+/*
+.waf-widget.waf-form
+{
+	font-size:10px;
+	font-weight:normal;
+	font-style:normal;
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.2)));
+	background-image:-moz-linear-gradient(center top , rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+}
+*/
+
+.waf-widget .waf-form-header
+{
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-topleft: 4px;
+	-webkit-border-radius-topright: 4px;
+	-webkit-border-radius-topleft: 4px;
+	height:24px;
+	display:table;
+	width:100%;
+}
+
+.waf-widget .waf-form-header-left
+{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	width:20px;
+}
+
+.waf-widget .waf-form-header-left-inside
+{
+	width:10px;
+	height:10px;
+	background-color:White;
+	border-style:solid;
+	border-width:1px;
+	border-color:Black;
+	margin-left:6px;
+}
+
+.waf-widget .waf-form-header-text
+{
+	display:table-cell;
+	vertical-align:middle;
+	font-size:10px;
+	font-weight:bolder;
+	text-align:left;
+	padding-left:10px;
+}
+
+.waf-widget .waf-form-header-right
+{
+	display:table-cell;
+}
+
+
+.waf-widget .waf-form-body
+{
+	padding-top:15px;
+	/*background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.3)));
+	background-image:-moz-linear-gradient(center top , rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));*/
+}
+
+
+.waf-widget .waf-form-row
+{
+	height:30px;
+	display:table;
+}
+
+.waf-widget .waf-form-att-label
+{
+	display:table-cell;
+	vertical-align:top;
+	padding-left:5px;
+	padding-right:8px;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+.waf-widget .waf-form-att-label-text
+{
+	/*margin-top:4px;*/
+	text-shadow:1px 1px 1px White;
+	-moz-text-shadow:1px 1px 1px White;
+	-webkit-text-shadow:1px 1px 1px White;
+	float:left;
+	margin-right:8px;
+}
+
+
+.waf-widget .waf-form-att-label.waf-form-large-object
+{
+	vertical-align:top;
+}
+
+.waf-widget .waf-form-att-label-rel
+{
+	float:right;
+	margin-top:5px;
+	margin-right:8px;
+}
+
+.waf-widget .waf-form-att-value
+{
+	display:table-cell;
+	vertical-align:top;
+	padding-bottom:8px;
+}
+.waf-widget .waf-form-att-value.waf-form-large-object
+{
+	vertical-align:top;
+}
+
+.waf-widget .waf-form-att-value .ui-resizable-s
+{
+	bottom:0px;
+}
+
+.waf-widget .waf-form-att-value .ui-resizable-e
+{
+	right:5px;
+}
+
+.waf-widget .waf-form-att-value .ui-resizable-se
+{
+	right:0px;
+	bottom:0px;
+	z-index:100000;
+}
+
+.waf-widget .waf-form-att-value .ui-resizable-se
+{
+	right:0px;
+	bottom:0px;
+	z-index:100000;
+}
+
+.waf-widget .waf-form-att-value-pict
+{
+	border-style:none;
+}
+.waf-widget .waf-form-att-value-pict:hover
+{
+	border-style:solid;
+	border-color:Black;
+	border-width:1px;
+}
+
+.waf-form .waf-textField
+{
+	padding-left:3px;
+	padding-right:0px;
+	padding-bottom:0px;
+	padding-top:0px;
+}
+
+.waf-widget .waf-form-att-value-input
+{
+	height:20px;
+	/*color: Black;
+	border-width:1px;*/
+	/*
+	background: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0, rgb(209,209,209)),
+			color-stop(1, rgb(240,240,240))
+		);
+	
+	background: -moz-linear-gradient(
+			center bottom,
+			rgb(209,209,209) 0%,
+			rgb(240,240,240) 100%
+		);
+		*/
+}
+
+/*
+.waf-widget .waf-form-att-value-input:focus
+{
+	background-color: White;
+	background-image:none;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

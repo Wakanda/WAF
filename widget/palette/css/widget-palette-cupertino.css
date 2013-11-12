@@ -1,0 +1,823 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+/** 
+ * Widget color palette
+ *
+ * @style Cupertino
+ *
+ * colordef rgb(109, 133, 163);	Background
+ *
+ */
+
+
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-widget,
+.waf-widget a {
+	color: rgb(0, 0, 0);
+        border-color: rgb(0, 0, 0);        
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section Widget subElements
+ * -------------------------------------------------------
+ */
+/**
+ * -----------------------------------
+ * @subsection Widget header
+ * -----------------------------------
+ */
+.cupertino .waf-widget-header,
+.cupertino.waf-container.waf-widget-header {
+	background-color: rgb(109, 133, 163);
+	
+	border-bottom-color: rgb(0, 0, 0);
+	border-top-color: rgb(153, 153, 153);
+	border-right-color: rgb(153, 153, 153);
+	border-left-color: rgb(153, 153, 153);
+	
+	color: rgb(255, 255, 255);
+	text-shadow: rgb(91, 103, 117) 0 -1px;
+
+}
+
+/**
+ * -----------------------------------
+ * @subsection Widget body
+ * -----------------------------------
+ */
+/*.waf-widget .waf-widget-body*/
+.waf-widget-body,
+.waf-widget.waf-container.waf-widget-body {
+	background-color: transparent;
+}
+
+/**
+ * -----------------------------------
+ * @subsection Widget alternate content
+ * -----------------------------------
+ */
+
+/**
+ * -----------------------------------
+ * @subsection Widget footer
+ * -----------------------------------
+ */
+.cupertino .waf-widget-footer,
+.cupertino.waf-widget.waf-container.waf-widget-footer {
+	background-color: rgb(109, 133, 163);
+	
+	/*border-color: rgb(0, 0, 0);*/
+	border-bottom-color: rgb(153, 153, 153);
+	border-top-color: rgb(0, 0, 0);
+	border-right-color: rgb(153, 153, 153);
+	border-left-color: rgb(153, 153, 153);
+	
+	color: rgb(255, 255, 255);
+	text-shadow: rgb(0, 0, 0) 1px 1px;
+	
+	-moz-box-shadow:    inset 0 1px 0 rgb(238, 238, 238);
+    -webkit-box-shadow: inset 0 1px 0 rgb(238, 238, 238);
+    box-shadow:         inset 0 1px 0 rgb(238, 238, 238);
+}
+
+
+
+/**
+ * -------------------------------------------------------
+ * @section Widget state
+ * -------------------------------------------------------
+ */
+.waf-state-hover {
+}
+
+.waf-state-active,
+.waf-state-selected {
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section radio
+ * -------------------------------------------------------
+ */
+.waf-radio {
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(171, 171, 171);
+	color: rgb(0, 0, 0);
+}
+
+/**
+ * -----------------------------------
+ * @subection radio state
+ * -----------------------------------
+ */
+.waf-radio.waf-state-selected {
+	color: rgb(56, 84, 135);
+}
+.waf-radio.waf-state-active {
+	background-color: rgb(1, 93, 230);
+	color: rgb(255, 255, 255);
+}
+
+/**
+ * -----------------------------------
+ * @subection radio box
+ * -----------------------------------
+ */
+
+
+/**
+ * -----------------------------------
+ * @subsubsection radio box state
+ * -----------------------------------
+ */
+
+
+/**
+ * -----------------------------------
+ * @subection radio icon symbol
+ * -----------------------------------
+ */
+.waf-radio .waf-radio-icon-symbol {
+	fill: rgb(230, 230, 230);
+}
+.waf-radio .waf-radio-icon-symbol-shadow {
+	fill: rgb(255, 255, 255);
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection radio icon state
+ * -----------------------------------
+ */
+/* selected */
+.waf-radio.waf-state-selected .waf-radio-icon-symbol {
+	fill: rgb(50, 79, 133);
+}
+/* active */
+.waf-radio.waf-state-active .waf-radio-icon-symbol {
+	fill: rgb(255, 255, 255);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section container
+ * -------------------------------------------------------
+ */
+.cupertino.waf-container {
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(171, 171, 171);		
+}
+
+.waf-splitView .waf-widget.waf-container.waf-container-level-0.waf-level-0.waf-split-container {
+	background-color: rgb(0, 0, 0);
+	border-color: rgb(0, 0, 0);
+}
+
+
+.cupertino.waf-navigationView .waf-navigationView-body {
+	background-color: rgb(109, 133, 163);
+	border-color: rgb(92, 99, 104);
+}
+
+
+.waf-widget.waf-matrix-element, .waf-widget.waf-matrix-clone{
+	background-color: rgb(255, 255, 255);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section menuBar
+ * -------------------------------------------------------
+ */
+.waf-widget.waf-menuBar {
+	/*background-color: rgb(109, 133, 163);
+	border-color: rgb(0, 0, 0);*/
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section menuItem
+ * -------------------------------------------------------
+ */
+.waf-menuItem {
+	background-color: rgb(119, 133, 147);
+
+    border-top-color: rgb(84, 103, 125);
+    border-right-color: rgb(94, 110, 133);
+    border-bottom-color: rgb(107, 121, 136);
+    border-left-color: rgb(144, 156, 171);
+
+	color: rgb(63, 92, 132);
+	text-shadow: rgba(255, 255, 255, 0.65) 0 2px;
+}
+/*.waf-menuItem-level-0 {
+	background-color: rgb(109, 133, 163);
+    border-left-color: transparent;
+    border-right-color: rgb(77, 98, 127);
+}*/
+
+
+/**
+ * -----------------------------------
+ * @subsection menuItem state
+ * -----------------------------------
+ */
+.waf-menuItem.waf-state-active,
+.waf-menuItem.waf-state-selected {
+	background-color: rgb(100, 119, 146);
+
+    border-top-color: rgb(56, 72, 98);
+    border-bottom-color: rgb(90, 109, 135);
+
+	color: rgb(255, 255, 255);
+	text-shadow: rgba(0, 0, 0, 0.35) 0 -2px;
+}
+
+
+/**
+ * -----------------------------------
+ * @subsubsection sub-menuItem state
+ * -----------------------------------
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section dialog
+ * -------------------------------------------------------
+ */
+
+/**
+ * -----------------------------------
+ * @subection dialog body
+ * -----------------------------------
+ */
+.waf-widget.waf-dialog .waf-dialog-body {
+	background-color: rgb(255, 255, 255);
+
+}
+
+
+
+/**
+ * -------------------------------------------------------
+ * @section textField
+ * -------------------------------------------------------
+ */
+.cupertino.waf-textField {
+	background-color: rgb(255,255,255);
+	box-shadow: inset 0 0 2px rgb(0,0,0);
+	border-bottom-color: rgb(238,238,238);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section tabView
+ * -------------------------------------------------------
+ */
+/**
+ * -----------------------------------
+ * @subsection tabView menuBar 
+ * -----------------------------------
+ */
+.waf-widget.waf-tabView .waf-menuBar {
+	background-color: transparent;
+
+}
+.waf-widget.waf-tabView .waf-tabView-menuBar-bottom-left,
+.waf-widget.waf-tabView .waf-tabView-menuBar-bottom-right {
+	border-color: rgb(0, 0, 0);
+	background-color: rgb(0, 0, 0);
+}
+
+.cupertino.waf-tabView.waf-tabView-menu-position-left-bottom .waf-widget.waf-menuBar, 
+.cupertino.waf-tabView.waf-tabView-menu-position-left-top .waf-widget.waf-menuBar {
+	background-color: rgb(109, 133, 163);
+	border-top-color: rgb(109, 133, 163);
+	box-shadow: inset 0 1px 1px rgb(255,255,255), inset -1px 0px 1px rgb(0,0,0);
+}
+
+.cupertino.waf-tabView.waf-tabView-menu-position-right-bottom .waf-widget.waf-menuBar,
+.cupertino.waf-tabView.waf-tabView-menu-position-right-top .waf-widget.waf-menuBar {
+	background-color: rgb(109, 133, 163);
+	border-top-color: rgb(109, 133, 163);
+	box-shadow: inset 0 1px 1px #fff, inset 1px 0px 1px rgb(0,0,0);
+}
+
+.cupertino.waf-tabView.waf-tabView-menu-position-top-left .waf-widget.waf-menuBar,
+.cupertino.waf-tabView.waf-tabView-menu-position-top-right .waf-widget.waf-menuBar {
+	border-top-color: rgb(109, 133, 163);
+    border-bottom-color: rgb(0, 0, 0);
+    background-color: rgb(109, 133, 163);
+}
+
+.waf-tabView.waf-tabView-menu-position-bottom-left .waf-widget.waf-menuBar,
+.waf-tabView.waf-tabView-menu-position-bottom-right .waf-widget.waf-menuBar {
+	border-top-color: rgb(0, 0, 0);
+}
+
+/**
+ * -----------------------------------
+ * @subsection tabView container 
+ * -----------------------------------
+ */
+.waf-tabView.waf-tabView-menu-position-left-top .waf-widget.waf-container.waf-tabView-container-level-0,
+.waf-tabView.waf-tabView-menu-position-left-bottom .waf-widget.waf-container.waf-tabView-container-level-0,
+.waf-tabView.waf-tabView-menu-position-right-top .waf-widget.waf-container.waf-tabView-container-level-0,
+.waf-tabView.waf-tabView-menu-position-right-bottom .waf-widget.waf-container.waf-tabView-container-level-0 {
+	border-top-color: rgb(109, 133, 163);
+	box-shadow: inset 0 1px 1px rgb(255, 255, 255);
+}
+
+.waf-tabView.waf-tabView-menu-position-bottom-left .waf-widget.waf-container.waf-tabView-container-level-0,
+.waf-tabView.waf-tabView-menu-position-bottom-right .waf-widget.waf-container.waf-tabView-container-level-0 {
+	border-top-color: rgb(255, 255, 255);
+	box-shadow: inset 0 1px 1px #fff;
+}
+.cupertino.waf-tabView .waf-container.waf-tabView-container-level-0 {
+	box-shadow: 0px 0px 0px rgb(238, 238, 238);
+}
+
+
+
+/**
+ * -----------------------------------
+ * @subsection tabView menuItem 
+ * -----------------------------------
+ */
+.waf-tabView .waf-menuItem {
+	border-color: transparent;
+	background-color: transparent;
+	color:	rgb(168, 168, 168);
+	text-shadow: none;
+}
+
+
+.waf-tabView.waf-tabView-menu-position-right-bottom .waf-menuItem-level-0.waf-state-selected,
+.waf-tabView.waf-tabView-menu-position-right-top .waf-menuItem-level-0.waf-state-selected,
+.waf-tabView.waf-tabView-menu-position-left-bottom .waf-menuItem-level-0.waf-state-selected,
+.waf-tabView.waf-tabView-menu-position-left-top .waf-menuItem-level-0.waf-state-selected  {
+	border-bottom-color: rgb(238, 238, 238);
+}
+
+.waf-tabView.waf-tabView-menu-position-top-left .waf-menuItem,
+.waf-tabView.waf-tabView-menu-position-top-right .waf-menuItem,
+.waf-tabView.waf-tabView-menu-position-left-top .waf-menuItem,
+.waf-tabView.waf-tabView-menu-position-left-bottom .waf-menuItem,
+.waf-tabView.waf-tabView-menu-position-right-top .waf-menuItem,
+.waf-tabView.waf-tabView-menu-position-right-bottom .waf-menuItem {
+	color: #333333;
+}
+
+
+
+/**
+ * -----------------------------------
+ * @subsubsection tabView menuItem state
+ * -----------------------------------
+ */
+.waf-tabView .waf-menuItem.waf-state-selected {
+	color:	rgb(255, 255, 255);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView
+ * -------------------------------------------------------
+ */
+
+/**
+ * -----------------------------------
+ * @subsection navigationView back button
+ * -----------------------------------
+ */
+.waf-navigationView-header-back-button {
+	background-color: rgb(78, 117, 163);
+	color: inherit;
+	text-shadow: rgb(91, 103, 117) 0 -1px;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView title
+ * -------------------------------------------------------
+ */
+.waf-navigationView-title {
+	color: inherit;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section autoForm
+ * -------------------------------------------------------
+ */
+.waf-widget.waf-autoForm {
+	border-color: rgb(92, 99, 104);
+}
+
+/**
+ * -----------------------------------
+ * @subsection autoForm body
+ * -----------------------------------
+ */
+
+/**
+ * -----------------------------------
+ * @subsection autoForm row
+ * -----------------------------------
+ */
+
+/**
+ * -----------------------------------
+ * @subsection autoForm col
+ * -----------------------------------
+ */
+.waf-autoForm .attribute-col {
+	border-right-color: rgb(77, 98, 127);
+}
+
+/**
+ * -----------------------------------
+ * @subsection autoForm footer
+ * -----------------------------------
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section select
+ * -------------------------------------------------------
+ */
+.cupertino.waf-select {
+	background-color: rgb(208, 208, 208);
+	border-color: rgb(76, 76, 76);
+}
+
+/**
+ * -----------------------------------
+ * @subsection select state
+ * -----------------------------------
+ */
+.cupertino.waf-select.waf-state-active {
+	border-color: rgb(17, 46, 135);
+}
+
+/**
+ * -----------------------------------
+ * @subection select label
+ * -----------------------------------
+ */
+.cupertino.waf-select .waf-select-label {
+	border-color: rgba(0, 0, 0, 0.57);
+}
+
+/**
+ * -----------------------------------
+ * @subsubection select label state
+ * -----------------------------------
+ */
+.waf-widget.waf-select.waf-state-active .waf-select-label {
+	border-color: rgb(17, 46, 135);
+}
+
+/**
+ * -----------------------------------
+ * @subection select button
+ * -----------------------------------
+ */
+.waf-widget.waf-select .waf-select-button {
+	background-color: rgb(0, 0, 0);
+}
+
+/**
+ * -----------------------------------
+ * @subsubection select button states
+ * -----------------------------------
+ */
+.waf-widget.waf-select.waf-state-active .waf-select-button {
+	background-color: rgb(17, 46, 135);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section button 
+ * -------------------------------------------------------
+ */
+.cupertino.waf-button {
+
+    border-top-color: rgb(90, 90, 90);
+    border-left-color: rgb(90, 90, 90);
+    border-right-color: rgb(90, 90, 90);
+    border-bottom-color: rgb(190, 190, 190);
+    
+    text-shadow: rgb(91, 103, 117) 0 -1px;
+   
+    background-color: rgb(78, 117, 163); 
+    color: #eee;
+     
+    -moz-box-shadow:    inset 0 0 2px rgb(0, 0, 0);
+    -webkit-box-shadow: inset 0 0 1px rgb(0, 0, 0);
+    box-shadow:         inset 0 0px 2px rgb(62, 80, 126); /*rgb(62, 80, 126);*/
+}
+
+/**
+ * -----------------------------------
+ * @subsection button state
+ * -----------------------------------
+ */
+.waf-button.waf-state-active {
+    background-color: rgb(32, 69, 122);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section buttonImage 
+ * -------------------------------------------------------
+ */
+.cupertino.waf-buttonImage {
+
+    border-top-color: rgb(90, 90, 90);
+    border-left-color: rgb(90, 90, 90);
+    border-right-color: rgb(90, 90, 90);
+    border-bottom-color: rgb(90, 90, 90); /*rgb(190, 190, 190);*/
+    
+    text-shadow: rgb(91, 103, 117) 0 -1px;
+   
+    background-color: rgb(65,105,222); /*rgb(78, 117, 163);*/
+    color: #eee;
+     
+    -moz-box-shadow:    inset 0 0 2px rgb(0, 0, 0);
+    -webkit-box-shadow: inset 0 0 1px rgb(0, 0, 0);
+    box-shadow:         inset 0 0px 2px rgb(62, 80, 126); /*rgb(62, 80, 126);*/
+}
+
+/**
+ * -----------------------------------
+ * @subsection buttonImage state
+ * -----------------------------------
+ */
+.cupertino.waf-buttonImage.waf-state-active {
+    background-color: rgb(56, 87, 182);
+}
+
+
+/**
+ * -----------------------------------
+ * @subection select icon symbol
+ * -----------------------------------
+ */
+.waf-widget.waf-select .waf-select-icon-symbol {
+	fill: rgb(255, 255, 255);
+}
+.waf-widget.waf-select .waf-select-icon-symbol-shadow {
+	opacity: 0.75;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section switchBox
+ * -------------------------------------------------------
+ */
+.cupertino.waf-switchbox .waf-switchbox-off,
+.cupertino.waf-switchbox .waf-switchbox-on {
+    border-color: rgb(158, 158, 158);
+}
+
+
+
+
+
+/**
+ * -----------------------------------
+ * @subection switchBox switch
+ * -----------------------------------
+ */
+.cupertino.waf-switchbox .waf-switchbox-switch {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(113, 113, 113);
+}
+
+/**
+ * -----------------------------------
+ * @subection switchBox off
+ * -----------------------------------
+ */
+.cupertino.waf-switchbox .waf-switchbox-off {
+    background-color: rgb(249, 249, 249);
+}
+
+/**
+ * -----------------------------------
+ * @subection switchBox on
+ * -----------------------------------
+ */
+.cupertino.waf-switchbox .waf-switchbox-on {
+    background-color: rgb(104, 155, 248); /*rgb(54, 154, 238);*/
+
+}
+
+/**
+ * -----------------------------------
+ * @subsection switchBox label
+ * -----------------------------------
+ */
+.cupertino.waf-switchbox .waf-switchbox-label-off,
+.cupertino.waf-switchbox .waf-switchbox-label-on {
+    text-shadow: 0 -2px rgb(0, 0, 0, 0.25);
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection switchBox label off
+ * -----------------------------------
+ */
+.waf-widget.waf-switchbox .waf-switchbox-label-off {
+    color: rgb(127, 127, 127);
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection switchBox label off
+ * -----------------------------------
+ */
+.waf-widget.waf-switchbox .waf-switchbox-label-on {
+    color: rgb(255, 255, 255);
+}
+
+
+/**
+ * -----------------------------------
+ * @subsection Widget alternate content
+ * -----------------------------------
+ */
+.waf-widget-even {
+	background-color: rgb(240, 240, 240);
+	border-bottom: 1px solid rgb(196, 196, 196);
+	border-top: 2px solid rgb(255, 255, 255);
+}
+
+.waf-widget-even.waf-state-active, .waf-widget-odd.waf-state-active {
+	border-top: 1px solid #0589F4;
+	border-bottom: 1px solid #0589F4;
+}
+
+.waf-widget-odd {
+	background-color: rgb(240, 240, 240);
+	border-bottom: 1px solid rgb(196, 196, 196);
+	border-top: 2px solid rgb(255, 255, 255);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dataGrid
+ * -------------------------------------------------------
+ */
+.waf-widget.waf-dataGrid {
+
+}
+
+.waf-dataGrid-header .waf-dataGrid-cell {
+   
+}
+
+.waf-dataGrid-body {
+
+}
+
+.waf-dataGrid-row {
+
+}
+
+/* states */
+.waf-dataGrid-row.waf-state-hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0163E7), color-stop(100%, #0589F4));
+	background-image: -webkit-linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    background-image:    -moz-linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    background-image:     -ms-linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    background-image:      -o-linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    background-image:         linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    
+	color: rgb(255, 255, 255);
+}
+.waf-dataGrid-row.waf-state-active {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0163E7), color-stop(100%, #0589F4));
+	background-image: -webkit-linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    background-image:    -moz-linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    background-image:     -ms-linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    background-image:      -o-linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    background-image:         linear-gradient(top, #0163E7 0%, #0589F4 100%);
+	
+	color: rgb(255, 255, 255);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section slider
+ * -------------------------------------------------------
+ */
+.cupertino.waf-slider {
+	
+	background-color: rgb(255, 255, 255);
+	border-bottom-color: rgb(238,238,238);
+	-webkit-box-shadow: inset 0 1px 5px rgb(61, 61, 61);
+}
+
+/**
+ * -----------------------------------
+ * @subsection ui-slider-range
+ * -----------------------------------
+ */
+.cupertino.waf-slider .ui-slider-range {
+	-webkit-box-shadow: inset 0 1px 5px rgb(61, 61, 61);
+	background-color: rgb(104, 155, 248);
+}
+
+.waf-slider.ui-slider-vertical .ui-slider-range {
+	background-image : none;
+}
+
+
+
+/**
+ * -----------------------------------
+ * @subsection ui-slider-range
+ * -----------------------------------
+ */
+.waf-slider .ui-slider-handle {
+	background-color: rgb(255, 239, 143);
+	border-color: rgb(153,153,153);
+	background-image: -webkit-linear-gradient(90deg, #fff, rgb(202,202,202));	
+	-webkit-box-shadow:  0 0px 1px rgb(153,153,153), inset 0 1px 1px rgb(255,255,255);	
+}
+
+/* states */
+.waf-slider .ui-slider-handle.ui-state-hover,
+.waf-slider .ui-slider-handle.ui-state-active {
+	
+}
+
+/**
+ * -------------------------------------------------------
+ * @section progressBar
+ * -------------------------------------------------------
+ */
+.cupertino.waf-progressBar {
+	background-color: rgb(255, 255, 255);
+	-webkit-box-shadow: inset 0 1px 5px rgb(61, 61, 61);
+	color: rgb(0, 0, 0);
+	border-color: rgb(238,238,238);
+}
+
+.waf-progressBar-range {
+	background-image: -webkit-gradient(
+    	linear, left top, left bottom, 
+    	from(rgba(255, 255, 255, 0.6)), 
+    	color-stop(0.4, rgba(255, 255, 255, 0.4)), 
+    	color-stop(0.4, rgba(255, 255, 255, 0)), 
+    	to(rgba(255, 255, 255, 0.1)));
+	background-color: rgb(80,136,248);
+	border-color: rgb(80,136,248);
+}
+
+.waf-progressBar-range span {
+	color: rgb(255,255,255);
+}
+/**
+ * -------------------------------------------------------
+ * @section icon
+ * -------------------------------------------------------
+ */
+
+/**
+ * -----------------------------------
+ * @subsection icon state
+ * -----------------------------------
+ */

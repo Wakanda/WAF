@@ -1,0 +1,41 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+.roundy.waf-progress-bar-container
+{
+	
+}
+
+
+.roundy .waf-progress-message 
+{
+	
+}
+
+
+.roundy .waf-progressBar-range
+{
+	background-color:White;
+	background-image:-moz-linear-gradient(center top , rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.5)), color-stop(0.5, rgba(0,0,0,0.2)), to(rgba(0, 0, 0, 0.5)));
+}
+	
+	
+.roundy.waf-progressBar
+{
+	background-color:White;
+	background-image:-moz-linear-gradient(center top , rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.2));
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.2)), color-stop(0.5, rgba(0,0,0,0.01)), to(rgba(0, 0, 0, 0.2)));
+}

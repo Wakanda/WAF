@@ -1,0 +1,124 @@
+    /*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+
+
+/**
+ * Widget combobox
+ *
+ * Includes mandatory rules for the combobox widget
+ *
+ * @link /walib/WAF/widget/css/widget.css
+*/
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+*/
+
+/**
+ * -------------------------------------------------------
+ * This prevents select box to briefly appear
+ * before script execution
+ *
+ * @section combobox select
+ * -------------------------------------------------------
+*/
+.waf-combobox select {
+    display: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section combobox input
+ * -------------------------------------------------------
+*/
+.waf-combobox input {
+    background: transparent;
+    border: none;
+    color: inherit;
+    text-align: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    text-shadow: inherit;
+    letter-spacing: inherit;
+    float: left; /* To fix position bug on firefox */
+
+    -webkit-border-top-left-radius: inherit;
+    -webkit-border-bottom-left-radius: inherit;
+    -moz-border-top-left-radius: inherit;
+    -moz-border-bottom-left-radius: inherit;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section combobox button
+ * -------------------------------------------------------
+*/
+.waf-combobox button {
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    right: 0px;
+
+    -webkit-border-top-right-radius: inherit;
+    -webkit-border-bottom-right-radius: inherit;
+    -moz-border-top-right-radius: inherit;
+    -moz-border-bottom-right-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section combobox list
+ * -------------------------------------------------------
+*/
+.waf-combobox-list {
+    background-image: none;
+}
+
+.waf-combobox-list li {
+    cursor: pointer;
+}
+
+.waf-combobox-list li a{
+    min-height: 15px;
+}
+
+/**
+ * -------------------------------------------------------
+ * @subsection combobox list ui-menu-item
+ * -------------------------------------------------------
+*/
+.waf-combobox-list .ui-menu-item strong {
+    font-weight: bold;
+}
+
+.ui-autocomplete {
+    z-index: 9999999 !important;
+}
+
+/* fix the combo box issue */
+.waf-combobox .ui-button {
+    position: absolute;
+}
