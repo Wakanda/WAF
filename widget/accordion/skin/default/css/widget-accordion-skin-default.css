@@ -1,0 +1,61 @@
+/* 
+    Document   : widget-accordion-skin-default.css
+    Created on : Sep 3, 2012, 11:41:18 AM
+    Author     : Mac
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/** 
+ * Widget tabView
+ *
+ * Includes tabView-specific rules of the Default skin
+ *
+ * @style default
+ * @link /walib/WAF/widget/css/widget.css
+ * @link /walib/WAF/widget/accordion/css/widget-accordion.css
+ * @link /walib/WAF/widget/skin/default/css/widget-skin-default.css
+ *
+ */
+
+root { 
+    display: block;
+}
+
+.default.waf-accordion {
+	
+
+	
+	
+}
+
+
+.default.waf-widget .waf-container.accordion-section{
+
+
+}
+
+
+.waf-widget .waf-container .default.accordion-header{
+
+
+
+
+
+
+}
+
+.waf-widget .waf-container .default.accordion-content{
+
+	
+
+}
+
+
+
+

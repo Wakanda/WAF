@@ -1,0 +1,768 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+/** 
+ * Widget color palette
+ *
+ * @style Orange
+ *
+ * @colordef rgb(221, 151, 36);		Border
+ * @colordef rgb(253, 245, 206);	Background state
+ * @colordef rgb(235, 143, 0);		Color
+ * @colordef rgb(221, 221, 221);	Border
+ * 
+ */
+
+
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-widget,
+.waf-widget a {
+	color: rgb(0, 0, 0);
+        border-color: rgb(0, 0, 0);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section Widget subElements
+ * -------------------------------------------------------
+ */
+/**
+ * -----------------------------------
+ * @subsection Widget header
+ * -----------------------------------
+ */
+.waf-widget-header,
+.waf-widget.waf-container.waf-widget-header {
+	background-color: rgb(246, 168, 40);
+	border-color: rgb(221, 151, 36);
+	color: rgb(255, 255, 255);
+}
+
+/**
+ * -----------------------------------
+ * @subsection Widget body
+ * -----------------------------------
+ */
+/*.waf-widget .waf-widget-body*/
+.waf-widget-body,
+.waf-widget.waf-container.waf-widget-body {
+	background-color: rgb(238, 238, 238);
+}
+/* track */
+.waf-widget-body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.17);
+}
+/* thumb */
+.waf-widget-body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/**
+ * -----------------------------------
+ * @subsection Widget alternate content
+ * -----------------------------------
+ */
+.waf-widget-even {
+	background-color: rgb(246, 246, 246);
+}
+
+/**
+ * -----------------------------------
+ * @subsection Widget footer
+ * -----------------------------------
+ */
+.waf-widget-footer,
+.waf-widget.waf-container.waf-widget-footer {
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(221, 221, 221);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section button
+ * -------------------------------------------------------
+ */
+.waf-widget.waf-button {
+	background-color: rgb(246, 246, 246);
+	border-color: rgb(204, 204, 204);
+	color: rgb(28, 148, 196);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section button state
+ * -------------------------------------------------------
+ */
+.waf-button.waf-state-hover,
+.waf-button.waf-state-active {
+	background-color: rgb(253, 245, 206);
+	border-color: rgb(251, 203, 9);
+	color: rgb(199, 116, 5);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section checkbox
+ * -------------------------------------------------------
+ */
+/**
+ * -----------------------------------
+ * @subection checkbox box
+ * -----------------------------------
+ */
+.waf-checkbox .waf-checkbox-box {
+	background-color: rgb(253, 245, 206);
+	border-color: rgb(235, 143, 0);
+}
+
+/**
+ * -----------------------------------
+ * @subection checkbox icon symbol
+ * -----------------------------------
+ */
+.waf-checkbox .waf-checkbox-icon-symbol {
+	fill: rgb(0, 0, 0);
+}
+.waf-checkbox.waf-state-active .waf-checkbox-icon-symbol-shadow {
+	fill: rgb(235, 143, 0);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section radio
+ * -------------------------------------------------------
+ */
+/**
+ * -----------------------------------
+ * @subection radio box
+ * -----------------------------------
+ */
+.waf-radio .waf-radio-box {
+	background-color: rgb(246, 168, 40);
+	border-color: rgb(221, 151, 36);
+}
+
+/**
+ * -----------------------------------
+ * @subection radio icon symbol
+ * -----------------------------------
+ */
+.waf-radio .waf-radio-icon-symbol {
+	fill: rgb(221, 151, 36);
+}
+.waf-radio .waf-radio-icon-symbol-shadow {
+	fill: rgb(255, 255, 255);
+}
+
+
+
+/**
+ * -------------------------------------------------------
+ * @section combobox
+ * -------------------------------------------------------
+ */
+.waf-widget.waf-combobox {
+	background-color: rgb(238, 139, 8);
+	border-color: rgb(221, 151, 36);
+	color: rgb(255, 255, 255);
+}
+
+
+/**
+ * -----------------------------------
+ * @subsection combobox button
+ * -----------------------------------
+ */
+.waf-combobox button {
+	background: transparent;
+	border-left-color: rgb(253, 245, 206);
+}
+
+/**
+ * -----------------------------------
+ * @subsection combobox list
+ * -----------------------------------
+ */
+.waf-combobox-list {
+	border-color: rgb(221, 221, 221);
+	color: rgb(28, 148, 196);
+}
+
+/**
+ * -----------------------------------
+ * @subsection combobox ui-menu-item
+ * -----------------------------------
+ */
+.waf-combobox-list .ui-menu-item a {
+	border-color: transparent;
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection combobox ui-menu-item states
+ * -----------------------------------
+ */
+.waf-combobox-list .ui-menu-item a.ui-state-hover {
+	/* we need to reset the background shortcut for IE */
+	background: none;
+	background-color: rgb(253, 245, 206);
+	color: rgb(235, 143, 0);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section menuBar
+ * -------------------------------------------------------
+ */
+.waf-widget.waf-menuBar {
+	background-color: rgb(246, 168, 40);
+	border-color: rgb(221, 151, 36);
+}
+
+.waf-menuBar .waf-menuBar {
+	background-image: none;
+	background-color: rgb(246, 246, 246);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section menuItem
+ * -------------------------------------------------------
+ */
+.waf-menuItem {
+	color: rgb(255, 255, 255);
+}
+.waf-menuItem-level-0 {
+	background-color: rgb(246, 168, 40);
+    border-left-color: rgb(221, 221, 221);
+    border-right-color: rgb(235, 143, 0);
+}
+.waf-menuItem .waf-menuItem {
+	color: rgb(28, 148, 196);
+}
+
+
+/**
+ * -----------------------------------
+ * @subsection menuItem state
+ * -----------------------------------
+ */
+.waf-menuItem.waf-state-hover {
+	background-color: rgb(253, 245, 206);
+	color: rgb(199, 116, 5);
+}
+.waf-menuItem.waf-state-active {
+	background-color: rgb(255, 255, 255);
+	color: rgb(235, 143, 0);
+}
+
+
+/**
+ * -----------------------------------
+ * @subsubsection sub-menuItem state
+ * -----------------------------------
+ */
+.waf-menuItem .waf-menuItem.waf-state-hover {
+	background-color: rgb(253, 245, 206);
+	color: rgb(199, 116, 5);
+}
+.waf-menuItem .waf-menuItem.waf-state-active {
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section container
+ * -------------------------------------------------------
+ */
+.waf-widget.waf-container {
+	background-color: rgb(238, 139, 8);
+	border-color: rgb(178, 178, 178);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dialog
+ * -------------------------------------------------------
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section dialog header title
+ * -------------------------------------------------------
+ */
+.waf-dialog-header-title {
+	color: inherit;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section tabView
+ * -------------------------------------------------------
+ */
+/**
+ * -----------------------------------
+ * @subsection tabView menuBar 
+ * -----------------------------------
+ */
+.waf-widget.waf-tabView .waf-menuBar {
+	background-color: transparent;
+}
+
+/**
+ * -----------------------------------
+ * @subsection tabView menuItem 
+ * -----------------------------------
+ */
+.waf-tabView .waf-menuItem {
+	border-color: rgb(178, 178, 178);
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection tabView menuItem state
+ * -----------------------------------
+ */
+.waf-tabView .waf-menuItem.waf-state-selected {
+	background-color: rgb(238, 238, 238);
+	color: rgb(28, 148, 196);
+}
+
+/**
+ * -----------------------------------
+ * @subsection tabView container 
+ * -----------------------------------
+ */
+.waf-tabView .waf-container {
+	background-color: rgb(238, 238, 238);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView
+ * -------------------------------------------------------
+ */
+
+/**
+ * -----------------------------------
+ * @subsection navigationView back button
+ * -----------------------------------
+ */
+.waf-navigationView-header-back-button {
+	background-color: rgb(246, 168, 40);
+	color: inherit;
+	text-shadow: rgb(91, 103, 117) 0 -1px;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView title
+ * -------------------------------------------------------
+ */
+.waf-navigationView-title {
+	color: inherit;
+	text-shadow: rgb(91, 103, 117) 0 -1px;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView footer
+ * -------------------------------------------------------
+ */
+ .waf-widget.waf-container.waf-navigationView-footer {
+	background-color: rgb(255, 228, 92);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section login
+ * -------------------------------------------------------
+ */
+.waf-widget.waf-login {
+	background-color: rgb(238, 139, 8);
+	border-color: rgb(178, 178, 178);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section autoForm
+ * -------------------------------------------------------
+ */
+.waf-widget.waf-autoForm {
+	border-color: rgb(254, 210, 47);
+}
+
+/**
+ * -----------------------------------
+ * @subsection autoForm body
+ * -----------------------------------
+ */
+.waf-autoForm-body {
+	border-bottom-color: rgb(254, 210, 47);
+}
+
+/**
+ * -----------------------------------
+ * @subsection autoForm row
+ * -----------------------------------
+ */
+.waf-autoForm-row.last-child.waf-widget-odd > td {
+	border-bottom-color: rgb(238, 238, 238);
+}
+
+
+/**
+ * -----------------------------------
+ * @subsection autoForm col
+ * -----------------------------------
+ */
+.waf-autoForm .attribute-col {
+	border-right-color: rgb(221, 221, 221);
+}
+
+.waf-autoForm .included .attribute-col.expanded {
+	border-right-color: rgb(254, 210, 47);
+}
+
+/**
+ * -----------------------------------
+ * @subsection autoForm footer
+ * -----------------------------------
+ */
+.waf-autoForm-footer {
+	background-color: rgb(255, 228, 92);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section dataGrid
+ * -------------------------------------------------------
+ */
+.waf-widget.waf-dataGrid {
+	/**
+	 * @affected webkit win
+	 * @note WARNING !!!
+	 * Dont use rgba color for the container border:
+	 * this make webkit apply a global opacity on the widget
+	 *
+	 * ex: border: 1px solid rgba(0, 0, 0, 0.3);
+	 */
+	border-color: rgb(178, 178, 178);
+}
+
+.waf-dataGrid-header .waf-dataGrid-cell {
+    border-left-color: rgba(255, 255, 255, 0.4);
+}
+
+.waf-dataGrid-body {
+	border-color: rgb(221, 221, 221);
+	color: rgb(28, 148, 196);
+}
+
+.waf-dataGrid-row {
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+}
+
+/* states */
+.waf-dataGrid-row.waf-state-hover {
+	background-color: rgb(253, 245, 206);
+	color: rgb(235, 143, 0);
+}  
+.waf-dataGrid-row.waf-state-active {
+	background-color: rgb(255, 240, 165);
+	color: rgb(54, 54, 54);
+}
+
+.waf-dataGrid-cell {
+    border-left-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section progressBar
+ * -------------------------------------------------------
+ */
+.waf-widget.waf-progressBar {
+	background-color: rgb(255, 240, 165);
+	border-color: rgb(221, 151, 36);
+	color: rgb(255, 255, 255);
+}
+.waf-progressBar-range {
+	background-color: rgb(238, 139, 8);
+	border-color: rgb(221, 221, 221);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section slider
+ * -------------------------------------------------------
+ */
+.waf-widget.waf-slider {
+	background-color: rgb(222, 237, 247);
+	border-color: rgb(221, 221, 221);
+}
+
+/**
+ * -----------------------------------
+ * @subsection ui-slider-range
+ * -----------------------------------
+ */
+.waf-slider .ui-slider-range {
+	background-color: rgb(246, 168, 40);
+}
+
+/**
+ * -----------------------------------
+ * @subsection ui-slider-range
+ * -----------------------------------
+ */
+.waf-slider .ui-slider-handle {
+	background-color: rgb(255, 240, 165);
+	border-color: rgb(221, 151, 36);
+}
+
+/* states */
+.waf-slider .ui-slider-handle.ui-state-hover,
+.waf-slider .ui-slider-handle.ui-state-active {
+	background-color: rgb(253, 245, 206);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section textField
+ * -------------------------------------------------------
+ */
+.waf-widget.waf-textField {
+	background-color: rgb(246, 246, 246);
+	
+	border-color: rgb(231, 143, 8);
+	color: rgb(28, 148, 196);
+}
+
+
+/* states */
+.waf-textField.waf-state-hover {
+	background-color: rgb(253, 245, 206);
+	color: rgb(235, 143, 0);
+}
+.waf-textField.waf-state-focus {
+	background-color: rgb(255, 240, 165);
+	color: rgb(54, 54, 54);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section datePicker
+ * -------------------------------------------------------
+ */
+.ui-datepicker .ui-datepicker-header {
+	background-color: rgb(246, 168, 40);
+	border-color: rgb(221, 151, 36);
+	color: rgb(255, 255, 255);
+}
+
+/* states */
+.ui-datepicker td a.ui-state-hover {
+	background-color: rgb(253, 245, 206);
+	border-color: rgb(255, 255, 255);
+	color: rgb(235, 143, 0);
+}
+.ui-datepicker td a.ui-state-active {
+	background-color: rgb(255, 240, 165);
+	border-color: transparent;
+	color: rgb(54, 54, 54);
+}
+.ui-datepicker td a.ui-state-highlight {
+	background-color: rgb(246, 168, 40);
+	border-color: transparent;
+	color: rgb(255, 255, 255);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section select
+ * @note 	duplication of cupertino palette
+ * @todo	code a dedicated palette
+ * -------------------------------------------------------
+ */
+.waf-widget.waf-select {
+	background-color: rgb(208, 208, 208);
+	border-color: rgb(76, 76, 76);
+}
+
+/**
+ * -----------------------------------
+ * @subsection select state
+ * -----------------------------------
+ */
+.waf-widget.waf-select.waf-state-active {
+	border-color: rgb(17, 46, 135);
+}
+
+/**
+ * -----------------------------------
+ * @subection select label
+ * -----------------------------------
+ */
+.waf-widget.waf-select .waf-select-label {
+	border-color: rgba(0, 0, 0, 0.57);
+}
+
+/**
+ * -----------------------------------
+ * @subsubection select label state
+ * -----------------------------------
+ */
+.waf-widget.waf-select.waf-state-active .waf-select-label {
+	border-color: rgb(17, 46, 135);
+}
+
+/**
+ * -----------------------------------
+ * @subection select button
+ * -----------------------------------
+ */
+.waf-widget.waf-select .waf-select-button {
+	background-color: rgb(0, 0, 0);
+}
+
+/**
+ * -----------------------------------
+ * @subsubection select button states
+ * -----------------------------------
+ */
+.waf-widget.waf-select.waf-state-active .waf-select-button {
+	background-color: rgb(17, 46, 135);
+}
+
+/**
+ * -----------------------------------
+ * @subection select icon symbol
+ * -----------------------------------
+ */
+.waf-widget.waf-select .waf-select-icon-symbol {
+	fill: rgb(255, 255, 255);
+}
+.waf-widget.waf-select .waf-select-icon-symbol-shadow {
+	opacity: 0.75;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section Widget state
+ * -------------------------------------------------------
+ */
+.waf-state-hover {
+}
+
+.waf-state-active,
+.waf-state-selected {
+}
+
+
+
+/**
+ * -------------------------------------------------------
+ * @section icon
+ * -------------------------------------------------------
+ */
+.waf-icon path {
+	fill: rgb(94, 94, 94);
+}
+
+/**
+ * -----------------------------------
+ * @subsection icon state
+ * -----------------------------------
+ */
+/* hover */
+.waf-icon.waf-state-hover {
+	background-color: transparent;
+}
+.waf-icon.waf-state-hover path {
+	background-color: transparent;
+	opacity: 1;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section Accordion
+ * -------------------------------------------------------
+ */
+/**
+ * -----------------------------------
+ * @subsection Accordion header 
+ * -----------------------------------
+ */
+ 
+ .waf-widget.waf-accordion .waf-container{
+	background-color: #EEE;
+ }
+ 
+.waf-widget.waf-accordion .waf-container.accordion-header{
+	border-color: rgb(178, 178, 178);
+	background-color: rgb(246, 168, 40);
+}
+
+.waf-widget.waf-accordion .waf-container.accordion-header .waf-richText{
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: white;
+}
+
+.waf-widget.waf-accordion .waf-container.accordion-section.accordion-expanded .accordion-header .waf-richText{
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #1C94C4;
+}
+
+.waf-widget.waf-accordion .waf-container.accordion-section.accordion-expanded .accordion-header{
+	background-color: rgb(238, 238, 238);
+	box-shadow: inset 0 -1px 1px hsl(0, 0%, 100%),
+				inset 0 0 6px hsla(0, 0%, 0%, 0.2);
+	
+}
+
+
+
+

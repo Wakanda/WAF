@@ -1,0 +1,99 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+/** 
+ * Widget tabView
+ *
+ * Includes tabView-specific rules of the Metal skin
+ *
+ * @style metal
+ * @link /walib/WAF/widget/css/widget.css
+ * @link /walib/WAF/widget/tabView/css/widget-tabView.css
+ * @link /walib/WAF/widget/skin/metal/css/widget-skin-metal.css
+ *
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section main
+ * -------------------------------------------------------
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section tabview menuBar
+ * -------------------------------------------------------
+ */
+.metal.waf-tabView .waf-menuBar {
+	background-image: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section tabview menuItem
+ * -------------------------------------------------------
+ */
+/*.metal.waf-tabView .waf-menuItem {
+	-webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+	   -moz-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+	        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}*/
+
+
+.metal.waf-tabView.waf-tabView-menu-position-top-left .waf-menuItem-level-0,
+.metal.waf-tabView.waf-tabView-menu-position-top-right .waf-menuItem-level-0 {
+	border-width: 1px 1px 0 1px;
+}
+
+.metal.waf-tabView.waf-tabView-menu-position-right-top .waf-menuItem-level-0,
+.metal.waf-tabView.waf-tabView-menu-position-right-bottom .waf-menuItem-level-0 {
+	border-width: 1px 1px 1px 0;
+}
+
+.metal.waf-tabView.waf-tabView-menu-position-bottom-right .waf-menuItem-level-0,
+.metal.waf-tabView.waf-tabView-menu-position-bottom-left .waf-menuItem-level-0 {
+	border-width: 0 1px 1px 1px;
+}
+
+.metal.waf-tabView.waf-tabView-menu-position-left-bottom .waf-menuItem-level-0,
+.metal.waf-tabView.waf-tabView-menu-position-left-top .waf-menuItem-level-0 {
+	border-width: 1px 0 1px 1px;
+}
+
+/**
+ * -----------------------------------
+ * @subsection tabview menuItem state
+ * -----------------------------------
+ */
+.metal.waf-tabView.waf-tabView-menu-position-top-left .waf-menuItem-level-0.waf-state-selected,
+.metal.waf-tabView.waf-tabView-menu-position-top-right .waf-menuItem-level-0.waf-state-selected {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0.03)));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.03));
+	background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.03));
+	background-image:     -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.03));
+	background-image:      -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.03));
+	background-image:         linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.03));
+}
+
+.metal.waf-tabView.waf-tabView-menu-position-bottom-right .waf-menuItem-level-0.waf-state-selected,
+.metal.waf-tabView.waf-tabView-menu-position-bottom-left .waf-menuItem-level-0.waf-state-selected {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.07)), color-stop(1, rgba(0, 0, 0, 0.13)));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.13));
+	background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.13));
+	background-image:     -ms-linear-gradient(top, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.13));
+	background-image:      -o-linear-gradient(top, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.13));
+	background-image:         linear-gradient(top, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.13));
+}

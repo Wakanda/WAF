@@ -1,0 +1,180 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+/**
+ * Widget tabview
+ *
+ * Includes tabview-specific rules of the Light skin
+ *
+ * @style light
+ * @link /walib/WAF/widget/css/widget.css
+ * @link /walib/WAF/widget/tabview/css/widget-tabview.css
+ * @link /walib/WAF/widget/skin/light/css/widget-skin-light.css
+ *
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section tabview menuBar
+ * -------------------------------------------------------
+ */
+.light.waf-tabView .waf-menuBar {
+	background-image: none;
+	
+    border: 0 none;
+	
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+	
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	    -ms-border-radius: 0;
+	     -o-border-radius: 0;
+	        border-radius: 0;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section tabview menuItem
+ * -------------------------------------------------------
+ */
+.light.waf-tabView .waf-menuItem-level-0 {
+    border-width: 1px;
+    border-style: solid;
+	
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	    -ms-border-radius: 0;
+	     -o-border-radius: 0;
+	        border-radius: 0;
+}
+
+
+
+/**
+ * -----------------------------------
+ * @ubsection tabview menuItem top
+ * -----------------------------------
+ */
+.light.waf-tabView.waf-tabView-menu-position-top-left .waf-menuItem-level-0,
+.light.waf-tabView.waf-tabView-menu-position-top-right .waf-menuItem-level-0 {
+	border-width: 1px 1px 0 1px;
+	/*border-radius: 10px 10px 0 0;*/
+}
+.light.waf-tabView.waf-tabView-menu-position-top-left .waf-menuItem-level-0.waf-menuItem-first,
+.light.waf-tabView.waf-tabView-menu-position-top-right .waf-menuItem-level-0.waf-menuItem-first {
+	border-radius: 10px 0 0 0;
+}
+.light.waf-tabView.waf-tabView-menu-position-top-left .waf-menuItem-level-0.waf-menuItem-last,
+.light.waf-tabView.waf-tabView-menu-position-top-right .waf-menuItem-level-0.waf-menuItem-last {
+	border-radius: 0 10px 0 0;
+}
+
+
+/**
+ * -----------------------------------
+ * @ubsection tabview menuItem right
+ * -----------------------------------
+ */
+.light.waf-tabView.waf-tabView-menu-position-right-top .waf-menuItem-level-0,
+.light.waf-tabView.waf-tabView-menu-position-right-bottom .waf-menuItem-level-0 {
+	border-width: 1px 1px 1px 0;
+	/*border-radius: 0 10px 10px 0;*/
+}
+.light.waf-tabView.waf-tabView-menu-position-right-top .waf-menuItem-level-0.waf-menuItem-first,
+.light.waf-tabView.waf-tabView-menu-position-right-bottom .waf-menuItem-level-0.waf-menuItem-first {
+	border-radius: 0 10px 0 0;
+}
+.light.waf-tabView.waf-tabView-menu-position-right-top .waf-menuItem-level-0.waf-menuItem-last,
+.light.waf-tabView.waf-tabView-menu-position-right-bottom .waf-menuItem-level-0.waf-menuItem-last {
+	border-radius: 0 0 10px 0;
+}
+
+
+/**
+ * -----------------------------------
+ * @ubsection tabview menuItem bottom
+ * -----------------------------------
+ */
+.light.waf-tabView.waf-tabView-menu-position-bottom-right .waf-menuItem-level-0,
+.light.waf-tabView.waf-tabView-menu-position-bottom-left .waf-menuItem-level-0 {
+	border-width: 0 1px 1px 1px;
+	/*border-radius: 0 0 10px 10px;*/
+}
+.light.waf-tabView.waf-tabView-menu-position-bottom-right .waf-menuItem-level-0.waf-menuItem-first,
+.light.waf-tabView.waf-tabView-menu-position-bottom-left .waf-menuItem-level-0.waf-menuItem-first {
+	border-radius: 0 0 0 10px;
+}
+.light.waf-tabView.waf-tabView-menu-position-bottom-right .waf-menuItem-level-0.waf-menuItem-last,
+.light.waf-tabView.waf-tabView-menu-position-bottom-left .waf-menuItem-level-0.waf-menuItem-last {
+	border-radius: 0 0 10px 0;
+}
+
+
+/**
+ * -----------------------------------
+ * @ubsection tabview menuItem left
+ * -----------------------------------
+ */
+.light.waf-tabView.waf-tabView-menu-position-left-bottom .waf-menuItem-level-0,
+.light.waf-tabView.waf-tabView-menu-position-left-top .waf-menuItem-level-0 {
+	border-width: 1px 0 1px 1px;
+	/*border-radius: 10px 0 0 10x;*/
+}
+.light.waf-tabView.waf-tabView-menu-position-left-bottom .waf-menuItem-level-0.waf-menuItem-first,
+.light.waf-tabView.waf-tabView-menu-position-left-top .waf-menuItem-level-0.waf-menuItem-first {
+	border-radius: 10px 0 0 0;
+}
+.light.waf-tabView.waf-tabView-menu-position-left-bottom .waf-menuItem-level-0.waf-menuItem-last,
+.light.waf-tabView.waf-tabView-menu-position-left-top .waf-menuItem-level-0.waf-menuItem-last {
+	border-radius: 0 0 0 10px;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section container
+ * -------------------------------------------------------
+ */
+.light.waf-tabView.waf-tabView-menu-position-left-top .waf-container,
+.light.waf-tabView.waf-tabView-menu-position-top-left .waf-container {
+	border-top-left-radius: 0;
+}
+.light.waf-tabView.waf-tabView-menu-position-top-right .waf-container,
+.light.waf-tabView.waf-tabView-menu-position-right-top .waf-container {
+	border-top-right-radius: 0;
+}
+
+.light.waf-tabView.waf-tabView-menu-position-right-bottom .waf-container,
+.light.waf-tabView.waf-tabView-menu-position-bottom-right .waf-container {
+	border-bottom-right-radius: 0;
+}
+
+.light.waf-tabView.waf-tabView-menu-position-bottom-left .waf-container,
+.light.waf-tabView.waf-tabView-menu-position-left-bottom .waf-container {
+	border-bottom-left-radius: 0;
+}
+
+
+
+
+
+
+
+
+

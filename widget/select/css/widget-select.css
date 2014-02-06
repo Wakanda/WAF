@@ -1,0 +1,96 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+/**
+ * Widget select
+ *
+ * Includes mandatory rules for the select widget
+ *
+ * @link /walib/WAF/widget/css/widget.css
+ *
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section container
+ * -------------------------------------------------------
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section select native dom element
+ * -------------------------------------------------------
+ */
+.waf-select select {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+    opacity: 0;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+        -ms-appearance: none;
+    cursor: pointer;
+    
+    -webkit-tap-highlight-color: transparent; /* "turn off" link highlight */
+
+}
+
+/**
+ * -------------------------------------------------------
+ * @section select mask
+ * -------------------------------------------------------
+ */
+.waf-select-mask {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    left: 0;
+    top: 0;
+    z-index: 0;
+
+}
+
+.waf-select-label {
+    position: absolute;
+    display: block;
+    height: 100%;
+    left: 0;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.waf-select-button {
+    position: absolute;
+    display: block;
+    height: 100%;
+    right: 0;
+
+    overflow: hidden;
+}
+ 
+

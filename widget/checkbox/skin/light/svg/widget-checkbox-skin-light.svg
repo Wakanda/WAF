@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<g>
+	<path class="waf-checkbox-icon-symbol-shadow" d="M6.861,13.151L3.523,9.386C3.18,8.999,3.253,8.435,3.689,8.128c0.436-0.307,1.068-0.24,1.414,0.148l1.693,1.91
+		l4.076-4.969c0.328-0.398,0.957-0.489,1.406-0.197s0.547,0.852,0.221,1.252L6.861,13.151L6.861,13.151z"/>
+	<path class="waf-checkbox-icon-symbol" d="M6.861,12.151L3.523,8.386C3.18,7.999,3.253,7.435,3.689,7.128c0.436-0.307,1.068-0.24,1.414,0.148l1.693,1.91
+		l4.076-4.969c0.328-0.398,0.957-0.489,1.406-0.197s0.547,0.852,0.221,1.252L6.861,12.151L6.861,12.151z"/>
+</g>
+</svg>

@@ -1,0 +1,13 @@
+/* 
+    Document   : widget-googleMaps
+    Created on : 6 juil. 2012, 11:26:43
+    Author     : med
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.waf-googleMaps-dialogBox{
+    overflow : auto;
+    height : 180px ; 
+    width : 300px;
+}

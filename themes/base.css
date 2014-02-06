@@ -1,0 +1,339 @@
+/**
+ * -----------------------------------------------------------------------------
+ * Generic 
+ * -----------------------------------------------------------------------------
+ */
+.waf-theme, 
+.waf-theme *,
+.waf-theme *::before,
+.waf-theme *::after {
+    margin:  0;
+    padding: 0;    
+    
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+
+.waf-theme {
+    -webkit-font-smoothing: antialiased;
+            font-smooth: always;
+}
+
+.waf-theme *:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+ul, 
+li {
+    list-style: none;
+}
+
+/**
+ * Basic elements
+ *
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Buttons
+ * -------------------------------------------------------
+ */
+.waf-theme.default .waf-skin-button {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Box
+ * -------------------------------------------------------
+ */
+.waf-skin-box {
+    border-style: solid;
+    border-width: 0;
+}
+.waf-skin-box > .waf-skin-header {
+    border-width: 0 0 1px 0;
+    border-style: inherit;
+    border-color: inherit;
+    
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.waf-skin-box > .waf-skin-footer {
+    border-width: 1px 0 0 0;
+    border-style: inherit;
+    border-color: inherit;
+    
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Tabs
+ * -------------------------------------------------------
+ */
+.waf-skin-tabs li {
+    display: block;
+    float: left;
+}
+.waf-skin-tabs li span {
+    display: block;
+    
+    padding: 5px;
+    
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+
+    cursor: default;
+}
+
+
+/**
+ * Context, Effect & Behaviour
+ *
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Inset
+ * -------------------------------------------------------
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section States
+ * -------------------------------------------------------
+ */
+.waf-state-disabled {
+    opacity: 0.4;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * Widgets
+ * -----------------------------------------------------------------------------
+ */
+
+
+/**
+ * Widget tabview
+ *
+ */
+
+/**
+ * -----------------------------------
+ * @section TabView MenuBar
+ * -----------------------------------
+ */
+/* waf-tabviewmenubar */
+.waf-widget.waf-tabview .waf-tabviewmenubar {
+    position: absolute;    
+    overflow: hidden;
+    top:    0;
+    right:  0;
+    bottom: 0;
+    left:   0;
+    
+    z-index: 1000;
+}
+.waf-widget.waf-tabview.waf-tabview-menu-position-top-left > .waf-tabviewmenubar,
+.waf-widget.waf-tabview.waf-tabview-menu-position-top-right > .waf-tabviewmenubar {
+    bottom: auto;
+    height: 30px;
+}
+.waf-widget.waf-tabview.waf-tabview-menu-position-bottom-left > .waf-tabviewmenubar,
+.waf-widget.waf-tabview.waf-tabview-menu-position-bottom-right > .waf-tabviewmenubar {
+    top:    auto;
+    height: 30px;
+}
+.waf-widget.waf-tabview.waf-tabview-menu-position-left-top > .waf-tabviewmenubar,
+.waf-widget.waf-tabview.waf-tabview-menu-position-left-bottom > .waf-tabviewmenubar {
+    right:  auto;
+    width:  90px;
+}
+.waf-widget.waf-tabview.waf-tabview-menu-position-right-top > .waf-tabviewmenubar,
+.waf-widget.waf-tabview.waf-tabview-menu-position-right-bottom > .waf-tabviewmenubar {
+    left:   auto;
+    width:  90px;
+}
+
+/* waf-tabviewmenubar-content */
+.waf-widget.waf-tabview .waf-tabviewmenubar .waf-tabviewmenubar-content {
+    overflow: hidden;
+    position: absolute;   
+    top:    0;
+    right:  0;
+    bottom: 0;
+    left:   0;
+}
+.waf-widget.waf-tabview.waf-tabview-menu-position-top-left > .waf-tabviewmenubar .waf-tabviewmenubar-content,
+.waf-widget.waf-tabview.waf-tabview-menu-position-top-right > .waf-tabviewmenubar .waf-tabviewmenubar-content,
+.waf-widget.waf-tabview.waf-tabview-menu-position-bottom-left > .waf-tabviewmenubar .waf-tabviewmenubar-content, 
+.waf-widget.waf-tabview.waf-tabview-menu-position-bottom-right > .waf-tabviewmenubar .waf-tabviewmenubar-content {
+    left:   25px;
+    right:  25px;
+}
+.waf-widget.waf-tabview.waf-tabview-menu-position-left-top > .waf-tabviewmenubar .waf-tabviewmenubar-content,
+.waf-widget.waf-tabview.waf-tabview-menu-position-left-bottom > .waf-tabviewmenubar .waf-tabviewmenubar-content,
+.waf-widget.waf-tabview.waf-tabview-menu-position-right-top > .waf-tabviewmenubar .waf-tabviewmenubar-content,
+.waf-widget.waf-tabview.waf-tabview-menu-position-right-bottom > .waf-tabviewmenubar .waf-tabviewmenubar-content {
+    top:    25px;
+    bottom: 25px;
+}
+
+/* waf-tabviewmenubar-scroll */
+.waf-widget.waf-tabview .waf-tabviewmenubar .waf-tabviewmenubar-previous,
+.waf-widget.waf-tabview .waf-tabviewmenubar .waf-tabviewmenubar-next {
+    display: none;
+    position: absolute;
+
+    cursor: pointer;
+}
+.waf-widget.waf-tabview.waf-tabview-menu-position-top-left > .waf-tabviewmenubar .waf-tabviewmenubar-previous,
+.waf-widget.waf-tabview.waf-tabview-menu-position-top-right > .waf-tabviewmenubar .waf-tabviewmenubar-previous,
+.waf-widget.waf-tabview.waf-tabview-menu-position-bottom-left > .waf-tabviewmenubar .waf-tabviewmenubar-previous, 
+.waf-widget.waf-tabview.waf-tabview-menu-position-bottom-right > .waf-tabviewmenubar .waf-tabviewmenubar-previous {
+    top:    0;
+    bottom: 0;
+    left:   0;
+    width:  25px;
+}
+.waf-widget.waf-tabview.waf-tabview-menu-position-top-left > .waf-tabviewmenubar .waf-tabviewmenubar-next,
+.waf-widget.waf-tabview.waf-tabview-menu-position-top-right > .waf-tabviewmenubar .waf-tabviewmenubar-next,
+.waf-widget.waf-tabview.waf-tabview-menu-position-bottom-left > .waf-tabviewmenubar .waf-tabviewmenubar-next, 
+.waf-widget.waf-tabview.waf-tabview-menu-position-bottom-right > .waf-tabviewmenubar .waf-tabviewmenubar-next {
+    top:    0;
+    right:  0;
+    bottom: 0;
+    width:  25px;
+}
+.waf-widget.waf-tabview.waf-tabview-menu-position-left-top > .waf-tabviewmenubar .waf-tabviewmenubar-previous,
+.waf-widget.waf-tabview.waf-tabview-menu-position-left-bottom > .waf-tabviewmenubar .waf-tabviewmenubar-previous,
+.waf-widget.waf-tabview.waf-tabview-menu-position-right-top > .waf-tabviewmenubar .waf-tabviewmenubar-previous,
+.waf-widget.waf-tabview.waf-tabview-menu-position-right-bottom > .waf-tabviewmenubar .waf-tabviewmenubar-previous {
+    top:    0;
+    right:  0;
+    left:   0;
+    height: 25px;
+}
+.waf-widget.waf-tabview.waf-tabview-menu-position-left-top > .waf-tabviewmenubar .waf-tabviewmenubar-next,
+.waf-widget.waf-tabview.waf-tabview-menu-position-left-bottom > .waf-tabviewmenubar .waf-tabviewmenubar-next,
+.waf-widget.waf-tabview.waf-tabview-menu-position-right-top > .waf-tabviewmenubar .waf-tabviewmenubar-next,
+.waf-widget.waf-tabview.waf-tabview-menu-position-right-bottom > .waf-tabviewmenubar .waf-tabviewmenubar-next {
+    right:  0;
+    bottom: 0;
+    left:   0;
+    height: 25px;
+}
+
+.waf-widget.waf-tabview .waf-tabviewmenubar.waf-tabviewmenubar-scrollable-previous > .waf-tabviewmenubar-previous {
+    display: block;
+}
+.waf-widget.waf-tabview .waf-tabviewmenubar.waf-tabviewmenubar-scrollable-next > .waf-tabviewmenubar-next {
+    display: block;
+}
+
+/* waf-tabviewmenubar li */
+.waf-widget.waf-tabview .waf-tabviewmenubar li {
+    min-width: 45px;
+}
+
+/* waf-tabviewmenubar li span */
+.waf-widget.waf-tabview .waf-tabviewmenubar li span {
+    position: relative;
+    text-align: center;
+}
+
+/* waf-tabviewmenubar li waf-menuitem-part-close */
+.waf-widget.waf-tabview .waf-tabviewmenubar li .waf-menuitem-part-close {
+    visibility: hidden;
+    position: absolute;
+    
+    border: 0 none transparent;
+    
+    background-color: transparent;
+    background-image: none;
+    
+    cursor: pointer;
+    opacity: 0.3;
+}
+.waf-widget.waf-tabview .waf-tabviewmenubar li.waf-menuitem-closable .waf-menuitem-part-close {
+    visibility: visible;
+}
+.waf-widget.waf-tabview .waf-tabviewmenubar li.waf-menuitem-closable.waf-state-hover .waf-menuitem-part-close {
+    opacity: 1;
+}
+
+/* waf-skin-tabs */
+.waf-widget.waf-tabview.waf-tabview-menu-position-top-right > .waf-tabviewmenubar .waf-skin-tabs,
+.waf-widget.waf-tabview.waf-tabview-menu-position-bottom-right > .waf-tabviewmenubar .waf-skin-tabs {
+    float: right;
+}
+.waf-widget.waf-tabview.waf-tabview-menu-position-right-bottom > .waf-tabviewmenubar .waf-skin-tabs,
+.waf-widget.waf-tabview.waf-tabview-menu-position-left-bottom > .waf-tabviewmenubar .waf-skin-tabs {
+    position: absolute;
+    bottom: 0;
+}
+
+/**
+ * -----------------------------------
+ * @section TabView Container
+ * -----------------------------------
+ */
+.waf-widget.waf-tabview .waf-tabviewcontainer {
+    position: absolute;
+    visibility: hidden;
+    top:    0;
+    right:  0;
+    bottom: 0;
+    left:   0;
+}
+.waf-widget.waf-tabview .waf-tabviewcontainer.waf-state-active {
+    visibility: visible;
+}
+
+.waf-widget.waf-tabview.waf-tabview-menu-position-top-left > .waf-tabviewcontainer,
+.waf-widget.waf-tabview.waf-tabview-menu-position-top-right > .waf-tabviewcontainer,
+/* GUI Designer */
+.waf-widget.waf-tabview.waf-tabview-menu-position-top-left > .waf-designer-tabviewcontainer,
+.waf-widget.waf-tabview.waf-tabview-menu-position-top-right > .waf-designer-tabviewcontainer 
+/* // GUI Designer */
+{
+    top:    30px;
+}
+.waf-widget.waf-tabview.waf-tabview-menu-position-bottom-left > .waf-tabviewcontainer, 
+.waf-widget.waf-tabview.waf-tabview-menu-position-bottom-right > .waf-tabviewcontainer,
+/* GUI Designer */
+.waf-widget.waf-tabview.waf-tabview-menu-position-bottom-left > .waf-designer-tabviewcontainer,
+.waf-widget.waf-tabview.waf-tabview-menu-position-bottom-right > .waf-designer-tabviewcontainer 
+/* // GUI Designer */
+{
+    bottom: 30px;
+}
+.waf-widget.waf-tabview.waf-tabview-menu-position-left-top > .waf-tabviewcontainer,
+.waf-widget.waf-tabview.waf-tabview-menu-position-left-bottom > .waf-tabviewcontainer,
+/* GUI Designer */
+.waf-widget.waf-tabview.waf-tabview-menu-position-left-top > .waf-designer-tabviewcontainer,
+.waf-widget.waf-tabview.waf-tabview-menu-position-left-bottom > .waf-designer-tabviewcontainer 
+/* // GUI Designer */
+{
+    left:   90px;
+}
+.waf-widget.waf-tabview.waf-tabview-menu-position-right-top > .waf-tabviewcontainer,
+.waf-widget.waf-tabview.waf-tabview-menu-position-right-bottom > .waf-tabviewcontainer,
+/* GUI Designer */
+.waf-widget.waf-tabview.waf-tabview-menu-position-right-top > .waf-designer-tabviewcontainer,
+.waf-widget.waf-tabview.waf-tabview-menu-position-right-bottom > .waf-designer-tabviewcontainer 
+/* // GUI Designer */
+{
+    right:  90px;
+}
