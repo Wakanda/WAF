@@ -1,0 +1,136 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+/**
+ * Widget dialog
+ *
+ * Includes mandatory rules for the dialog widget
+ *
+ * @link /walib/WAF/widget/css/widget.css
+ *
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section dialog container
+ * -------------------------------------------------------
+ */
+.waf-dialog {
+    overflow:  hidden;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section dialog titlebar
+ * -------------------------------------------------------
+ */
+.waf-dialog .waf-dialog-header {
+    padding: 2px 10px 2px 10px;
+    z-index: 1;
+    -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    -moz-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+.waf-widget.waf-container.waf-dialog-modal {
+    top                 : 0px;
+    left                : 0px;
+    right               : 0px;
+    bottom              : 0px;
+    opacity             : 0.3;
+    background-color   : black;
+    z-index           : 1002;
+}
+
+.waf-widget.waf-image.waf-dialog-header-icon img{
+/*    width: 100%;
+    height: 100%;*/
+}
+
+.waf-widget.waf-button.waf-dialog-header-buttons {
+    border-width: 0;
+    
+    -webkit-border-radius: 7px;
+       -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+         -o-border-radius: 7px;
+            border-radius: 7px;
+    
+    /*background-color: rgb(196, 196, 196);
+    color: rgb(255, 255, 255);*/
+}
+
+.waf-widget.waf-richText.waf-dialog-header-title {
+    text-align: center;
+    font-weight: bold;
+    z-index: -1 !important;
+}
+
+.waf-widget.waf-container.waf-dialog-body {
+    border-style: none;
+    border-radius: 0px 0px;
+    -moz-border-radius : 0px 0px;
+}
+
+.waf-dialog .waf-dialog-footer {
+    z-index: 0;
+}
+.waf-designer-taskbar {
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+}
+
+.waf-designer-taskbar li {
+     float: left;
+     margin: 5px;
+}
+
+.waf-designer-taskbar .waf-dialog {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 190px !important;
+    height: 28px !important;
+    background-repeat: no-repeat;
+    display: block;
+    cursor: pointer;
+}
+
+.waf-dialog .waf-dialog-iframe {
+             top: 0px;
+            left: 0px;
+           right: 0px;
+           width: 100%;
+          bottom: 0px;
+          height: 100%;
+          border: solid;
+    border-color: #999;
+    border-width: 1px;
+}
+
+.waf-dialog-fade {
+    display: none;
+    background: #000; 
+    position: absolute; left: 0; top: 0; 
+    z-index: 10;
+    width: 100%; height: 100%;
+    opacity: .50;
+    z-index: 100000;
+}

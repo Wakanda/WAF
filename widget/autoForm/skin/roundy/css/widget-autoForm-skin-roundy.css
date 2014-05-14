@@ -1,0 +1,480 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+.roundy.waf-autoForm
+{
+	background: -moz-radial-gradient(#CCCCCC, #EEEEEE);
+	background: -webkit-gradient(radial,center center,10,center center,480,from(#CCCCCC),to(#EEEEEE)); 
+	border: 1px solid Black;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/*.roundy
+{
+	background-color: #daf9f9;
+	background-color:Transparent;
+}*/
+
+
+/*.roundy
+{
+	background: -moz-radial-gradient(#CCCCCC, #EEEEEE);
+	background: -webkit-gradient(radial,center center,10,center center,480,from(#CCCCCC),to(#EEEEEE)); 
+}*/
+
+.roundy.waf-widget-panel.autoForm-panel table
+{
+	background-color: Transparent;
+	background-image: none;
+}
+	
+.roundy.waf-widget-panel.autoForm-panel .included table
+{
+	background: -moz-radial-gradient(#CCCCCC, #EEEEEE);
+	background: -webkit-gradient(radial,center center,10,center center,480,from(#CCCCCC),to(#EEEEEE)); 
+}
+
+
+.waf-widget-panel .roundy .autoForm-data.included table
+{
+	background: -moz-radial-gradient(#CCCCCC, #EEEEEE);
+	background: -webkit-gradient(radial,center center,10,center center,480,from(#CCCCCC),to(#EEEEEE)); 
+}
+
+/**
+ * -------------------------------------------------------
+ * @section thead
+ * -------------------------------------------------------
+ */
+.roundy .autoForm-title-col
+{
+	/*background-color: #daf9f9;*/
+	background-color:Transparent;
+	background-image: none;
+	color: White;
+}
+
+.roundy .autoForm-title-col {
+	/*border: 1px solid Black;
+	border-bottom:0px;*/
+	/*padding: 10px 10px 10px 10px; */
+	height: 54px;
+}
+
+.roundy .included .autoForm-title-col
+{
+	/*border: 1px solid Black;
+	border-bottom: 0px;*/
+	/*-moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;*/
+}
+
+.roundy .autoForm-title {
+	margin: 10px 12px 11px 10px;
+	padding:4px 4px 6px 4px;
+	/*background-color: #F0F0F0;*/
+	text-align:center;
+	font-size:18px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border:solid 1px Gray;
+	-moz-box-shadow: 4px 4px 8px #aaa;
+	-webkit-box-shadow: 4px 4px 8px #aaa;
+	background:-webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0, rgb(204,204,204)),
+			color-stop(0.5, rgb(138,138,138)),
+			color-stop(1, rgb(199,199,199))
+		);
+	background:-moz-linear-gradient(
+			center bottom,
+			rgb(204,204,204) 0%,
+			rgb(138,138,138) 50%,
+			rgb(199,199,199) 100%
+		)
+}
+
+.roundy.waf-widget-panel .ui-dialog-title
+{
+	float: none;
+}
+
+/*
+.roundy .waf-widget-panel.autoForm-panel .ui-dialog .ui-dialog-titlebar 
+{
+	margin: 10px 12px 11px 10px;
+	padding:4px 4px 6px 4px;
+	text-align:center;
+	font-size:18px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border:solid 1px Gray;
+	-moz-box-shadow: 4px 4px 8px #aaa;
+	-webkit-box-shadow: 4px 4px 8px #aaa;
+	background:-webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0, rgb(204,204,204)),
+			color-stop(0.5, rgb(138,138,138)),
+			color-stop(1, rgb(199,199,199))
+		);
+	background:-moz-linear-gradient(
+			center bottom,
+			rgb(204,204,204) 0%,
+			rgb(138,138,138) 50%,
+			rgb(199,199,199) 100%
+		)
+
+}
+*/
+/*
+.roundy .waf-widget-panel.autoForm-panel .ui-dialog-titlebar 
+{
+	margin: 10px 12px 11px 10px;
+	padding:4px 4px 6px 4px;
+	text-align:center;
+	font-size:18px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border:solid 1px Gray;
+	-moz-box-shadow: 4px 4px 8px #aaa;
+	-webkit-box-shadow: 4px 4px 8px #aaa;
+	background:-webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0, rgb(204,204,204)),
+			color-stop(0.5, rgb(138,138,138)),
+			color-stop(1, rgb(199,199,199))
+		);
+	background:-moz-linear-gradient(
+			center bottom,
+			rgb(204,204,204) 0%,
+			rgb(138,138,138) 50%,
+			rgb(199,199,199) 100%
+		)
+}
+*/
+
+.roundy.waf-widget-panel.autoForm-panel .ui-dialog-titlebar 
+{
+	margin: 10px 12px 11px 10px;
+	padding:4px 4px 6px 4px;
+	text-align:center;
+	font-size:18px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border:solid 1px Gray;
+	-moz-box-shadow: 4px 4px 8px #aaa;
+	-webkit-box-shadow: 4px 4px 8px #aaa;
+	background:-webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0, rgb(204,204,204)),
+			color-stop(0.5, rgb(138,138,138)),
+			color-stop(1, rgb(199,199,199))
+		);
+	background:-moz-linear-gradient(
+			center bottom,
+			rgb(204,204,204) 0%,
+			rgb(138,138,138) 50%,
+			rgb(199,199,199) 100%
+		)
+}
+
+
+/*
+.roundy.waf-widget-panel .ui-dialog .ui-dialog-content
+{
+	border:1px solid Black;
+	background: -moz-radial-gradient(#CCCCCC, #EEEEEE);
+	background: -webkit-gradient(radial,center center,10,center center,480,from(#CCCCCC),to(#EEEEEE)); 
+}
+*/
+.roundy.waf-widget-panel.ui-dialog
+{
+	border:1px solid Black;
+	background: -moz-radial-gradient(#CCCCCC, #EEEEEE);
+	background: -webkit-gradient(radial,center center,10,center center,480,from(#CCCCCC),to(#EEEEEE));
+	-moz-box-shadow: 4px 4px 8px #aaa;
+	-webkit-box-shadow: 4px 4px 8px #aaa;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section tbody
+ * -------------------------------------------------------
+ */
+  
+.roundy .autoForm-data tbody {
+	background-color:Transparent;
+	border: 0px solid Black;
+}
+
+.roundy .waf-autoForm-row.waf-widget-odd {
+	background-color:Transparent;
+	border: 0px solid Black;
+}
+
+.roundy .waf-autoForm-row.last-child.waf-widget-odd > td
+{
+	border-bottom: 0px;
+}
+
+
+.roundy .waf-autoForm-row.waf-widget-even {
+	background-color:Transparent;
+	border: 0px solid Black;
+}
+
+.roundy .waf-autoForm-row > td
+{
+	border: 0px solid Black;
+	/*
+	Décale le nom de l'attribut lorsque le subform est déplié
+	vertical-align:middle;
+	*/
+	vertical-align: top;
+}
+
+.roundy .autonomous .waf-autoForm-row > td
+{
+	border: 0px;
+	/*
+	Décale le nom de l'attribut lorsque le subform est déplié
+	vertical-align:middle;
+	*/
+	vertical-align: top;
+}
+
+.roundy .included .waf-autoForm-row > td
+{
+	border: 0px;
+	/*
+	Décale le nom de l'attribut lorsque le subform est déplié
+	vertical-align:middle;
+	*/
+	vertical-align: top;
+}
+
+.roundy .autonomous .waf-autoForm-row > td.attribute-col
+{
+	/*border-left: 1px solid Black;*/
+}
+
+.roundy .autonomous .waf-autoForm-row > td.value-col
+{
+	/*border-right: 1px solid Black;*/
+}
+
+.roundy .included .waf-autoForm-row > td.attribute-col
+{
+	/*border-left: 1px solid Black;*/
+}
+
+.roundy .included .waf-autoForm-row > td.value-col
+{
+	border-right: 1px solid Black;
+}
+
+.roundy .autonomous .attribute-col
+{
+	border-left: 1px solid Black;
+	border-right: 0px;
+}
+
+.roundy .autonomous .value-col
+{
+	border-right: 1px solid Black;
+}
+
+.roundy.autoForm-panel.waf-widget-panel .autonomous .waf-autoForm-row > td.attribute-col
+{
+	border-left: 0px;
+}
+
+.roundy.autoForm-panel.waf-widget-panel .autonomous .waf-autoForm-row > td.value-col
+{
+	border-right: 0px;
+}
+
+.roundy.autoForm-panel.waf-widget-panel .autonomous .attribute-col
+{
+	border-left: 0px;
+}
+
+.roundy.autoForm-panel.waf-widget-panel .autonomous .value-col
+{
+	border-right: 0px;
+}
+
+
+.roundy.autoForm-panel.waf-widget-panel .included .waf-autoForm-row > td.attribute-col
+{
+	border-left: 1px solid Black;
+}
+
+.roundy.autoForm-panel.waf-widget-panel .included .waf-autoForm-row > td.value-col
+{
+	border-right: 1px solid Black;
+}
+
+.roundy.autoForm-panel.waf-widget-panel .included .attribute-col
+{
+	border-left: 1px solid Black;
+}
+
+.roundy.autoForm-panel.waf-widget-panel .included .value-col
+{
+	border-right: 1px solid Black;
+}
+
+
+.roundy .autonomous .attribute-col.expanded 
+{
+	border-right:0px;
+}
+
+
+.roundy .attribute-rel {
+	background-image: none;
+}
+ 
+.roundy .value-rel-div
+{
+	margin-right:15px;
+	margin-top:10px;
+}
+ 
+.roundy .attribute-div
+{
+	margin-left:8px;
+	text-shadow:1px 1px 1px White;
+	-moz-text-shadow:1px 1px 1px White;
+	-webkit-text-shadow:1px 1px 1px White;
+}
+
+.roundy .value-div input {
+	width: 80%;
+	height: 25px;
+	padding: 0 4px;
+    border: 1px solid #A0A0A0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: Black;
+	margin:10px 10px 8px 10px;
+	-moz-box-shadow: 3px 3px 7px #aaa;
+	-webkit-box-shadow: 3px 3px 7px #aaa;
+	box-shadow: 3px 3px 7px #aaa;
+	background: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.13, rgb(240,240,240)),
+			color-stop(0.57, rgb(209,209,209)),
+			color-stop(0.79, rgb(240,240,240))
+		);
+	
+	background: -moz-linear-gradient(
+			center bottom,
+			rgb(240,240,240) 13%,
+			rgb(209,209,209) 57%,
+			rgb(240,240,240) 79%
+		);
+
+
+}
+
+.roundy .value-div input:hover 
+{
+	color:Blue;
+	background-color:#C0C0C0;
+}
+
+.roundy .value-div input:focus 
+{
+	background-color: #b9cde5;
+	color:Blue;
+}
+
+
+.roundy .value-div input[disabled] {
+	color: Gray;
+}
+
+
+
+/**
+ * -------------------------------------------------------
+ * @section tfoot
+ * -------------------------------------------------------
+ */
+.roundy .waf-autoForm-footer td {
+/*.roundy .autoForm-data tfoot td {*/
+	height: 57px;
+	/*background-color:Transparent;
+	background-image:none;
+	border-color:Black;*/
+}
+
+.roundy .autoForm-data.included tfoot td
+{
+	/*-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;*/
+	/*border-width: 0 1px 1px 1px;
+	border-style: solid;*/
+}
+	
+	
+.roundy.autoForm-panel.waf-widget-panel .autoForm-data tfoot td {
+	border:0px solid Black;
+}
+
+.roundy.autoForm-panel.waf-widget-panel .autoForm-data.included tfoot td {
+	border-width: 0 1px 1px 1px;
+}
+
+.roundy .autoForm-data .waf-toolbar
+{
+	margin: 15px 12px 10px 10px;
+	/*padding:4px 4px 6px 4px;*/
+	padding: 0 4px;
+	background-color: #F0F0F0;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border:solid 1px Gray;
+	-moz-box-shadow: 4px 4px 8px #aaa;
+	-webkit-box-shadow: 4px 4px 8px #aaa;
+}
+
+
+.roundy .waf-form-header
+{
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.4)));
+	background-image:-moz-linear-gradient(center top , rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+	color:White;
+}
+
+

@@ -1,0 +1,81 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+/** 
+ * Widget textField
+ *
+ * Includes textField-specific rules of the Default skin
+ *
+ * @style default
+ * @link /walib/WAF/widget/css/widget.css
+ * @link /walib/WAF/widget/textfield/css/widget-textfield.css
+ * @link /walib/WAF/widget/skin/default/css/widget-skin-default.css
+ *
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.default.waf-textField {
+	border-width: 1px;
+	border-style: solid;
+	
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	    -ms-border-radius: 3px;
+	     -o-border-radius: 3px;
+	        border-radius: 3px;
+	
+	resize: none;
+
+	font-size: 13px;
+}
+
+
+/**
+ * -----------------------------------
+ * @subsection textfield state
+ * -----------------------------------
+ */
+.default.waf-textField.waf-state-disabled {
+	opacity: 0.4;
+    filter: alpha(opacity=4);
+}
+
+
+
+
+/**
+ * -----------------------------------
+ * @section textfield label
+ * -----------------------------------
+ */
+.default.waf-label-textField {
+	font-size: 12px;
+}
+
+
+/**
+ * -----------------------------------
+ * @subsection textfield label state
+ * -----------------------------------
+ */
+.default.waf-label-textField.waf-state-disabled {
+	opacity: 0.4;
+    filter: alpha(opacity=4);
+}

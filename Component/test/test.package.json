@@ -1,0 +1,1 @@
+{"name":"testPageWebComponent/walib/WAF/Component/test/test.html","version":"1.0.0","loadDependencies":[{"id":"Desktop_Core","version":"1.0.0","type":"core"},{"id":"Widget/component","type":"widget"},{"id":"default","type":"theme"},{"id":"Component/test/styles/test.css","path":"WAF","type":"style"},{"id":"Component/test/scripts/test.js","path":"WAF","type":"script"}]}

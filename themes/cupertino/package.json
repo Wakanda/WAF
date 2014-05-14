@@ -1,0 +1,13 @@
+{
+    "name": "cupertino",
+    "author": "Wakanda",
+    "copyright": "GNU GPL v3, AGPL v3, Commercial",
+    "studio": {
+	    "label": "Cupertino", 	
+        "mobile": "true"
+    },	
+    "version": "1.0.0", 
+    "loadDependencies": [
+        {"id": "themes/cupertino/cupertino.css", "path": "WAF"}
+    ]
+}

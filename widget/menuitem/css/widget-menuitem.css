@@ -1,0 +1,122 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+/**
+ * Widget menuItem
+ *
+ * Includes mandatory rules for the menu item widget
+ *
+ * @link /walib/WAF/widget/css/widget.css
+ *
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section menuItem container
+ * -------------------------------------------------------
+ */
+.waf-menuItem {
+    text-align: center;
+    /*padding: 5px;*/
+    overflow: visible !important;
+    
+    /* HERITED FROM MENUBAR
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-align: inherit;
+    text-decoration: inherit;
+    color: inherit;
+    color: inherit;*/
+    
+    cursor: pointer;
+    
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    position: relative !important;
+}
+
+.waf-menuItem .waf-richText {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative !important;
+}
+
+
+.waf-menuItem .waf-richText,
+.waf-menuItem .waf-label {
+    font-family: inherit;
+    text-align: inherit;
+    color: inherit;
+    font-size: inherit;
+}
+
+/**
+ * -----------------------------------
+ * @subsection menuItem icon
+ * -----------------------------------
+ */
+.waf-menuItem > .waf-menuItem-icon-top span,   
+.waf-menuItem > .waf-menuItem-icon-bottom span {
+    display: block;
+}
+
+.waf-menuItem img {
+    vertical-align: middle;
+}
+/*
+.waf-menuBar.waf-menuBar-vertical:not(.waf-tabView-menuBar) > .waf-menuItem {
+    width: 100% !important;
+}
+.waf-menuBar.waf-menuBar-horizontal:not(.waf-tabView-menuBar) > .waf-menuItem {
+    height: 100% !important;
+}
+*/
+/*#cms-body .waf-tabView.waf-tabView-menu-position-top-left .waf-menuItem.waf-state-selected,
+#cms-body .waf-tabView.waf-tabView-menu-position-top-right .waf-menuItem.waf-state-selected 
+{
+    height : auto !important;
+    top: 0px !important;
+    bottom: -1px !important;
+}
+
+#cms-body .waf-tabView.waf-tabView-menu-position-bottom-left .waf-menuItem.waf-state-selected,
+#cms-body .waf-tabView.waf-tabView-menu-position-bottom-right .waf-menuItem.waf-state-selected 
+{
+    height : auto !important;
+    top: -1px !important;
+    bottom: 0px !important;
+}
+
+#cms-body .waf-tabView.waf-tabView-menu-position-left-top .waf-menuItem.waf-state-selected,
+#cms-body .waf-tabView.waf-tabView-menu-position-left-bottom .waf-menuItem.waf-state-selected 
+{
+    width : auto !important;
+    left: 0px !important;
+    right: -1px !important;
+}
+
+#cms-body .waf-tabView.waf-tabView-menu-position-right-top .waf-menuItem.waf-state-selected,
+#cms-body .waf-tabView.waf-tabView-menu-position-right-bottom .waf-menuItem.waf-state-selected 
+{
+    width : auto !important;
+    left: 0px !important;
+    right: -1px !important;
+}*/

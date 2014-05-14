@@ -1,0 +1,13 @@
+{
+    "name": "light",
+    "author": "Wakanda",
+    "copyright": "GNU GPL v3, AGPL v3, Commercial",
+    "studio": {
+        "label": "Light",
+        "mobile": "false"
+    },
+    "version": "1.0.0",
+    "loadDependencies": [
+        {"id": "themes/light/light.css", "path": "WAF"}
+    ]
+}

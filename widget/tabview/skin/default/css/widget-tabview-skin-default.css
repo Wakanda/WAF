@@ -1,0 +1,145 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+/** 
+ * Widget tabView
+ *
+ * Includes tabView-specific rules of the Default skin
+ *
+ * @style default
+ * @link /walib/WAF/widget/css/widget.css
+ * @link /walib/WAF/widget/tabView/css/widget-tabView.css
+ * @link /walib/WAF/widget/skin/default/css/widget-skin-default.css
+ *
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section main
+ * -------------------------------------------------------
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section tabview menuBar
+ * -------------------------------------------------------
+ */
+.default.waf-tabView .waf-menuBar {
+	background-image: none;
+
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	    -ms-border-radius: 0;
+	     -o-border-radius: 0;
+	        border-radius: 0;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section tabview menuItem
+ * -------------------------------------------------------
+ */
+.default.waf-tabView .waf-menuItem {
+	font-size: 12px;
+}
+
+
+/**
+ * -----------------------------------
+ * @subsection tabview menuItem level 0
+ * -----------------------------------
+ */
+.default.waf-tabView.waf-tabView-menu-position-top-left .waf-menuItem-level-0,
+.default.waf-tabView.waf-tabView-menu-position-top-right .waf-menuItem-level-0 {
+	border-width: 1px 1px 0 1px;
+	border-radius: 3px 3px 0 0;
+}
+
+.default.waf-tabView.waf-tabView-menu-position-right-top .waf-menuItem-level-0,
+.default.waf-tabView.waf-tabView-menu-position-right-bottom .waf-menuItem-level-0 {
+	border-width: 1px 1px 1px 0;
+	border-radius: 0 3px 3px 0;
+}
+
+.default.waf-tabView.waf-tabView-menu-position-bottom-right .waf-menuItem-level-0,
+.default.waf-tabView.waf-tabView-menu-position-bottom-left .waf-menuItem-level-0 {
+	border-width: 0 1px 1px 1px;
+	border-radius: 0 0 3px 3px;
+}
+
+.default.waf-tabView.waf-tabView-menu-position-left-bottom .waf-menuItem-level-0,
+.default.waf-tabView.waf-tabView-menu-position-left-top .waf-menuItem-level-0 {
+	border-width: 1px 0 1px 1px;
+	border-radius: 3px 0 0 3px;
+}
+
+
+/**
+ * -----------------------------------
+ * @subsection tabview menuItem state
+ * -----------------------------------
+ */
+.default.waf-tabView .waf-menuItem-level-0.waf-state-active {
+}
+.default.waf-tabView .waf-menuItem-level-0.waf-state-selected {
+	/*background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, hsla(0, 0%, 0%, 0)), color-stop(0.68, hsla(0, 0%, 0%, 0)), color-stop(1, hsla(0, 0%, 0%, 0.3)));
+	background-image: -webkit-linear-gradient(bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0) 68%, hsla(0, 0%, 0%, 0.3) 100%);
+	background-image:    -moz-linear-gradient(bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0) 68%, hsla(0, 0%, 0%, 0.3) 100%);
+	background-image:     -ms-linear-gradient(bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0) 68%, hsla(0, 0%, 0%, 0.3) 100%);
+	background-image:      -o-linear-gradient(bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0) 68%, hsla(0, 0%, 0%, 0.3) 100%);
+	background-image:         linear-gradient(bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0) 68%, hsla(0, 0%, 0%, 0.3) 100%);*/
+
+}
+/*.default.waf-tabView.waf-tabView-menu-position-bottom-right .waf-menuItem-level-0.waf-state-selected,
+.default.waf-tabView.waf-tabView-menu-position-bottom-left .waf-menuItem-level-0.waf-state-selected {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsla(0, 0%, 0%, 0)), color-stop(0.68, hsla(0, 0%, 0%, 0)), color-stop(1, hsla(0, 0%, 0%, 0.3)));
+	background-image: -webkit-linear-gradient(top, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0) 68%, hsla(0, 0%, 0%, 0.3) 100%);
+	background-image:    -moz-linear-gradient(top, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0) 68%, hsla(0, 0%, 0%, 0.3) 100%);
+	background-image:     -ms-linear-gradient(top, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0) 68%, hsla(0, 0%, 0%, 0.3) 100%);
+	background-image:      -o-linear-gradient(top, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0) 68%, hsla(0, 0%, 0%, 0.3) 100%);
+	background-image:         linear-gradient(top, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0) 68%, hsla(0, 0%, 0%, 0.3) 100%);
+}*/
+.default.waf-tabView .waf-menuItem-level-0.waf-state-disabled {
+	opacity: 0.5;
+}
+
+
+
+/**
+ * -------------------------------------------------------
+ * @section container
+ * -------------------------------------------------------
+ */
+.default.waf-tabView.waf-tabView-menu-position-left-top .waf-container,
+.default.waf-tabView.waf-tabView-menu-position-top-left .waf-container {
+	border-top-left-radius: 0;
+}
+.default.waf-tabView.waf-tabView-menu-position-top-right .waf-container,
+.default.waf-tabView.waf-tabView-menu-position-right-top .waf-container {
+	border-top-right-radius: 0;
+}
+
+.default.waf-tabView.waf-tabView-menu-position-right-bottom .waf-container,
+.default.waf-tabView.waf-tabView-menu-position-bottom-right .waf-container {
+	border-bottom-right-radius: 0;
+}
+
+.default.waf-tabView.waf-tabView-menu-position-bottom-left .waf-container,
+.default.waf-tabView.waf-tabView-menu-position-left-bottom .waf-container {
+	border-bottom-left-radius: 0;
+}
+

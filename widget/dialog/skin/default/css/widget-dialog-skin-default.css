@@ -1,0 +1,80 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+/** 
+ * Widget dialog
+ *
+ * Includes dialog-specific rules of the Default skin
+ *
+ * @style default
+ * @link /walib/WAF/widget/css/widget.css
+ * @link /walib/WAF/widget/dialog/css/widget-dialog.css
+ * @link /walib/WAF/widget/skin/default/css/widget-skin-default.css
+ *
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section main
+ * -------------------------------------------------------
+ */
+.default.waf-dialog .waf-container {
+	box-shadow: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dialog header
+ * -------------------------------------------------------
+ */
+.default .waf-widget-header.waf-dialog-header {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-width: 0 0 1px 0;
+
+	box-shadow: 0px 1px 0 1px hsla(0, 0%, 0%, 0.05);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dialog body
+ * -------------------------------------------------------
+ */
+.default .waf-widget-body.waf-dialog-body {
+	border-radius: 0;
+	border-width: 0;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dialog footer
+ * -------------------------------------------------------
+ */
+.default .waf-widget-footer.waf-dialog-footer {
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	border-width: 1px 1px 1px 1px;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @subsection dialog footer buttons
+ * -------------------------------------------------------
+ */
+.default .waf-widget-footer.waf-dialog-footer .waf-button {
+	font-size: 11px;
+	line-height: 20px;
+}

@@ -1,0 +1,160 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+/**
+ * Widget dataGrid
+ *
+ * Includes default rules for the errorDiv widget
+ *
+ * @link /walib/WAF/widget/css/widget.css
+ *
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section main
+ * -------------------------------------------------------
+ */
+.waf-errorDiv{
+	/*
+		by default, border-color inherits from the color property, so setting text color to red, would cause the border to become red as well
+	    this change ensures this doesn't happen.
+	*/
+	border-color:inherit;
+}
+
+/**
+ * -------------------------------------------------------
+ * @subection errordiv conatainer
+ * -------------------------------------------------------
+ */
+.waf-error-div.ui-dialog-content {
+	padding: 0;
+}
+
+
+
+/**
+ * -------------------------------------------------------
+ * @subection errordiv message
+ * -------------------------------------------------------
+ */
+.waf-error-div-message-outside {
+	width: 100%;
+	margin-bottom: 10px;
+	
+	/*color: Black;
+	padding:5px;
+	border-style: solid;
+	border-width: 1;
+	border-color:Black;
+	*/
+	
+}
+
+.waf-error-div .waf-error-div-message-inside {
+	padding: 0 0 0 20px;
+	background: url("/walib/WAF/widget/errorDiv/svg/error.svg") no-repeat;
+	line-height: 16px;
+	font-weight: bold;
+	color: rgb(255, 0, 0);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @subection errorDiv body
+ * -------------------------------------------------------
+ */
+.waf-error-div-body {
+	width: 100%;
+	padding: 8px 16px;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @subection errorDiv table
+ * -------------------------------------------------------
+ */
+.waf-error-div-table {
+	width: 100%;
+	
+	/*color:Black;
+	
+	border-style:solid;
+	border-width:1;
+	border-color:#808080;
+	*/
+}
+
+/**
+ * -------------------------------------------------------
+ * @subection errorDiv table row
+ * -------------------------------------------------------
+ */
+.waf-error-div-row {
+
+}
+
+.waf-error-div-table-row td {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	vertical-align: top;
+}
+
+.waf-error-div-table-row td + td {
+	padding-left: 8px;
+}
+
+.waf-error-div-table-row + .waf-error-div-table-row td {
+	border-top: 1px dashed hsla(0, 0%, 0%, 0.2);
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @subection errorDiv table message
+ * -------------------------------------------------------
+ */
+.waf-error-div-table-message {
+	position: relative;
+	text-align: left;
+}
+.waf-error-div-table-message::before {
+	position: absolute;
+	content: "- ";
+	left: -8px;
+}
+
+/**
+ * -------------------------------------------------------
+ * @subection errorDiv table error number
+ * -------------------------------------------------------
+ */
+.waf-error-div-table-errnum {
+	text-align: right;
+}
+
+ 
+/**
+ * -------------------------------------------------------
+ * @subection errorDiv table component
+ * -------------------------------------------------------
+ */
+.waf-error-div-table-component {
+	text-align: right;
+}

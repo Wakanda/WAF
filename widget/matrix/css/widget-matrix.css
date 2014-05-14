@@ -1,0 +1,176 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+
+
+/**
+ * Widget matrix
+ *
+ * Includes mandatory rules for the matrix widget
+ *
+ * @link /walib/WAF/widget/css/widget.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section matrix container
+ * -------------------------------------------------------
+ */
+.waf-matrix {
+    /* Prevent default border-width */
+    border-style: none;
+    border-width: 0;
+}
+
+/**
+ * -------------------------------------------------------
+ * @subsection matrix states
+ * -------------------------------------------------------
+ */
+.waf-matrix.matrixLoaderMask {
+	background-image: url(/walib/WAF/widget/matrix/images/loader-big.gif);/*, url(/walib/WAF/widget/matrix/images/loader.gif);*/
+	background-repeat: no-repeat;
+	background-position: center center; /*, center bottom*/
+}
+
+/*.matrixLoaderMask {
+	position: absolute;
+	bottom: 30px;
+	height: 50px;
+	left: 10px;
+	right: 10px;
+	background-color: red;
+
+}
+*/
+/*
+#warningGradientOuterBarG{
+	height:20px;
+	width:100%;
+	border:1px solid #000000;
+	overflow:hidden;
+	background-color:#FFFFFF;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#000000));
+	background: -moz-linear-gradient(top, #FFFFFF, #000000);
+	background: -webkit-linear-gradient(top, #FFFFFF, #000000);
+	background: -ms-linear-gradient(top, #FFFFFF, #000000);
+	background: -o-linear-gradient(top, #FFFFFF, #000000);
+	background: linear-gradient(top, #FFFFFF, #000000);
+}
+
+.warningGradientBarLineG{
+background-color:#FFFFFF;
+float:left;
+width:14px;
+height:120px;
+margin-right:24px;
+margin-top:-28px;
+-moz-transform:rotate(45deg);
+-webkit-transform:rotate(45deg);
+-ms-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+.warningGradientAnimationG{
+width:100%;
+-moz-animation-name:warningGradientAnimationG;
+-moz-animation-duration:1.3s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-timing-function:linear;
+-webkit-animation-name:warningGradientAnimationG;
+-webkit-animation-duration:1.3s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-timing-function:linear;
+-ms-animation-name:warningGradientAnimationG;
+-ms-animation-duration:1.3s;
+-ms-animation-iteration-count:infinite;
+-ms-animation-timing-function:linear;
+-o-animation-name:warningGradientAnimationG;
+-o-animation-duration:1.3s;
+-o-animation-iteration-count:infinite;
+-o-animation-timing-function:linear;
+animation-name:warningGradientAnimationG;
+animation-duration:1.3s;
+animation-iteration-count:infinite;
+animation-timing-function:linear;
+}
+
+#warningGradientFrontBarG{
+}
+
+@-moz-keyframes warningGradientAnimationG{
+0%{
+margin-left:0px;
+}
+
+100%{
+margin-left:-38px;
+}
+
+}
+
+@-webkit-keyframes warningGradientAnimationG{
+0%{
+margin-left:0px;
+}
+
+100%{
+margin-left:-38px;
+}
+
+}
+
+@-ms-keyframes warningGradientAnimationG{
+0%{
+margin-left:0px;
+}
+
+100%{
+margin-left:-38px;
+}
+
+}
+
+@-o-keyframes warningGradientAnimationG{
+0%{
+margin-left:0px;
+}
+
+100%{
+margin-left:-38px;
+}
+
+}
+
+@keyframes warningGradientAnimationG{
+0%{
+margin-left:0px;
+}
+
+100%{
+margin-left:-38px;
+}
+
+}*/
+
+/**
+ * -------------------------------------------------------
+ * @section matrix scrollbars
+ * -------------------------------------------------------
+ */
+.waf-matrix[data-scrollbar="false"]::-webkit-scrollbar {
+    display: none;
+}

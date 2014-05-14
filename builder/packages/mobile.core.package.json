@@ -1,0 +1,6 @@
+{
+    "name": "_Mobile_Core_Full",
+    "loadDependencies": [
+        {"id": "Mobile_Core"}
+    ]
+}

@@ -1,0 +1,89 @@
+/**
+ * Widget tabview
+ *
+ */
+
+/**
+ * -----------------------------------
+ * @section TabView MenuBar
+ * -----------------------------------
+ */
+/* waf-tabviewmenubar */
+.waf-tabview .waf-tabviewmenubar {
+    position: absolute;    
+    overflow: hidden;
+    top:    0;
+    right:  0;
+    bottom: 0;
+    left:   0;
+    
+    z-index: 1000;
+}
+.waf-tabview.waf-tabview-menu-position-top-left > .waf-tabviewmenubar,
+.waf-tabview.waf-tabview-menu-position-top-right > .waf-tabviewmenubar {
+    bottom: auto;
+    height: 100%;
+}
+.waf-tabview.waf-tabview-menu-position-bottom-left > .waf-tabviewmenubar,
+.waf-tabview.waf-tabview-menu-position-bottom-right > .waf-tabviewmenubar {
+    top: auto;
+    height: 100%;
+}
+.waf-tabview.waf-tabview-menu-position-left-top > .waf-tabviewmenubar,
+.waf-tabview.waf-tabview-menu-position-left-bottom > .waf-tabviewmenubar {
+    right: auto;
+    width: 100%;
+}
+.waf-tabview.waf-tabview-menu-position-right-top > .waf-tabviewmenubar,
+.waf-tabview.waf-tabview-menu-position-right-bottom > .waf-tabviewmenubar {
+    left: auto;
+    width: 100%;
+}
+
+/* waf-tabviewmenubar-content */
+.waf-tabview .waf-tabviewmenubar .waf-tabviewmenubar-content {
+    overflow: hidden;
+    position: absolute;   
+    top:    0;
+    right:  0;
+    bottom: 0;
+    left:   0;
+}
+
+/* waf-tabviewmenubar-prev / waf-tabviewmenubar-next */
+.waf-tabview .waf-tabviewmenubar .waf-tabviewmenubar-previous,
+.waf-tabview .waf-tabviewmenubar .waf-tabviewmenubar-next {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+.waf-tabview .waf-tabviewmenubar.waf-tabviewmenubar-scrollable-previous > .waf-tabviewmenubar-previous {
+    display: block;
+}
+.waf-tabview .waf-tabviewmenubar.waf-tabviewmenubar-scrollable-next > .waf-tabviewmenubar-next {
+    display: block;
+}
+
+/* waf-skin-tabs */
+.waf-tabview.waf-tabview-menu-position-top-right > .waf-tabviewmenubar .waf-skin-tabs,
+.waf-tabview.waf-tabview-menu-position-bottom-right > .waf-tabviewmenubar .waf-skin-tabs {
+    float: right;
+}
+.waf-tabview.waf-tabview-menu-position-right-bottom > .waf-tabviewmenubar .waf-skin-tabs,
+.waf-tabview.waf-tabview-menu-position-left-bottom > .waf-tabviewmenubar .waf-skin-tabs {
+    position: absolute;
+    bottom: 0;
+}
+
+/**
+ * -----------------------------------
+ * @section TabView Container
+ * -----------------------------------
+ */
+.waf-tabview .waf-tabviewcontainer {
+    visibility: hidden;
+}
+.waf-tabview .waf-tabviewcontainer.waf-state-active {
+    visibility: visible;
+}
+
