@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Desktop_Core",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Lib/JQuery"},
+            {"id": "Lib/JQueryHammer"},
+            {"id": "Core/Native/Rest"},
+            {"id": "Core/Utils"},
+            {"id": "DataProvider"},
+            {"id": "Lib/JQueryUI"},
+            {"id": "DataSource"},
+            {"id": "Rpc"},
+            {"id": "Tags"},
+            {"id": "Lib/JQuerySVG"},
+            {"id": "Lib/Selectbox"},
+            {"id": "Lib/Combobox"},
+            {"id": "Lib/Beautytips"},
+            {"id": "Lib/Notify"},
+            {"id": "Widget/Widget"},
+            {"id": "Core/Widget_V2"},
+            {"id": "Component/Component"}
+        ]
+    },
+    {
+        "name": "Mobile_Core",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Lib/JQuery"},
+            {"id": "Lib/JQueryHammer"},
+            {"id": "Core/Native/Rest"},
+            {"id": "Core/Utils"},
+            {"id": "DataProvider"},
+            {"id": "Lib/JQueryUI"},
+            {"id": "DataSource"},
+            {"id": "Rpc"},
+            {"id": "Tags"},
+            {"id": "Lib/JQuerySVG"},
+            {"id": "Lib/Selectbox"},
+            {"id": "Lib/Mobile"},
+            {"id": "Widget/Widget_Mobile"},
+            {"id": "Core/Widget_V2"}
+        ]
+    },
+    {
+        "name": "Reporting_Core",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Lib/JQuery"},            
+            {"id": "Core/Native/Rest"},
+            {"id": "Core/Utils"},
+            {"id": "DataProvider"},
+            {"id": "Lib/JQueryUI"},
+            {"id": "DataSource"},
+            {"id": "Rpc"},
+            {"id": "Tags"},
+            {"id": "Lib/JQuerySVG"},
+            {"id": "Lib/Selectbox"},
+            {"id": "Lib/Combobox"},
+            {"id": "Lib/Beautytips"},
+            {"id": "Lib/Notify"},
+            {"id": "Widget/Widget"}
+        ]
+    }
+]

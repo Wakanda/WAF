@@ -1,0 +1,6 @@
+{
+    "name": "_Desktop_Core_Full",
+    "loadDependencies": [
+        {"id": "Desktop_Core"}
+    ]
+}

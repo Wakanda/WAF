@@ -1,0 +1,90 @@
+/*
+* Copyright (c) 4D, 2011
+*
+* This file is part of Wakanda Application Framework (WAF).
+* Wakanda is an open source platform for building business web applications
+* with nothing but JavaScript.
+*
+* Wakanda Application Framework is free software. You can redistribute it and/or
+* modify since you respect the terms of the GNU General Public License Version 3,
+* as published by the Free Software Foundation.
+*
+* Wakanda is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+* Licenses for more details.
+*
+* You should have received a copy of the GNU General Public License version 3
+* along with Wakanda. If not see : http://www.gnu.org/licenses/
+*/
+/**
+ * Widget navigationView
+ *
+ * Includes mandatory rules for the button widget
+ *
+ * @link /walib/WAF/widget/css/widget.css
+ *
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView container
+ * -------------------------------------------------------
+ */
+.waf-popover  {
+    position: relative;
+    overflow: visible !important;
+    z-index: 9999;
+}
+
+.waf-popover .waf-popover-arrow {
+	position: absolute;
+	width: 25px;
+	height: 10px;
+	overflow: hidden;
+}
+.waf-popover .waf-popover-arrow.waf-popover-arrow-top {
+	top: -10px;
+	left: 10px;
+}
+.waf-popover .waf-popover-arrow.waf-popover-arrow-bottom {
+    -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+.waf-popover .waf-popover-arrow.waf-popover-arrow-right {
+    -webkit-transform: rotate(90deg);
+       -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+.waf-popover .waf-popover-arrow.waf-popover-arrow-left {
+    -webkit-transform: rotate(-90deg);
+       -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+         -o-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+}
+.waf-popover .waf-popover-arrow span {
+	display: block;
+	width: 14px;
+	height: 14px;
+
+    -webkit-transform: rotate(45deg) skew(-10deg, -10deg);
+       -moz-transform: rotate(45deg) skew(-10deg, -10deg);
+        -ms-transform: rotate(45deg) skew(-10deg, -10deg);
+         -o-transform: rotate(45deg) skew(-10deg, -10deg);
+            transform: rotate(45deg) skew(-10deg, -10deg);
+
+	zoom: 1;
+	margin: 2px 0 0 4px;
+}
+
+.waf-popover .waf-popover-arrow.waf-popover-arrow-bottom span,
+.waf-popover .waf-popover-arrow.waf-popover-arrow-right span {
+
+}

@@ -1,0 +1,74 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+/** 
+ * Widget radiogroup
+ *
+ * Includes radiogroup-specific rules of the Metal skin
+ *
+ * @style metal
+ * @link /walib/WAF/widget/css/widget.css
+ * @link /walib/WAF/widget/radiogroup/css/widget-radiogroup.css
+ * @link /walib/WAF/widget/skin/metal/css/widget-skin-metal.css
+ *
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section radio box
+ * -------------------------------------------------------
+ */
+.waf-radioGroup .metal.waf-radio .waf-radio-box {
+ 	position: relative;
+ 	width: 12px;
+	height: 12px;
+ 	
+	border-width: 1px;
+	border-style: solid;
+	
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	    -ms-border-radius: 6px;
+	     -o-border-radius: 6px;
+	        border-radius: 6px;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section radio icon
+ * -------------------------------------------------------
+ */
+ .waf-radioGroup .metal.waf-radio .waf-radio-icon {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+ 	left: -3px;
+ 	top: -3px;
+}
+
+.waf-radioGroup .metal.waf-radio .waf-radio-icon.waf-icon-svg {
+	display: none;
+}
+
+/**
+ * -----------------------------------
+ * @subsection radio icon state
+ * -----------------------------------
+ */
+.waf-radioGroup .metal.waf-radio.waf-state-active .waf-radio-icon.waf-icon-svg,
+.waf-radioGroup .metal.waf-radio.waf-state-selected .waf-radio-icon.waf-icon-svg {
+ 	display: block;
+}

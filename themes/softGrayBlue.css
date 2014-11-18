@@ -1,0 +1,1524 @@
+/**
+ * This file is part of Wakanda software, licensed by 4D under
+ *  (i) the GNU General Public License version 3 (GNU GPL v3), or
+ *  (ii) the Affero General Public License version 3 (AGPL v3) or
+ *  (iii) a commercial license.
+ * This file remains the exclusive property of 4D and/or its licensors
+ * and is protected by national and international legislations.
+ * In any event, Licensee's compliance with the terms and conditions
+ * of the applicable license constitutes a prerequisite to any use of this file.
+ * Except as otherwise expressly stated in the applicable license,
+ * such license does not include any other license or rights on this file,
+ * 4D's and/or its licensors' trademarks and/or other proprietary rights.
+ * Consequently, no title, copyright or other proprietary rights
+ * other than those specified in the applicable license is granted.
+ **/
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue {
+    background-color: rgb(227, 227, 227) !important;
+    
+    font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+    font-size: 12px;
+}
+.waf-theme.softGrayBlue, 
+.waf-theme.softGrayBlue a {
+    color: rgb(51, 51, 51);
+}
+
+#studio-tmp-bodyContainer.waf-theme.softGrayBlue {
+    background-color: transparent !important;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Widget Header
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-widget-header,
+.waf-theme.softGrayBlue .waf-container.waf-widget-header {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5BC0DE), color-stop(1, #2F96B4));
+    background-image: -webkit-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:    -moz-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:     -ms-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:      -o-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:         linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+
+    color: rgb(255, 255, 255);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Widget Footer
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-widget-footer,
+.waf-theme.softGrayBlue .waf-container.waf-widget-footer {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5BC0DE), color-stop(1, #2F96B4));
+    background-image: -webkit-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:    -moz-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:     -ms-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:      -o-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:         linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+
+    color: rgb(102, 102, 102);
+}
+
+
+/** 
+ * Widget accordion
+ *
+ * Includes accordion-specific rules of the 'Soft Gray' theme
+ *
+ * @link /walib/WAF/widget/accordion/css/widget-accordion.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-accordion {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+}
+
+/**
+ * -----------------------------------
+ * @subsection Section, Header, Content
+ * -----------------------------------
+ */
+.waf-theme.softGrayBlue .waf-accordion {
+    border-width: 0;
+}
+.waf-theme.softGrayBlue .waf-accordion .accordion-section {
+    border-width: 1px;
+}
+
+.waf-theme.softGrayBlue .waf-accordion .waf-accordion-header {
+    border-width: 0 0 1px 0;
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5BC0DE), color-stop(1, #2F96B4));
+    background-image: -webkit-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:    -moz-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:     -ms-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:      -o-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:         linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    
+    font-size: 14px;
+    color: #fff;
+}
+
+.waf-theme.softGrayBlue .waf-accordion .waf-accordion-content {
+    border-width: 0;
+    border-radius: 0;
+}
+
+    /* Border Radius */
+.waf-theme.softGrayBlue .waf-accordion .accordion-section,
+.waf-theme.softGrayBlue .waf-accordion .accordion-section .waf-accordion-header {
+    border-radius: 0;    
+}
+.waf-theme.softGrayBlue .waf-accordion .accordion-section:first-of-type,
+.waf-theme.softGrayBlue .waf-accordion .accordion-section:first-of-type .waf-accordion-header {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.waf-theme.softGrayBlue .waf-accordion .accordion-section:last-of-type,
+.waf-theme.softGrayBlue .waf-accordion .accordion-section:last-of-type .waf-accordion-header,
+.waf-theme.softGrayBlue .waf-accordion .accordion-section:last-of-type .waf-accordion-content {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.waf-theme.softGrayBlue .waf-accordion .accordion-section:last-of-type.waf-state-expanded .waf-accordion-header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Other Widgets
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-accordion .waf-accordion-header .waf-richText {
+    font-size: 14px;
+    color: #fff;
+}
+
+
+/**
+ * Widget button
+ *
+ * Includes button-specific rules of the 'Soft Gray' theme
+ *
+ * @link /walib/WAF/widget/button/css/widget-button.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-button {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5BC0DE), color-stop(1, #2F96B4));
+    background-image: -webkit-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:    -moz-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:     -ms-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:      -o-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:         linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    
+    font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+    font-size: 14px;
+    color: rgb(255, 255, 255)!important;
+}
+
+/* States */
+.waf-theme.softGrayBlue .waf-button.waf-state-hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5BC0DE), color-stop(1, #2F96B4));
+    background-image: -webkit-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:    -moz-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:     -ms-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:      -o-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:         linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+}
+.waf-theme.softGrayBlue .waf-button.waf-state-active {
+    border-color: rgb(131, 131, 132);
+    
+    background-image: -webkit-gradient(linear, left bottom, left bottom, color-stop(0, #5BC0DE), color-stop(1, #2F96B4));
+    background-image: -webkit-linear-gradient(bottom, #5BC0DE 0%, #2F96B4 100%);
+    background-image:    -moz-linear-gradient(bottom, #5BC0DE 0%, #2F96B4 100%);
+    background-image:     -ms-linear-gradient(bottom, #5BC0DE 0%, #2F96B4 100%);
+    background-image:      -o-linear-gradient(bottom, #5BC0DE 0%, #2F96B4 100%);
+    background-image:         linear-gradient(bottom, #5BC0DE 0%, #2F96B4 100%);
+}
+.waf-theme.softGrayBlue .waf-button.waf-state-focus {
+    border-color: rgb(131, 131, 132);
+}
+.waf-theme.softGrayBlue .waf-button.waf-state-disabled {
+    opacity: 0.4;
+}
+
+/**
+ * -----------------------------------
+ * @subsection Roles
+ * -----------------------------------
+ */
+.waf-theme.softGrayBlue .waf-button.waf-role-error {
+    border-color: transparent;
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(238, 95, 91)), color-stop(1, rgb(189, 54, 47)));
+    background-image: -webkit-linear-gradient(top, rgb(238, 95, 91) 0%, rgb(189, 54, 47) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(238, 95, 91) 0%, rgb(189, 54, 47) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(238, 95, 91) 0%, rgb(189, 54, 47) 100%);
+    background-image:      -o-linear-gradient(top, rgb(238, 95, 91) 0%, rgb(189, 54, 47) 100%);
+    background-image:         linear-gradient(top, rgb(238, 95, 91) 0%, rgb(189, 54, 47) 100%);
+    
+    color: rgb(255, 255, 255);
+}
+.waf-theme.softGrayBlue .waf-button.waf-role-error.waf-state-hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(238, 95, 91)), color-stop(1, rgb(189, 54, 47)));
+    background-image: -webkit-linear-gradient(top, rgb(238, 95, 91) 0%, rgb(189, 54, 47) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(238, 95, 91) 0%, rgb(189, 54, 47) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(238, 95, 91) 0%, rgb(189, 54, 47) 100%);
+    background-image:      -o-linear-gradient(top, rgb(238, 95, 91) 0%, rgb(189, 54, 47) 100%);
+    background-image:         linear-gradient(top, rgb(238, 95, 91) 0%, rgb(189, 54, 47) 100%);
+}
+.waf-theme.softGrayBlue .waf-button.waf-role-error.waf-state-active {
+    border-color: transparent;
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(189, 54, 47)), color-stop(1, rgb(238, 95, 91)));
+    background-image: -webkit-linear-gradient(top, rgb(189, 54, 47) 0%, rgb(238, 95, 91) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(189, 54, 47) 0%, rgb(238, 95, 91) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(189, 54, 47) 0%, rgb(238, 95, 91) 100%);
+    background-image:      -o-linear-gradient(top, rgb(189, 54, 47) 0%, rgb(238, 95, 91) 100%);
+    background-image:         linear-gradient(top, rgb(189, 54, 47) 0%, rgb(238, 95, 91) 100%);
+}
+
+.waf-theme.softGrayBlue .waf-button.waf-role-cancel {
+    border-color: transparent;
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(84, 84, 84)), color-stop(1, rgb(35, 35, 35)));
+    background-image: -webkit-linear-gradient(top, rgb(84, 84, 84) 0%, rgb(35, 35, 35) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(84, 84, 84) 0%, rgb(35, 35, 35) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(84, 84, 84) 0%, rgb(35, 35, 35) 100%);
+    background-image:      -o-linear-gradient(top, rgb(84, 84, 84) 0%, rgb(35, 35, 35) 100%);
+    background-image:         linear-gradient(top, rgb(84, 84, 84) 0%, rgb(35, 35, 35) 100%);
+    
+    color: rgb(255, 255, 255);
+}
+.waf-theme.softGrayBlue .waf-button.waf-role-cancel.waf-state-hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(84, 84, 84)), color-stop(1, rgb(35, 35, 35)));
+    background-image: -webkit-linear-gradient(top, rgb(84, 84, 84) 0%, rgb(35, 35, 35) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(84, 84, 84) 0%, rgb(35, 35, 35) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(84, 84, 84) 0%, rgb(35, 35, 35) 100%);
+    background-image:      -o-linear-gradient(top, rgb(84, 84, 84) 0%, rgb(35, 35, 35) 100%);
+    background-image:         linear-gradient(top, rgb(84, 84, 84) 0%, rgb(35, 35, 35) 100%);
+}
+.waf-theme.softGrayBlue .waf-button.waf-role-cancel.waf-state-active {
+    border-color: transparent;
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(35, 35, 35)), color-stop(1, rgb(84, 84, 84)));
+    background-image: -webkit-linear-gradient(top, rgb(35, 35, 35) 0%, rgb(84, 84, 84) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(35, 35, 35) 0%, rgb(84, 84, 84) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(35, 35, 35) 0%, rgb(84, 84, 84) 100%);
+    background-image:      -o-linear-gradient(top, rgb(35, 35, 35) 0%, rgb(84, 84, 84) 100%);
+    background-image:         linear-gradient(top, rgb(35, 35, 35) 0%, rgb(84, 84, 84) 100%);
+}
+
+.waf-theme.softGrayBlue .waf-button.waf-role-confirm {
+    border-color: transparent;
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(97, 194, 97)), color-stop(1, rgb(81, 163, 81)));
+    background-image: -webkit-linear-gradient(top, rgb(97, 194, 97) 0%, rgb(81, 163, 81) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(97, 194, 97) 0%, rgb(81, 163, 81) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(97, 194, 97) 0%, rgb(81, 163, 81) 100%);
+    background-image:      -o-linear-gradient(top, rgb(97, 194, 97) 0%, rgb(81, 163, 81) 100%);
+    background-image:         linear-gradient(top, rgb(97, 194, 97) 0%, rgb(81, 163, 81) 100%);
+    
+    color: rgb(255, 255, 255);
+}
+.waf-theme.softGrayBlue .waf-button.waf-role-confirm.waf-state-hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(97, 194, 97)), color-stop(1, rgb(81, 163, 81)));
+    background-image: -webkit-linear-gradient(top, rgb(97, 194, 97) 0%, rgb(81, 163, 81) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(97, 194, 97) 0%, rgb(81, 163, 81) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(97, 194, 97) 0%, rgb(81, 163, 81) 100%);
+    background-image:      -o-linear-gradient(top, rgb(97, 194, 97) 0%, rgb(81, 163, 81) 100%);
+    background-image:         linear-gradient(top, rgb(97, 194, 97) 0%, rgb(81, 163, 81) 100%);
+}
+.waf-theme.softGrayBlue .waf-button.waf-role-confirm.waf-state-active {
+    border-color: transparent;
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(81, 163, 81)), color-stop(1, rgb(97, 194, 97)));
+    background-image: -webkit-linear-gradient(top, rgb(81, 163, 81) 0%, rgb(97, 194, 97) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(81, 163, 81) 0%, rgb(97, 194, 97) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(81, 163, 81) 0%, rgb(97, 194, 97) 100%);
+    background-image:      -o-linear-gradient(top, rgb(81, 163, 81) 0%, rgb(97, 194, 97) 100%);
+    background-image:         linear-gradient(top, rgb(81, 163, 81) 0%, rgb(97, 194, 97) 100%);
+}
+
+
+/**
+ * Widget buttonImage
+ *
+ * Includes button-specific rules of the 'Soft Gray' theme
+ *
+ * @link /walib/WAF/widget/button/css/widget-buttonImage.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-buttonImage {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5BC0DE), color-stop(1, #2F96B4));
+    background-image: -webkit-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:    -moz-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:     -ms-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:      -o-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:         linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    
+    box-shadow: none;
+    
+    font-size: 14px;
+    color: #fff;
+}
+
+/* States */
+.waf-theme.softGrayBlue .waf-buttonImage.waf-state-hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5BC0DE), color-stop(1, #2F96B4));
+    background-image: -webkit-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:    -moz-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:     -ms-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:      -o-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:         linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+}
+.waf-theme.softGrayBlue .waf-buttonImage.waf-state-active {
+    border-color: rgb(131, 131, 132);
+    
+    background-image: -webkit-gradient(linear, left bottom, left bottom, color-stop(0, #5BC0DE), color-stop(1, #2F96B4));
+    background-image: -webkit-linear-gradient(bottom, #5BC0DE 0%, #2F96B4 100%);
+    background-image:    -moz-linear-gradient(bottom, #5BC0DE 0%, #2F96B4 100%);
+    background-image:     -ms-linear-gradient(bottom, #5BC0DE 0%, #2F96B4 100%);
+    background-image:      -o-linear-gradient(bottom, #5BC0DE 0%, #2F96B4 100%);
+    background-image:         linear-gradient(bottom, #5BC0DE 0%, #2F96B4 100%);
+}
+.waf-theme.softGrayBlue .waf-buttonImage.waf-state-focus {
+    border-color: rgb(131, 131, 132);
+}
+.waf-theme.softGrayBlue .waf-buttonImage.waf-state-disabled {
+    opacity: 0.4;
+}
+
+/**
+ * -------------------------------------------------------
+ * @subsection Label
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-buttonImage label {
+    color: #fff;
+}
+
+
+/**
+ * Widget checkbox
+ *
+ * Includes button-specific rules of the 'Soft Gray' theme
+ *
+ * @link /walib/WAF/widget/checkbox/css/widget-checkbox.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+/* States */
+/* @TODO - Delete these properties after clean structural file */
+.waf-theme.softGrayBlue .waf-checkbox.waf-state-focus {
+    border: none;
+    box-shadow: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Checkbox Container
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-checkbox .waf-checkbox-box {
+ 	position: absolute;
+ 	width: 87.5%;
+	height: 87.5%;
+ 	left: 6.25%;
+ 	top: 6.25%;
+    
+    border: 1px solid rgb(204,204,204);
+    border-radius: 3px;
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255, 255, 255)), color-stop(1, rgb(233, 233, 233)));
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(233, 233, 233) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(233, 233, 233) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(227, 233, 233) 100%);
+    background-image:      -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(233, 233, 233) 100%);
+    background-image:         linear-gradient(top, rgb(255, 255, 255) 0%, rgb(233, 233, 233) 100%);
+}
+
+/* States */
+.waf-theme.softGrayBlue .waf-checkbox.waf-state-focus .waf-checkbox-box,
+.waf-theme.softGrayBlue .waf-checkbox.waf-state-active .waf-checkbox-box {
+    border-color: rgb(131, 131, 132);    
+}
+
+.waf-theme.softGrayBlue .waf-checkbox.waf-state-disabled .waf-checkbox-box {
+    opacity: 0.4;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Checkbox Icon
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-checkbox .waf-checkbox-icon {
+	position: absolute;
+ 	width: 80%;
+	height: 80%;
+ 	left: 11%;
+ 	top: 16%;
+}
+
+.waf-theme.softGrayBlue .waf-checkbox .waf-checkbox-icon.waf-icon-svg {
+ 	display: none;
+}
+/* States */
+.waf-theme.softGrayBlue .waf-checkbox.waf-state-active .waf-checkbox-icon.waf-icon-svg,
+.waf-theme.softGrayBlue .waf-checkbox.waf-state-selected .waf-checkbox-icon.waf-icon-svg {
+ 	display: block;
+}
+
+.waf-theme.softGrayBlue .waf-checkbox .waf-checkbox-icon-symbol {
+    fill: rgb(102, 102, 102);    
+}
+.waf-theme.softGrayBlue .waf-checkbox .waf-checkbox-icon-symbol-shadow {
+    display: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Checkbox label
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-label.waf-label-checkbox {
+    color: rgb(102, 102, 102);    
+}
+
+
+/** 
+ * Widget combobox
+ *
+ * Includes combobox-specific rules of the 'Soft Gray' theme
+ *
+ * @link /walib/WAF/widget/combobox/css/widget-combobox.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-combobox {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5BC0DE), color-stop(1, #2F96B4));
+    background-image: -webkit-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:    -moz-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:     -ms-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:      -o-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:         linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+}
+
+/* States */
+.waf-theme.softGrayBlue .waf-combobox.waf-state-hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5BC0DE), color-stop(1, #2F96B4));
+    background-image: -webkit-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:    -moz-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:     -ms-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:      -o-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:         linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+}
+.waf-theme.softGrayBlue .waf-combobox.waf-state-active {
+
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section Input
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-combobox input {
+    padding: 0 4px;
+    border-right: 1px solid rgb(204, 204, 204);
+    color: rgb(102, 102, 102);
+}
+.waf-theme.softGrayBlue .waf-combobox.waf-state-active {
+    border-color: rgb(131, 131, 132);
+}
+.waf-theme.softGrayBlue .waf-combobox.waf-state-active input {
+    background: white;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Button
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-combobox button {
+    border-left: 1px solid rgb(255, 255, 255);
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(250, 249, 251)), color-stop(1, rgb(227, 227, 235)));
+    background-image: -webkit-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:      -o-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:         linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+}
+/* States */
+.waf-theme.softGrayBlue .waf-combobox.waf-state-hover button {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(252, 252, 252)), color-stop(1, rgb(236, 236, 236)));
+    background-image: -webkit-linear-gradient(top, rgb(252, 252, 252) 0%, rgb(236, 236, 236) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(252, 252, 252) 0%, rgb(236, 236, 236) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(252, 252, 252) 0%, rgb(236, 236, 236) 100%);
+    background-image:      -o-linear-gradient(top, rgb(252, 252, 252) 0%, rgb(236, 236, 236) 100%);
+    background-image:         linear-gradient(top, rgb(252, 252, 252) 0%, rgb(236, 236, 236) 100%);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section label
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-label-combobox {
+    color: rgb(102, 102, 102);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section comboList
+ * -------------------------------------------------------
+ */
+
+
+/** 
+ * Widget container
+ *
+ * Includes container-specific rules of the 'Soft Gray' theme
+ *
+ * @link /walib/WAF/widget/container/css/widget-container.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-container {
+	border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+    
+    background: rgb(255, 255, 255);
+}
+
+/**
+ * -----------------------------------
+ * @subsection Roles
+ * -----------------------------------
+ */
+.waf-theme.softGrayBlue .waf-container.waf-role-bevel {
+    box-shadow: 0 -1px 5px -2px rgba(204, 204, 204, 0.8) inset;
+}
+
+/** 
+ * Widget dialog
+ *
+ * Includes dialog-specific rules of the 'Soft Gray' theme
+ *
+ * @link /walib/WAF/widget/dialog/css/widget-dialog.css
+ *
+ */
+ 
+/**
+ * -------------------------------------------------------
+ * @section main
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-dialog .waf-container {
+	box-shadow: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dialog header
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-dialog .waf-widget-header {
+    border-width: 0 0 1px 0;
+    
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.waf-theme.softGrayBlue .waf-dialog .waf-widget-header .waf-dialog-header-title {
+	color: inherit;
+    font-weight: normal;
+}
+.waf-theme.softGrayBlue .waf-dialog .waf-widget-header .waf-image {
+    top: 5px !important;
+    left: 5px !important;
+    width: 15px !important;
+    height: 15px !important;
+}
+.waf-theme.softGrayBlue .waf-dialog .waf-widget-header .waf-button {
+    top: 0!important;
+    bottom: 0!important;
+
+    width: 15px !important;
+    height: auto !important;
+    
+    border-width: 0 0 0 1px;
+    border-radius: 0;
+}
+.waf-theme.softGrayBlue .waf-dialog .waf-widget-header .waf-button:before {
+    content: '';
+    display: block;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    
+    width: 0;
+    height: auto;
+    
+    border-left: 1px solid rgb(255, 255, 255);
+}
+.waf-theme.softGrayBlue .waf-dialog .waf-widget-header .waf-dialog-header-minimize {
+    right: 30px!important;
+}
+.waf-theme.softGrayBlue .waf-dialog .waf-widget-header .waf-dialog-header-maximize {
+    right: 15px!important;
+}
+.waf-theme.softGrayBlue .waf-dialog .waf-widget-header .waf-dialog-header-close {
+    right: 0!important;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dialog body
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-dialog .waf-widget-body {
+	border-width: 0;
+    border-radius: 0;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dialog footer
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-dialog .waf-widget-footer {
+    border-width: 1px 0 0 0;
+    border-color: rgb(217, 217, 217);
+    border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+
+/**
+ * -------------------------------------------------------
+ * @subsection dialog footer buttons
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-widget-footer.waf-dialog-footer .waf-button {
+	font-size: 11px;
+	line-height: 20px;
+}
+
+
+/** 
+ * Widget dataGrid
+ *
+ * Includes dataGrid-specific rules of the 'Soft Gray' theme
+ *
+ * @link /walib/WAF/widget/dataGrid/css/widget-dataGrid.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-dataGrid {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+	
+    font-size: 12px;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dataGrid Header
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-dataGrid .waf-widget-header {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    border-radius: 3px 3px 0 0; 
+}
+.waf-theme.softGrayBlue .waf-dataGrid .waf-widget-header > .container {
+    border-radius: inherit;
+}
+
+.waf-theme.softGrayBlue .waf-dataGrid .waf-widget-header .waf-dataGrid-cell {
+    border-right: 1px solid rgb(255, 255, 255);
+    box-shadow: none;
+}
+.waf-theme.softGrayBlue .waf-dataGrid .waf-widget-header .waf-dataGrid-cell:after {
+    content: '';
+    float: right;
+    display: block;
+    height: 100%;
+
+    border-right: 1px solid rgb(204, 204, 204);
+}
+
+.waf-theme.softGrayBlue .waf-dataGrid .waf-widget-header .waf-icon path {
+    fill: rgb(102, 102, 102);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dataGrid Footer
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-dataGrid .waf-widget-footer {
+    border-top: 1px solid rgb(204, 204, 204);
+    border-radius: 0 0 3px 3px; 
+}
+.waf-theme.softGrayBlue .waf-dataGrid .waf-widget-footer .waf-icon path {
+    fill: rgb(102, 102, 102);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dataGrid Body
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-dataGrid .waf-widget-body .waf-datagrid-missingBinding {
+    color: rgb(189, 54, 47);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dataGrid Rows
+ * -------------------------------------------------------
+ */
+/* States */
+.waf-theme.softGrayBlue .waf-dataGrid .waf-widget-body .waf-dataGrid-row.waf-state-hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(91, 192, 222)), color-stop(1, rgb(47, 150, 180)));
+    background-image: -webkit-linear-gradient(top, rgb(91, 192, 222) 0%, rgb(47, 150, 180) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(91, 192, 222) 0%, rgb(47, 150, 180) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(0, 136, 204) 0%, rgb(0, 85, 204) 100%);
+    background-image:      -o-linear-gradient(top, rgb(0, 136, 204) 0%, rgb(0, 85, 204) 100%);
+    background-image:         linear-gradient(top, rgb(0, 136, 204) 0%, rgb(0, 85, 204) 100%);
+    
+    color: rgb(255, 255, 255);
+}
+.waf-theme.softGrayBlue .waf-dataGrid .waf-widget-body .waf-dataGrid-row.waf-state-active {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(0, 136, 204)), color-stop(1, rgb(0, 85, 204)));
+    background-image: -webkit-linear-gradient(top, rgb(0, 136, 204) 0%, rgb(0, 85, 204) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(0, 136, 204) 0%, rgb(0, 85, 204) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(0, 136, 204) 0%, rgb(0, 85, 204) 100%);
+    background-image:      -o-linear-gradient(top, rgb(0, 136, 204) 0%, rgb(0, 85, 204) 100%);
+    background-image:         linear-gradient(top, rgb(0, 136, 204) 0%, rgb(0, 85, 204) 100%);
+    
+    color: rgb(255, 255, 255);
+}
+
+
+/**
+ * Widget fileUpload
+ *
+ * Includes fileUpload-specific rules of the 'Soft Gray' theme
+ *
+ * @link /walib/WAF/widget/fileUpload/css/widget-fileUpload.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-fileUpload {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px; 
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5BC0DE), color-stop(1, #2F96B4));
+    background-image: -webkit-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:    -moz-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:     -ms-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:      -o-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:         linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Paragraph
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-fileUpload p {
+    font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	font-size: 12px;
+    color: rgb(102, 102, 102);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Input
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-fileUpload input {
+    font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	font-size: 12px;
+    color: rgb(102, 102, 102);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Buttons
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-fileUpload .waf-button {
+    border: none;
+    border-radius: 0;
+    background-image: none;
+    
+    color: rgb(102, 102, 102);
+    
+    cursor: pointer;
+}
+
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnCardinal,
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnDelete,
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnBrowse,
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnUpload {
+    top: 0!important;
+    bottom: 0!important;    
+
+    border-left: 1px solid rgb(204, 204, 204);
+    
+    background: none;
+}
+
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnBrowse {
+    width: 25px!important;
+    right: 0!important;
+    
+    border-radius: 0 3px 3px 0;
+}
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnBrowse span {
+    width: 100%;
+    text-align: center;
+}
+
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnUpload {
+    width: 25px!important;
+    right: 24px!important;
+    box-shadow: none;
+}
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnUpload span {
+    
+}
+
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnCardinal {
+    width: 25px!important;
+    right: 49px!important; 
+}
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnCardinal span {
+    width: 100%;
+    text-align: center;    
+}
+
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnDelete {
+    width: 25px!important;
+    right: 74px!important;
+}
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnDelete span {
+    width: 100%;
+    text-align: center;
+}
+
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnCardinal:before,
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnDelete:before,
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnBrowse:before,
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnUpload:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    
+    border-left: 1px solid rgb(255, 255, 255);
+}
+/* States */
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnCardinal.waf-state-active,
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnDelete.waf-state-active,
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnBrowse.waf-state-active {
+    border-left-color: rgb(204, 204, 204);
+}
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnCardinal.waf-state-active:before,
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnDelete.waf-state-active:before,
+.waf-theme.softGrayBlue .waf-fileUpload .waf-fileUpload-btnBrowse.waf-state-active:before {
+    display: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Label
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-label-fileUpload {
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section fileList
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-container.waf-fileUpload-fileList {
+    border-color: rgb(167, 167, 168);
+   
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(185, 185, 185)), color-stop(1, rgb(203, 203, 203)));
+    background-image: -webkit-linear-gradient(top, rgb(185, 185, 185) 0%, rgb(203, 203, 203) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(185, 185, 185) 0%, rgb(203, 203, 203) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(185, 185, 185) 0%, rgb(203, 203, 203) 100%);
+    background-image:      -o-linear-gradient(top, rgb(185, 185, 185) 0%, rgb(203, 203, 203) 100%);
+    background-image:         linear-gradient(top, rgb(185, 185, 185) 0%, rgb(203, 203, 203) 100%);    
+}
+.waf-theme.softGrayBlue .waf-container.waf-fileUpload-fileList .waf-fileUpload-fileItem {
+    height: auto;
+}
+.waf-theme.softGrayBlue .waf-container.waf-fileUpload-fileList .waf-fileUpload-fileItem.waf-state-hover {
+    background: none;
+}
+
+.waf-theme.softGrayBlue .waf-container.waf-fileUpload-fileList .waf-fileUpload-fileItem td {
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: transparent;
+    
+    font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	font-size: 12px;
+    color: rgb(250, 250, 250);
+}
+.waf-theme.softGrayBlue .waf-container.waf-fileUpload-fileList .waf-fileUpload-fileItem:first-of-type td {
+    border-top-width: 0;
+}
+.waf-theme.softGrayBlue .waf-container.waf-fileUpload-fileList .waf-fileUpload-fileItem:last-of-type td {
+    border-bottom-width: 0;
+}
+.waf-theme.softGrayBlue .waf-container.waf-fileUpload-fileList .waf-fileUpload-fileItem .waf-fileUpload-fileItem-name {
+    padding: 4px 10px;
+}
+.waf-theme.softGrayBlue .waf-container.waf-fileUpload-fileList .waf-fileUpload-fileItem:first-of-type .waf-fileUpload-fileItem-name {
+    border-top-left-radius: 3px;
+}
+.waf-theme.softGrayBlue .waf-container.waf-fileUpload-fileList .waf-fileUpload-fileItem:last-of-type .waf-fileUpload-fileItem-name {
+    border-bottom-left-radius: 3px;
+}
+.waf-theme.softGrayBlue .waf-container.waf-fileUpload-fileList .waf-fileUpload-fileItem:first-of-type .waf-fileUpload-fileItem-button {
+    border-top-right-radius: 3px;
+}
+.waf-theme.softGrayBlue .waf-container.waf-fileUpload-fileList .waf-fileUpload-fileItem:last-of-type .waf-fileUpload-fileItem-button {
+    border-bottom-right-radius: 3px;
+}
+
+.waf-theme.softGrayBlue .waf-container.waf-fileUpload-fileList .waf-fileUpload-fileItem.waf-state-hover td {
+    border-color: rgb(176, 176, 176);
+    
+    color: rgb(51, 51, 51);
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(250, 249, 251)), color-stop(1, rgb(227, 227, 235)));
+    background-image: -webkit-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:      -o-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:         linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:         linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+}
+
+
+/**
+ * Widget menuBar & menuItem
+ *
+ * Includes menuBar-specific rules of the 'Soft Gray' theme
+ *
+ * @link /walib/WAF/widget/menubar/css/widget-menubar.css
+ * @link /walib/WAF/widget/menuitem/css/widget-menuitem.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main menuBar
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-menuBar {
+	border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Main menuItem
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-menuBar .waf-menuItem {
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5BC0DE), color-stop(1, #2F96B4));
+    background-image: -webkit-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:    -moz-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:     -ms-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:      -o-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:         linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    
+    color: rgb(102, 102, 102);
+}
+/* States */
+.waf-theme.softGrayBlue .waf-menuBar .waf-menuItem.waf-state-hover {
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5BC0DE), color-stop(1, #2F96B4));
+    background-image: -webkit-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:    -moz-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:     -ms-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:      -o-linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+    background-image:         linear-gradient(top, #5BC0DE 0%, #2F96B4 100%);
+}
+
+.waf-theme.softGrayBlue .waf-menuBar .waf-menuItem.waf-state-selected {
+    
+    background-image: -webkit-gradient(linear, left bottom, left bottom, color-stop(0, #5BC0DE), color-stop(1, #2F96B4));
+    background-image: -webkit-linear-gradient(bottom, #5BC0DE 0%, #2F96B4 100%);
+    background-image:    -moz-linear-gradient(bottom, #5BC0DE 0%, #2F96B4 100%);
+    background-image:     -ms-linear-gradient(bottom, #5BC0DE 0%, #2F96B4 100%);
+    background-image:      -o-linear-gradient(bottom, #5BC0DE 0%, #2F96B4 100%);
+    background-image:         linear-gradient(bottom, #5BC0DE 0%, #2F96B4 100%);
+}
+.waf-theme.softGrayBlue .waf-menuBar .waf-menuItem.waf-state-active {
+    background-image: none;
+    background-color: rgb(86, 86, 86);
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3) inset;
+
+    color: rgb(255, 255, 255);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section MenuBar Horizontal
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-menuBar.waf-menuBar-horizontal .waf-menuItem {
+    border-right: 1px solid rgb(204, 204, 204);
+    border-left: 1px solid rgb(255, 255, 255);
+}
+.waf-theme.softGrayBlue .waf-menuBar .waf-menuBar-horizontal .waf-menuItem.waf-menuItem-first {
+    border-left-width: 0;
+    border-radius: 3px 0 0 3px;
+}
+.waf-theme.softGrayBlue .waf-menuBar .waf-menuBar-horizontal .waf-menuItem.waf-menuItem-last {
+    border-right-width: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+/* States */
+.waf-theme.softGrayBlue .waf-menuBar.waf-menuBar-horizontal .waf-menuItem.waf-state-selected {
+    border-left-color: transparent;    
+}
+.waf-theme.softGrayBlue .waf-menuBar.waf-menuBar-horizontal .waf-menuItem.waf-state-active {
+    border-left-color: transparent;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section MenuBar Vertical
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-menuBar.waf-menuBar-vertical .waf-menuItem {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    border-top: 1px solid rgb(255, 255, 255);
+}
+.waf-theme.softGrayBlue .waf-menuBar.waf-menuBar-vertical .waf-menuItem.waf-menuItem-first {
+    border-top: none;
+    border-radius: 3px 3px 0 0;
+}
+.waf-theme.softGrayBlue .waf-menuBar.waf-menuBar-vertical .waf-menuItem.waf-menuItem-last {
+    border-bottom: none;
+    border-radius: 0 0 3px 3px;
+}
+
+/* States */
+.waf-theme.softGrayBlue .waf-menuBar.waf-menuBar-vertical .waf-menuItem.waf-state-selected {
+    border-top-color: transparent;    
+}
+.waf-theme.softGrayBlue .waf-menuBar.waf-menuBar-vertical .waf-menuItem.waf-state-active {
+    border-top-color: transparent;
+}
+
+
+/** 
+ * Widget radioGroup
+ *
+ * Includes radioGroup-specific rules of the 'Soft Gray' theme
+ *
+ * @link /walib/WAF/widget/radiogroup/css/widget-radiogroup.css
+ */
+ 
+/**
+ * -------------------------------------------------------
+ * @section radio box
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-radioGroup .waf-radio .waf-radio-box {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 50%;
+
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(250, 249, 251)), color-stop(1, rgb(227, 227, 235)));
+    background-image: -webkit-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:      -o-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:         linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+}
+
+/* States */
+.waf-theme.softGrayBlue .waf-radioGroup .waf-radio.waf-state-hover .waf-radio-box {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(252, 252, 252)), color-stop(1, rgb(236, 236, 236)));
+    background-image: -webkit-linear-gradient(top, rgb(252, 252, 252) 0%, rgb(236, 236, 236) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(252, 252, 252) 0%, rgb(236, 236, 236) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(252, 252, 252) 0%, rgb(236, 236, 236) 100%);
+    background-image:      -o-linear-gradient(top, rgb(252, 252, 252) 0%, rgb(236, 236, 236) 100%);
+    background-image:         linear-gradient(top, rgb(252, 252, 252) 0%, rgb(236, 236, 236) 100%);    
+}
+.waf-theme.softGrayBlue .waf-radioGroup .waf-radio.waf-state-focus .waf-radio-box {
+	border-color: rgb(131, 131, 132);    
+}
+.waf-theme.softGrayBlue .waf-radioGroup .waf-radio.waf-state-active .waf-radio-box {
+	border-color: rgb(131, 131, 132);
+
+    background: none;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM1NjU2NTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM1NjU2NTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0b3AtY29sb3I9IiM1NjU2NTUiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNTY1NjU1IiBzdG9wLW9wYWNpdHk9IjAiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(115, 115, 115,1)), color-stop(30%,rgba(115, 115, 115,1)), color-stop(45%,rgba(115, 115, 115,0)), color-stop(100%,rgba(115, 115, 115,0)));
+    background-image: -webkit-radial-gradient(center, ellipse cover,  rgba(115, 115, 115,1) 0%,rgba(115, 115, 115,1) 30%,rgba(115, 115, 115,0) 45%,rgba(115, 115, 115,0) 100%);
+    background-image:    -moz-radial-gradient(center, ellipse cover,  rgba(115, 115, 115,1) 0%, rgba(115, 115, 115,1) 30%, rgba(115, 115, 115,0) 45%, rgba(115, 115, 115,0) 100%);
+    background-image:     -ms-radial-gradient(center, ellipse cover,  rgba(115, 115, 115,1) 0%,rgba(115, 115, 115,1) 30%,rgba(115, 115, 115,0) 45%,rgba(115, 115, 115,0) 100%);
+    background-image:      -o-radial-gradient(center, ellipse cover,  rgba(115, 115, 115,1) 0%,rgba(115, 115, 115,1) 30%,rgba(115, 115, 115,0) 45%,rgba(115, 115, 115,0) 100%);
+    background-image:         radial-gradient(ellipse at center,  rgba(115, 115, 115,1) 0%,rgba(115, 115, 115,1) 30%,rgba(115, 115, 115,0) 45%,rgba(115, 115, 115,0) 100%);
+}
+.waf-theme.softGrayBlue .waf-radioGroup .waf-radio.waf-state-selected .waf-radio-box {
+    background: none;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM1NjU2NTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM1NjU2NTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0b3AtY29sb3I9IiM1NjU2NTUiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNTY1NjU1IiBzdG9wLW9wYWNpdHk9IjAiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(115, 115, 115,1)), color-stop(30%,rgba(115, 115, 115,1)), color-stop(45%,rgba(115, 115, 115,0)), color-stop(100%,rgba(115, 115, 115,0)));
+    background-image: -webkit-radial-gradient(center, ellipse cover,  rgba(115, 115, 115,1) 0%,rgba(115, 115, 115,1) 30%,rgba(115, 115, 115,0) 45%,rgba(115, 115, 115,0) 100%);
+    background-image:    -moz-radial-gradient(center, ellipse cover,  rgba(115, 115, 115,1) 0%, rgba(115, 115, 115,1) 30%, rgba(115, 115, 115,0) 45%, rgba(115, 115, 115,0) 100%);
+    background-image:     -ms-radial-gradient(center, ellipse cover,  rgba(115, 115, 115,1) 0%,rgba(115, 115, 115,1) 30%,rgba(115, 115, 115,0) 45%,rgba(115, 115, 115,0) 100%);
+    background-image:      -o-radial-gradient(center, ellipse cover,  rgba(115, 115, 115,1) 0%,rgba(115, 115, 115,1) 30%,rgba(115, 115, 115,0) 45%,rgba(115, 115, 115,0) 100%);
+    background-image:         radial-gradient(ellipse at center,  rgba(115, 115, 115,1) 0%,rgba(115, 115, 115,1) 30%,rgba(115, 115, 115,0) 45%,rgba(115, 115, 115,0) 100%);
+}
+.waf-theme.softGrayBlue .waf-radioGroup .waf-radio.waf-state-disabled .waf-radio-box {
+    opacity: 0.4;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section radio label
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-radioGroup .waf-radio label {
+ 	font-size: 12px;
+    color: rgb(102, 102, 102);
+}
+.waf-theme.softGrayBlue .waf-label-radioGroup {
+ 	font-size: 12px;
+    color: rgb(102, 102, 102);
+}
+
+
+/** 
+ * Widget slider
+ *
+ * Includes slider-specific rules of the 'Soft Gray' theme
+ *
+ * @link /walib/WAF/widget/slider/css/widget-slider.css
+ */
+ 
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-slider {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+}
+
+/* States */
+.waf-theme.softGrayBlue .waf-slider.waf-state-disabled {
+	opacity: 0.4;
+}
+
+/**
+ * -----------------------------------
+ * @subsection slider horizontal
+ * -----------------------------------
+ */
+
+/**
+ * -----------------------------------
+ * @subsection slider vertical
+ * -----------------------------------
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section ui-slider-handle
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-slider .ui-slider-handle {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 100px;
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(250, 249, 251)), color-stop(1, rgb(227, 227, 235)));
+    background-image: -webkit-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:      -o-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:         linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);   
+
+    box-shadow: none;
+}
+
+/* States */
+.waf-theme.softGrayBlue .waf-slider .ui-slider-handle.ui-state-hover {
+    border: 1px solid rgb(204, 204, 204);
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(250, 249, 251)), color-stop(1, rgb(227, 227, 235)));
+    background-image: -webkit-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:      -o-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:         linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);   
+    
+    box-shadow: none;
+}
+.waf-theme.softGrayBlue .waf-slider .ui-slider-handle.ui-state-active {
+    border-color: rgb(131, 131, 132);   
+
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(185, 185, 185)), color-stop(1, rgb(203, 203, 203)));
+    background-image: -webkit-linear-gradient(top, rgb(185, 185, 185) 0%, rgb(203, 203, 203) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(185, 185, 185) 0%, rgb(203, 203, 203) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(185, 185, 185) 0%, rgb(203, 203, 203) 100%);
+    background-image:      -o-linear-gradient(top, rgb(185, 185, 185) 0%, rgb(203, 203, 203) 100%);
+    background-image:         linear-gradient(top, rgb(185, 185, 185) 0%, rgb(203, 203, 203) 100%);
+    
+    box-shadow: none;
+}
+
+/**
+ * -----------------------------------
+ * @subsection ui-slider-handle horizontal
+ * -----------------------------------
+ */
+.waf-theme.softGrayBlue .waf-slider.ui-slider-horizontal .ui-slider-handle {
+	top:    -5px;
+    bottom: -5px;
+}
+
+/**
+ * -----------------------------------
+ * @subsection ui-slider-handle vertical
+ * -----------------------------------
+ */
+.waf-theme.softGrayBlue .waf-slider.ui-slider-vertical .ui-slider-handle {
+	left:   -5px;
+    right:  -5px;
+}
+
+
+/** 
+ * Widget tabView
+ *
+ * Includes tabView-specific rules of the 'Soft Gray' theme
+ *
+ * @link /walib/WAF/widget/tabView/css/widget-tabView.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section tabview menuBar
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-tabView .waf-menuBar {
+    border: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section tabview menuItem
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-tabView .waf-menuBar .waf-menuItem {
+    border-color: rgb(204, 204, 204);
+    border-style: solid;
+    border-radius: 3px;
+}
+
+/* States */
+.waf-theme.softGrayBlue .waf-tabView .waf-menuBar .waf-menuItem.waf-state-selected {
+    font-weight: bold;
+    background: rgb(255, 255, 255);
+}
+
+/* Border Radius */
+.waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-top-left .waf-menuBar .waf-menuItem,
+.waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-top-right .waf-menuBar .waf-menuItem {
+    border-width: 1px 1px 0 1px;
+    border-radius: 3px 3px 0 0; 
+}
+.waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-right-top .waf-menuBar .waf-menuItem,
+.waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-right-bottom .waf-menuBar .waf-menuItem {
+    border-width: 1px 1px 1px 0;
+    border-radius: 0 3px 3px 0; 
+}
+.waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-bottom-left .waf-menuBar .waf-menuItem,
+.waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-bottom-right .waf-menuBar .waf-menuItem {
+    border-width: 0 1px 1px 1px;
+    border-radius: 0 0 3px 3px; 
+}
+.waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-left-bottom .waf-menuBar .waf-menuItem,
+.waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-left-top .waf-menuBar .waf-menuItem {
+    border-width: 1px 0 1px 1px;
+    border-radius: 3px 0 0 3px; 
+}
+
+/**
+ * -------------------------------------------------------
+ * @section container
+ * -------------------------------------------------------
+ */
+.waf-theme.softGrayBlue .waf-tabView > .waf-container,  
+/* GUI Designer */
+body.yui-layout .waf-theme.softGrayBlue .waf-tabView > div > div > .waf-container
+/* // GUI Designer */
+{
+
+}
+
+.waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-top-left > .waf-container,  
+.waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-left-top > .waf-container,  
+/* GUI Designer */
+body.yui-layout .waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-top-left > div > div > .waf-container,
+body.yui-layout .waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-left-top > div > div > .waf-container
+/* // GUI Designer */
+{
+    border-radius: 0 3px 3px 3px;
+}
+.waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-top-right > .waf-container,  
+.waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-right-top > .waf-container,  
+/* GUI Designer */
+body.yui-layout .waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-top-right > div > div > .waf-container,
+body.yui-layout .waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-right-top > div > div > .waf-container
+/* // GUI Designer */
+{
+    border-radius: 3px 0 3px 3px;
+}
+.waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-bottom-left > .waf-container,
+.waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-left-bottom > .waf-container,
+/* GUI Designer */
+body.yui-layout .waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-bottom-left > div > div > .waf-container,
+body.yui-layout .waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-left-bottom > div > div > .waf-container
+/* // GUI Designer */
+{
+    border-radius: 3px 3px 3px 0;
+}
+.waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-bottom-right > .waf-container,  
+.waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-right-bottom > .waf-container,  
+/* GUI Designer */
+body.yui-layout .waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-bottom-right > div > div > .waf-container,
+body.yui-layout .waf-theme.softGrayBlue .waf-tabView.waf-tabView-menu-position-right-bottom > div > div > .waf-container
+/* // GUI Designer */
+{
+    border-radius: 3px 3px 0 3px;
+}
+
+/** 
+ * Widget textField
+ *
+ * Includes textField-specific rules of the 'Soft Gray' theme
+ *
+ * @link /walib/WAF/widget/textfield/css/widget-textfield.css
+ */
+ 
+ /**
+  * -------------------------------------------------------
+  * @section Main
+  * -------------------------------------------------------
+  */
+.waf-theme.softGrayBlue .waf-textField {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+
+    font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	font-size: 12px;
+    color: rgb(102, 102, 102);
+    
+	resize: none;
+}
+
+/* States */
+.waf-theme.softGrayBlue .waf-textField.waf-state-focus {
+    border-color: rgb(131, 131, 132);
+}
+.waf-theme.softGrayBlue .waf-textField.waf-state-disabled {
+	opacity: 0.4;
+}
+
+/**
+ * -----------------------------------
+ * @section textfield label
+ * -----------------------------------
+ */
+.waf-theme.softGrayBlue .waf-label-textField {
+	font-size: 12px;
+    color: rgb(102, 102, 102);
+}
+/* States */
+.waf-theme.softGrayBlue .waf-label-textField.waf-state-disabled {
+	opacity: 0.4;
+}
+
+
+/** 
+ * UI Autocomplete
+ *
+ * Includes autoComplete-specific rules of the 'Soft Gray' theme
+ */
+
+.waf-theme.softGrayBlue .ui-autocomplete {
+    padding: 0;
+
+    border: 1px solid rgb(167, 167, 168);
+    border-radius: 3px;
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(185, 185, 185)), color-stop(1, rgb(203, 203, 203)));
+    background-image: -webkit-linear-gradient(top, rgb(185, 185, 185) 0%, rgb(203, 203, 203) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(185, 185, 185) 0%, rgb(203, 203, 203) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(185, 185, 185) 0%, rgb(203, 203, 203) 100%);
+    background-image:      -o-linear-gradient(top, rgb(185, 185, 185) 0%, rgb(203, 203, 203) 100%);
+    background-image:         linear-gradient(top, rgb(185, 185, 185) 0%, rgb(203, 203, 203) 100%);
+}
+
+.waf-theme.softGrayBlue .ui-autocomplete li a {
+    padding: 4px 10px;
+
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 0;
+    
+    font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	font-size: 12px;
+    color: rgb(250, 250, 250);
+    
+    cursor: pointer;
+}
+.waf-theme.softGrayBlue .ui-autocomplete li:first-of-type a {
+    border-top-width: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.waf-theme.softGrayBlue .ui-autocomplete li:last-of-type a {
+    border-bottom-width: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.waf-theme.softGrayBlue .ui-autocomplete li a.ui-state-hover {    
+    margin: 0;
+    border-color: rgb(176, 176, 176);
+    
+    color: rgb(51, 51, 51);
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(250, 249, 251)), color-stop(1, rgb(227, 227, 235)));
+    background-image: -webkit-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:      -o-linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+    background-image:         linear-gradient(top, rgb(250, 249, 251) 0%, rgb(227, 227, 235) 100%);
+}
+.waf-theme.softGrayBlue .ui-autocomplete li:first-of-type a.ui-state-hover {
+    border-top-color: transparent;
+}

@@ -1,0 +1,454 @@
+/**
+ * HTML
+ *
+ */
+
+*,
+*::before,
+*::after {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+/**
+ * waf-theme
+ *
+ */
+
+.waf-theme {
+    -webkit-font-smoothing: antialiased;
+            font-smooth: always;
+}
+
+.waf-theme *:focus {
+    /* outline: none; */
+}
+
+
+/**
+ * waf-ui
+ * Generic Classes
+ *
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Box
+ * -------------------------------------------------------
+ */
+
+.waf-ui-box {
+    border-style: solid;
+    border-width: 0;
+}
+.waf-ui-box > .waf-ui-header {
+    border-width: 0 0 1px 0;
+    border-style: inherit;
+    border-color: inherit;
+    
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.waf-ui-box > .waf-ui-footer {
+    border-width: 1px 0 0 0;
+    border-style: inherit;
+    border-color: inherit;
+    
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+
+/**
+ * Fonts
+ *
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section font face
+ * @note Generic icon fonts
+ * -------------------------------------------------------
+ */
+
+/**
+ * -----------------------------------
+ * @subsection Web Symbols icon font
+ * -----------------------------------
+ */
+
+@font-face { 
+    font-family: 'WebSymbolsRegular';
+    src: url('/walib/WAF/fonts/websymbols-regular-webfont.eot');
+    src: url('/walib/WAF/fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/walib/WAF/fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('/walib/WAF/fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('/walib/WAF/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+}
+
+
+/**
+ * -----------------------------------
+ * @subsection Foundation icon font
+ * -----------------------------------
+ */
+
+/* General */
+@font-face {
+  font-family: 'FoundationIconsGeneral';
+  src: url('/walib/WAF/fonts/foundation-icons-general.eot');
+  src: url('/walib/WAF/fonts/foundation-icons-general.eot?#iefix') format('embedded-opentype'),
+       url('/walib/WAF/fonts/foundation-icons-general.woff') format('woff'),
+       url('/walib/WAF/fonts/foundation-icons-general.ttf') format('truetype'),
+       url('/walib/WAF/fonts/foundation-icons-general.svg#FoundationIconsGeneral') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Enclosed */
+@font-face {
+    font-family: 'FoundationIconsGeneralEnclosed';
+    src: url('/walib/WAF/fonts/foundation-icons-general-enclosed.eot');
+    src: url('/walib/WAF/fonts/foundation-icons-general-enclosed.eot?#iefix') format('embedded-opentype'),
+         url('/walib/WAF/fonts/foundation-icons-general-enclosed.woff') format('woff'),
+         url('/walib/WAF/fonts/foundation-icons-general-enclosed.ttf') format('truetype'),
+         url('/walib/WAF/fonts/foundation-icons-general-enclosed.svg#FoundationIconsGeneralEnclosed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Social */
+@font-face {
+    font-family: 'FoundationIconsSocial';
+    src: url('/walib/WAF/fonts/foundation-icons-social.eot');
+    src: url('/walib/WAF/fonts/foundation-icons-social.eot?#iefix') format('embedded-opentype'),
+         url('/walib/WAF/fonts/foundation-icons-social.woff') format('woff'),
+         url('/walib/WAF/fonts/foundation-icons-social.ttf') format('truetype'),
+         url('/walib/WAF/fonts/foundation-icons-social.svg#FoundationIconsSocial') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/**
+ * Widgets
+ *
+ */
+
+
+/**
+ * -------------------------------------------------------
+ * @section Icon
+ * -------------------------------------------------------
+ */
+
+.waf-icon {
+    position: relative;
+    display: block;
+    background-repeat: no-repeat;
+    text-indent: -100000px;
+    overflow: hidden;
+}
+.waf-icon :first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.waf-icon-16 {
+    width: 16px;
+    height: 16px;
+}
+.waf-icon-24 {
+    width: 24px;
+    height: 24px;
+}
+.waf-icon-32 {
+    width: 32px;
+    height: 32px;
+}
+
+/* state */
+.waf-icon-16:hover :first-child,
+.waf-state.waf-state-hover .waf-icon-16 :first-child {
+    top: -16px;
+}
+.waf-icon-16:active :first-child,
+.waf-state.waf-state-active .waf-icon-16 :first-child {
+    top: -32px;
+}
+.waf-icon-16.disabled :first-child,
+.waf-state.waf-state-disabled .waf-icon-16 :first-child {
+    top: -48px;
+}
+
+
+.waf-icon-24:hover :first-child {
+    top: -24px;
+}
+.waf-icon-24:active :first-child {
+    top: -48px;
+}
+.waf-icon-24.disabled :first-child {
+    top: -72px;
+}
+
+
+.waf-icon-32:hover :first-child {
+    top: -32px;
+}
+.waf-icon-32:active :first-child {
+    top: -64px;
+}
+.waf-icon-32.disabled :first-child {
+    top: -96px;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section Toolbar
+ * -------------------------------------------------------
+ */
+
+.waf-theme .waf-toolbar {
+    list-style-type: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select:none;
+    display: block;
+}
+.waf-theme .waf-toolbar .waf-toolbar-element {
+    position: relative;
+    height: 16px;
+    display: inline-block;
+    margin: 3px 0 0 6px;
+    overflow: hidden;
+    text-align: left;
+    cursor: pointer;
+}
+.waf-theme .waf-toolbar .waf-icon {
+    float: left;
+    vertical-align: middle;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section Status
+ * -------------------------------------------------------
+ */
+
+.waf-status {
+    display: table;
+    width: 100%;
+}
+.waf-status-element {
+    display: table-cell;
+    width: 33%;
+    vertical-align: middle;
+    overflow: visible;
+    white-space: nowrap;
+}
+.waf-status-left {
+    text-align: left !important;
+}
+.waf-status-center {
+    text-align: center !important;
+}
+.waf-status-right {
+    text-align: right !important;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section jQuery widgets text inheritance
+ * -------------------------------------------------------
+ */
+
+html .ui-widget * {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    color: inherit;
+    text-align: inherit;
+}
+html .ui-widget *:not(strong) {
+    font-weight: inherit;    
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section Our widgets in Jquery Panels
+ * -------------------------------------------------------
+ */
+.waf-widget .ui-resizable-se {
+    right: -3px;
+    bottom: -3px;
+}
+
+.waf-widget-panel .ui-widget-content
+{
+    border: 0px;
+}
+
+.waf-widget-panel .ui-widget
+{
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:11px;
+}
+
+.waf-widget-panel .ui-dialog .ui-dialog-title 
+{
+    margin:0px;
+}
+
+.waf-widget-panel .ui-dialog-title 
+{
+    margin:0px;
+}
+
+
+.waf-widget-panel .ui-dialog .ui-dialog-content
+{
+    border:0 none;
+    padding:0;
+    overflow:hidden;
+}
+
+.waf-widget-panel.ui-dialog
+{
+    border:0 none;
+    padding:0;
+    overflow:hidden;
+}
+
+.waf-widget-panel .ui-dialog-content
+{
+    border:0 none;
+    padding:0;
+    overflow:hidden;
+}
+
+.waf-widget-panel .ui-dialog .ui-dialog-titlebar 
+{
+    padding:0;
+}
+
+.waf-widget-panel .ui-dialog-titlebar 
+{
+    padding:0;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section Expand/Collapse
+ * -------------------------------------------------------
+ */
+
+.waf-expandable
+{
+    height:9px;
+    width:6px;
+}
+
+.waf-expandable.waf-collapsed
+{
+    background-image: url("/walib/WAF/widget/css/images/collapsed.png");
+}
+.waf-expandable.waf-collapsed:hover
+{
+    background-image: url("/walib/WAF/widget/css/images/collapsed-over.png");
+}
+
+.waf-expandable.waf-expanded
+{
+    background-image: url("/walib/WAF/widget/css/images/expanded.png"); 
+}
+.waf-expandable.waf-expanded:hover
+{
+    background-image: url("/walib/WAF/widget/css/images/expanded-over.png");    
+}
+
+.ui-datepicker-trigger {
+    margin-left:5px;
+    margin-top:3px;
+}
+
+/*
+ * close button
+ */
+
+.waf-menuitem {
+    position: relative;
+}
+.waf-menuitem .waf-menuitem-part-close {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+
+/**
+ * -------------------------------------------------------
+ * @section wListView
+ * -------------------------------------------------------
+ */
+
+.waf-widget.waf-wlistview {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+    -webkit-overflow-scrolling: touch;
+}
+
+.waf-widget.waf-wlistview li {
+    position: relative;
+    width:  100%;
+
+    overflow: hidden;
+
+    border-style: inherit;
+    border-color: inherit;
+}
+.waf-widget.waf-wlistview li::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.waf-widget.waf-wlistview li .content {
+    position: absolute;
+    top:    0;
+    left:   0;
+    width:  100%;
+    height: 100%;
+}
+.waf-widget.waf-wlistview li .content.waf-state-swyped {
+    left: -50%;
+}
+.waf-widget.waf-wlistview li img {
+    display: block;
+    float: left;
+}
+.waf-widget.waf-wlistview li h1, 
+.waf-widget.waf-wlistview li h2, 
+.waf-widget.waf-wlistview li h3, 
+.waf-widget.waf-wlistview li h4, 
+.waf-widget.waf-wlistview li h5, 
+.waf-widget.waf-wlistview li h6,
+.waf-widget.waf-wlistview li p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    margin: 0;
+}

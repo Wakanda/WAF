@@ -1,0 +1,188 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+
+
+/**
+ * Widget fileUpload
+ *
+ * Includes mandatory rules for the fileUpload widget
+ *
+ * @link /walib/WAF/widget/css/widget.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-fileUpload {
+    display: inline-block;
+    overflow: visible !important;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Input File
+ * -------------------------------------------------------
+ */
+.waf-fileUpload input[type=file] {
+    width: 100%;
+    height:100%;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Paragraph
+ * -------------------------------------------------------
+ */
+.waf-fileUpload .waf-fileUpload-paragraph {
+    position: absolute;
+    top:    0;
+    left:   0;
+    bottom: 0;
+    
+    height: 100%;
+    width: auto;
+    
+    padding-left: 10px;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section fileList
+ * -------------------------------------------------------
+ */
+/* States */
+.waf-fileUpload .waf-fileUpload-fileList.waf-state-disabled{
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+}
+
+.waf-fileUpload .waf-fileUpload-fileList {
+    overflow: hidden;
+}
+.waf-fileUpload .waf-fileUpload-fileList .waf-fileUpload-fileList-table{
+    position: relative;
+    width: 100%;
+    cursor: default;
+    overflow: hidden;
+}
+
+.waf-fileUpload .waf-fileUpload-fileList .waf-fileUpload-fileItem{
+    height: 15px;
+}
+.waf-fileUpload .waf-fileUpload-fileList:not(.waf-state-disabled) .waf-fileUpload-fileItem:hover {
+    background-color: rgb(175, 175, 175);
+}
+
+.waf-fileUpload-fileItem-name{
+    padding: 0 0 0 6px;
+}
+
+.waf-fileUpload-fileItem-button{
+    width: 19px;
+    padding: 0;
+    text-align: center;
+}
+
+.waf-fileUpload .waf-fileUpload-fileList-menu .waf-fileUpload-fileList-table .waf-fileUpload-fileItem .waf-fileUpload-fileItem-button button {
+    display: block;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    background-color: transparent;
+    background-image: url(/walib/WAF/widget/fileUpload/icons/delete.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+    border: 0 none;
+    box-shadow: none;
+}
+
+.waf-fileUpload-fileList.waf-fileUpload-fileList-popup {
+    position: absolute;
+    width: 210px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    
+	-webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
+	   -moz-box-shadow: 0 0 10px rgb(0, 0, 0);
+	        box-shadow: 0 0 10px rgb(0, 0, 0);
+	
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	    -ms-border-radius: 3px;
+	     -o-border-radius: 3px;
+	        border-radius: 3px;
+	
+	overflow: visible;
+}
+
+.waf-fileUpload-fileList.waf-fileUpload-fileList-popup:before {
+	position: absolute;
+    content: '';
+    background-color: inherit;
+    /*background-image: inherit;*/
+    width: 15px;
+    height: 15px; 
+	left: 50%;
+        margin-left: -7.5px;
+	top: -9px;/*
+    border-top: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);*/
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: inherit;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+            transform: rotate(45deg);
+    
+	-webkit-box-shadow: -3px -3px 3px rgba(0, 0, 0, 0.3);
+	   -moz-box-shadow: -3px -3px 3px rgba(0, 0, 0, 0.3);
+	        box-shadow: -3px -3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.waf-fileUpload-fileList.waf-fileUpload-fileList-menu {
+    
+}
+
+#waf-notify-container {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+    font-size: 11px;
+    font-family: "Lucida grande", "Segoe UI", "Tahoma", "sans-serif";
+}
+
+#waf-notify-container #waf-notify {
+    display: none;
+}
+
+.waf-fileUpload-confirm {
+    outline-width: 0px; 
+    outline-style: initial; 
+    outline-color: initial; 
+    height: auto; 
+    width: 400px; 
+    top: 420px; 
+    left: 750px; 
+    display: block; 
+    z-index: 1002; 
+}

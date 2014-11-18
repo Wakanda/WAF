@@ -1,0 +1,2525 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+
+
+/** 
+ * Widget skin
+ *
+ * Includes generic rules for all widgets available for the 'cupertino' theme
+ *
+ * @link /walib/WAF/widget/css/widget.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino {
+    background-color: rgb(255, 255, 255);
+    
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Widget
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino,
+.waf-theme.cupertino a {
+    border-color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
+}
+
+.waf-theme.cupertino ul, 
+.waf-theme.cupertino li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Widget header
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-widget-header,
+.waf-theme.cupertino .waf-container.waf-widget-header {
+	border-width: 0 0 1px 0;
+	border-style: solid;
+	border-top-color:    rgb(153, 153, 153);
+	border-right-color:  rgb(153, 153, 153);
+	border-bottom-color: rgb(0, 0, 0);
+	border-left-color:   rgb(153, 153, 153);
+	
+	background-color: rgb(109, 133, 163);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.46)), color-stop(0.5, rgba(255, 255, 255, 0.17)), color-stop(0.5, rgba(255, 255, 255, 0.14)), to(rgba(255, 255, 255, 0)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+	background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+	background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+	background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+
+	text-shadow: rgb(91, 103, 117) 0 -1px;	
+	color: rgb(255, 255, 255);	
+	font-weight: bold;
+}
+
+/**
+ * -----------------------------------
+ * @subsection Widget body
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-widget-body,
+.waf-theme.cupertino .waf-widget.waf-container.waf-widget-body {
+	background-color: transparent;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Widget footer
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-widget-footer,
+.waf-theme.cupertino .waf-container.waf-widget-footer {
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-top-color:    rgb(0, 0, 0);
+	border-right-color:  rgb(153, 153, 153);
+	border-bottom-color: rgb(153, 153, 153);
+	border-left-color:   rgb(153, 153, 153);
+
+	background-color: rgb(109, 133, 163);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.46)), color-stop(0.5, rgba(255, 255, 255, 0.17)), color-stop(0.5, rgba(255, 255, 255, 0.14)), to(rgba(255, 255, 255, 0)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+	background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+	background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+	background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+
+    box-shadow: inset 0 1px 0 rgb(238, 238, 238);
+    
+	text-shadow: rgb(0, 0, 0) 1px 1px;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+}
+
+/**
+ * -----------------------------------
+ * @subsection Widget alternate content
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-widget-even {
+	background-color: rgb(240, 240, 240);
+	border-bottom: 1px solid rgb(196, 196, 196);
+	border-top: 2px solid rgb(255, 255, 255);
+}
+.waf-theme.cupertino .waf-widget-odd {
+	background-color: rgb(240, 240, 240);
+	border-bottom: 1px solid rgb(196, 196, 196);
+	border-top: 2px solid rgb(255, 255, 255);
+}
+.waf-theme.cupertino .waf-widget-even.waf-state-active, 
+.waf-theme.cupertino .waf-widget-odd.waf-state-active {
+	border-top: 1px solid #0589F4;
+	border-bottom: 1px solid #0589F4;
+}
+
+/** 
+ * Widget button
+ *
+ * Includes button-specific rules of the 'cupertino' theme
+ *
+ * @link /walib/WAF/widget/button/css/widget-button.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section button container
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-button {
+    margin: 0;
+	
+    border-style: solid;
+    border-top-color: rgb(90, 90, 90);
+    border-right-color: rgb(90, 90, 90);
+    border-bottom-color: rgb(190, 190, 190);
+    border-left-color: rgb(90, 90, 90);
+    border-radius: 5px;
+
+    background-color: rgb(78, 117, 163); 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(50%, rgba(255, 255, 255, 0.2)), color-stop(50%, rgba(255, 255, 255, 0.1)), color-stop(100%, rgba(255, 255, 255, 0)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:         linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+
+    -webkit-background-clip: border-box;
+            background-clip: border-box;
+
+    -webkit-background-origin: padding-box;
+            background-origin: padding-box;
+
+    box-shadow: inset 0 0px 2px rgb(62, 80, 126);
+
+    text-shadow: rgb(91, 103, 117) 0 -1px;
+     
+    font-weight: bold;
+    font-size: 12px;
+    color: #eee;    
+}
+/* States */
+.waf-theme.cupertino .waf-button.waf-state-active {
+    background-color: rgb(32, 69, 122);
+}
+.waf-theme.cupertino .waf-button.waf-state-disabled {
+    opacity: 0.4;
+}
+
+/**
+ * -----------------------------------
+ * @subsection button exceptions
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-button:not(.waf-navigationView-header-back-button) {
+    border-width: 1px;
+}
+
+
+/** 
+ * Widget buttonImage
+ *
+ * Includes buttonImage-specific rules of the 'cupertino' theme
+ *
+ * @link /walib/WAF/widget/buttonImage/css/widget-buttonImage.css
+ *
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section button container
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-buttonImage  {
+    margin: 0 0 3px 0;
+
+    border-style: solid;
+    border-color: rgb(90, 90, 90);
+    border-radius: 4px;
+    
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+
+    background-color: rgb(65,105,222);
+    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(255, 255, 255, 0.4 )), to(rgba(255, 255, 255, 0)), color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.5, rgba(255, 255, 255, 0.1)) );
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:         linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    
+    -webkit-background-origin: padding-box;
+    -webkit-background-clip: border-box;
+
+    box-shadow: inset 0 0px 2px rgb(62, 80, 126);
+    
+    text-shadow: rgb(91, 103, 117) 0 -1px;
+
+    color: #eee;
+	font-size: 12px;
+	font-weight: bold;
+}
+.waf-theme.cupertino .waf-buttonImage.waf-state-active {
+     background-color: rgb(56, 87, 182);
+}
+
+
+/**
+ * Widget canvas
+ *
+ * Includes canvas-specific rules of the 'Cupertino' theme
+ *
+ * @link /walib/WAF/widget/canvas/css/widget-canvas.css
+ */
+
+/**
+ * -----------------------------------
+ * @section Main
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-canvas {
+	border: 1px solid rgb(171, 171, 171);
+    background-color: rgb(255, 255, 255);
+}
+
+
+/** 
+ * Widget container
+ *
+ * Includes container-specific rules of the 'cupertino' theme
+ *
+ * @link /walib/WAF/widget/container/css/widget-container.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section container container
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-container {
+	border: 1px solid rgb(171, 171, 171);
+    border-radius: 10px;
+	        
+	background-color: rgb(255, 255, 255);
+}
+
+
+/** 
+ * Widget dataGrid
+ *
+ * Includes dataGrid-specific rules of the 'cupertino' theme
+ *
+ * @link /walib/WAF/widget/dataGrid/css/widget-dataGrid.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-dataGrid {
+    border-radius: 5px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+} 
+
+/**
+ * -----------------------------------
+ * @subsection Widget header
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-widget-header,
+.waf-theme.cupertino .waf-widget.waf-container.waf-widget-header {
+    box-shadow: inset 0 1px 0 rgb(238, 238, 238);
+}
+.waf-theme.cupertino .waf-dataGrid .waf-dataGrid-header {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-width: 1px;
+}
+
+/**
+ * -----------------------------------
+ * @subsection Widget body
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-dataGrid .waf-dataGrid-body {
+     background-image: url("/walib/WAF/widget/dataGrid/skin/cupertino/images/grid_back.png");
+}
+
+/**
+* -----------------------------------
+* @subsection Widget rows & cells
+* -----------------------------------
+*/
+.waf-theme.cupertino .waf-dataGrid .waf-dataGrid-cell .content {
+    padding-left: 10px;
+}
+.waf-theme.cupertino .waf-dataGrid-cell > .content.content-img img.inside-img {
+    max-height: 40px !important;
+}
+
+/* States */
+.waf-theme.cupertino .waf-dataGrid .waf-dataGrid-row.waf-state-hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0163E7), color-stop(100%, #0589F4));
+	background-image: -webkit-linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    background-image:    -moz-linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    background-image:     -ms-linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    background-image:      -o-linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    background-image:         linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    
+	color: rgb(255, 255, 255);
+}
+.waf-theme.cupertino .waf-dataGrid .waf-dataGrid-row.waf-state-active {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0163E7), color-stop(100%, #0589F4));
+	background-image: -webkit-linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    background-image:    -moz-linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    background-image:     -ms-linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    background-image:      -o-linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    background-image:         linear-gradient(top, #0163E7 0%, #0589F4 100%);
+    
+	color: rgb(255, 255, 255);
+}
+
+/**
+* -----------------------------------
+* @subsection Widget footer
+* -----------------------------------
+*/
+.waf-theme.cupertino .waf-dataGrid .waf-dataGrid-footer {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-width: 1px;
+}
+
+
+/**
+ * Widget frame
+ *
+ * Includes frame-specific rules of the 'Cupertino' theme
+ *
+ * @link /walib/WAF/widget/frame/css/widget-frame.css
+ */
+
+/**
+ * -----------------------------------
+ * @section Main
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-frame {
+	border: 1px solid rgb(171, 171, 171);
+    background-color: rgb(255, 255, 255);
+}
+
+
+/** 
+ * Widget listView
+ *
+ * Includes listView-specific rules of the 'cupertino' theme
+ *
+ * @link /walib/WAF/widget/list/css/widget-list.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section row
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-listView .waf-list-row {
+    border: 0px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #fff;
+    border-radius: 0px;
+    
+    background: -webkit-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(237,237,237,1) 100%); 
+    background: linear-gradient(to bottom,  rgba(247,247,247,1) 0%,rgba(237,237,237,1) 100%);
+} 
+/* States */
+.waf-theme.cupertino .waf-listView .waf-list-row.waf-state-selected {
+    border-left: 0px;
+    border-right: 0px;
+    border-top-color: transparent;
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(5, 137, 244)), to(rgb(1, 99, 231)));
+	background-image: -webkit-linear-gradient(top, rgb(5, 137, 244) 0%, rgb(1, 99, 231) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(5, 137, 244) 0%, rgb(1, 99, 231) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(5, 137, 244) 0%, rgb(1, 99, 231) 100%);
+    background-image:      -o-linear-gradient(top, rgb(5, 137, 244) 0%, rgb(1, 99, 231) 100%);
+    background-image:         linear-gradient(top, rgb(5, 137, 244) 0%, rgb(1, 99, 231) 100%);
+    box-shadow: none;
+}
+
+.waf-theme.cupertino .waf-listView.widget-list-inset {
+    border: 1px solid #999;
+    -webkit-box-sizing: center-box;
+    box-sizing: center-box;
+}
+
+.waf-theme.cupertino .waf-listView.widget-list-inset .waf-matrix {
+    /*border-radius: 10px;*/
+}
+
+.waf-theme.cupertino .waf-listView .waf-list-mainLabel {
+    overflow: hidden;
+    max-width: 190px;
+
+    background: none;
+    
+    white-space: nowrap;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    font-weight: bold;
+}
+.waf-theme.cupertino .waf-listView .waf-list-row .waf-list-mainLabel {
+    background-color: transparent;
+}
+
+.waf-theme.cupertino .waf-listView .waf-list-secondLabel {
+    background: none;
+    font-size: 11px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+}
+.waf-theme.cupertino .waf-listView .waf-list-number {
+    border: 2px solid #fff;
+    box-shadow: 1px 2px 3px #999;
+    border-radius: 30px;
+    padding:0 4px;
+    min-width: 30px;
+    min-height: 20px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(68,138,214,1)), color-stop(100%,rgba(28,106,201,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(68,138,214,1) 0%,rgba(28,106,201,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(to bottom,  rgba(68,138,214,1) 0%,rgba(28,106,201,1) 100%); /* W3C */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    line-height: 16px;
+    font-size: 12px;
+}
+
+.waf-theme.cupertino .waf-listView .waf-list-row.waf-state-selected .waf-list-mainLabel {
+    color: #fff;
+}
+
+.waf-theme.cupertino .waf-listView .waf-list-row .waf-list-buttonGoTo {
+    background:none;
+    border: 0px;
+    box-shadow: none;
+    background-image: url(/walib/WAF/widget/list/skin/images/widget-list-goNext.png);
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+
+/** 
+ * Widget matrix
+ *
+ * Includes matrix-specific rules of the 'cupertino' theme
+ *
+ * @link /walib/WAF/widget/matrix/css/widget-matrix.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section matrix element container
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-matrix .waf-matrix-element {
+	-webkit-transition: border 0.2s ease-in-out,
+						-webkit-box-shadow 0.2s ease-in-out;
+	   -moz-transition: border 0.2s ease-in-out,
+						background-image 0.2s ease-in-out,
+						-moz-box-shadow 0.2s ease-in-out;
+	     -o-transition: border 0.2s ease-in-out,
+						background-image 0.2s ease-in-out,
+						box-shadow 0.2s ease-in-out;
+}
+
+/**
+ * -------------------------------------------------------
+ * @subsection matrix elements states
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-matrix-element.waf-container.waf-state-selected {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: rgb(76, 76, 76) 0px 1px 1px 1px;	                
+}
+
+
+/**
+ * Widget menuBar
+ *
+ * Includes menuBar-specific rules of the 'cupertino' theme
+ *
+ * @link /walib/WAF/widget/menubar/css/widget-menubar.css
+ */
+ 
+ /**
+ * -------------------------------------------------------
+ * @section menuBar container
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-tabView .waf-menuBar.waf-menuBar-vertical {
+    padding: 5px;
+}
+
+
+/**
+ * Widget menuItem
+ *
+ * Includes menuItem-specific rules of the 'cupertino' theme
+ *
+ * @link /walib/WAF/widget/menuitem/css/widget-menuitem.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section menuItem
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-menuItem {
+    border-top-color: rgb(84, 103, 125);
+    border-right-color: rgb(94, 110, 133);
+    border-bottom-color: rgb(107, 121, 136);
+    border-left-color: rgb(144, 156, 171);
+    
+    background-color: rgb(119, 133, 147);
+
+	text-shadow: rgba(255, 255, 255, 0.65) 0 2px;
+	color: rgb(63, 92, 132);
+    
+	-webkit-tap-highlight-color: transparent;
+}
+.waf-theme.cupertino .waf-menuItem-level-0  {
+	border-width: 1px;
+	border-style: solid;
+	
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, hsla(0, 0%, 100%, 0)), color-stop(0, hsla(0.01, 0%, 100%, 0.5)), color-stop(0.97, hsla(0, 0%, 100%, 0.8)), color-stop(1, hsla(0, 0%, 100%, 0)));
+	background-image: -webkit-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.5) 1%, hsla(0, 0%, 100%, 0.8) 97%, hsla(0, 0%, 100%, 0) 100%);
+    background-image:    -moz-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.5) 1%, hsla(0, 0%, 100%, 0.8) 97%, hsla(0, 0%, 100%, 0) 100%);
+    background-image:     -ms-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.5) 1%, hsla(0, 0%, 100%, 0.8) 97%, hsla(0, 0%, 100%, 0) 100%);
+    background-image:      -o-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.5) 1%, hsla(0, 0%, 100%, 0.8) 97%, hsla(0, 0%, 100%, 0) 100%);
+    background-image:         linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.5) 1%, hsla(0, 0%, 100%, 0.8) 97%, hsla(0, 0%, 100%, 0) 100%);
+
+    box-shadow: 0 1px 1px hsla(0, 0%, 100%, 0.5);
+    
+	font-weight: bold;
+}
+
+/* States */
+.waf-theme.cupertino .waf-menuItem.waf-state-active,
+.waf-theme.cupertino .waf-menuItem.waf-state-selected {
+    border-top-color: rgb(56, 72, 98);
+    border-bottom-color: rgb(90, 109, 135);
+    
+    background-color: rgb(100, 119, 146);
+    
+	color: rgb(255, 255, 255);
+	text-shadow: rgba(0, 0, 0, 0.35) 0 -2px;
+}
+.waf-theme.cupertino .waf-menuItem-level-0.waf-state-active,
+.waf-theme.cupertino .waf-menuItem-level-0.waf-state-selected {
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, hsla(0, 0%, 100%, 0)), color-stop(0.96, hsla(0, 0%, 100%, 0.27)), color-stop(1, hsla(0, 0%, 100%, 0)));
+	background-image: -webkit-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.27) 96%, hsla(0, 0%, 100%, 0) 100%);
+	background-image:    -moz-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.27) 96%, hsla(0, 0%, 100%, 0) 100%);
+	background-image:     -ms-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.27) 96%, hsla(0, 0%, 100%, 0) 100%);
+	background-image:      -o-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.27) 96%, hsla(0, 0%, 100%, 0) 100%);
+	background-image:         linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.27) 96%, hsla(0, 0%, 100%, 0) 100%);
+}
+
+/**
+ * -----------------------------------
+ * @subsection menuItem of horizontal menuBar
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-menuItem-horizontal.waf-menuItem-level-0.waf-menuItem-first {
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+.waf-theme.cupertino .waf-menuItem-horizontal.waf-menuItem-level-0.waf-menuItem-last {
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
+/**
+ * -----------------------------------
+ * @subsection menuItem of vertical menuBar
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-menuItem-vertical.waf-menuItem-level-0 {
+	border-top-width: 0;
+	border-right-width: 1px;
+	border-bottom-width: 0;
+	border-left-width: 1px;
+}
+
+/**
+ * -----------------------------------
+ * @subsection menuItem of vertical menuBar
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-menuItem .waf-richText {
+	color: inherit;
+}
+
+
+/** 
+ * Widget navigationView
+ *
+ * Includes navigationView-specific rules of the 'cupertino' theme
+ *
+ * @link /walib/WAF/widget/navigationView/css/widget-navigationView.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section main
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-navigationView {
+	background-color: transparent;
+}
+
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-content,
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-view,
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-view > .waf-widget-body,
+/* GUI Designer */
+body.yui-layout .waf-theme.cupertino .waf-navigationView .waf-navigationView-view > div > div > .waf-widget-body
+/* // GUI Designer */ 
+{
+    border-radius: 0;
+}
+
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-view > .waf-widget-body,
+/* GUI Designer */
+body.yui-layout .waf-theme.cupertino .waf-navigationView .waf-navigationView-view > div > div > .waf-widget-body
+/* // GUI Designer */ 
+{
+	border: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView content & views
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-content {
+	overflow: hidden;
+	border: none;
+	
+	background-color: transparent;
+}
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-view {
+	background-color: transparent;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView header & footer
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-view > .waf-widget-header,
+.waf-theme.cupertino .waf-navigationView > .waf-widget-footer,
+/* GUI Designer */
+body.yui-layout .waf-theme.cupertino .waf-navigationView .waf-navigationView-view > div > div > .waf-widget-header,
+body.yui-layout .waf-theme.cupertino .waf-navigationView > div > div > .waf-widget-footer
+/* // GUI Designer */ 
+{
+	box-shadow: none;
+}
+
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-view > .waf-widget-header,
+/* GUI Designer */
+body.yui-layout .waf-theme.cupertino .waf-navigationView .waf-navigationView-view > div > div > .waf-widget-header
+/* // GUI Designer */ 
+{
+    border-bottom-color: rgb(100, 100, 100);
+    border-radius: 0;
+	
+    text-align: center;
+}
+
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-view > .waf-widget-header .waf-navigationView-title,
+/* GUI Designer */
+body.yui-layout .waf-theme.cupertino .waf-navigationView .waf-navigationView-view > div > div > .waf-widget-header .waf-navigationView-title
+/* // GUI Designer */ 
+{
+    line-height: 40px;
+    font-size: 26px;
+	color: rgb(255, 255, 255);
+	text-shadow: 0 -1px 0 #5b6775;
+}
+
+.waf-theme.cupertino .waf-navigationView > .waf-widget-footer,
+/* GUI Designer */
+body.yui-layout .waf-theme.cupertino .waf-navigationView > div > div > .waf-widget-footer
+/* // GUI Designer */ 
+{
+    border-top-color: rgb(100, 100, 100);
+    border-radius: 0;	
+}
+
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-view > .waf-widget-header .waf-select,
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-view > .waf-widget-header .waf-label,
+/* GUI Designer */
+body.yui-layout .waf-theme.cupertino .waf-navigationView .waf-navigationView-view > div > div > .waf-widget-header .waf-select,
+body.yui-layout .waf-theme.cupertino .waf-navigationView .waf-navigationView-view > div > div > .waf-widget-header .waf-label
+/* // GUI Designer */ 
+{
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    text-shadow: none;
+    text-align: left;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView body
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-view > .waf-widget-body,
+/* GUI Designer */
+body.yui-layout .waf-theme.cupertino .waf-navigationView .waf-navigationView-view > div > div > .waf-widget-body
+/* // GUI Designer */ 
+{
+    border-style: none;
+	border-color: rgb(92, 99, 104);
+    border-radius: initial;
+    
+    -webkit-background-size: 7px;
+       -moz-background-size: 7px;
+        -ms-background-size: 7px;
+         -o-background-size: 7px;
+            background-size: 7px;
+
+    background-color: rgb(109, 133, 163);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0.7, hsla(0, 0%, 100%, 0.59)), color-stop(0.7, hsla(0, 0%, 100%, 0.68)));
+    background-image: -webkit-linear-gradient(left, hsla(0, 0%, 100%, 0.59) 70%, hsla(0, 0%, 100%, 0.68) 70%);
+    background-image:    -moz-linear-gradient(left, hsla(0, 0%, 100%, 0.59) 70%, hsla(0, 0%, 100%, 0.68) 70%);
+    background-image:     -ms-linear-gradient(left, hsla(0, 0%, 100%, 0.59) 70%, hsla(0, 0%, 100%, 0.68) 70%);
+    background-image:      -o-linear-gradient(left, hsla(0, 0%, 100%, 0.59) 70%, hsla(0, 0%, 100%, 0.68) 70%);
+    background-image:         linear-gradient(left, hsla(0, 0%, 100%, 0.59) 70%, hsla(0, 0%, 100%, 0.68) 70%);
+    
+    box-shadow: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView view
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-view {
+	border-width: 0;
+	-webkit-transition: -webkit-transform 0.5s;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView back button
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-header-back-button {
+    position: absolute;
+    overflow: visible !important;
+    
+    border: 0;
+    border-radius: 1000px;
+    
+    cursor: default;
+}
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-header-back-button:before {
+    content: '';
+    position: absolute;
+    overflow: hidden;
+
+    width:  20px;
+    height: 20px;
+
+    top:  4px;
+    left: -8px;
+    
+    border-left: 1px solid rgba(0, 0, 0, 0.45);
+	border-bottom: 1px solid rgba(0, 0 ,0, 0.25);
+
+    background-color: inherit;    
+	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.46)), color-stop(0.5, rgba(255, 255, 255, 0.17)), color-stop(0.5, rgba(255, 255, 255, 0.14)), to(rgba(255, 255, 255, 0)));
+	background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+	background-image:    -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+	background-image:     -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+	background-image:      -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+	
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 1px 1px rgba(0, 0, 0, 0.25);
+	
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+            transform: rotate(45deg);
+            
+	clip: rect(1px 20px 30px 0);
+}
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-header-back-button span,
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-header-back-button input {
+    position: absolute;
+
+    height: 29px;
+
+    top:    0;
+    right:  -5px;
+    bottom: 0;
+    left:   0;
+
+    margin-top: auto !important;
+    
+    line-height: 28px;
+    
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-left-width: 0;
+    border-radius: 0 5px 5px 0;
+
+    background-color: inherit;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.46)), color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.5, rgba(255, 255, 255, 0.14)), to(rgba(255, 255, 255, 0)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+	background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+	background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+	background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 1px 1px rgba(0, 0, 0, 0.25);
+	
+	clip: rect(auto auto 30px 2px);
+    font-size: 12px;
+}
+.waf-theme.cupertino .waf-navigationView .waf-navigationView-header-back-button input {
+    width: auto!important;
+    height: auto!important;
+    left: 1px !important;
+    right: -5px !important;
+    
+    border: 1px solid rgba(0, 0, 0, 0.4) !important;
+    border-left-width: 0!important;
+    
+    background-color: inherit !important;
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0)) !important;
+    /*background-color: rgba(255, 0, 0, 0.2)!important;*/
+}
+
+/** 
+ * Widget popover
+ *
+ * Includes popover-specific rules of the 'cupertino' theme
+ *
+ * @link /walib/WAF/widget/popover/css/widget-popover.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView container
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-popover  {
+	border: 1px solid #000;
+    border-radius: 11px;
+
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #575757), color-stop(100%, #373737));
+    background-image: -webkit-linear-gradient(top,  #575757 0%, #373737 100%);
+    background-image:    -moz-linear-gradient(top,  #575757 0%, #373737 100%);
+    background-image:     -ms-linear-gradient(top,  #575757 0%, #373737 100%);
+    background-image:      -o-linear-gradient(top,  #575757 0%, #373737 100%);
+    background-image:         linear-gradient(top,  #575757 0%, #373737 100%);
+
+    box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37), 0px 6px 18px 0px rgba(0, 0, 0, 0.95);
+}
+.waf-theme.cupertino .waf-popover .waf-popover-header {
+    border: 0px;
+    border-radius: 10px 10px 0 0;
+
+	background: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.46)), color-stop(50%, rgba(255, 255, 255, 0.17)), color-stop(50%, rgba(255, 255, 255, 0.14)), color-stop(100%, rgba(255, 255, 255, 0)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:         linear-gradient(top, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+}
+.waf-theme.cupertino .waf-popover .waf-popover-body {
+	border: 1px solid #000;
+    border-radius: 8px;
+	
+	background: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.4), 
+                1px 1px 4px 0px rgba(0, 0, 0, 0.66) inset;
+}
+.waf-theme.cupertino .waf-popover .waf-popover-header .waf-button {
+    background-color: rgb(65,105,222);
+}
+.waf-theme.cupertino .waf-popover .waf-popover-header .waf-richText {
+	color: #ffffff;
+	font-size: 18px;
+	text-shadow: #000 0 -1px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.waf-theme.cupertino .waf-popover .waf-popover-footer {
+    border: 0;
+    border-radius: 0 0 10px 10px;
+    
+    background: none;
+}
+.waf-theme.cupertino .waf-popover .waf-popover-footer .waf-button {
+	background-color: #777777;
+}
+.waf-theme.cupertino .waf-popover .waf-popover-arrow span {
+	border-left: 1px solid #000;
+	border-top: 1px solid #000;
+	background: #575757;
+    box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37);
+}
+.waf-theme.cupertino .waf-popover .waf-popover-arrow.waf-popover-arrow-bottom span,
+.waf-theme.cupertino .waf-popover .waf-popover-arrow.waf-popover-arrow-right span {
+	background: #373737;
+}
+.waf-theme.cupertino .waf-popover .waf-popover-arrow.waf-popover-arrow-bottom span {
+	box-shadow: none;
+}
+
+.waf-theme.cupertino .waf-popover .waf-popover-header + .waf-popover-arrow.waf-popover-arrow-top span,
+.waf-theme.cupertino .waf-popover .waf-popover-header + .waf-popover-footer + .waf-popover-arrow.waf-popover-arrow-top span,
+.waf-theme.cupertino .waf-popover .waf-popover-header + .waf-popover-footer + .waf-popover-body + .waf-popover-arrow.waf-popover-arrow-top span,
+.waf-theme.cupertino .waf-popover .waf-popover-header + .waf-popover-body + .waf-popover-arrow.waf-popover-arrow-top span,
+.waf-theme.cupertino .waf-popover .waf-popover-header + .waf-popover-body + .waf-popover-footer + .waf-popover-arrow.waf-popover-arrow-top span  {
+    background: #9a9a9a;
+}
+
+
+/** 
+ * Widget progressBar
+ *
+ * Includes progressBar-specific rules of the 'Cupertino' skin
+ *
+ * @link /walib/WAF/widget/progressBar/css/widget-progressBar.css
+ *
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-progressBar {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-bottom-width: 1px;
+	border-style: solid;
+	border-color: rgb(238,238,238);
+    border-radius: 10px;
+
+	background-color: rgb(255, 255, 255);
+
+	box-shadow: inset 0 1px 5px rgb(61, 61, 61);
+
+	color: rgb(0, 0, 0);	
+	font-size: 10px;
+}
+
+/**
+ * -----------------------------------
+ * @subsection range
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-progressBar-range {	
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-bottom-width: 0px;
+	border-style: solid;
+	border-color: rgb(80,136,248);
+
+    border-radius: 10px;
+
+	background-color: rgb(80,136,248);	        
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), color-stop(0.4, rgba(255, 255, 255, 0.4)), color-stop(0.4, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.1)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.1));
+	background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.1));
+	background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.1));
+	background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.1));
+}
+.waf-theme.cupertino .waf-progressBar-range span {
+	display: inline-block;
+	right: 5px;
+	top: -1px;
+	height: 100%;
+	font-size: 10px;
+	position: absolute;
+	color: rgb(255,255,255);
+}
+
+/** 
+ * Widget radiogroup
+ *
+ * Includes radiogroup-specific rules of the 'cupertino' theme
+ *
+ * @link /walib/WAF/widget/radiogroup/css/widget-radiogroup.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section radio
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-radioGroup .waf-radio {
+	border: 1px solid rgb(171, 171, 171);
+    border-radius: 0;
+    
+	background-color: rgb(255, 255, 255);
+
+	color: rgb(0, 0, 0);
+    
+	font-size: 16px;
+	font-weight: bold;
+	
+	-webkit-tap-highlight-color: transparent;
+}
+.waf-theme.cupertino .waf-radioGroup.waf-direction-vertical .waf-radio:not(.waf-position-first) {
+	border-top-width: 0;
+}
+.waf-theme.cupertino .waf-radioGroup.waf-direction-vertical .waf-radio.waf-position-first {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.waf-theme.cupertino .waf-radioGroup.waf-direction-vertical .waf-radio.waf-position-last {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.waf-theme.cupertino .waf-radioGroup.waf-direction-horizontal .waf-radio:not(.waf-position-first) {
+	border-left-width: 0;
+}
+.waf-theme.cupertino .waf-radioGroup.waf-direction-horizontal .waf-radio.waf-position-first {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.waf-theme.cupertino .waf-radioGroup.waf-direction-horizontal .waf-radio.waf-position-last {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/**
+ * -----------------------------------
+ * @subsection radio state
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-radioGroup .waf-radio.waf-state-active {
+    background-color: rgb(1, 93, 230);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsla(0, 0%, 100%, 0.25)), color-stop(1, hsla(0, 0%, 100%, 0)));
+	background-image: -webkit-linear-gradient(top, hsla(0, 0%, 100%, 0.25), hsla(0, 0%, 100%, 0));
+	background-image:    -moz-linear-gradient(top, hsla(0, 0%, 100%, 0.25), hsla(0, 0%, 100%, 0));
+	background-image:     -ms-linear-gradient(top, hsla(0, 0%, 100%, 0.25), hsla(0, 0%, 100%, 0));
+	background-image:      -o-linear-gradient(top, hsla(0, 0%, 100%, 0.25), hsla(0, 0%, 100%, 0));
+	background-image:         linear-gradient(top, hsla(0, 0%, 100%, 0.25), hsla(0, 0%, 100%, 0));
+
+	color: rgb(255, 255, 255);
+}
+
+.waf-theme.cupertino .waf-radioGroup .waf-radio.waf-state-selected {
+    color: rgb(56, 84, 135);
+    
+	-webkit-transition-property: background-color, color;
+	-webkit-transition-duration: 350ms, 200ms;
+	-webkit-transition-timing-function: linear, linear;
+
+	-moz-transition-property: background-color, color;
+	-moz-transition-duration: 350ms, 200ms;
+	-moz-transition-timing-function: linear, linear;
+
+	transition-property: background-color, color;
+	transition-duration: 350ms, 200ms;
+	transition-timing-function: linear, linear;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section radio box
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-radioGroup .waf-radio .waf-radio-box {
+ 	position: absolute;
+ 	width: 16px;
+	height: 16px;
+	left: auto;
+	right: 8px;
+	visibility: hidden;
+}
+
+/**
+ * -----------------------------------
+ * @subsection radio box state
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-radioGroup .waf-radio.waf-state-active .waf-radio-box {
+	visibility: hidden;
+}
+.waf-theme.cupertino .waf-radioGroup .waf-radio.waf-state-selected .waf-radio-box {
+	visibility: visible;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section radio icon
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-radioGroup .waf-radio .waf-radio-icon {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+ 	left: 0;
+ 	top: 0;
+}
+
+/**
+ * -----------------------------------
+ * @subection radio icon symbol
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-radioGroup .waf-radio .waf-radio-icon-symbol {
+	fill: rgb(230, 230, 230);
+}
+.waf-theme.cupertino .waf-radioGroup .waf-radio .waf-radio-icon-symbol-shadow {
+	fill: rgb(255, 255, 255);
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection radio icon state
+ * -----------------------------------
+ */
+/* selected */
+.waf-theme.cupertino .waf-radioGroup .waf-radio.waf-state-selected .waf-radio-icon-symbol {
+	fill: rgb(50, 79, 133);
+}
+/* active */
+.waf-theme.cupertino .waf-radioGroup .waf-radio.waf-state-active .waf-radio-icon-symbol {
+	fill: rgb(255, 255, 255);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section radio label
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-radioGroup label {
+	padding-left: 10px;
+}
+
+
+/** 
+ * Widget section
+ *
+ * Includes select-specific rules of the 'cupertino' theme
+ *
+ * @link /walib/WAF/widget/section/css/widget-section.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section main
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-section {
+    overflow: hidden;
+    
+	border: 1px solid rgb(171, 171, 171);
+    border-radius: 10px;
+	        
+	background-color: rgb(255, 255, 255);
+}
+
+.waf-theme.cupertino .waf-section > .waf-container,
+/* GUI Designer */
+body.yui-layout .waf-theme.cupertino .waf-section > div > div .waf-container
+/* // GUI Designer */
+{
+	border: none;
+	border-top:    1px solid rgb(255, 255, 255);
+	border-bottom: 1px solid rgb(202, 202, 202);
+    border-radius: 0;	
+	
+	background-color: transparent;
+	
+	box-shadow: none;
+}
+
+.waf-theme.cupertino .waf-section > .waf-container.waf-element-first,
+/* GUI Designer */
+body.yui-layout .waf-theme.cupertino .waf-section > div > div .waf-container.waf-element-first
+/* // GUI Designer */
+{
+	border-top-color: transparent;
+	
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	   -moz-border-radius-topleft: 10px;
+	   -moz-border-radius-topright: 10px;
+	        border-top-left-radius: 10px;
+	        border-top-right-radius: 10px;
+}
+
+.waf-theme.cupertino .waf-section > .waf-container.waf-element-last,
+/* GUI Designer */
+body.yui-layout .waf-theme.cupertino .waf-section > div > div .waf-container.waf-element-last
+/* // GUI Designer */
+{
+	border-bottom-color: transparent;
+	
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	   -moz-border-radius-bottomright: 10px;
+	   -moz-border-radius-bottomleft: 10px;
+	        border-bottom-right-radius: 10px;
+	        border-bottom-left-radius: 10px;
+}
+
+/**
+ * -------------------------------------------------------
+ * @subsection elements
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-section .waf-richText {
+	font-weight: bold;
+	font-size: 16px;	
+}
+ 
+.waf-theme.cupertino .waf-section > .waf-container:not(.waf-section-blank) .waf-richText,
+/* GUI Designer */
+body.yui-layout .waf-theme.cupertino .waf-section > div > div .waf-container:not(.waf-section-blank) .waf-richText 
+/* // GUI Designer */
+{
+	/* parent's height, border less */	
+	line-height: 38px;
+}
+
+.waf-theme.cupertino .waf-section > .waf-container.waf-section-nav .waf-button,
+/* GUI Designer */
+body.yui-layout .waf-theme.cupertino .waf-section > div > div .waf-container.waf-section-nav .waf-button
+/* // GUI Designer */
+{
+    border: 0px;
+
+    background:none;
+    background-image: url(/walib/WAF/widget/section/skin/images/widget-section-goNext.png);
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    box-shadow: none;
+}
+.waf-theme.cupertino .waf-section .waf-textField {
+	padding: 0;
+		
+	border: none;
+	
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+        -ms-border-radius: 0;
+         -o-border-radius: 0;
+            border-radius: 0;
+	
+	background-color: transparent;
+
+	box-shadow: none;
+
+	text-overflow: ellipsis;
+
+	/* parent's height, border less */	
+	line-height: 38px;
+}
+
+
+/** 
+ * Widget select
+ *
+ * Includes select-specific rules of the 'cupertino' theme
+ *
+ * @link /walib/WAF/widget/select/css/widget-select.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section select container
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-select {
+	border: 1px solid rgb(76, 76, 76);
+    border-radius: 6px;
+	
+	background-color: rgb(208, 208, 208);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsla(0, 0%, 100%, 1)), color-stop(1, hsla(0, 0%, 100%, 0)));
+	background-image: -webkit-linear-gradient(top, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
+	background-image:    -moz-linear-gradient(top, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
+	background-image:     -ms-linear-gradient(top, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
+	background-image:      -o-linear-gradient(top, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
+	background-image:         linear-gradient(top, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
+}
+/* States */
+.waf-theme.cupertino .waf-select.waf-state-active {
+	border-color: rgb(17, 46, 135);
+}
+
+/**
+ * -----------------------------------
+ * @subsection select label
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-select .waf-select-label {
+    right: 19px;
+
+    padding-left: 5px;
+
+    border-width: 0 1px 0 0;
+    border-style: solid;
+	border-color: rgba(0, 0, 0, 0.57);
+
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+/* States */
+.waf-theme.cupertino .waf-select.waf-state-active .waf-select-label {
+	border-color: rgb(17, 46, 135);
+}
+
+/**
+ * -----------------------------------
+ * @subsection select button
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-select .waf-select-button {
+    width: 19px;
+
+	background-color: rgb(0, 0, 0);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsla(0, 0%, 100%, 0.58)), color-stop(1, hsla(0, 0%, 100%, 0.34)));
+	background-image: -webkit-linear-gradient(top, hsla(0, 0%, 100%, 0.58) 0%, hsla(0, 0%, 100%, 0.34) 100%);
+	background-image:    -moz-linear-gradient(top, hsla(0, 0%, 100%, 0.58) 0%, hsla(0, 0%, 100%, 0.34) 100%);
+	background-image:     -ms-linear-gradient(top, hsla(0, 0%, 100%, 0.58) 0%, hsla(0, 0%, 100%, 0.34) 100%);
+	background-image:      -o-linear-gradient(top, hsla(0, 0%, 100%, 0.58) 0%, hsla(0, 0%, 100%, 0.34) 100%);
+	background-image:         linear-gradient(top, hsla(0, 0%, 100%, 0.58) 0%, hsla(0, 0%, 100%, 0.34) 100%);
+
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+/* States */
+.waf-theme.cupertino .waf-select.waf-state-active .waf-select-button {
+	background-color: rgb(17, 46, 135);
+}
+.waf-theme.cupertino .waf-select.waf-state-active .waf-select-button {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsla(0, 0%, 100%, 0.03)), color-stop(1, hsla(0, 0%, 100%, 0.45)));
+	background-image: -webkit-linear-gradient(top, hsla(0, 0%, 100%, 0.03) 0%, hsla(0, 0%, 100%, 0.45) 100%);
+	background-image:    -moz-linear-gradient(top, hsla(0, 0%, 100%, 0.03) 0%, hsla(0, 0%, 100%, 0.45) 100%);
+	background-image:     -ms-linear-gradient(top, hsla(0, 0%, 100%, 0.03) 0%, hsla(0, 0%, 100%, 0.45) 100%);
+	background-image:      -o-linear-gradient(top, hsla(0, 0%, 100%, 0.03) 0%, hsla(0, 0%, 100%, 0.45) 100%);
+	background-image:         linear-gradient(top, hsla(0, 0%, 100%, 0.03) 0%, hsla(0, 0%, 100%, 0.45) 100%);
+}
+
+/**
+ * -----------------------------------
+ * @subsection select icon
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-select-icon {
+	position: absolute;
+	width:  16px;
+	height: 16px;
+ 	left:   50%;
+ 	top:    50%;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+.waf-theme.cupertino .waf-select .waf-select-icon-symbol {
+	fill: rgb(255, 255, 255);
+}
+.waf-theme.cupertino .waf-select .waf-select-icon-symbol-shadow {
+	opacity: 0.75;
+}
+
+
+/** 
+ * Widget slider
+ *
+ * Includes slider-specific rules of the 'cupertino' theme
+ *
+ * @link /walib/WAF/widget/slider/css/widget-slider.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-slider {
+	border-width: 0 0 1px 0;
+    border-style: solid;
+	border-bottom-color: rgb(238,238,238);
+    border-radius: 10px;
+    
+	background-color: rgb(255, 255, 255);
+
+	box-shadow: inset 0 1px 5px rgb(61, 61, 61);
+}
+.waf-theme.cupertino .waf-slider .ui-slider-range {
+    border-radius: 10px;
+    
+	background-color: rgb(104, 155, 248);
+	box-shadow: inset 0 1px 5px rgb(61, 61, 61);
+}
+.waf-theme.cupertino .waf-slider .ui-slider-handle {
+    position: absolute;
+    
+    width: 20px;
+    height: 20px;
+    
+	border: 1px solid rgb(153,153,153);
+    border-radius: 100px;
+    
+	background-color: rgb(255, 239, 143);
+	background-image: -webkit-linear-gradient(90deg, #fff, rgb(202,202,202));	
+
+	box-shadow: 0 0px 1px rgb(153,153,153), 
+                0 1px 1px rgb(255,255,255) inset;	
+}
+
+/**
+ * -----------------------------------
+ * @subsection slider horizontal
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-slider.ui-slider-horizontal .ui-slider-range {
+
+}
+.waf-theme.cupertino .waf-slider.ui-slider-horizontal .ui-slider-handle {
+    bottom: -5px;
+	top: -5px;
+	margin-left:-10px;
+    height: auto;
+}
+
+/**
+ * -----------------------------------
+ * @subsection slider vertical
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-slider.ui-slider-vertical .ui-slider-range  {
+	width: 100% !important;
+    background-image: none;
+}
+.waf-theme.cupertino .waf-slider.ui-slider-vertical .ui-slider-handle {
+    left: -5px !important;
+    width: auto;
+    right: -5px;
+	margin-left:0;
+}
+
+
+/** 
+ * Widget splitView
+ *
+ * Includes splitView-specific rules of the 'Cupertino' theme
+ *
+ * @link /walib/WAF/widget/splitView/css/widget-splitView.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section splitView Containers
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-splitView,
+.waf-theme.cupertino .waf-splitView > .waf-container, 
+/* GUI Designer */
+body.yui-layout .waf-theme.cupertino .waf-splitView > div > div > .waf-container
+/* // GUI Designer */
+{
+    border-radius: 0;
+	background-color: rgb(0, 0, 0);
+    border-color: transparent;
+    border-width: 0;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section SplitContainer 
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-splitView .waf-container .waf-split-container {
+	/*background-color: rgb(0, 0, 0);*/
+	border-color: rgb(0, 0, 0);
+}
+
+/**
+ * -----------------------------------
+ * @subsection splitContainer (mobile)
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-splitView .waf-container .waf-split-container.waf-container-split-mobile {
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.waf-theme.cupertino .waf-splitView .waf-container .waf-split-container.waf-split-container-float + .waf-split-container {
+    background-color: transparent;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView container
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-splitView .waf-navigationView {
+    border-radius: 0;
+}
+
+
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView view
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-splitView .waf-container.waf-navigationView-view {
+    border-style: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView header
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-splitView .waf-container.waf-navigationView-header {
+    border-radius: 0;
+    
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-left-style: none;
+}
+
+.waf-theme.cupertino .waf-splitView-menuButton {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView body
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-splitView .waf-container.waf-navigationView-body {
+    border-radius: 0;
+    
+    border-style: none;	
+}
+
+/**
+ * -------------------------------------------------------
+ * @section navigationView footer
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-splitView .waf-container.waf-navigationView-footer {
+    border-radius: 0;
+    
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+}
+
+
+/** 
+ * Widget switchBox
+ *
+ * Includes switchBox-specific rules of the 'Cupertino' skin
+ *
+ * @link /walib/WAF/widget/switchBox/css/widget-switchBox.css
+ *
+ */
+
+/**
+ * -----------------------------------
+ * @subsection switchBox off & on
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-switchbox .waf-switchbox-off,
+.waf-theme.cupertino .waf-switchbox .waf-switchbox-on {
+	border: 1px solid rgb(158, 158, 158);
+
+    box-shadow:
+        inset 0 2px 2px rgba(0, 0, 0, 0.5),
+        inset 0 13px 0 rgba(0, 0, 0, 0.08),
+        inset 0 12px 9px rgba(255, 255, 255, 0.25),
+        inset -5px -11px 0px rgba(255, 255, 255, 0.009);
+}
+
+/**
+ * -----------------------------------
+ * @subsection switchBox switch
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-switchbox .waf-switchbox-switch {
+	border: 1px solid rgb(113, 113, 113);
+	
+    background-color: rgb(255, 255, 255);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.19)), color-stop(100%,rgba(0, 0, 0, 0)));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.19) 0%, rgba(0, 0, 0, 0) 100%);
+	background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, 0.19) 0%, rgba(0, 0, 0, 0) 100%);
+	background-image:     -ms-linear-gradient(top, rgba(0, 0, 0, 0.19) 0%, rgba(0, 0, 0, 0) 100%);
+	background-image:      -o-linear-gradient(top, rgba(0, 0, 0, 0.19) 0%, rgba(0, 0, 0, 0) 100%);
+	background-image:         linear-gradient(top, rgba(0, 0, 0, 0.19) 0%, rgba(0, 0, 0, 0) 100%);
+
+    box-shadow:
+        0 0 10px rgba(0 ,0, 0, 0.4),
+        inset 0 2px rgba(255, 255, 255, 0.7);
+
+    border-radius: 1000px;
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection switchBox off
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-switchbox .waf-switchbox-off {
+    border-radius: 0 1000px 1000px 0;
+    background-color: rgb(249, 249, 249);
+    color: rgb(127, 127, 127);
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection switchBox on
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-switchbox .waf-switchbox-on {
+    border-radius: 1000px 0 0 1000px;
+    background-color: rgb(104, 155, 248);
+    color: rgb(255, 255, 255);
+}
+
+/**
+ * -----------------------------------
+ * @subsection switchBox label
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-switchbox .waf-switchbox-label-off,
+.waf-theme.cupertino .waf-switchbox .waf-switchbox-label-on {
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 -2px rgb(0, 0, 0, 0.25);
+}
+
+
+/** 
+ * Widget tabView
+ *
+ * Includes tabView-specific rules of the 'Cupertino' skin
+ *
+ * @link /walib/WAF/widget/tabView/css/widget-tabView.css
+ *
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section main
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-tabView {
+    border: 0px;
+    border-radius: 5px;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section tabView menuBar
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-tabView .waf-tabView-menuBar {
+    background-color: transparent;
+}
+
+/**
+ * -----------------------------------
+ * @subsection tabView menuBar (horizontal)
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-tabView .waf-tabView-menuBar.waf-menuBar-vertical {
+	padding: 5px;
+}
+
+/**
+ * -----------------------------------
+ * @subsection tabView menuBar (position)
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-top-left .waf-tabView-menuBar,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-top-right .waf-tabView-menuBar {
+	padding: 5px;
+    
+    border-top: 1px solid rgb(109, 133, 163);
+    border-bottom: 1px solid rgb(0, 0, 0);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+    background-color: rgb(109, 133, 163);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.3)), color-stop(0.5, rgba(255, 255, 255, 0.1)), color-stop(0.5, rgba(255, 255, 255, 0)), color-stop(1, rgba(255, 255, 255, 0.1)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 100%);
+	background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 100%);
+	background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 100%);
+	background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 100%);
+	background-image:         linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 100%);
+
+    box-shadow: 0 1px 0 rgb(255,255,255) inset;
+}
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-left-top .waf-tabView-menuBar,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-left-bottom .waf-tabView-menuBar {
+	border-top: 1px solid rgb(109, 133, 163);
+	
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+	
+	background-color: rgb(109, 133, 163);
+	background-image: none;
+    
+	box-shadow: 0 1px 1px rgb(255,255,255) inset, 
+                -1px 0px 1px rgb(0,0,0) inset;    
+}
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-bottom-left .waf-tabView-menuBar,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-bottom-right .waf-tabView-menuBar {
+	padding: 5px;
+    
+    border-top: 1px solid rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+    
+    background-color: rgb(0, 0, 0);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.3)), color-stop(0.5, rgba(255, 255, 255, 0.1)), color-stop(0.5, rgba(255, 255, 255, 0)), color-stop(1, rgba(255, 255, 255, 0.1)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 100%);
+	background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 100%);
+	background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 100%);
+	background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 100%);
+	background-image:         linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 100%);
+    
+    box-shadow: 0 1px 0 rgb(153,153,153) inset;
+}
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-right-top .waf-tabView-menuBar,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-right-bottom .waf-tabView-menuBar {
+	border-top: 1px solid rgb(109, 133, 163); 
+
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+
+	background-color: rgb(109, 133, 163);
+	background-image: none;
+	
+	box-shadow: 0 1px 1px #fff inset, 
+                1px 0px 1px rgb(0,0,0) inset;
+}
+
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-top-right .waf-tabView-menuBar,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-bottom-right .waf-tabView-menuBar {
+    text-align: right;
+}
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-left-bottom .waf-tabView-menuBar,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-right-bottom .waf-tabView-menuBar {
+	display: table-cell;
+	vertical-align: bottom;
+	position: relative !important;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section tabView menuBar menuItem
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-tabView .waf-tabView-menuBar .waf-menuItem {
+    height: 20px;    
+    
+	border-width: 0px;
+    border-color: transparent;
+    border-radius: 5px;
+    
+    background-color: transparent;
+	background-image: none;
+
+	box-shadow: 0 0 0 hsla(0, 0%, 100%, 0.5);
+    
+    color:	rgb(168, 168, 168);
+    text-shadow: none;
+	font-weight: normal;
+}
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-top-left     .waf-tabView-menuBar .waf-menuItem,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-top-right    .waf-tabView-menuBar .waf-menuItem,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-left-top     .waf-tabView-menuBar .waf-menuItem,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-left-bottom  .waf-tabView-menuBar .waf-menuItem,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-right-top    .waf-tabView-menuBar .waf-menuItem,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-right-bottom .waf-tabView-menuBar .waf-menuItem {
+	color: #333333;
+}
+
+/* States */
+.waf-theme.cupertino .waf-tabView .waf-tabView-menuBar .waf-menuItem.waf-state-selected {
+	border: 0px solid;
+    color: rgb(255, 255, 255);
+}
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-right-bottom .waf-tabView-menuBar .waf-menuItem.waf-state-selected,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-right-top    .waf-tabView-menuBar .waf-menuItem.waf-state-selected,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-left-bottom  .waf-tabView-menuBar .waf-menuItem.waf-state-selected,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-left-top     .waf-tabView-menuBar .waf-menuItem.waf-state-selected {
+	border-bottom-color: rgb(238, 238, 238);
+}
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-right-bottom .waf-tabView-menuBar .waf-menuItem.waf-state-selected,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-right-top .waf-tabView-menuBar .waf-menuItem.waf-state-selected {
+	border-bottom: 1px solid;
+    background-color: inherit;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.3)), color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.5, rgba(255, 255, 255, 0.1)), color-stop(1, rgba(255, 255, 255, 0.2)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+	background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+	background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+	background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+	background-image:         linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+    background-repeat: no-repeat;
+    box-shadow: inset 0 1px 1px rgb(87,87,87);
+}
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-left-bottom .waf-tabView-menuBar .waf-menuItem.waf-state-selected,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-left-top .waf-tabView-menuBar .waf-menuItem.waf-state-selected {
+	border-bottom: 1px solid;
+    background-color: inherit;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.3)), color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.5, rgba(255, 255, 255, 0.1)), color-stop(1, rgba(255, 255, 255, 0.2)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+	background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+	background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+	background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+	background-image:         linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+    background-repeat: no-repeat;
+    box-shadow: inset 0 1px 1px rgb(87,87,87);
+}
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-bottom-right .waf-tabView-menuBar .waf-menuItem.waf-state-selected,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-bottom-left .waf-tabView-menuBar .waf-menuItem.waf-state-selected,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-top-left .waf-tabView-menuBar .waf-menuItem.waf-state-selected,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-top-right .waf-tabView-menuBar .waf-menuItem.waf-state-selected {
+	background-color: inherit;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.3)), color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.5, rgba(255, 255, 255, 0.1)), color-stop(1, rgba(255, 255, 255, 0.2)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+	background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+	background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+	background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+	background-image:         linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+    background-repeat: no-repeat;
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection tabview menuBar menuItem (position)
+ * -----------------------------------
+ */
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-left-bottom .waf-tabView-menuBar .waf-menuItem.waf-menuItem-last,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-right-bottom .waf-tabView-menuBar .waf-menuItem.waf-menuItem-last {
+	margin-bottom:15px;
+}
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-top-right .waf-tabView-menuBar .waf-menuItem,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-bottom-right .waf-tabView-menuBar .waf-menuItem {
+    display: inline-block;
+    float: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section container
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-tabView .waf-container.waf-tabView-container-level-0 {
+    right: 0px;
+    bottom: 0px;
+	box-shadow: 0px 0px 0px rgb(238, 238, 238);
+}
+
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-left-top .waf-container.waf-tabView-container-level-0,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-left-bottom .waf-container.waf-tabView-container-level-0,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-right-top .waf-container.waf-tabView-container-level-0,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-right-bottom .waf-container.waf-tabView-container-level-0   {
+	border-top: 1px solid rgb(109, 133, 163);
+	box-shadow: inset 0 1px 1px rgb(255, 255, 255);
+}
+
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-bottom-left .waf-container.waf-tabView-container-level-0,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-bottom-right .waf-container.waf-tabView-container-level-0   {
+	border-top: 1px solid rgb(255, 255, 255);
+	box-shadow: inset 0 1px 1px #fff;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section container
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-tabView .waf-container.waf-tabView-container-level-0 {
+	border-width: 0px;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+
+	background-color: rgb(109, 133, 163);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0.7, hsla(0, 0%, 100%, 0.59)), color-stop(0.7, hsla(0, 0%, 100%, 0.68)));
+	background-image: -webkit-linear-gradient(left, hsla(0, 0%, 100%, 0.59) 70%, hsla(0, 0%, 100%, 0.68) 70%);
+	background-image:    -moz-linear-gradient(left, hsla(0, 0%, 100%, 0.59) 70%, hsla(0, 0%, 100%, 0.68) 70%);
+	background-image:     -ms-linear-gradient(left, hsla(0, 0%, 100%, 0.59) 70%, hsla(0, 0%, 100%, 0.68) 70%);
+	background-image:      -o-linear-gradient(left, hsla(0, 0%, 100%, 0.59) 70%, hsla(0, 0%, 100%, 0.68) 70%);
+	background-image:         linear-gradient(left, hsla(0, 0%, 100%, 0.59) 70%, hsla(0, 0%, 100%, 0.68) 70%);
+    background-size: 7px;
+}
+
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-top-left .waf-container.waf-tabView-container-level-0,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-top-right .waf-container.waf-tabView-container-level-0 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-right-top .waf-container.waf-tabView-container-level-0,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-right-bottom .waf-container.waf-tabView-container-level-0 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-botom-left .waf-container.waf-tabView-container-level-0,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-botom-right .waf-container.waf-tabView-container-level-0 {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-left-top .waf-container.waf-tabView-container-level-0,
+.waf-theme.cupertino .waf-tabView.waf-tabView-menu-position-left-bottom .waf-container.waf-tabView-container-level-0 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+/** 
+ * Widget textField
+ *
+ * Includes textField-specific rules of the 'Cupertino' skin
+ *
+ * @link /walib/WAF/widget/textfield/css/widget-textfield.css
+ *
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-textField {
+    -webkit-appearance: none;
+	   -moz-appearance: none;
+
+    padding-left:  10px;
+    padding-right: 10px;
+       
+    border-top: 0px;
+    border-bottom: 1px solid rgb(238,238,238);
+    border-left: 0px;
+    border-right: 0px;
+    
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+         -o-border-radius: 8px;
+            border-radius: 8px;
+
+	background-color: rgb(255,255,255);
+
+	box-shadow: inset 0 0 2px rgb(0,0,0);
+}
+
+
+/** 
+ * Widget video
+ *
+ * Includes video-specific rules of the 'Cupertino' theme
+ *
+ * @link /walib/WAF/widget/video/css/widget-video.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-video {
+    border: 1px solid rgb(171, 171, 171);
+    background-color: rgb(255, 255, 255);
+}
+
+/** 
+ * -----------------------------------------------------------------------------
+ * New Wak6 classes
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Buttons
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-ui-button {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(90, 90, 90);
+    border-bottom-color: rgb(190, 190, 190);
+    border-radius: 5px;
+    
+    background-color: rgb(78, 117, 163); 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(50%, rgba(255, 255, 255, 0.2)), color-stop(50%, rgba(255, 255, 255, 0.1)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image:         linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    
+    -webkit-background-origin: padding-box;
+            background-origin: padding-box;
+            
+    box-shadow: 0 0px 2px rgb(62, 80, 126) inset;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+/* States */
+.waf-theme.cupertino .waf-ui-button:not(.waf-button):active {
+    background-color: rgb(32, 69, 122);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Box
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-ui-box {
+    border-style: solid;
+    border-width: 0;
+}
+.waf-theme.cupertino .waf-ui-box > .waf-ui-header {
+    border-width: 0 0 1px 0;
+    border-style: inherit;
+    border-color: inherit;
+    
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.waf-theme.cupertino .waf-ui-box > .waf-ui-footer {
+    border-width: 1px 0 0 0;
+    border-style: inherit;
+    border-color: inherit;
+    
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+.waf-theme.cupertino .waf-ui-box {
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 10px;
+
+    background-color: rgb(255, 255, 255);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Table
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-ui-table {
+  width: 100%;
+  max-width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ababab;
+  font-size: 12px;
+
+  border-collapse: collapse;
+}
+.waf-theme.cupertino .waf-ui-table thead,
+.waf-theme.cupertino .waf-ui-table tbody,
+.waf-theme.cupertino .waf-ui-table tfoot,
+.waf-theme.cupertino .waf-ui-table tr,
+.waf-theme.cupertino .waf-ui-table th,
+.waf-theme.cupertino .waf-ui-table td {
+  border-width: 0;
+  border-style: inherit;
+  border-color: inherit;
+}
+.waf-theme.cupertino .waf-ui-table th,
+.waf-theme.cupertino .waf-ui-table td {
+  padding: 12px;
+  border-width: 1px;
+}
+.waf-theme.cupertino .waf-ui-table thead th {
+  text-align: center;
+}
+.waf-theme.cupertino .waf-ui-table thead th,
+.waf-theme.cupertino .waf-ui-table thead td {
+  background-color: #6d85a3;
+  color: #ffffff;
+  box-shadow: inset 0 1px 0 #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.46)), color-stop(0.5, rgba(255, 255, 255, 0.17)), color-stop(0.5, rgba(255, 255, 255, 0.14)), to(rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75ffffff', endColorstr='#00ffffff', GradientType=0);
+  text-shadow: #5b6775 0 -1px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.waf-theme.cupertino .waf-ui-table tfoot th,
+.waf-theme.cupertino .waf-ui-table tfoot td {
+  background-color: #6d85a3;
+  color: #ffffff;
+  box-shadow: inset 0 1px 0 #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.46)), color-stop(0.5, rgba(255, 255, 255, 0.17)), color-stop(0.5, rgba(255, 255, 255, 0.14)), to(rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75ffffff', endColorstr='#00ffffff', GradientType=0);
+  text-shadow: #000000 1px 1px;
+}
+.waf-theme.cupertino .waf-ui-table tbody th {
+  background-color: #6d85a3;
+  color: #ffffff;
+  box-shadow: inset 0 1px 0 #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.46)), color-stop(0.5, rgba(255, 255, 255, 0.17)), color-stop(0.5, rgba(255, 255, 255, 0.14)), to(rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75ffffff', endColorstr='#00ffffff', GradientType=0);
+  text-shadow: #5b6775 0 -1px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.waf-theme.cupertino .waf-ui-table tbody td {
+  background-color: transparent;
+}
+.waf-theme.cupertino .waf-ui-table .waf-state-loading {
+  height: 120px;
+}
+.waf-theme.cupertino .waf-ui-table .waf-state-loading .waf-ui-spinner,
+.waf-theme.cupertino .waf-ui-table .waf-state-loading .waf-ui-loader {
+  margin: auto;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Header, Footer and Content
+ * -------------------------------------------------------
+ */
+.waf-theme.cupertino .waf-ui-header {
+    border-bottom-color: rgb(0, 0, 0);
+
+    background-color: rgb(109, 133, 163);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.46)), color-stop(0.5, rgba(255, 255, 255, 0.17)), color-stop(0.5, rgba(255, 255, 255, 0.14)), to(rgba(255, 255, 255, 0)));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+    background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+    background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+    background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+    box-shadow: inset 0 1px 0 rgb(238, 238, 238);
+}
+.waf-theme.cupertino .waf-ui-footer {
+    border-top-color:    rgb(0, 0, 0);
+
+    background-color: rgb(109, 133, 163);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.46)), color-stop(0.5, rgba(255, 255, 255, 0.17)), color-stop(0.5, rgba(255, 255, 255, 0.14)), to(rgba(255, 255, 255, 0)));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+    background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+    background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+    background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.17) 50%, rgba(255, 255, 255, 0.14) 50%, rgba(255, 255, 255, 0));
+    box-shadow: inset 0 1px 0 rgb(238, 238, 238);
+}
+.waf-theme.cupertino .waf-ui-body {
+    
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * Widgets
+ * -----------------------------------------------------------------------------
+ */
+
+/** 
+ * Widget ListView
+ *
+ */
+
+.waf-theme.cupertino .waf-wlistview {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #aaaaaa;
+    border-radius: 10px;
+}
+.waf-theme.cupertino .waf-wlistview li {
+    height: 80px;
+    padding: 10px;
+    border-width: 1px 0;
+    border-color: rgb(255, 255, 255) transparent rgb(204, 204, 204);
+    background-color: #ffffff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#ededed));
+    background-image: -webkit-linear-gradient(top, #f7f7f7 0%, #ededed 100%);
+    background-image: -moz-linear-gradient(top, #f7f7f7 0%, #ededed 100%);
+    background-image: linear-gradient(to bottom, #f7f7f7 0%, #ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff7f7f7', endColorstr='#ffededed', GradientType=0);
+}
+.waf-theme.cupertino .waf-wlistview li:first-of-type {
+    border-top-width: 0;
+}
+.waf-theme.cupertino .waf-wlistview li:last-of-type {
+    border-bottom-width: 0;
+}
+.waf-theme.cupertino .waf-wlistview li .content {
+    padding: 10px;
+    background-color: #ffffff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#ededed));
+    background-image: -webkit-linear-gradient(top, #f7f7f7 0%, #ededed 100%);
+    background-image: -moz-linear-gradient(top, #f7f7f7 0%, #ededed 100%);
+    background-image: linear-gradient(to bottom, #f7f7f7 0%, #ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff7f7f7', endColorstr='#ffededed', GradientType=0);
+    box-shadow: 1px 0 3px 1px rgba(0, 0, 0, 0.3);
+    -webkit-transition-property: left;
+    -moz-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    transition-duration: 300ms;
+}
+.waf-theme.cupertino .waf-wlistview li.swyped-content {
+    background-color: #e6e6e6;
+    background-image: none;
+}
+.waf-theme.cupertino .waf-wlistview img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+.waf-theme.cupertino .waf-wlistview h1,
+.waf-theme.cupertino .waf-wlistview h2,
+.waf-theme.cupertino .waf-wlistview h3,
+.waf-theme.cupertino .waf-wlistview h4,
+.waf-theme.cupertino .waf-wlistview h5,
+.waf-theme.cupertino .waf-wlistview h6 {
+    margin-top: 7px;
+    height: 22px;
+    line-height: 22px;
+}
+.waf-theme.cupertino .waf-wlistview p {
+    height: 22px;
+    line-height: 22px;
+}
+.waf-theme.cupertino .waf-wlistview.waf-tpl-alignTop h1,
+.waf-theme.cupertino .waf-wlistview.waf-tpl-alignTop h2,
+.waf-theme.cupertino .waf-wlistview.waf-tpl-alignTop h3,
+.waf-theme.cupertino .waf-wlistview.waf-tpl-alignTop h4,
+.waf-theme.cupertino .waf-wlistview.waf-tpl-alignTop h5,
+.waf-theme.cupertino .waf-wlistview.waf-tpl-alignTop h6 {
+    margin-top: 0;
+    line-height: 1;
+    height: auto;
+    max-height: 30px;
+}
+
+
+/*/** 
+ * Widget tabview2 (Widget Custom)
+ *
+ */
+
+.waf-theme.cupertino .waf-tabview2 {
+    border: 0px;
+    border-radius: 10px;    
+}
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-top"] {
+    border-top: 1px solid rgb(109, 133, 163);
+
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #96a8bd), color-stop(0.5, #7c91ac), color-stop(0.5, #6d85a3), color-stop(1, #7a90ab));
+    background-image: -webkit-linear-gradient(top, #96a8bd 0%, #7c91ac 50%, #6d85a3 50%, #7a90ab 100%);
+    background-image:    -moz-linear-gradient(top, #96a8bd 0%, #7c91ac 50%, #6d85a3 50%, #7a90ab 100%);
+    background-image:     -ms-linear-gradient(top, #96a8bd 0%, #7c91ac 50%, #6d85a3 50%, #7a90ab 100%);
+    background-image:      -o-linear-gradient(top, #96a8bd 0%, #7c91ac 50%, #6d85a3 50%, #7a90ab 100%);
+    background-image:         linear-gradient(top, #96a8bd 0%, #7c91ac 50%, #6d85a3 50%, #7a90ab 100%);
+
+    background-size: 100% 49px;
+    background-repeat: no-repeat;
+
+    box-shadow: 0 1px 0 rgb(255,255,255) inset;
+}
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-bottom"] {
+    border-top: 1px solid rgb(109, 133, 163);
+
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4a4a4a), color-stop(0.5, #1c1c1c), color-stop(0.5, #010101), color-stop(1, #000));
+    background-image: -webkit-linear-gradient(top, #4a4a4a 0%, #1c1c1c 50%, #010101 50%, #000 100%);
+    background-image:    -moz-linear-gradient(top, #4a4a4a 0%, #1c1c1c 50%, #010101 50%, #000 100%);
+    background-image:     -ms-linear-gradient(top, #4a4a4a 0%, #1c1c1c 50%, #010101 50%, #000 100%);
+    background-image:      -o-linear-gradient(top, #4a4a4a 0%, #1c1c1c 50%, #010101 50%, #000 100%);
+    background-image:         linear-gradient(top, #4a4a4a 0%, #1c1c1c 50%, #010101 50%, #000 100%);
+
+    background-size: 100% 49px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-left"],
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-right"] {
+    border-top: 1px solid rgb(109, 133, 163);
+
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(109, 133, 163)), color-stop(1, rgb(109, 133, 163)));
+    background-image: -webkit-linear-gradient(top, rgb(109, 133, 163) 0%, rgb(109, 133, 163) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(109, 133, 163) 0%, rgb(109, 133, 163) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(109, 133, 163) 0%, rgb(109, 133, 163) 100%);
+    background-image:      -o-linear-gradient(top, rgb(109, 133, 163) 0%, rgb(109, 133, 163) 100%);
+    background-image:         linear-gradient(top, rgb(109, 133, 163) 0%, rgb(109, 133, 163) 100%);
+
+    background-size: 70px 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0 1px 1px rgb(255, 255, 255) inset;
+}
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-right"] {
+    background-position: right top;
+}
+
+
+/**
+ * tabs Bar
+ */
+
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-top"] > ul {
+    height: 49px;
+    padding: 5px;
+}
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-bottom"] > ul {
+    height: 49px;
+    padding: 5px;
+}
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-left"] > ul {
+    width: 70px;
+    padding: 5px;
+}
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-right"] > ul {
+    width: 70px;
+    padding: 5px;
+}
+
+
+/**
+ * tabs
+ */
+
+.waf-theme.cupertino .waf-tabview2 > ul li {
+    border-radius: 5px;
+}
+.waf-theme.cupertino .waf-tabview2:not([class*="waf-tabview2-bottom"]) > ul li {
+    color: #333333;
+}
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-bottom"] > ul li {
+    color: rgb(168, 168, 168);
+}
+.waf-theme.cupertino .waf-tabview2 > ul li.waf-state-selected {
+    border-bottom: 1px solid #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.3)), color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.5, rgba(255, 255, 255, 0.1)), color-stop(1, rgba(255, 255, 255, 0.2)));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+    background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+    background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+    background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+    background-image:         linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+    background-repeat: no-repeat;
+    box-shadow: inset 0 1px 1px rgb(87,87,87);
+    color: rgb(255, 255, 255);
+}
+
+
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-left"] > ul li,
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-right"] > ul li {
+    height: 39px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 37px;
+}
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-top"] > ul li,
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-bottom"] > ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 39px;
+}
+
+
+/**
+ * close Tab
+ */
+
+.waf-theme.cupertino .waf-tabview2 .waf-tabview2-closeTab {
+    float: left;
+    width: 10px;
+    height: 35px;
+    background-image: url("./images/close_button.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4;
+}
+.waf-theme.cupertino .waf-tabview2 .waf-tabview2-closeTab:hover {
+    opacity: 1;
+}
+
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-top"] .waf-tabview2-closeTab,
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-bottom"] .waf-tabview2-closeTab {
+    float: right;
+    background-position: right center;
+    height: 37px;
+}
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-left"] .waf-tabview2-closeTab,
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-right"] .waf-tabview2-closeTab {
+    background-position: left center;
+}
+
+
+/**
+ * containers 
+ */
+
+.waf-theme.cupertino .waf-tabview2 .waf-tabview2container {
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 0px;
+
+    background-color: rgb(109, 133, 163);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0.7, hsla(0, 0%, 100%, 0.59)), color-stop(0.7, hsla(0, 0%, 100%, 0.68)));
+    background-image: -webkit-linear-gradient(left, hsla(0, 0%, 100%, 0.59) 70%, hsla(0, 0%, 100%, 0.68) 70%);
+    background-image:    -moz-linear-gradient(left, hsla(0, 0%, 100%, 0.59) 70%, hsla(0, 0%, 100%, 0.68) 70%);
+    background-image:     -ms-linear-gradient(left, hsla(0, 0%, 100%, 0.59) 70%, hsla(0, 0%, 100%, 0.68) 70%);
+    background-image:      -o-linear-gradient(left, hsla(0, 0%, 100%, 0.59) 70%, hsla(0, 0%, 100%, 0.68) 70%);
+    background-image:         linear-gradient(left, hsla(0, 0%, 100%, 0.59) 70%, hsla(0, 0%, 100%, 0.68) 70%);
+    background-size: 7px;
+
+    box-shadow: 0px 0px 0px rgb(238, 238, 238);
+}
+
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-top"] > .waf-tabview2container {
+    top: 49px;
+
+    border-top: 1px solid #000;
+
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-bottom"] > .waf-tabview2container {
+    bottom: 49px;
+    
+    border-bottom: 1px solid #999999;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    box-shadow: inset 0 1px 1px #fff,
+                inset 0 -1px #000;
+}
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-left"] > .waf-tabview2container {
+    left: 70px;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    
+    box-shadow: inset 0 1px 1px rgb(255, 255, 255);
+}
+.waf-theme.cupertino .waf-tabview2[class*="waf-tabview2-right"] > .waf-tabview2container {
+    right: 70px;
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    box-shadow: inset 0 1px 1px rgb(255, 255, 255);
+}

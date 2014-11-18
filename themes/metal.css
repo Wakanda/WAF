@@ -1,0 +1,2888 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+
+
+/** 
+ * Widget skin
+ *
+ * Includes generic rules for all widgets available for the 'metal' theme
+ *
+ * @link /walib/WAF/widget/css/widget.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.metal {
+    background-color: rgb(255, 255, 255);
+    
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.waf-theme.metal,
+.waf-theme.metal a {
+    color: rgb(0, 0, 0);
+}
+
+.waf-theme.metal ul, 
+.waf-theme.metal li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Widget header
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-widget-header,
+.waf-theme.metal .waf-container.waf-widget-header {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU0JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU4JSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.42, rgba(255, 255, 255, 0)), color-stop(0.46, rgba(255, 255, 255, 0.85)), color-stop(1, rgba(255, 255, 255, 1))), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:  -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:     -moz-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:      -ms-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:       -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:          linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+
+	border-color: rgb(204, 204, 204);
+	color: rgb(115, 115, 115);
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0 5px 5px;
+	
+	font-weight: bold;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Widget body
+ * -------------------------------------------------------
+ */
+
+.waf-theme.metal .waf-widget-body,
+.waf-theme.metal .waf-container.waf-widget-body {
+	background-color: rgb(255, 255, 255);
+}
+
+/* track */
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-track {
+    background-color: rgb(115, 115, 115);
+	border-color: rgb(115, 115, 115);
+}
+/* thumb */
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-thumb {
+	background-color: rgb(240, 240, 240);
+	border-color: rgb(115, 115, 115);
+}
+
+/**
+ * -----------------------------------
+ * @subsection widget body scrollbar
+ * -----------------------------------
+ */
+/*scrollbar dimensions */
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-button:start:decrement,
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-button:end:increment {
+    width: 12px;
+    height: 12px;
+    display: block;
+}
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-button:start:increment,
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-button:end:decrement {
+    display: none;
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection dataGrid body scrollbar button vertical
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-button:vertical {
+    border-right: 1px solid rgb(115, 115, 115);
+    border-left: 1px solid rgb(115, 115, 115);
+    
+    background-repeat: no-repeat;
+    background-position: -3px 0px;
+}
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-button:vertical:hover {
+    background-position: -3px -16px;
+}
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-button:vertical:active {
+    background-position: -3px -32px;
+}
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-button:vertical:window-inactive {
+    background-position: -3px -48px;
+}
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url("/walib/WAF/widget/skin/metal/svg/scrollbar-vertical-decrement-arrow.svg"),
+    	-webkit-gradient(linear, left top, left bottom, color-stop(0, hsla(0, 0%, 100%, 0)), color-stop(0.5, hsla(0, 0%, 100%, 1)), color-stop(1, hsla(182, 0%, 95%, 1)));
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-button:vertical:increment {
+    background-image: url("/walib/WAF/widget/skin/metal/svg/scrollbar-vertical-increment-arrow.svg"),
+    	-webkit-gradient(linear, left top, left bottom, color-stop(0, hsla(0, 0%, 100%, 0)), color-stop(0.5, hsla(0, 0%, 100%, 1)), color-stop(1, hsla(182, 0%, 95%, 1)));
+    border-top: 1px solid rgb(204, 204, 204);
+    border-bottom: 1px solid rgb(115, 115, 115);
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection widget body scrollbar button horizontal
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-button:horizontal {
+    border-top: 1px solid rgb(115, 115, 115);
+    border-bottom: 1px solid rgb(115, 115, 115);
+    
+    background-repeat: no-repeat;
+    background-position: -1px -2px;
+}
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-button:horizontal:hover {
+    background-position: -17px -2px;
+}
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-button:horizontal:active {
+    background-position: -33px -2px;
+}
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-button:horizontal:window-inactive {
+    background-position: -49px -2px;
+}
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-button:horizontal:increment {
+    background-image: url("/walib/WAF/widget/skin/metal/svg/scrollbar-horizontal-increment-arrow.svg"),
+    	-webkit-gradient(linear, left top, left bottom, color-stop(0, hsla(0, 0%, 100%, 0)), color-stop(0.5, hsla(0, 0%, 100%, 1)), color-stop(1, hsla(182, 0%, 95%, 1)));
+    border-left: 1px solid rgb(204, 204, 204);
+    border-right: 1px solid rgb(115, 115, 115);
+}
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-button:horizontal:decrement {
+    background-image: url("/walib/WAF/widget/skin/metal/svg/scrollbar-horizontal-decrement-arrow.svg"),
+    	-webkit-gradient(linear, left top, left bottom, color-stop(0, hsla(0, 0%, 100%, 0)), color-stop(0.5, hsla(0, 0%, 100%, 1)), color-stop(1, hsla(182, 0%, 95%, 1)));
+    border-right: 1px solid rgb(204, 204, 204);
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection widget body scrollbar thumb
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 2px;
+    border: 1px outset rgba(0, 0, 0, 0.4);
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection widget body scrollbar corner
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-widget-body::-webkit-scrollbar-corner {
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, hsla(0, 0%, 0%, 0.2)), color-stop(1, hsla(0, 0%, 0%, 0)));
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Widget content
+ * -------------------------------------------------------
+ */
+
+/**
+ * -----------------------------------
+ * @subsection Widget alternate content
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-widget-even {
+	background-color: rgb(247, 247, 247);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Widget footer
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-widget-footer,
+.waf-theme.metal .waf-container.waf-widget-footer {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMxJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc0JSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.26, rgba(255, 255, 255, 0)), color-stop(0.69, rgba(255, 255, 255, 0.85)), color-stop(1, rgba(255, 255, 255, 1))), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 26%, rgba(255, 255, 255, 0.85) 69%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:    -moz-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 26%, rgba(255, 255, 255, 0.85) 69%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:     -ms-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 26%, rgba(255, 255, 255, 0.85) 69%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:      -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 26%, rgba(255, 255, 255, 0.85) 69%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:         linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 26%, rgba(255, 255, 255, 0.85) 69%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+
+	border-color: rgb(204, 204, 204);
+
+    /*
+	box-shadow: inset 0 -1px 1px rgb(255, 255, 255);*/
+    box-shadow: rgba(0, 0, 0, 0.1) 0 -5px 5px;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Widget state
+ * -------------------------------------------------------
+ */
+
+
+/** 
+ * Widget accordion
+ *
+ * Includes accordion-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/accordion/css/widget-accordion.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-accordion {
+    background-color: rgb(255, 255, 255);
+    
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}
+.waf-theme.metal .waf-accordion .accordion-section,
+.waf-theme.metal .waf-accordion .accordion-section .waf-accordion-header,
+.waf-theme.metal .waf-accordion .accordion-section .waf-accordion-content {
+    box-shadow: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Section
+ * -------------------------------------------------------
+ */
+
+/**
+ * -----------------------------------
+ * @subsection Border width
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-accordion .accordion-section {
+    border-width: 1px 1px 0 1px;
+}
+.waf-theme.metal .waf-accordion .accordion-section:last-of-type {
+    border-bottom-width: 1px;
+}
+
+/* GUI Designer */
+body.yui-layout .waf-theme.metal .waf-accordion > div.yui-overlay > div > .accordion-section,
+body.yui-layout .waf-theme.metal .waf-accordion > div.yui-overlay > div > .accordion-section:last-of-type {
+    border-width: 1px 1px 0 1px;
+}
+body.yui-layout .waf-theme.metal .waf-accordion > div.yui-overlay:last-of-type > div > .accordion-section {
+    border-bottom-width: 1px;    
+}
+/* // GUI Designer */
+
+/**
+ * -----------------------------------
+ * @subsection Section, Header, Content
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-accordion .waf-accordion-header {
+    border-width: 0 0 1px 0;
+	border-color: rgb(153, 153, 153);
+    
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255, 255, 255)), color-stop(0.47, rgb(255, 255, 255)), color-stop(0.51, rgb(242, 242, 242)), color-stop(1, rgb(242, 242, 242)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+	background-image:      -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+	background-image:         linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+
+	text-shadow: rgb(255, 255, 255) 1px 1px;
+}
+.waf-theme.metal .waf-accordion .waf-accordion-header .waf-richText {
+	color: #999;
+}
+.waf-theme.metal .waf-accordion .accordion-section.waf-state-expanded .waf-accordion-header {
+    background-color: white;
+    background-image: none;
+}
+.waf-theme.metal .waf-accordion .accordion-section.waf-state-expanded .waf-accordion-header .waf-richText {
+	color: #E66000;
+}
+.waf-theme.metal .waf-accordion .waf-accordion-content {
+    border-width: 0;
+}
+
+/**
+ * -----------------------------------
+ * @subsection Icon
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-accordion .waf-accordion-icon {
+    top:    0;
+    bottom: 0;
+    left:   0;
+    width:  25px;
+    
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+}
+/* States */
+.waf-theme.metal .waf-accordion .waf-state-collapsed .waf-accordion-icon {
+    background-image: url("/walib/WAF/widget/accordion/icons/widget-accordion-collapsed-icon.png");
+}
+.waf-theme.metal .waf-accordion .waf-state-expanded .waf-accordion-icon {
+    background-image: url("/walib/WAF/widget/accordion/icons/widget-accordion-expanded-icon.png");
+}
+
+
+/** 
+ * Widget autoForm
+ *
+ * Includes autoForm-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/autoForm/css/widget-autoForm.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section autoForm container
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-autoForm {
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(153, 153, 153);
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section autoForm header
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-autoForm-header {
+	height: 25px;
+	box-shadow: inset 1px -1px 1px rgb(255, 255, 255);
+	text-shadow: rgb(255, 255, 255) 1px 1px;
+}
+.waf-theme.metal .waf-autoForm-header th {
+	height: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#05000000', endColorstr='#2b000000');
+}
+
+/**
+ * -------------------------------------------------------
+ * @section autoForm body
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-autoForm .waf-autoForm-body {
+	border-color: rgb(204, 204, 204);
+}
+
+/**
+ * -----------------------------------
+ * @subsection autoForm row
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-autoForm-row.last-child.waf-widget-odd > td {
+}
+
+/**
+ * -------------------------------------------------------
+ * @section autoForm col
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-autoForm .attribute-col {
+	border-right-width: 1px;
+	border-right-style: solid;
+    border-right-color: rgb(204, 204, 204);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section autoForm footer
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-autoForm-footer,
+.waf-theme.metal .waf-autoForm-footer td {
+	height: 25px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-color: rgb(204, 204, 204);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#05000000', endColorstr='#2b000000');
+}
+
+/**
+ * -----------------------------------
+ * @subsection queryForm footer
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-widget.waf-queryForm .waf-widget-footer td {
+	border-color: rgb(204, 204, 204);
+}
+
+
+/** 
+ * Widget button
+ *
+ * Includes button-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/button/css/widget-button.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section button container
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-button {
+	border: 1px solid rgb(153, 153, 153);
+    
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
+		inset 0 1px 0px rgba(255, 255, 255, 0.5);
+	
+	-webkit-transition: background-color 0.2s ease-in-out,
+						-webkit-box-shadow 0.2s ease-in-out;
+	   -moz-transition: background-color 0.2s ease-in-out,
+						-moz-box-shadow 0.2s ease-in-out;
+	     -o-transition: background-color 0.2s ease-in-out,
+						box-shadow 0.2s ease-in-out;
+	
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255, 255, 255)), color-stop(0.47, rgb(255, 255, 255)), color-stop(0.51, rgb(242, 242, 242)), color-stop(1, rgb(242, 242, 242)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+	background-image:      -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+	background-image:         linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+	
+	outline: none;
+
+    color: rgb(115, 115, 115);
+	text-shadow: rgb(255, 255, 255) 1px 1px;
+}
+
+/* States */
+.waf-theme.metal .waf-button.waf-state-hover {
+	border: 1px solid rgb(0, 159, 199);
+
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2NjZmFmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjY2ZhZmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255, 255, 255)), color-stop(0.5, rgb(255, 255, 255)), color-stop(0.5, rgb(204, 250, 252)), color-stop(1, rgb(204, 250, 252)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:      -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:         linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+
+	color: rgb(0, 159, 199);
+    
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
+                0 1px 0px rgba(255, 255, 255, 0.5) inset;
+}
+.waf-theme.metal .waf-button.waf-state-focus {
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
+                0 1px 0px rgba(255, 255, 255, 0.5) inset;
+}
+.waf-theme.metal .waf-button.waf-state-active {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 116, 140);
+	
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
+                0 1px 0px rgba(255, 255, 255, 0.5) inset;
+	
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNzQ4YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMyJSIgc3RvcC1jb2xvcj0iIzAwOWZjNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDlmYzciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(0, 159, 199)), color-stop(0.68, rgb(0, 159, 199)), color-stop(1, rgb(0, 116, 140)));
+	background-image: -webkit-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:    -moz-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:     -ms-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:      -o-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:         linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+
+	color: rgb(255, 255, 255);
+	text-shadow: rgba(0, 0, 0, 0.3) 1px 1px;
+}
+.waf-theme.metal .waf-button.waf-state-disabled {
+    opacity: 0.4;
+}
+
+
+/** 
+ * Widget buttonImage
+ *
+ * Includes buttonImage-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/buttonImage/css/widget-buttonImage.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section button container
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-buttonImage {
+	border: 1px solid rgb(153, 153, 153);
+    
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
+		inset 0 1px 0px rgba(255, 255, 255, 0.5);
+	
+	-webkit-transition: background-color 0.2s ease-in-out,
+						-webkit-box-shadow 0.2s ease-in-out;
+	   -moz-transition: background-color 0.2s ease-in-out,
+						-moz-box-shadow 0.2s ease-in-out;
+	     -o-transition: background-color 0.2s ease-in-out,
+						box-shadow 0.2s ease-in-out;
+	
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255, 255, 255)), color-stop(0.47, rgb(255, 255, 255)), color-stop(0.51, rgb(242, 242, 242)), color-stop(1, rgb(242, 242, 242)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+	background-image:      -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+	background-image:         linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+	
+	outline: none;
+
+    color: rgb(115, 115, 115);
+	text-shadow: rgb(255, 255, 255) 1px 1px;
+}
+
+/* States */
+.waf-theme.metal .waf-buttonImage.waf-state-hover {
+	border: 1px solid rgb(0, 159, 199);
+
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2NjZmFmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjY2ZhZmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255, 255, 255)), color-stop(0.5, rgb(255, 255, 255)), color-stop(0.5, rgb(204, 250, 252)), color-stop(1, rgb(204, 250, 252)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:      -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:         linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+
+	color: rgb(0, 159, 199);
+    
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+	   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4),
+						inset 0 1px 0px rgba(255, 255, 255, 0.5);
+	        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
+						inset 0 1px 0px rgba(255, 255, 255, 0.5);
+}
+.waf-theme.metal .waf-buttonImage.waf-state-focus {
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+	   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4),
+						inset 0 1px 0px rgba(255, 255, 255, 0.5);
+	        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
+						inset 0 1px 0px rgba(255, 255, 255, 0.5);
+}
+.waf-theme.metal .waf-buttonImage.waf-state-active {
+	border: 1px solid rgb(0, 116, 140);
+	
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
+                inset 0 1px 0px rgba(255, 255, 255, 0.5);
+	
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNzQ4YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMyJSIgc3RvcC1jb2xvcj0iIzAwOWZjNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDlmYzciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(0, 159, 199)), color-stop(0.68, rgb(0, 159, 199)), color-stop(1, rgb(0, 116, 140)));
+	background-image: -webkit-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:    -moz-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:     -ms-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:      -o-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:         linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+
+	color: rgb(255, 255, 255);
+	text-shadow: rgba(0, 0, 0, 0.3) 1px 1px;
+}
+.waf-theme.metal .waf-buttonImage.waf-state-disabled {
+    opacity: 0.4;
+}
+
+
+/**
+ * Widget canvas
+ *
+ * Includes canvas-specific rules of the 'Metal' theme
+ *
+ * @link /walib/WAF/widget/canvas/css/widget-canvas.css
+ */
+
+/**
+ * -----------------------------------
+ * @section Main
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-canvas {
+	border: 1px solid rgb(153, 153, 153);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/** 
+ * Widget checkbox
+ *
+ * Includes checkbox-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/checkbox/css/widget-checkbox.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section checkbox container
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-checkbox .waf-checkbox-box {
+ 	position: absolute;
+ 	width:  70%;
+	height: 70%;
+ 	left:   0%;
+ 	top:    15%;
+	
+    border: 1px solid rgb(153, 153, 153);
+	background-color: rgb(255, 255, 255);
+	
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#03000000', endColorstr='#07000000');
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.03)), color-stop(0.2, rgba(0, 0, 0, 0.03)), color-stop(1, rgba(0, 0, 0, 0.07)));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	background-image:     -ms-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	background-image:      -o-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	background-image:         linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection checkbox box state
+ * -----------------------------------
+ */
+
+.waf-theme.metal .waf-checkbox.waf-state-focus .waf-checkbox-box {
+	border-color: rgb(0, 116, 140);
+	background-color: rgb(237, 254, 255);
+	
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);    
+}
+.waf-theme.metal .waf-checkbox.waf-state-hover .waf-checkbox-box {
+	background-color: rgb(204, 250, 252);
+	border-color: rgb(0, 159, 199);
+}
+.waf-theme.metal .waf-checkbox.waf-state-active .waf-checkbox-box {
+	background-color: rgb(0, 159, 199);
+	border-color: rgb(0, 116, 140);
+}
+.waf-theme.metal .waf-checkbox.waf-state-selected .waf-checkbox-box {
+	background-color: rgb(255, 136, 0);
+	border-color: rgb(230, 96, 0);
+}
+.waf-theme.metal .waf-checkbox.waf-state-disabled .waf-checkbox-box {
+	opacity: 0.4;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section checkbox icon
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-checkbox .waf-checkbox-icon {
+	position: absolute;
+	width:  100%;
+	height: 100%;
+ 	left:   0;
+ 	top:    0;
+}
+.waf-theme.metal .waf-checkbox .waf-checkbox-icon.waf-icon-svg {
+    display: none;
+}
+.waf-theme.metal .waf-checkbox .waf-checkbox-icon-symbol {
+	fill: rgb(255, 255, 255);
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection checkbox icon state
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-checkbox.waf-state-active .waf-checkbox-icon-symbol-shadow {
+	fill: rgb(0, 116, 140);
+}
+.waf-theme.metal .waf-checkbox.waf-state-selected .waf-checkbox-icon-symbol-shadow {
+	fill: rgb(230, 96, 0);
+}
+.waf-theme.metal .waf-checkbox.waf-state-active .waf-checkbox-icon.waf-icon-svg,
+.waf-theme.metal .waf-checkbox.waf-state-selected .waf-checkbox-icon.waf-icon-svg {
+ 	display: block;
+}
+
+
+/** 
+ * Widget combobox
+ *
+ * Includes checkbox-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/combobox/css/widget-combobox.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-combobox {
+    border-width: 1px;
+    border-style: solid;
+	
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.47, rgba(255, 255, 255, 0)), color-stop(0.47, rgb(255, 255, 255)), color-stop(1, rgb(255, 255, 255))), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 47%, rgb(255, 255, 255) 47%, rgb(255, 255, 255) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:    -moz-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 47%, rgb(255, 255, 255) 47%, rgb(255, 255, 255) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:     -ms-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 47%, rgb(255, 255, 255) 47%, rgb(255, 255, 255) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:      -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 47%, rgb(255, 255, 255) 47%, rgb(255, 255, 255) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:         linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 47%, rgb(255, 255, 255) 47%, rgb(255, 255, 255) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+
+	border-color: rgb(153, 153, 153);
+	color: rgb(26, 24, 24);
+	text-shadow: rgb(255, 255, 255) 1px 1px;
+}
+
+/* States */
+.waf-theme.metal .waf-combobox.waf-state-hover {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2NjZmFmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjY2ZhZmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, co-stop(0, rgb(255, 255, 255)), color-stop(0.5, rgb(255, 255, 255)), color-stop(0.5, rgb(204, 250, 252)), color-stop(1, rgb(204, 250, 252)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:      -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:         linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+
+	border-color: rgb(0, 159, 199);
+	color: rgb(0, 159, 199);
+}
+.waf-theme.metal .waf-combobox.waf-state-active {
+    border-color: rgb(0, 116, 140);
+
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNzQ4YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMyJSIgc3RvcC1jb2xvcj0iIzAwOWZjNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDlmYzciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(0, 159, 199)), color-stop(0.68, rgb(0, 159, 199)), color-stop(1, rgb(0, 116, 140)));
+	background-image: -webkit-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:    -moz-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:     -ms-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:      -o-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:         linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+
+    color: rgb(255, 255, 255);
+	text-shadow: rgb(74, 64, 44) 1px 1px;
+}
+.waf-theme.metal .waf-combobox.waf-state-disabled {
+    opacity: 0.4;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section combobox input
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-combobox input {
+    border: 0;
+    padding-left: 10px;
+    box-shadow: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section combobox button
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-combobox button {
+    border-width: 0 0 0 1px;
+    border-left-style: solid;
+	background: transparent;
+    box-shadow: none;
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection combobox button states
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-combobox.waf-state-hover button {
+	border-left-color: rgb(115, 220, 230);
+}
+.waf-theme.metal .waf-combobox.waf-state-active button {
+	border-left-color: transparent;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section combobox-list
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-combobox-list {
+    padding: 0;
+    
+    border-left-width: 1px;
+    border-left-style: solid;
+	
+	-webkit-box-shadow: 2px 2px 3px hsla(36, 40%, 27%, 0.3);
+    
+	border-color: rgb(204, 204, 204);
+	box-shadow: 2px 2px 9px rgba(66, 55, 40, 0.3);
+	color: rgb(26, 24, 24);
+}
+.waf-theme.metal .waf-combobox-list.ui-corner-all {
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+        -ms-border-radius: 0;
+         -o-border-radius: 0;
+            border-radius: 0;
+}
+
+/**
+ * -----------------------------------
+ * @subsection ui-menu-item
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-combobox-list .ui-menu-item a,
+.waf-theme.metal .waf-combobox-list .ui-menu-item a.ui-state-hover {
+	margin: 0;
+	padding: 3px 10px;
+    
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+	border-color: transparent;
+    
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+        -ms-border-radius: 0;
+         -o-border-radius: 0;
+            border-radius: 0;
+    
+    outline: none;
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection combobox ui-menu-item states
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-combobox-list .ui-menu-item a.ui-state-hover {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsla(0, 0%, 100%, 0.48)), color-stop(0.17, hsla(0, 0%, 100%, 1)), color-stop(0.83, hsla(0, 0%, 100%, 0)), color-stop(1, hsla(0, 0%, 100%, 0)));
+	background-image: -webkit-linear-gradient(top, hsla(0, 0%, 100%, 0.48) 0%, hsla(0, 0%, 100%, 1) 17%, hsla(0, 0%, 100%, 0) 83%, hsla(0, 0%, 100%, 0) 100%);
+	background-image:    -moz-linear-gradient(top, hsla(0, 0%, 100%, 0.48) 0%, hsla(0, 0%, 100%, 1) 17%, hsla(0, 0%, 100%, 0) 83%, hsla(0, 0%, 100%, 0) 100%);
+	background-image:     -ms-linear-gradient(top, hsla(0, 0%, 100%, 0.48) 0%, hsla(0, 0%, 100%, 1) 17%, hsla(0, 0%, 100%, 0) 83%, hsla(0, 0%, 100%, 0) 100%);
+	background-image:      -o-linear-gradient(top, hsla(0, 0%, 100%, 0.48) 0%, hsla(0, 0%, 100%, 1) 17%, hsla(0, 0%, 100%, 0) 83%, hsla(0, 0%, 100%, 0) 100%);
+	background-image:         linear-gradient(top, hsla(0, 0%, 100%, 0.48) 0%, hsla(0, 0%, 100%, 1) 17%, hsla(0, 0%, 100%, 0) 83%, hsla(0, 0%, 100%, 0) 100%);
+    
+	border-top-color: rgb(176, 242, 245);
+	border-bottom-color: rgb(176, 242, 245);
+	
+	/* we need to reset the background shortcut for IE */
+	background: none;
+	/*background-color: rgb(204, 250, 252);*/
+
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U2ZmVmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgzJSIgc3RvcC1jb2xvcj0iI2NjZmFmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjY2ZhZmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(230, 254, 255)), color-stop(0.17, rgb(255, 255, 255)), color-stop(0.83, rgb(204, 250, 252)), color-stop(1, rgb(204, 250, 252)));
+	background-image: -webkit-linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	background-image:      -o-linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	background-image:         linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	
+	box-shadow: inset 0 1px 1px rgb(255, 255, 255),
+				inset 0 -1px 1px rgb(255, 255, 255);
+
+	color: rgb(0, 159, 199);
+}
+
+
+/** 
+ * Widget container
+ *
+ * Includes container-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/container/css/widget-container.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section container container
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-container {
+    border: 1px solid rgb(153, 153, 153);
+    
+	background-color: rgb(255, 255, 255);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#03000000', endColorstr='#07000000');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.03)), color-stop(0.2, rgba(0, 0, 0, 0.03)), color-stop(1, rgba(0, 0, 0, 0.07)));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	background-image:     -ms-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	background-image:      -o-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	background-image:         linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/** 
+ * Widget dataGrid
+ *
+ * Includes dataGrid-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/dataGrid/css/widget-dataGrid.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section dataGrid container
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-dataGrid {
+    border: 1px solid rgb(153, 153, 153);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dataGrid header
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-dataGrid-header {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+    
+	background-color: rgb(240, 240, 240);
+	border-color: rgb(204, 204, 204);
+	color: rgb(115, 115, 115);
+	text-shadow: rgb(255, 255, 255) 1px 1px;
+}
+.waf-theme.metal .waf-dataGrid .waf-dataGrid-header .waf-dataGrid-cell.waf-state-focus {
+	color: rgb(26, 24, 24);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dataGrid body
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-dataGrid-body {
+	border-color: rgb(204, 204, 204);
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection dataGrid row
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-dataGrid-row {
+	border-color: transparent;
+}
+/* states */
+.waf-theme.metal .waf-dataGrid-row.waf-state-hover {
+	border-top-color: rgb(176, 242, 245);
+	border-bottom-color: rgb(176, 242, 245);
+	/*background-color: rgb(204, 250, 252);*/
+
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U2ZmVmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgzJSIgc3RvcC1jb2xvcj0iI2NjZmFmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjY2ZhZmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(230, 254, 255)), color-stop(0.17, rgb(255, 255, 255)), color-stop(0.83, rgb(204, 250, 252)), color-stop(1, rgb(204, 250, 252)));
+	background-image: -webkit-linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	background-image:      -o-linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	background-image:         linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+
+	box-shadow: inset 0 1px 1px rgb(255, 255, 255),
+				inset 0 -1px 1px rgb(255, 255, 255);
+
+	color: rgb(0, 159, 199);
+}
+.waf-theme.metal .waf-dataGrid-row.waf-state-active {
+	border-top-color: rgb(0, 107, 131);
+	border-bottom-color: rgb(0, 116, 140);
+
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNzQ4YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMyJSIgc3RvcC1jb2xvcj0iIzAwOWZjNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDlmYzciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(0, 159, 199)), color-stop(0.68, rgb(0, 159, 199)), color-stop(1, rgb(0, 116, 140)));
+	background-image: -webkit-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:    -moz-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:     -ms-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:      -o-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:         linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+
+	box-shadow: none;
+
+	color: rgb(255, 255, 255);
+	text-shadow: rgba(0, 0, 0, 0.3) 1px 1px;
+}
+.waf-theme.metal .waf-dataGrid-row.waf-state-active .waf-dataGrid-cell {
+	border-left-color: rgb(0, 116, 140);
+}
+.waf-theme.metal .waf-dataGrid-row.waf-state-selected {
+	border-top-color: rgb(252, 225, 174);
+	border-bottom-color: rgb(252, 225, 174);
+	/*background-color: rgb(252, 240, 217);*/
+
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZjllZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgzJSIgc3RvcC1jb2xvcj0iI2ZjZjBkOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmY2YwZDkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255, 249, 237)), color-stop(0.17, rgb(255, 255, 255)), color-stop(0.83, rgb(252, 240, 217)), color-stop(1, rgb(252, 240, 217)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 249, 237) 0%, rgb(255, 255, 255) 17%, rgb(252, 240, 217) 83%, rgb(252, 240, 217) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(255, 249, 237) 0%, rgb(255, 255, 255) 17%, rgb(252, 240, 217) 83%, rgb(252, 240, 217) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(255, 249, 237) 0%, rgb(255, 255, 255) 17%, rgb(252, 240, 217) 83%, rgb(252, 240, 217) 100%);
+	background-image:      -o-linear-gradient(top, rgb(255, 249, 237) 0%, rgb(255, 255, 255) 17%, rgb(252, 240, 217) 83%, rgb(252, 240, 217) 100%);
+	background-image:         linear-gradient(top, rgb(255, 249, 237) 0%, rgb(255, 255, 255) 17%, rgb(252, 240, 217) 83%, rgb(252, 240, 217) 100%);
+	
+	box-shadow: inset 0 1px 1px rgb(255, 255, 255),
+				inset 0 -1px 1px rgb(255, 255, 255);
+
+	color: rgb(230, 96, 0);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dataGrid cell
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-dataGrid .waf-dataGrid-cell {
+    border-left: 1px solid rgb(204, 204, 204);
+}
+.waf-theme.metal .waf-dataGrid .waf-dataGrid-cell:first-of-type {
+    border-left-color: transparent;
+}
+
+/* states */
+.waf-theme.metal .waf-dataGrid-header .waf-dataGrid-cell.waf-state-focus {
+	color: rgb(26, 24, 24);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dataGrid footer
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-dataGrid-footer {
+	border-top-width: 1px;
+	border-top-style: solid;
+	background-color: rgb(240, 240, 240);
+	border-color: rgb(204, 204, 204);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dataGrid status bar
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-dataGrid .waf-status .waf-status-element {
+    line-height: 30px;
+}
+.waf-theme.metal .waf-dataGrid .waf-status .waf-status-element .waf-toolbar .waf-toolbar-element {
+    top: 4px;
+}
+
+
+/** 
+ * Widget datepicker
+ *
+ * Includes datepicker-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/datepicker/css/widget-datepicker.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section datepicker container
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .ui-datepicker {
+	padding: 0;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	    -ms-border-radius: 0;
+	     -o-border-radius: 0;
+	        border-radius: 0;
+}
+.waf-theme.metal .ui-datepicker-header {
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	    -ms-border-radius: 0;
+	     -o-border-radius: 0;
+	        border-radius: 0;
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.02)), to(rgba(0, 0, 0, 0.17)));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.17));
+	background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.17));
+	background-image:     -ms-linear-gradient(top, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.17));
+	background-image:      -o-linear-gradient(top, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.17));
+	background-image:         linear-gradient(top, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.17));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#05000000', endColorstr='#2b000000');
+	
+	border: 0;
+	
+    background-color: rgb(240, 240, 240);
+	border-color: rgb(204, 204, 204);
+	color: rgb(115, 115, 115);
+}
+.waf-theme.metal .ui-datepicker-calendar {
+	border: 5px solid transparent;
+	margin: 0;
+}
+.waf-theme.metal .ui-datepicker-calendar thead th {
+	text-transform: uppercase;
+}
+.waf-theme.metal .ui-datepicker-calendar td {
+	padding: 0;
+}
+.waf-theme.metal .ui-datepicker td a {
+	background-image: none;
+}
+
+/* states */
+.waf-theme.metal .ui-datepicker td a.ui-state-hover {
+	background-color: rgb(204, 250, 252);
+	border-color: rgb(255, 255, 255);
+	color: rgb(0, 159, 199);
+}
+.waf-theme.metal .ui-datepicker td a.ui-state-active {
+	background-color: rgb(252, 240, 217);
+	border-color: transparent;
+	color: rgb(230, 96, 0);
+}
+.waf-theme.metal .ui-datepicker td a.ui-state-highlight {
+	background-color: rgb(0, 159, 199);
+	border-color: transparent;
+	color: rgb(255, 255, 255);
+}
+
+
+/** 
+ * Widget dialog
+ *
+ * Includes dialog-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/dialog/css/widget-dialog.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section dialog header
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-widget-header.waf-dialog-header {
+	border-width: 0 0 1px 0;
+	border-color: rgb(153, 153, 153);
+}
+.waf-theme.metal .waf-dialog-header-title {
+	color: inherit;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dialog body
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-widget-body.waf-dialog-body {
+    border-width: 0;
+	box-shadow: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section dialog footer
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-widget-footer.waf-dialog-footer {
+	border-width: 1px 0 0 0;
+    border-color: rgb(153, 153, 153);
+}
+
+
+/**
+ * Widget fileUpload
+ *
+ * Includes fileUpload-specific rules of the 'Metal' theme
+ *
+ * @link /walib/WAF/widget/fileUpload/css/widget-fileUpload.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-fileUpload {
+	border: 1px solid rgb(153, 153, 153);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}
+/* States */
+.waf-theme.metal .waf-fileUpload.waf-state-disabled {
+    opacity: 0.4;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Paragraph
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-fileUpload .waf-fileUpload-paragraph {
+    color: rgb(115, 115, 115);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Buttons
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-fileUpload .waf-button.waf-fileUpload-btnBrowse {
+    top:    3px !important;
+    right:  3px !important;
+    bottom: 3px !important;
+    left: auto !important;
+    
+    width: 20px !important;
+    height: auto !important;
+}
+.waf-theme.metal .waf-fileUpload .waf-button.waf-fileUpload-btnUpload {
+    top:    3px !important;
+    right:  26px !important;
+    bottom: 3px !important;
+    left: auto !important;
+    
+    width: 25px !important;
+    height: auto !important;
+
+    background: none;
+    background-color: rgb(255, 255, 255);
+    background-image: url("/walib/WAF/widget/fileUpload/images/upload.png");
+    background-repeat: no-repeat;
+    background-position:  center top;
+}
+.waf-theme.metal .waf-fileUpload .waf-button.waf-fileUpload-btnCardinal {
+    top:    3px !important;
+    right:  54px !important;
+    bottom: 3px !important;
+    left: auto !important;
+    
+    width: 20px !important;
+    height: auto !important;
+}
+.waf-theme.metal .waf-fileUpload .waf-button.waf-fileUpload-btnDelete {
+    top:    3px !important;
+    right:  77px !important;
+    bottom: 3px !important;
+    left: auto !important;
+    
+    width: 20px !important;
+    height: auto !important;
+
+    /* background: rgb(255, 255, 255) url("/walib/WAF/widget/fileUpload/images/upload.png") no-repeat center top; */
+}
+
+
+/* GUI Designer */
+body.yui-layout .waf-theme.metal .waf-designer-fileupload .waf-button.waf-fileUpload-btnBrowse,
+body.yui-layout .waf-theme.metal .waf-designer-fileupload .waf-button.waf-fileUpload-btnUpload,
+body.yui-layout .waf-theme.metal .waf-designer-fileupload .waf-button.waf-fileUpload-btnCardinal,
+body.yui-layout .waf-theme.metal .waf-designer-fileupload .waf-button.waf-fileUpload-btnDelete{
+    top:    0 !important;
+    right:  0 !important;
+    bottom: 0 !important;
+    left:   0 !important;
+    
+    width:  100% !important;
+    height: 100% !important;
+}
+/* // GUI Designer */
+
+/**
+ * -------------------------------------------------------
+ * @section fileList
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-fileUpload .waf-fileUpload-fileList .waf-fileUpload-fileItem .waf-fileUpload-fileItem-name {
+    padding: 3px 10px;
+    
+    line-height: 1.5;
+    font-size: 11px;
+}
+.waf-theme.metal .waf-fileUpload .waf-fileUpload-fileList .waf-fileUpload-fileItem:first-of-type {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.waf-theme.metal .waf-fileUpload .waf-fileUpload-fileList .waf-fileUpload-fileItem:last-of-type {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* States */
+.waf-theme.metal .waf-fileUpload .waf-fileUpload-fileList.waf-state-disabled{
+    opacity: 0.4 !important;
+}
+.waf-theme.metal .waf-fileUpload .waf-fileUpload-fileList .waf-fileUpload-fileItem.waf-state-hover {
+    /* we need to reset the background shortcut for IE */
+    background: none;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U2ZmVmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgzJSIgc3RvcC1jb2xvcj0iI2NjZmFmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjY2ZhZmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(230, 254, 255)), color-stop(0.17, rgb(255, 255, 255)), color-stop(0.83, rgb(204, 250, 252)), color-stop(1, rgb(204, 250, 252)));
+	background-image: -webkit-linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	background-image:      -o-linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	background-image:         linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	
+	box-shadow: inset 0 1px 1px rgb(255, 255, 255),
+				inset 0 -1px 1px rgb(255, 255, 255);
+}
+.waf-theme.metal .waf-fileUpload .waf-fileUpload-fileList .waf-fileUpload-fileItem.waf-state-hover .waf-fileUpload-fileItem-name {
+	color: rgb(0, 159, 199);
+}
+
+
+/**
+ * Widget frame
+ *
+ * Includes frame-specific rules of the 'Metal' theme
+ *
+ * @link /walib/WAF/widget/frame/css/widget-frame.css
+ */
+
+/**
+ * -----------------------------------
+ * @section Main
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-frame {
+	border: 1px solid rgb(153, 153, 153);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/** 
+ * Widget icon
+ *
+ * Includes icon-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/icon/css/widget-icon.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section icon
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-icon path {
+	fill: rgb(115, 115, 115);
+}
+
+/**
+ * -----------------------------------
+ * @subsection icon state
+ * -----------------------------------
+ */
+/* hover */
+.waf-theme.metal .waf-icon.waf-state-hover {
+	background-color: transparent;
+}
+.waf-theme.metal .waf-icon.waf-state-hover path {
+	background-color: transparent;
+	fill: rgb(0, 159, 199);
+	opacity: 1;
+}
+
+
+/**
+ * Widget label
+ *
+ * Includes label-specific rules of the 'Metal' theme
+ *
+ * @link /walib/WAF/widget/label/css/widget-label.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+/* States */
+.waf-theme.metal .waf-label.waf-state-disabled {
+	opacity: 0.4;
+}
+
+
+/** 
+ * Widget login
+ *
+ * Includes login-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/login/css/widget-login.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-login {
+	border: 1px solid rgb(153, 153, 153);
+
+    background-color: rgb(255, 255, 255);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.03)), color-stop(0.2, rgba(0, 0, 0, 0.03)), color-stop(1, rgba(0, 0, 0, 0.07)));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	background-image:     -ms-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	background-image:      -o-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	background-image:         linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#03000000', endColorstr='#07000000');
+	
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Login Dialog
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .ui-widget {
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 0;
+   
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+    
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 11px;    
+}
+.waf-theme.metal .ui-widget .waf-widget-header {
+	border-width: 0 0 1px 0;
+	border-color: rgb(153, 153, 153);
+    
+    background-color: rgb(255, 255, 255);
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU0JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU4JSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.42, rgba(255, 255, 255, 0)), color-stop(0.46, rgba(255, 255, 255, 0.85)), color-stop(1, rgba(255, 255, 255, 1))), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:  -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:     -moz-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:      -ms-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:       -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:          linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0 5px 5px;
+}
+.waf-theme.metal .ui-widget .waf-widget-body {
+    background-color: transparent;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.03)), color-stop(0.2, rgba(0, 0, 0, 0.03)), color-stop(1, rgba(0, 0, 0, 0.07)));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	background-image:     -ms-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	background-image:      -o-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	background-image:         linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#03000000', endColorstr='#07000000');
+}
+
+
+/** 
+ * Widget matrix
+ *
+ * Includes matrix-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/matrix/css/widget-matrix.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section matrix element container
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-matrix .waf-matrix-element {
+	-webkit-transition: border 0.2s ease-in-out,
+		-webkit-box-shadow 0.2s ease-in-out;
+	-moz-transition: border 0.2s ease-in-out,
+		background-image 0.2s ease-in-out,
+		-moz-box-shadow 0.2s ease-in-out;
+	-o-transition: border 0.2s ease-in-out,
+		background-image 0.2s ease-in-out,
+		box-shadow 0.2s ease-in-out;
+}
+
+/**
+ * -------------------------------------------------------
+ * @subsection matrix elements states
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-matrix-element.waf-state-selected {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		from(rgba(0, 0, 0, 0.03)),
+		color-stop(0.2, rgba(0, 0, 0, 0.03)),
+		to(rgba(0, 0, 0, 0.07))
+	);
+	background-image: -moz-linear-gradient(
+		bottom,
+		rgba(0, 0, 0, 0.03),
+		rgba(0, 0, 0, 0.03) 20%,
+		rgba(0, 0, 0, 0.07)
+	);
+	
+	-webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.3),
+		 inset 0 0 8px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 16px rgba(0, 0, 0, 0.3),
+		 inset 0 0 8px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.3),
+		 inset 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/** 
+ * Widget menubar
+ *
+ * Includes menubar-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/menubar/css/widget-menubar.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section menuBar container
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-menuBar {
+    border: 1px solid rgb(153, 153, 153);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 
+                0 1px 0px rgba(255, 255, 255, 0.5) inset;
+}
+.waf-theme.metal .waf-menuBar .waf-menuBar {
+	background-image: none;
+}
+
+/**
+ * -----------------------------------
+ * @subsection menuBar horizontal
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-menuBar-horizontal {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU0JSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.46, rgba(255, 255, 255, 0)), color-stop(0.49, rgba(255, 255, 255, 0.85)), color-stop(1, rgba(255, 255, 255, 1))), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:  -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.85) 49%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:     -moz-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.85) 49%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:      -ms-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.85) 49%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:       -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.85) 49%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:          linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.85) 49%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+}
+
+/**
+ * -----------------------------------
+ * @subsection menuBar level 0
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-widget.waf-menuBar-level-0 {
+    border-color: rgb(153, 153, 153);
+}
+
+/**
+ * -----------------------------------
+ * @subsection submenuBar
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-menuBar .waf-menuBar {
+	background-color: rgb(255, 255, 255);
+}
+
+
+/** 
+ * Widget menuitem
+ *
+ * Includes menuitem-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/menuitem/css/widget-menuitem.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section menuItem
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-menuItem {
+	border-width: 0;
+	border-style: solid;
+    border-color: rgb(204, 204, 204);
+	color: rgb(115, 115, 115);
+}
+.waf-theme.metal .waf-menuItem .waf-menuItem {
+	background-image: none;
+	filter: none;
+}
+.waf-theme.metal .waf-menuItem-level-0 {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section horizontal menuItem
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-menuItem-horizontal {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU0JSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.46, rgba(255, 255, 255, 0)), color-stop(0.49, rgba(255, 255, 255, 0.85)), color-stop(1, rgba(255, 255, 255, 1))), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:  -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.85) 49%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:     -moz-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.85) 49%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:      -ms-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.85) 49%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:       -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.85) 49%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+	background-image:          linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.85) 49%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+
+    border-right-color: rgb(204, 204, 204);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section vertical menuItem
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-menuItem-vertical {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.02)), to(rgba(0, 0, 0, 0.17)));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.17));
+	background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.17));
+	background-image:     -ms-linear-gradient(top, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.17));
+	background-image:      -o-linear-gradient(top, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.17));
+	background-image:         linear-gradient(top, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.17));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#05000000', endColorstr='#2b000000');
+}
+.waf-theme.metal .waf-menuItem-level-0.waf-menuItem-vertical {
+    border-top-color: rgb(204, 204, 204);
+    border-bottom-color: rgb(204, 204, 204);
+}
+.waf-theme.metal .waf-menuItem-level-0.waf-menuItem-vertical,
+.waf-theme.metal .waf-menuItem .waf-menuItem-horizontal {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc0JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255, 255, 255)), color-stop(0.74, rgb(255, 255, 255)), color-stop(1, rgb(242, 242, 242)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 74%, rgb(242, 242, 242) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 74%, rgb(242, 242, 242) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 74%, rgb(242, 242, 242) 100%);
+	background-image:      -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 74%, rgb(242, 242, 242) 100%);
+	background-image:         linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 74%, rgb(242, 242, 242) 100%);
+}
+.waf-theme.metal .waf-menuItem .waf-menuItem {
+	text-shadow: none;
+	color: rgb(26, 24, 24);
+}
+.waf-theme.metal .waf-menuItem .waf-menuItem-vertical {
+    border-color: transparent;
+}
+
+/**
+ * -----------------------------------
+ * @subsection menuItem state
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-menuItem.waf-state-hover {
+	/*background-color: rgb(204, 250, 252);*/
+
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2NjZmFmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjY2ZhZmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255, 255, 255)), color-stop(0.47, rgb(255, 255, 255)), color-stop(0.51, rgb(204, 250, 252)), color-stop(1, rgb(204, 250, 252)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(204, 250, 252) 51%, rgb(204, 250, 252) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(204, 250, 252) 51%, rgb(204, 250, 252) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(204, 250, 252) 51%, rgb(204, 250, 252) 100%);
+	background-image:      -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(204, 250, 252) 51%, rgb(204, 250, 252) 100%);
+	background-image:         linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(204, 250, 252) 51%, rgb(204, 250, 252) 100%);
+
+	color: rgb(0, 159, 199);
+	text-shadow: rgb(255, 255, 255) 1px 1px;
+}
+.waf-theme.metal .waf-menuItem.waf-menuItem-vertical.waf-state-hover {
+	box-shadow: inset 0 -1px 1px rgb(255, 255, 255);
+}
+.waf-theme.metal .waf-menuItem.waf-state-active {
+	/*background-color: rgb(0, 159, 199);*/
+
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNzQ4YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMyJSIgc3RvcC1jb2xvcj0iIzAwOWZjNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDlmYzciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(0, 159, 199)), color-stop(0.68, rgb(0, 159, 199)), color-stop(1, rgb(0, 116, 140)));
+	background-image: -webkit-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:    -moz-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:     -ms-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:      -o-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:         linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+
+	color: rgb(255, 255, 255);
+	text-shadow: rgba(0, 0, 0, 0.3) 1px 1px;
+}
+.waf-theme.metal .waf-menuItem.waf-state-selected {
+	/*background-color: rgb(255, 136, 0);*/
+
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U2NjAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE0JSIgc3RvcC1jb2xvcj0iI2ZmODgwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkzJSIgc3RvcC1jb2xvcj0iI2ZmYTIwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmEyMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(230, 96, 0)), color-stop(0.14, rgb(255, 136, 0)), color-stop(0.93, rgb(255, 162, 0)), color-stop(1, rgb(255, 162, 0)));
+	background-image: -webkit-linear-gradient(top, rgb(230, 96, 0) 0%, rgb(255, 136, 0) 14%, rgb(255, 162, 0) 93%, rgb(255, 162, 0) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(230, 96, 0) 0%, rgb(255, 136, 0) 14%, rgb(255, 162, 0) 93%, rgb(255, 162, 0) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(230, 96, 0) 0%, rgb(255, 136, 0) 14%, rgb(255, 162, 0) 93%, rgb(255, 162, 0) 100%);
+	background-image:      -o-linear-gradient(top, rgb(230, 96, 0) 0%, rgb(255, 136, 0) 14%, rgb(255, 162, 0) 93%, rgb(255, 162, 0) 100%);
+	background-image:         linear-gradient(top, rgb(230, 96, 0) 0%, rgb(255, 136, 0) 14%, rgb(255, 162, 0) 93%, rgb(255, 162, 0) 100%);
+
+	color: rgb(255, 255, 255);
+	text-shadow: rgba(0, 0, 0, 0.3) 1px 1px;
+}
+.waf-theme.metal .waf-menuItem.waf-state-disabled {
+	color: rgb(153, 153, 153);
+	text-shadow: rgb(255, 255, 255) 1px 1px;
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection sub-menuItem state
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-menuItem .waf-menuItem.waf-state-hover {
+	border-top-color: rgb(176, 242, 245);
+	border-bottom-color: rgb(176, 242, 245);
+	/*background-color: rgb(204, 250, 252);*/
+
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U2ZmVmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgzJSIgc3RvcC1jb2xvcj0iI2NjZmFmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjY2ZhZmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(230, 254, 255)), color-stop(0.17, rgb(255, 255, 255)), color-stop(0.83, rgb(204, 250, 252)), color-stop(1, rgb(204, 250, 252)));
+	background-image: -webkit-linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	background-image:      -o-linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+	background-image:         linear-gradient(top, rgb(230, 254, 255) 0%, rgb(255, 255, 255) 17%, rgb(204, 250, 252) 83%, rgb(204, 250, 252) 100%);
+
+	color: rgb(0, 159, 199);
+
+	box-shadow: inset 0 1px 1px rgb(255, 255, 255),
+				inset 0 -1px 1px rgb(255, 255, 255);
+}
+.waf-theme.metal .waf-menuItem .waf-menuItem.waf-state-active {
+	background-color: rgb(0, 159, 199);
+	color: rgb(255, 255, 255);
+
+	box-shadow: none;
+}
+
+
+/** 
+ * Widget progressBar
+ *
+ * Includes progressBar-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/progressBar/css/widget-progressBar.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-progressBar {
+	padding: 2px 0 0;
+	
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, hsla(0, 0%, 100%, 0.2)),
+		color-stop(1, hsla(0, 0%, 100%, 0.3))
+	);
+	background-image: -webkit-linear-gradient(
+		hsla(0, 0%, 100%, 0.2) 0%,
+		hsla(0, 0%, 100%, 0.3) 100%
+	);
+	background-image: -moz-linear-gradient(
+		hsla(0, 0%, 100%, 0.2) 0%,
+		hsla(0, 0%, 100%, 0.3) 100%
+	);
+	background-image: -ms-linear-gradient(
+		hsla(0, 0%, 100%, 0.2) 0%,
+		hsla(0, 0%, 100%, 0.3) 100%
+	);
+	background-image: -o-linear-gradient(
+		hsla(0, 0%, 100%, 0.2) 0%,
+		hsla(0, 0%, 100%, 0.3) 100%
+	);
+	background-image: linear-gradient(
+		hsla(0, 0%, 100%, 0.2) 0%,
+		hsla(0, 0%, 100%, 0.3) 100%
+	);
+	
+	-webkit-box-shadow:	inset 0px 1px 2px 0px hsla(0, 0%, 0%, 0.55),
+						0px 1px 0px 0px hsla(0, 0%, 100%, 0.55);
+	   -moz-box-shadow:	inset 0px 1px 2px 0px hsla(0, 0%, 0%, 0.55),
+						0px 1px 0px 0px hsla(0, 0%, 100%, 0.55);
+			box-shadow: inset 0px 1px 2px 0px hsla(0, 0%, 0%, 0.55),
+						0px 1px 0px 0px hsla(0, 0%, 100%, 0.55);
+
+	background-color: rgb(138, 140, 142);
+	border-color: rgb(115, 115, 115);
+	color: rgb(0, 0, 0);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section range
+ * -------------------------------------------------------
+ */
+@-webkit-keyframes waf-progressBar-animation {
+	from {
+		background-position: 0 0;
+	}
+	
+	to {
+		background-position: 100% 0;
+	}
+}
+
+.waf-theme.metal .waf-progressBar-range {
+	margin-top: -1px;
+	
+	-webkit-background-size: 15px 15px;
+	   -moz-background-size: 15px 15px;
+	    -ms-background-size: 15px 15px;
+		 -o-background-size: 15px 15px;
+			background-size: 15px 15px;
+	
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right bottom,
+		color-stop(0.00, hsla(0, 0%, 100%, 0.17)),
+		color-stop(0.25, hsla(0, 0%, 100%, 0.17)),
+		color-stop(0.26, hsla(0, 0%, 100%, 0)),
+		color-stop(0.50, hsla(0, 0%, 100%, 0)),
+		color-stop(0.51, hsla(0, 0%, 100%, 0.17)),
+		color-stop(0.75, hsla(0, 0%, 100%, 0.17)),
+		color-stop(0.76, hsla(0, 0%, 100%, 0)),
+		color-stop(1.00, hsla(0, 0%, 100%, 0))
+	);
+	
+	background-image: -moz-linear-gradient(
+		top left 0deg,
+		hsla(0, 0%, 100%, 0.17),
+		hsla(0, 0%, 100%, 0.17) 50%,
+		hsla(0, 0%, 100%, 0) 50%,
+		hsla(0, 0%, 100%, 0) 100%
+	);
+	
+	-webkit-box-shadow:
+		inset 0px 1px 0px 0px hsla(0, 0%, 100%, 0.35),
+		inset 0px -1px 1px hsla(0, 0%, 100%, 0.5);
+	-moz-box-shadow:
+		inset 0px 1px 0px 0px hsla(0, 0%, 100%, 0.35),
+		inset 0px -1px 1px hsla(0, 0%, 100%, 0.5);
+	-ms-box-shadow:
+		inset 0px 1px 0px 0px hsla(0, 0%, 100%, 0.35),
+		inset 0px -1px 1px hsla(0, 0%, 100%, 0.5);
+	-o-box-shadow:
+		inset 0px 1px 0px 0px hsla(0, 0%, 100%, 0.35),
+		inset 0px -1px 1px hsla(0, 0%, 100%, 0.5);
+	box-shadow:
+		inset 0px 1px 0px 0px hsla(0, 0%, 100%, 0.35),
+		inset 0px -1px 1px hsla(0, 0%, 100%, 0.5);
+    
+	background-color: rgb(255, 136, 0);
+	border-color: rgb(255, 136, 0);
+}
+
+.waf-theme.metal .waf-progressBar-range span {
+	display: inline-block;
+	margin: auto 5px;
+	height: 100%;
+}
+
+
+/** 
+ * Widget radiogroup
+ *
+ * Includes radiogroup-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/radiogroup/css/widget-radiogroup.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section main
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-radioGroup.waf-state-disabled {
+    opacity: 0.4;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section radio box
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-radioGroup .waf-radio .waf-radio-box {
+ 	position: relative;
+ 	width: 12px;
+	height: 12px;
+
+    border: 1px solid rgb(115, 115, 115);
+    border-radius: 6px;
+            
+    background-color: rgb(230, 230, 230);
+}
+/**
+ * -----------------------------------
+ * @subsubsection radio box state
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-radio.waf-state-hover .waf-radio-box {
+	background-color: rgb(204, 250, 252);
+	border-color: rgb(0, 159, 199);
+}
+.waf-theme.metal .waf-radio.waf-state-active .waf-radio-box {
+	background-color: rgb(0, 159, 199);
+	border-color: rgb(0, 116, 140);
+}
+.waf-theme.metal .waf-radio.waf-state-selected .waf-radio-box {
+	background-color: rgb(252, 255, 255);
+	border-color: rgb(230, 96, 0);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section radio icon
+ * -------------------------------------------------------
+ */
+ .waf-theme.metal .waf-radioGroup .waf-radio .waf-radio-icon {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+ 	left: -3px;
+ 	top: -3px;
+}
+
+.waf-theme.metal .waf-radioGroup .waf-radio .waf-radio-icon.waf-icon-svg {
+	display: none;
+}
+
+/**
+ * -----------------------------------
+ * @subection radio icon symbol
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-radio .waf-radio-icon-symbol {
+	fill: rgb(230, 230, 230);
+}
+.waf-theme.metal .waf-radio .waf-radio-icon-symbol-shadow {
+	fill: rgb(255, 255, 255);
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection radio icon state
+ * -----------------------------------
+ */
+/* hover */
+.waf-theme.metal .waf-radio.waf-state-hover .waf-radio-icon-symbol {
+	fill: rgb(0, 159, 199);
+}
+/* active */
+.waf-theme.metal .waf-radio.waf-state-active .waf-radio-icon-symbol {
+	fill: rgb(255, 255, 255);
+}
+.waf-theme.metal .waf-radio.waf-state-active .waf-radio-icon-symbol-shadow {
+	fill: rgb(0, 116, 140);
+}
+/* selected */
+.waf-theme.metal .waf-radio.waf-state-selected .waf-radio-icon-symbol {
+	fill: rgb(230, 96, 0);
+}
+.waf-theme.metal .waf-radio.waf-state-selected .waf-radio-icon-symbol-shadow {
+	fill: rgb(255, 162, 0);
+}
+
+/**
+ * -----------------------------------
+ * @subsection radio icon state
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-radioGroup .waf-radio.waf-state-active .waf-radio-icon.waf-icon-svg,
+.waf-theme.metal .waf-radioGroup .waf-radio.waf-state-selected .waf-radio-icon.waf-icon-svg {
+ 	display: block;
+}
+
+
+/** 
+ * Widget select
+ *
+ * Includes select-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/select/css/widget-select.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section select container
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-select {
+	/*height: 27px;*/
+
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsla(0, 0%, 100%, 1)), color-stop(1, hsla(0, 0%, 100%, 0)));
+	background-image: -webkit-linear-gradient(top, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
+	background-image:    -moz-linear-gradient(top, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
+	background-image:     -ms-linear-gradient(top, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
+	background-image:      -o-linear-gradient(top, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
+	background-image:         linear-gradient(top, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
+
+	border-width: 1px;
+	border-style: solid;
+	
+	border-radius: 6px;
+    
+	background-color: rgb(208, 208, 208);
+    border-color: rgb(76, 76, 76);
+}
+.waf-theme.metal .waf-widget.waf-select.waf-state-active {
+	border-color: rgb(17, 46, 135);
+}
+
+/**
+ * -----------------------------------
+ * @subsection select label
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-select-label {
+    right: 19px;
+
+    padding-left: 5px;
+
+    border-width: 0 1px 0 0;
+    border-style: solid;
+
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-color: rgba(0, 0, 0, 0.57);
+}
+.waf-theme.metal .waf-widget.waf-select.waf-state-active .waf-select-label {
+	border-color: rgb(17, 46, 135);
+}
+
+/**
+ * -----------------------------------
+ * @subsection select button
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-select-button {
+    width: 19px;
+
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsla(0, 0%, 100%, 0.58)), color-stop(1, hsla(0, 0%, 100%, 0.34)));
+	background-image: -webkit-linear-gradient(top, hsla(0, 0%, 100%, 0.58) 0%, hsla(0, 0%, 100%, 0.34) 100%);
+	background-image:    -moz-linear-gradient(top, hsla(0, 0%, 100%, 0.58) 0%, hsla(0, 0%, 100%, 0.34) 100%);
+	background-image:     -ms-linear-gradient(top, hsla(0, 0%, 100%, 0.58) 0%, hsla(0, 0%, 100%, 0.34) 100%);
+	background-image:      -o-linear-gradient(top, hsla(0, 0%, 100%, 0.58) 0%, hsla(0, 0%, 100%, 0.34) 100%);
+	background-image:         linear-gradient(top, hsla(0, 0%, 100%, 0.58) 0%, hsla(0, 0%, 100%, 0.34) 100%);
+
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+    
+	background-color: rgb(0, 0, 0);
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection select button state
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-select.waf-state-active .waf-select-button {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsla(0, 0%, 100%, 0.03)), color-stop(1, hsla(0, 0%, 100%, 0.45)));
+	background-image: -webkit-linear-gradient(top, hsla(0, 0%, 100%, 0.03) 0%, hsla(0, 0%, 100%, 0.45) 100%);
+	background-image:    -moz-linear-gradient(top, hsla(0, 0%, 100%, 0.03) 0%, hsla(0, 0%, 100%, 0.45) 100%);
+	background-image:     -ms-linear-gradient(top, hsla(0, 0%, 100%, 0.03) 0%, hsla(0, 0%, 100%, 0.45) 100%);
+	background-image:      -o-linear-gradient(top, hsla(0, 0%, 100%, 0.03) 0%, hsla(0, 0%, 100%, 0.45) 100%);
+	background-image:         linear-gradient(top, hsla(0, 0%, 100%, 0.03) 0%, hsla(0, 0%, 100%, 0.45) 100%);
+    background-color: rgb(17, 46, 135);
+}
+
+/**
+ * -----------------------------------
+ * @subection select icon symbol
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-widget.waf-select .waf-select-icon-symbol {
+	fill: rgb(255, 255, 255);
+}
+.waf-theme.metal .waf-widget.waf-select .waf-select-icon-symbol-shadow {
+	opacity: 0.75;
+}
+
+/**
+ * -----------------------------------
+ * @subsection select icon
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-select-icon {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+ 	left: 1px;
+ 	top: 2px;
+}
+
+
+/** 
+ * Widget slider
+ *
+ * Includes slider-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/slider/css/widget-slider.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-slider {
+    border: 1px solid rgb(115, 115, 115);
+}
+/* States */
+.waf-theme.metal .waf-slider.waf-state-disabled {
+	opacity: 0.4;
+}
+
+/**
+ * -----------------------------------
+ * @subsection slider horizontal
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-slider.ui-slider-horizontal {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQyNDI0MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQlIiBzdG9wLWNvbG9yPSIjNDI0MjQyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTIlIiBzdG9wLWNvbG9yPSIjNzM3MzczIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzczNzM3MyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(115, 115, 115)), color-stop(0.48, rgb(115, 115, 115)), color-stop(0.96, rgb(66, 66, 66)), color-stop(1, rgb(66, 66, 66)));
+	background-image: -webkit-linear-gradient(bottom, rgb(115, 115, 115) 0%, rgb(115, 115, 115) 48%, rgb(66, 66, 66) 96%, rgb(66, 66, 66) 100%);
+	background-image:    -moz-linear-gradient(bottom, rgb(115, 115, 115) 0%, rgb(115, 115, 115) 48%, rgb(66, 66, 66) 96%, rgb(66, 66, 66) 100%);
+	background-image:     -ms-linear-gradient(bottom, rgb(115, 115, 115) 0%, rgb(115, 115, 115) 48%, rgb(66, 66, 66) 96%, rgb(66, 66, 66) 100%);
+	background-image:      -o-linear-gradient(bottom, rgb(115, 115, 115) 0%, rgb(115, 115, 115) 48%, rgb(66, 66, 66) 96%, rgb(66, 66, 66) 100%);
+	background-image:         linear-gradient(bottom, rgb(115, 115, 115) 0%, rgb(115, 115, 115) 48%, rgb(66, 66, 66) 96%, rgb(66, 66, 66) 100%);
+	
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/**
+ * -----------------------------------
+ * @subsection slider vertical
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-slider.ui-slider-vertical {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQyNDI0MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQlIiBzdG9wLWNvbG9yPSIjNDI0MjQyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTIlIiBzdG9wLWNvbG9yPSIjNzM3MzczIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzczNzM3MyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background-image: -webkit-gradient(linear, right top, left top, color-stop(0, rgb(115, 115, 115)), color-stop(0.48, rgb(115, 115, 115)), color-stop(0.96, rgb(66, 66, 66)), color-stop(1, rgb(66, 66, 66)));
+	background-image: -webkit-linear-gradient(right, rgb(115, 115, 115), rgb(115, 115, 115) 48%, rgb(66, 66, 66) 96%, rgb(66, 66, 66) 100%);
+	background-image:    -moz-linear-gradient(right, rgb(115, 115, 115), rgb(115, 115, 115) 48%, rgb(66, 66, 66) 96%, rgb(66, 66, 66) 100%);
+	background-image:     -ms-linear-gradient(right, rgb(115, 115, 115), rgb(115, 115, 115) 48%, rgb(66, 66, 66) 96%, rgb(66, 66, 66) 100%);
+	background-image:      -o-linear-gradient(right, rgb(115, 115, 115), rgb(115, 115, 115) 48%, rgb(66, 66, 66) 96%, rgb(66, 66, 66) 100%);
+	background-image:         linear-gradient(right, rgb(115, 115, 115), rgb(115, 115, 115) 48%, rgb(66, 66, 66) 96%, rgb(66, 66, 66) 100%);
+	
+	-webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5);
+	   -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5);
+	    -ms-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5);
+	     -o-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5);
+			box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section ui-slider-range
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-slider .ui-slider-range {
+}
+
+/**
+ * -----------------------------------
+ * @subsection ui-slider-range horizontal
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-slider.ui-slider-horizontal .ui-slider-range {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjZTFhZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIxJSIgc3RvcC1jb2xvcj0iI2ZmYTIwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc5JSIgc3RvcC1jb2xvcj0iI2ZmODgwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNjYwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(252, 225, 174)), color-stop(0.21, rgb(255, 162, 0)), color-stop(0.79, rgb(255, 136, 0)), color-stop(1, rgb(230, 96, 0)));
+	background-image: -webkit-linear-gradient(top, rgb(252, 225, 174) 0%, rgb(255, 162, 0) 21%, rgb(255, 136, 0) 79%, rgb(230, 96, 0) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(252, 225, 174) 0%, rgb(255, 162, 0) 21%, rgb(255, 136, 0) 79%, rgb(230, 96, 0) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(252, 225, 174) 0%, rgb(255, 162, 0) 21%, rgb(255, 136, 0) 79%, rgb(230, 96, 0) 100%);
+	background-image:      -o-linear-gradient(top, rgb(252, 225, 174) 0%, rgb(255, 162, 0) 21%, rgb(255, 136, 0) 79%, rgb(230, 96, 0) 100%);
+	background-image:         linear-gradient(top, rgb(252, 225, 174) 0%, rgb(255, 162, 0) 21%, rgb(255, 136, 0) 79%, rgb(230, 96, 0) 100%);
+	
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85);
+	   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85);
+		-ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85);
+		 -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85);
+			box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+/**
+ * -----------------------------------
+ * @subsection ui-slider-range vertical
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-slider.ui-slider-vertical .ui-slider-range {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjZTFhZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIxJSIgc3RvcC1jb2xvcj0iI2ZmYTIwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc5JSIgc3RvcC1jb2xvcj0iI2ZmODgwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNjYwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgb(252, 225, 174)), color-stop(0.21, rgb(255, 162, 0)), color-stop(0.79, rgb(255, 136, 0)), color-stop(1, rgb(230, 96, 0)));
+	background-image: -webkit-linear-gradient(left, rgb(252, 225, 174) 0%, rgb(255, 162, 0) 21%, rgb(255, 136, 0) 79%, rgb(230, 96, 0) 100%);
+	background-image:    -moz-linear-gradient(left, rgb(252, 225, 174) 0%, rgb(255, 162, 0) 21%, rgb(255, 136, 0) 79%, rgb(230, 96, 0) 100%);
+	background-image:     -ms-linear-gradient(left, rgb(252, 225, 174) 0%, rgb(255, 162, 0) 21%, rgb(255, 136, 0) 79%, rgb(230, 96, 0) 100%);
+	background-image:      -o-linear-gradient(left, rgb(252, 225, 174) 0%, rgb(255, 162, 0) 21%, rgb(255, 136, 0) 79%, rgb(230, 96, 0) 100%);
+	background-image:         linear-gradient(left, rgb(252, 225, 174) 0%, rgb(255, 162, 0) 21%, rgb(255, 136, 0) 79%, rgb(230, 96, 0) 100%);
+	
+	-webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.85);
+	   -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.85);
+		-ms-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.85);
+		 -o-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.85);
+			box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.85);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section ui-slider-handle
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-slider .ui-slider-handle {
+	border-width: 1px;
+	border-style: solid;
+	
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	    -ms-border-radius: 0;
+	     -o-border-radius: 0;
+	        border-radius: 0;
+            
+	background-color: rgb(240, 240, 240);
+	border-color: rgb(153, 153, 153);
+
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255, 255, 255)), color-stop(0.5, rgb(255, 255, 255)), color-stop(0.5, rgb(242, 242, 242)), color-stop(1, rgb(242, 242, 242)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(242, 242, 242) 50%, rgb(242, 242, 242) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(242, 242, 242) 50%, rgb(242, 242, 242) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(242, 242, 242) 50%, rgb(242, 242, 242) 100%);
+	background-image:      -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(242, 242, 242) 50%, rgb(242, 242, 242) 100%);
+	background-image:         linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(242, 242, 242) 50%, rgb(242, 242, 242) 100%);
+
+	box-shadow: inset 0 0 0 1px rgb(255, 255, 255),
+				1px 1px 2px rgba(0, 0, 0, 0.15);
+
+	/*color: rgb(115, 115, 115);*/
+	color: rgb(173, 173, 173);
+	text-shadow: 1px 0 rgb(255, 255, 255);
+}
+
+/**
+ * -----------------------------------
+ * @subsection ui-slider-handle horizontal
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-slider.ui-slider-horizontal .ui-slider-handle {
+	top: -3px;
+	bottom: -3px;
+	
+	background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(255, 255, 255, 0.3)), color-stop(49%, rgba(255, 255, 255, 1)), color-stop(51%, rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0.3)));
+	background-image: -webkit-linear-gradient(top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 0.3) 100%);
+	background-image:    -moz-linear-gradient(top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 0.3) 100%);
+	background-image:     -ms-linear-gradient(top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 0.3) 100%);
+	background-image:      -o-linear-gradient(top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 0.3) 100%);
+	background-image:         linear-gradient(top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 0.3) 100%);
+	 /*
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#07ffffff', endColorstr='#ffffffff');
+	*/
+}
+
+/**
+ * -----------------------------------
+ * @subsection ui-slider-handle vertical
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-slider.ui-slider-vertical .ui-slider-handle {
+	left: -3px;
+	right: -3px;
+    margin-left: 0;
+	
+	background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(255, 255, 255, 0.3)), color-stop(49%, rgba(255, 255, 255, 1)), color-stop(51%, rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0.3)));
+	background-image: -webkit-linear-gradient(top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 0.3) 100%);
+	background-image:    -moz-linear-gradient(top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 0.3) 100%);
+	background-image:     -ms-linear-gradient(top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 0.3) 100%);
+	background-image:      -o-linear-gradient(top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 0.3) 100%);
+	background-image:         linear-gradient(top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 0.3) 100%);
+	 /*
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#07ffffff', endColorstr='#ffffffff');
+	*/
+}
+
+/**
+ * -----------------------------------
+ * @subsubsection ui-slider-handle state
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-slider .ui-slider-handle.ui-state-hover {
+	/*background-color: rgb(204, 250, 252);*/
+
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2NjZmFmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjY2ZhZmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255, 255, 255)), color-stop(0.5, rgb(255, 255, 255)), color-stop(0.5, rgb(204, 250, 252)), color-stop(1, rgb(204, 250, 252)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:      -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:         linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+
+	border-color: rgb(0, 159, 199);
+	color: rgb(115, 220, 230);
+}
+.waf-theme.metal .waf-slider .ui-slider-handle.ui-state-active {
+	/*background-color: rgb(0, 159, 199);*/
+
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzczZGNlNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzczZGNlNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwOWZjNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDlmYzciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(115, 220, 230)), color-stop(0.5, rgb(115, 220, 230)), color-stop(0.5, rgb(0, 159, 199)), color-stop(1, rgb(0, 159, 199)));
+	background-image: -webkit-linear-gradient(top, rgb(115, 220, 230) 0%, rgb(115, 220, 230) 50%, rgb(0, 159, 199) 50%, rgb(0, 159, 199) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(115, 220, 230) 0%, rgb(115, 220, 230) 50%, rgb(0, 159, 199) 50%, rgb(0, 159, 199) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(115, 220, 230) 0%, rgb(115, 220, 230) 50%, rgb(0, 159, 199) 50%, rgb(0, 159, 199) 100%);
+	background-image:      -o-linear-gradient(top, rgb(115, 220, 230) 0%, rgb(115, 220, 230) 50%, rgb(0, 159, 199) 50%, rgb(0, 159, 199) 100%);
+	background-image:         linear-gradient(top, rgb(115, 220, 230) 0%, rgb(115, 220, 230) 50%, rgb(0, 159, 199) 50%, rgb(0, 159, 199) 100%);
+
+	box-shadow: inset 0 0 0 1px rgb(115, 220, 230),
+				1px 1px 2px rgba(0, 0, 0, 0.15);
+
+	border-color: rgb(0, 116, 140);
+	color: rgb(0, 116, 140);
+	text-shadow: 1px 0 rgb(204, 250, 252);
+}
+.waf-theme.metal .waf-slider .ui-slider-handle.ui-state-focus {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
+                0 1px 0px rgba(255, 255, 255, 0.5) inset;
+}
+
+
+/** 
+ * Widget tabView (prior to Wakanda 6)
+ *
+ * Includes tabView-specific rules of the 'Metal' theme
+ *
+ * @link /walib/WAF/widget/tabView/css/widget-tabView.css
+ *
+ * Warning: the following properties have been deprecated
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section tabview menuBar
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-tabView .waf-tabView-menuBar {
+    border: 0;
+    background: none;
+    box-shadow: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section tabview menuBar menuItem
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-tabView .waf-tabView-menuBar .waf-menuItem {
+    border-color: rgb(153, 153, 153);
+	box-shadow: 1px 0 1px rgb(255, 255, 255) inset,
+				-1px 0 1px rgb(255, 255, 255) inset;
+	color: rgb(153, 153, 153);
+}
+
+/* States */
+.waf-theme.metal .waf-tabView .waf-tabView-menuBar .waf-menuItem.waf-state-hover:not(.waf-state-selected) {
+	border-color: rgb(0, 159, 199);
+	color: rgb(0, 155, 232);
+}
+.waf-theme.metal .waf-tabView .waf-tabView-menuBar .waf-menuItem.waf-state-active:not(.waf-state-selected) {
+	border-color: rgb(0, 116, 140);
+	box-shadow: none;
+	color: rgb(255, 255, 255);
+}
+.waf-theme.metal .waf-tabView .waf-tabView-menuBar .waf-menuItem.waf-state-selected {
+	background-color: rgb(255, 255, 255);
+	background-image: none;
+    box-shadow: none;
+    color: rgb(230, 96, 0);
+	text-shadow: none;
+}
+
+/**
+ * -----------------------------------
+ * @subsection tabview menuBar menuItem (position)
+ * -----------------------------------
+ */
+.waf-theme.metal .waf-tabView.waf-tabView-menu-position-top-left .waf-tabView-menuBar .waf-menuItem,
+.waf-theme.metal .waf-tabView.waf-tabView-menu-position-top-right .waf-tabView-menuBar .waf-menuItem {
+	border-width: 1px 1px 0 1px;
+}
+.waf-theme.metal .waf-tabView.waf-tabView-menu-position-right-top .waf-tabView-menuBar .waf-menuItem,
+.waf-theme.metal .waf-tabView.waf-tabView-menu-position-right-bottom .waf-tabView-menuBar .waf-menuItem {
+	border-width: 1px 1px 1px 0;
+}
+.waf-theme.metal .waf-tabView.waf-tabView-menu-position-bottom-right .waf-tabView-menuBar .waf-menuItem,
+.waf-theme.metal .waf-tabView.waf-tabView-menu-position-bottom-left .waf-tabView-menuBar .waf-menuItem {
+	border-width: 0 1px 1px 1px;
+}
+.waf-theme.metal .waf-tabView.waf-tabView-menu-position-left-bottom .waf-tabView-menuBar .waf-menuItem,
+.waf-theme.metal .waf-tabView.waf-tabView-menu-position-left-top .waf-tabView-menuBar .waf-menuItem {
+	border-width: 1px 0 1px 1px;
+}
+
+/* States */
+.waf-theme.metal .waf-tabView.waf-tabView-menu-position-top-left .waf-tabView-menuBar .waf-menuItem.waf-state-selected,
+.waf-theme.metal .waf-tabView.waf-tabView-menu-position-top-right .waf-tabView-menuBar .waf-menuItem.waf-state-selected {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.03)), color-stop(1, rgba(0, 0, 0, 0.03)));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03));
+	background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03));
+	background-image:     -ms-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03));
+	background-image:      -o-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03));
+	background-image:         linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03));    
+}
+.waf-theme.metal .waf-tabView.waf-tabView-menu-position-bottom-left .waf-tabView-menuBar .waf-menuItem.waf-state-selected,
+.waf-theme.metal .waf-tabView.waf-tabView-menu-position-bottom-right .waf-tabView-menuBar .waf-menuItem.waf-state-selected {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.07)), color-stop(1, rgba(0, 0, 0, 0.07)));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+	background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+	background-image:     -ms-linear-gradient(top, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+	background-image:      -o-linear-gradient(top, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+	background-image:         linear-gradient(top, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));    
+}
+
+
+/** 
+ * Widget textField
+ *
+ * Includes textField-specific rules of the 'metal' theme
+ *
+ * @link /walib/WAF/widget/textField/css/widget-textField.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-textField {
+	padding: 3px 6px;
+    
+    border: 1px solid rgb(153, 153, 153);
+
+	background-color: rgb(255, 255, 255);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#05ffffff', endColorstr='#b2ffffff');
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(1%, rgba(255, 255, 255, 0.02)), to(rgba(255, 255, 255, 0.7)));
+	background-image:  -webkit-linear-gradient(top, #fff, rgba(255, 255, 255, 0.02) 1px, rgba(255, 255, 255, 0.7) 100%);
+	background-image:     -moz-linear-gradient(top, #fff, rgba(255, 255, 255, 0.02) 1px, rgba(255, 255, 255, 0.7) 100%);
+	background-image:      -ms-linear-gradient(top, #fff, rgba(255, 255, 255, 0.02) 1px, rgba(255, 255, 255, 0.7) 100%);
+	background-image:       -o-linear-gradient(top, #fff, rgba(255, 255, 255, 0.02) 1px, rgba(255, 255, 255, 0.7) 100%);
+	background-image:          linear-gradient(top, #fff, rgba(255, 255, 255, 0.02) 1px, rgba(255, 255, 255, 0.7) 100%);
+
+	
+	-webkit-transition: border 0.2s ease-in-out,
+		-webkit-box-shadow 0.2s ease-in-out;
+	-moz-transition: border 0.2s ease-in-out,
+		-moz-box-shadow 0.2s ease-in-out;
+	-o-transition: border 0.2s ease-in-out,
+		box-shadow 0.2s ease-in-out;
+    
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3);
+
+	color: rgb(0, 0, 0);
+    font-size: 11px;
+    
+    
+	resize: none;
+	outline: none;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section textField state
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-textField.waf-state-hover,
+.waf-theme.metal .waf-textField.waf-state-focus {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	
+	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	   -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* states */
+.waf-theme.metal .waf-textField.waf-state-hover {
+	border-color: rgb(115, 220, 230);
+}
+.waf-theme.metal .waf-textField.waf-state-focus {
+    border-color: rgb(0, 116, 140);
+
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNzQ4YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMyJSIgc3RvcC1jb2xvcj0iIzAwOWZjNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDlmYzciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(0, 159, 199)), color-stop(0.68, rgb(0, 159, 199)), color-stop(1, rgb(0, 116, 140)));
+	background-image: -webkit-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:    -moz-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:     -ms-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:      -o-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:         linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+
+	text-shadow: rgb(74, 64, 44) 1px 1px;
+    color: rgb(255, 255, 255);
+}
+.waf-theme.metal .waf-textField.waf-state-active {
+	-webkit-transition-duration: 0.0s;
+	   -moz-transition-duration: 0.0s;
+	     -o-transition-duration: 0.0s;
+}
+.waf-theme.metal .waf-textField.waf-state-disabled {
+    opacity: 0.4;
+}
+
+
+/** 
+ * Widget video
+ *
+ * Includes video-specific rules of the 'Metal' theme
+ *
+ * @link /walib/WAF/widget/video/css/widget-video.css
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Main
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-video {
+    border: 1px solid rgb(153, 153, 153);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/** 
+ * Widget tinymce
+ *
+ * Includes tinymce-specific rules of the 'Metal' theme
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Skin
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .o2k7SkinSilver .mceExternalToolbar, 
+.waf-theme.metal .o2k7SkinSilver .mceListBox .mceText, 
+.waf-theme.metal .o2k7SkinSilver div.mceMenu, 
+.waf-theme.metal .o2k7SkinSilver table.mceLayout, 
+.waf-theme.metal .o2k7SkinSilver .mceMenuItemTitle a, 
+.waf-theme.metal .o2k7SkinSilver table.mceLayout tr.mceFirst td, 
+.waf-theme.metal .o2k7SkinSilver table.mceLayout, 
+.waf-theme.metal .o2k7SkinSilver .mceMenuItemTitle a, 
+.waf-theme.metal .o2k7SkinSilver table.mceLayout tr.mceLast td, 
+.waf-theme.metal .o2k7SkinSilver .mceIframeContainer {
+    border-color: rgb(153, 153, 153);
+}
+
+
+/** 
+ * -----------------------------------------------------------------------------
+ * New Wak6 classes
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * -------------------------------------------------------
+ * @section Buttons
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-ui-button {
+    border: 1px solid rgb(153, 153, 153);
+    
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255, 255, 255)), color-stop(0.47, rgb(255, 255, 255)), color-stop(0.51, rgb(242, 242, 242)), color-stop(1, rgb(242, 242, 242)));
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+    background-image:      -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+    background-image:         linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
+                0 1px 0px rgba(255, 255, 255, 0.5) inset;
+
+    -webkit-transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+       -moz-transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+         -o-transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+                
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+/* States */
+.waf-theme.metal .waf-ui-button:not(.waf-button):hover {
+    border-color: rgb(0, 159, 199);
+
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2NjZmFmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjY2ZhZmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255, 255, 255)), color-stop(0.5, rgb(255, 255, 255)), color-stop(0.5, rgb(204, 250, 252)), color-stop(1, rgb(204, 250, 252)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:      -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+	background-image:         linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(204, 250, 252) 50%, rgb(204, 250, 252) 100%);
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
+                0 1px 0px rgba(255, 255, 255, 0.5) inset;
+}
+.waf-theme.metal .waf-ui-button:not(.waf-button):active {
+    border-color: rgb(0, 116, 140);
+	
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNzQ4YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMyJSIgc3RvcC1jb2xvcj0iIzAwOWZjNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDlmYzciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(0, 159, 199)), color-stop(0.68, rgb(0, 159, 199)), color-stop(1, rgb(0, 116, 140)));
+	background-image: -webkit-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:    -moz-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:     -ms-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:      -o-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	background-image:         linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+	
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
+                0 1px 0px rgba(255, 255, 255, 0.5) inset;
+}
+.waf-theme.metal .waf-ui-button:not(.waf-button):focus {
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
+                0 1px 0px rgba(255, 255, 255, 0.5) inset;
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Box
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-ui-box {
+    border-style: solid;
+    border-width: 0;
+}
+.waf-theme.metal .waf-ui-box > .waf-ui-header {
+    border-width: 0 0 1px 0;
+    border-style: inherit;
+    border-color: inherit;
+    
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.waf-theme.metal .waf-ui-box > .waf-ui-footer {
+    border-width: 1px 0 0 0;
+    border-style: inherit;
+    border-color: inherit;
+    
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+.waf-theme.metal .waf-ui-box {
+    border: 1px solid rgb(153, 153, 153);
+
+    background-color: rgb(255, 255, 255);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#03000000', endColorstr='#07000000');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.03)), color-stop(0.2, rgba(0, 0, 0, 0.03)), color-stop(1, rgba(0, 0, 0, 0.07)));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+    background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+    background-image:     -ms-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+    background-image:      -o-linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+    background-image:         linear-gradient(top, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.07));
+	
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+/**
+ * -------------------------------------------------------
+ * @section Header, Footer and Content
+ * -------------------------------------------------------
+ */
+.waf-theme.metal .waf-ui-header {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU0JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU4JSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.42, rgba(255, 255, 255, 0)), color-stop(0.46, rgba(255, 255, 255, 0.85)), color-stop(1, rgba(255, 255, 255, 1))), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+    background-image:  -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+    background-image:     -moz-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+    background-image:      -ms-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+    background-image:       -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+    background-image:          linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+}
+.waf-theme.metal .waf-ui-footer {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU0JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU4JSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.42, rgba(255, 255, 255, 0)), color-stop(0.46, rgba(255, 255, 255, 0.85)), color-stop(1, rgba(255, 255, 255, 1))), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+    background-image:  -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+    background-image:     -moz-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+    background-image:      -ms-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+    background-image:       -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+    background-image:          linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.85) 46%, rgba(255, 255, 255, 1) 100%), url("/walib/WAF/widget/skin/default/png/widget-skin-default-texture.png");
+}
+.waf-theme.metal .waf-ui-body {
+    
+}
+
+
+/** 
+ * Widget tabview2 (Widget Custom)
+ *
+ */
+
+
+/**
+ * tabs Bar
+ */
+
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-top"] > ul {
+    height: 24px;
+}
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-bottom"] > ul {
+    height: 24px;
+}
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-left"] > ul {
+    width: 66px;
+}
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-right"] > ul {
+    width: 66px;
+}
+
+
+/**
+ * tabs
+ */
+
+.waf-theme.metal .waf-tabview2 > ul li {
+    border-width: 1px; 
+    border-style: solid;
+    border-color: rgb(153, 153, 153);
+
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255, 255, 255)), color-stop(0.47, rgb(255, 255, 255)), color-stop(0.51, rgb(242, 242, 242)), color-stop(1, rgb(242, 242, 242)));
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+    background-image:      -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+    background-image:         linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(242, 242, 242) 51%, rgb(242, 242, 242) 100%);
+    
+    box-shadow: 1px 0 1px rgb(255, 255, 255) inset, 
+                -1px 0 1px rgb(255, 255, 255) inset;
+
+    color: rgb(153, 153, 153);
+}
+.waf-theme.metal .waf-tabview2 > ul li.waf-state-hover {
+    border-color: rgb(0, 159, 199);
+
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2NjZmFmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjY2ZhZmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255, 255, 255)), color-stop(0.47, rgb(255, 255, 255)), color-stop(0.51, rgb(204, 250, 252)), color-stop(1, rgb(204, 250, 252)));
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(204, 250, 252) 51%, rgb(204, 250, 252) 100%);
+    background-image:    -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(204, 250, 252) 51%, rgb(204, 250, 252) 100%);
+    background-image:     -ms-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(204, 250, 252) 51%, rgb(204, 250, 252) 100%);
+    background-image:      -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(204, 250, 252) 51%, rgb(204, 250, 252) 100%);
+    background-image:         linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 47%, rgb(204, 250, 252) 51%, rgb(204, 250, 252) 100%);
+
+    text-shadow: rgb(255, 255, 255) 1px 1px;
+    color: rgb(0, 159, 199);
+}
+.waf-theme.metal .waf-tabview2 > ul li.waf-state-active {
+    border-color: rgb(0, 116, 140);
+
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNzQ4YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMyJSIgc3RvcC1jb2xvcj0iIzAwOWZjNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDlmYzciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(0, 159, 199)), color-stop(0.68, rgb(0, 159, 199)), color-stop(1, rgb(0, 116, 140)));
+    background-image: -webkit-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+    background-image:    -moz-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+    background-image:     -ms-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+    background-image:      -o-linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+    background-image:         linear-gradient(bottom, rgb(0, 159, 199) 0%, rgb(0, 159, 199) 68%, rgb(0, 116, 140) 100%);
+
+    box-shadow: none;
+
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.3) 1px 1px;
+}
+.waf-theme.metal .waf-tabview2 > ul li.waf-state-selected {
+    background-image: none;
+    background-color: #fff;
+    box-shadow: none;
+
+    color: rgb(230, 96, 0);
+}
+
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-top"] > ul li.waf-state-selected {
+    border-bottom-color: transparent;
+    background-color: #f8f8f8;
+}
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-bottom"] > ul li.waf-state-selected {
+    border-top-color: transparent;
+    background-color: #eeeeee;
+}
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-left"] > ul li.waf-state-selected {
+    border-right-color: transparent;
+}
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-right"] > ul li.waf-state-selected {
+    border-left-color: transparent;
+}
+
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-left"] > ul li,
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-right"] > ul li {
+    height: 26px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 24px;
+}
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-top"] > ul li,
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-bottom"] > ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 22px;
+}
+
+
+/**
+ * close Tab
+ */
+
+.waf-theme.metal .waf-tabview2 .waf-tabview2-closeTab {
+    float: left;
+    width: 10px;
+    height: 22px;
+    background-image: url("./images/close_button.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4;
+}
+.waf-theme.metal .waf-tabview2 .waf-tabview2-closeTab:hover {
+    opacity: 1;
+}
+
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-top"] .waf-tabview2-closeTab,
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-bottom"] .waf-tabview2-closeTab {
+    float: right;
+    background-position: right center;
+    height: 20px;
+}
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-left"] .waf-tabview2-closeTab,
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-right"] .waf-tabview2-closeTab {
+    background-position: left center;
+}
+
+
+/**
+ * containers 
+ */
+
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-top"] > .waf-tabview2container {
+    top: 23px;
+}
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-bottom"] > .waf-tabview2container {
+    bottom: 23px;
+}
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-left"] > .waf-tabview2container {
+    left: 65px;
+}
+.waf-theme.metal .waf-tabview2[class*="waf-tabview2-right"] > .waf-tabview2container {
+    right: 65px;
+}

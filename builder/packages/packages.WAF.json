@@ -1,0 +1,872 @@
+[
+    {
+        "name": "Widget_V2",
+        "version": "1.0.0",
+        "loadDependencies": []
+    },
+    {
+        "name": "Core/Widget_V2",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "themes/base.css", "path": "WAF"},
+            {"id": "Lib/HandleBars"},
+            {"id": "waf-core/formatters.js", "path": "WAF"},
+            {"id": "waf-core/binding-parser.js", "path": "WAF"},
+            {"id": "waf-core/template.js", "path": "WAF"},
+            {"id": "waf-behavior/bindable.js", "path": "WAF"},
+            {"id": "waf-behavior/properties.js", "path": "WAF"},
+            {"id": "waf-behavior/properties-list.js", "path": "WAF"},
+            {"id": "waf-behavior/properties-datasource.js", "path": "WAF"},
+            {"id": "waf-behavior/properties-template.js", "path": "WAF"},
+            {"id": "waf-core/widget.js", "path": "WAF"},
+            {"id": "waf-behavior/domhelpers.js", "path": "WAF"},
+            {"id": "waf-behavior/focus.js", "path": "WAF"},
+            {"id": "waf-behavior/style.js", "path": "WAF"},
+            {"id": "waf-behavior/size.js", "path": "WAF"},
+            {"id": "waf-behavior/position.js", "path": "WAF"},
+            {"id": "waf-behavior/layout/composed.js", "path": "WAF"},
+            {"id": "waf-behavior/layout/container.js", "path": "WAF"},
+            {"id": "waf-behavior/layout/container-customnode.js", "path": "WAF"},
+            {"id": "waf-behavior/layout/multicontainer.js", "path": "WAF"},
+            {"id": "waf-behavior/layout/repeater.js", "path": "WAF"},
+            {"id": "waf-behavior/layout/properties-container.js", "path": "WAF"},
+            {"id": "waf-behavior/source-navigation.js", "path": "WAF"},
+            {"id": "waf-widget/body.js", "path": "WAF"},
+            {"id": "waf-widget/oldwidget.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Core/Native/Rest",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Core/Native/Rest.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Core/Utils/Dates",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Core/Utils/Dates.js", "path": "WAF"}
+
+        ]
+    },
+    {
+        "name": "Core/Utils/DebugTools",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Core/Utils/DebugTools.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Core/Utils/Environment",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Core/Utils/Environment.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Core/Utils/Strings",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Core/Utils/Strings.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Core/Utils/Timers",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Core/Utils/Timers.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Core/Utils/Classes",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "waf-core/core.js", "path": "WAF"},
+            {"id": "waf-core/class.js", "path": "WAF"},
+            {"id": "waf-core/error.js", "path": "WAF"},
+            {"id": "waf-core/event.js", "path": "WAF"},
+            {"id": "waf-core/behavior.js", "path": "WAF"},
+            {"id": "waf-behavior/methodshelper.js", "path": "WAF"},
+            {"id": "waf-core/subscriber.js", "path": "WAF"},
+            {"id": "waf-behavior/observable.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Core/Utils",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Core/Utils/Dates"},
+            {"id": "Core/Utils/DebugTools"},
+            {"id": "Core/Utils/Environment"},
+            {"id": "Core/Utils/Strings"},
+            {"id": "Core/Utils/Timers"},
+            {"id": "Core/Utils/Classes"}
+        ]
+    },
+    {
+        "name": "DataProvider",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "DataProvider/Data-Provider.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "DataSource/DataSource",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "DataSource/Data-Source.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "DataSource/Selection",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "DataSource/Selection.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "DataSource/ErrorHandling",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "DataSource/ErrorHandling.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "DataSource",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "DataSource/DataSource"},
+            {"id": "DataSource/Selection"},
+            {"id": "DataSource/ErrorHandling"},
+	    {"id": "widget/calendar/js/datepicker.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Rpc",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "rpc/Rpc.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Tags",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Tags/taglib.js", "path": "WAF"},
+            {"id": "Tags/tags.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Lib/JQuery",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "lib/jquery/jquery.min.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Lib/JQueryUI",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "lib/jquery-ui/jquery-ui.min.js", "path": "WAF"},
+            {"id": "lib/jquery-ui/jquery-ui-i18n.js", "path": "WAF"},
+            {"id": "lib/jquery-ui/themes/base/jquery.ui.core.css", "path": "WAF"},
+            {"id": "lib/jquery-ui/themes/base/jquery.ui.resizable.css", "path": "WAF"},
+            {"id": "lib/jquery-ui/themes/base/jquery.ui.selectable.css", "path": "WAF"},
+            {"id": "lib/jquery-ui/themes/base/jquery.ui.accordion.css", "path": "WAF"},
+            {"id": "lib/jquery-ui/themes/base/jquery.ui.autocomplete.css", "path": "WAF"},
+            {"id": "lib/jquery-ui/themes/base/jquery.ui.button.css", "path": "WAF"},
+            {"id": "lib/jquery-ui/themes/base/jquery.ui.dialog.css", "path": "WAF"},
+            {"id": "lib/jquery-ui/themes/base/jquery.ui.slider.css", "path": "WAF"},
+            {"id": "lib/jquery-ui/themes/base/jquery.ui.tabs.css", "path": "WAF"},
+            {"id": "lib/jquery-ui/themes/base/jquery.ui.datepicker.css", "path": "WAF"},
+            {"id": "lib/jquery-ui/themes/base/jquery.ui.progressbar.css", "path": "WAF"},
+            {"id": "lib/jquery-ui/themes/base/jquery.ui.theme.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Lib/JQuerySVG",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "lib/jquery.svg/jquery.svg.min.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Lib/JQueryHammer",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "lib/hammer/jquery.hammer.min.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Lib/HandleBars",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "lib/handlebars/handlebars.min-latest.js", "path": "WAF"}
+        ]
+    },    
+    {
+        "name": "Lib/Raphael",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "lib/raphael/raphael-min.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Lib/GRaphael",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Lib/Raphael"},
+            {"id": "lib/graphael/g.raphael-min.js", "path": "WAF"},
+            {"id": "lib/graphael/g.line-min.js", "path": "WAF"},
+            {"id": "lib/graphael/g.bar-min.js", "path": "WAF"},
+            {"id": "lib/graphael/g.pie-min.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Lib/Selectbox",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "lib/selectbox/jquery-selectbox.js", "path": "WAF"},
+            {"id": "lib/selectbox/jquery-selectbox.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Lib/Combobox",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "lib/combobox/jquery-combobox.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Lib/Beautytips",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "lib/beautytips/beautytips.js", "path": "WAF"},
+            {"id": "lib/beautytips/beautytips.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Lib/Notify",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "lib/notify/jquery.notify.js", "path": "WAF"},
+            {"id": "lib/notify/ui.notify.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Lib/Mobile",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Core/Native/Rest"},
+            {"id": "lib/mobile/iscroll/iscroll-lite.js", "path": "WAF"},
+            {"id": "lib/mobile/jquery.ui.ipad.altfix.js", "path": "WAF"},
+            {"id": "lib/mobile/mobiscroll/js/mobiscroll-1.5.3.min.js", "path": "WAF"},
+            {"id": "lib/mobile/mobiscroll/css/mobiscroll-1.5.3.min.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/Widget",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/widget.js", "path": "WAF"},
+            {"id": "widget/css/widget.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/Widget_Mobile",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/widget.js", "path": "WAF"},
+            {"id": "widget/css/widget-mobile.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Component/Component",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Component/waf-component.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/Toolbar",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Widget/icon"},
+            {"id": "widget/toolbar/widget-toolbar.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/Datepicker",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/calendar/js/datepicker.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/icon",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Lib/Raphael"},
+            {"id": "widget/icon/widget-icon.js", "path": "WAF"},
+            {"id": "widget/icon/widget-icon-conf.js", "path": "WAF"},
+            {"id": "widget/icon/css/widget-icon.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/button",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/button/widget-button.js", "path": "WAF"},
+            {"id": "widget/button/widget-button-conf.js", "path": "WAF"},
+            {"id": "widget/button/css/widget-button.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/buttonImage",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Widget/button"},
+            {"id": "widget/buttonImage/widget-buttonImage.js", "path": "WAF"},
+            {"id": "widget/buttonImage/widget-buttonImage-conf.js", "path": "WAF"},
+            {"id": "widget/buttonImage/css/widget-buttonImage.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/checkbox",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/checkbox/widget-checkbox.js", "path": "WAF"},
+            {"id": "widget/checkbox/widget-checkbox-conf.js", "path": "WAF"},
+            {"id": "widget/checkbox/css/widget-checkbox.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/fileUpload",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Widget/button"},
+            {"id": "Widget/container"},
+            {"id": "widget/fileUpload/widget-fileUpload.js", "path": "WAF"},
+            {"id": "widget/fileUpload/widget-fileUpload-conf.js", "path": "WAF"},
+            {"id": "widget/fileUpload/css/widget-fileUpload.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/container",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/container/widget-container.js", "path": "WAF"},
+            {"id": "widget/container/widget-container-conf.js", "path": "WAF"},
+            {"id": "widget/container/css/widget-container.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/richText",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/richText/widget-richText.js", "path": "WAF"},
+            {"id": "widget/richText/widget-richText-conf.js", "path": "WAF"},
+            {"id": "widget/richText/css/widget-richText.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/errorDiv",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/errorDiv/widget-errorDiv.js", "path": "WAF"},
+            {"id": "widget/errorDiv/widget-errorDiv-conf.js", "path": "WAF"},
+            {"id": "widget/errorDiv/css/widget-errorDiv.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/dataGrid",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Widget/Toolbar"},
+            {"id": "widget/dataGrid/widget-dataGrid.js", "path": "WAF"},
+            {"id": "widget/dataGrid/widget-dataGrid-conf.js", "path": "WAF"},
+            {"id": "widget/dataGrid/css/widget-dataGrid.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/autoForm",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Widget/Toolbar"},
+            {"id": "Widget/checkbox"},
+            {"id": "Widget/textField"},
+            {"id": "Widget/calendar"},
+            {"id": "Widget/dataGrid"},
+            {"id": "Widget/image"},
+            {"id": "widget/autoForm/widget-autoForm.js", "path": "WAF"},
+            {"id": "widget/autoForm/widget-autoForm-conf.js", "path": "WAF"},
+            {"id": "widget/autoForm/css/widget-autoForm.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/queryForm",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Widget/autoForm"},
+            {"id": "widget/queryForm/widget-queryForm.js", "path": "WAF"},
+            {"id": "widget/queryForm/widget-queryForm-conf.js", "path": "WAF"},
+            {"id": "widget/dataGrid/css/widget-dataGrid.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/image",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/image/widget-image.js", "path": "WAF"},
+            {"id": "widget/image/widget-image-conf.js", "path": "WAF"},
+            {"id": "widget/image/css/widget-image.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/label",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/label/widget-label.js", "path": "WAF"},
+            {"id": "widget/label/widget-label-conf.js", "path": "WAF"},
+            {"id": "widget/label/css/widget-label.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/slider",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/slider/widget-slider.js", "path": "WAF"},
+            {"id": "widget/slider/widget-slider-conf.js", "path": "WAF"},
+            {"id": "widget/slider/css/widget-slider.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/textField",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "lib/mobile/mobiscroll/js/mobiscroll-1.5.3.min.js", "path": "WAF"},
+            {"id": "lib/mobile/mobiscroll/css/mobiscroll-1.5.3.min.css", "path": "WAF"},
+            {"id": "widget/textField/widget-textField.js", "path": "WAF"},
+            {"id": "widget/textField/widget-textField-conf.js", "path": "WAF"},
+            {"id": "widget/textField/css/widget-textField.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/googleMap",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/googleMap/widget-googleMap.js", "path": "WAF"},
+            {"id": "widget/googleMap/widget-googleMap-conf.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/yahooWeather",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/yahooWeather/widget-yahooWeather.js", "path": "WAF"},
+            {"id": "widget/yahooWeather/widget-yahooWeather-conf.js", "path": "WAF"},
+            {"id": "widget/yahooWeather/css/widget-yahooWeather.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/progressBar",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/progressBar/widget-progressBar.js", "path": "WAF"},
+            {"id": "widget/progressBar/widget-progressBar-conf.js", "path": "WAF"},
+            {"id": "widget/progressBar/css/widget-progressBar.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/matrix",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Widget/container"},
+            {"id": "widget/matrix/widget-matrix.js", "path": "WAF"},
+            {"id": "widget/matrix/widget-matrix-conf.js", "path": "WAF"},
+            {"id": "widget/matrix/css/widget-matrix.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/combobox",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/combobox/widget-combobox.js", "path": "WAF"},
+            {"id": "widget/combobox/widget-combobox-conf.js", "path": "WAF"},
+            {"id": "widget/combobox/css/widget-combobox.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/radioGroup",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/radiogroup/widget-radiogroup.js", "path": "WAF"},
+            {"id": "widget/radiogroup/widget-radiogroup-conf.js", "path": "WAF"},
+            {"id": "widget/radiogroup/css/widget-radiogroup.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/menuBar",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Widget/menuItem"},
+            {"id": "widget/menubar/widget-menubar.js", "path": "WAF"},
+            {"id": "widget/menubar/widget-menubar-conf.js", "path": "WAF"},
+            {"id": "widget/menubar/css/widget-menubar.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/menuItem",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/menuitem/widget-menuitem.js", "path": "WAF"},
+            {"id": "widget/menuitem/widget-menuitem-conf.js", "path": "WAF"},
+            {"id": "widget/menuitem/css/widget-menuitem.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/login",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/login/widget-login.js", "path": "WAF"},
+            {"id": "widget/login/widget-login-conf.js", "path": "WAF"},
+            {"id": "widget/login/css/widget-login.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/component",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/component/widget-component-conf.js", "path": "WAF"},
+            {"id": "widget/component/widget-component.js", "path": "WAF"},
+            {"id": "widget/component/css/widget-component.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/chart",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Lib/GRaphael"},
+            {"id": "widget/chart/widget-chart-conf.js", "path": "WAF"},
+            {"id": "widget/chart/widget-chart.js", "path": "WAF"},
+            {"id": "widget/chart/css/widget-chart.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/idUpload",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Widget/button"},
+            {"id": "Widget/container"},
+            {"id": "widget/idUpload/widget-idUpload-conf.js", "path": "WAF"},
+            {"id": "widget/idUpload/widget-idUpload.js", "path": "WAF"},
+            {"id": "widget/idUpload/css/widget-idUpload.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/tabView",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Widget/menuBar"},
+            {"id": "widget/tabview/widget-tabview.js", "path": "WAF"},
+            {"id": "widget/tabview/widget-tabview-conf.js", "path": "WAF"},
+            {"id": "widget/tabview/css/widget-tabview.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/dialog",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Lib/Raphael"},
+            {"id": "Widget/button"},
+            {"id": "Widget/container"},
+            {"id": "Widget/image"},
+            {"id": "Widget/richText"},
+            {"id": "widget/dialog/widget-dialog.js", "path": "WAF"},
+            {"id": "widget/dialog/widget-dialog-conf.js", "path": "WAF"},
+            {"id": "widget/dialog/css/widget-dialog.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/wysiwyg",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "lib/tiny_mce/tiny_mce.js", "path": "WAF"},
+            {"id": "widget/tinymce/widget-tinymce.js", "path": "WAF"},
+            {"id": "widget/tinymce/widget-tinymce-conf.js", "path": "WAF"},
+            {"id": "widget/tinymce/css/widget-tinymce.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/frame",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/frame/widget-frame.js", "path": "WAF"},
+            {"id": "widget/frame/widget-frame-conf.js", "path": "WAF"},
+            {"id": "widget/frame/css/widget-frame.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/video",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/video/widget-video.js", "path": "WAF"},
+            {"id": "widget/video/widget-video-conf.js", "path": "WAF"},
+            {"id": "widget/video/videoTypes/youtubeVideo.js", "path": "WAF"},
+            {"id": "widget/video/videoTypes/dailymotionVideo.js", "path": "WAF"},
+            {"id": "widget/video/videoTypes/html5Video.js", "path": "WAF"},
+            {"id": "widget/video/videoTypes/vimeoVideo.js", "path": "WAF"},
+            {"id": "widget/video/css/widget-video.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/canvas",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/canvas/widget-canvas.js", "path": "WAF"},
+            {"id": "widget/canvas/widget-canvas-conf.js", "path": "WAF"},
+            {"id": "widget/canvas/css/widget-canvas.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/calendar",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Widget/Datepicker"},
+            {"id": "widget/calendar/widget-calendar.js", "path": "WAF"},
+            {"id": "widget/calendar/widget-calendar-conf.js", "path": "WAF"},
+            {"id": "widget/calendar/css/widget-calendar.css", "path": "WAF"},
+            {"id": "widget/calendar/css/datepicker.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/googleMaps",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/googleMaps/widget-googleMaps.js", "path": "WAF"},
+            {"id": "widget/googleMaps/widget-googleMaps-conf.js", "path": "WAF"},
+            {"id": "widget/googleMaps/css/widget-googleMaps.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/accordion",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Widget/container"},
+            {"id": "Widget/image"},
+            {"id": "Widget/richText"},
+            {"id": "widget/accordion/widget-accordion.js", "path": "WAF"},
+            {"id": "widget/accordion/widget-accordion-conf.js", "path": "WAF"},
+            {"id": "widget/accordion/css/widget-accordion.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/select",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/select/widget-select.js", "path": "WAF"},
+            {"id": "widget/select/widget-select-conf.js", "path": "WAF"},
+            {"id": "widget/select/css/widget-select.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/switchbox",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/switchBox/widget-switchbox.js", "path": "WAF"},
+            {"id": "widget/switchBox/widget-switchbox-conf.js", "path": "WAF"},
+            {"id": "widget/switchBox/css/widget-switchbox.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/list",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Widget/container"},
+            {"id": "Widget/button"},
+            {"id": "Widget/richText"},
+            {"id": "widget/list/widget-list.js", "path": "WAF"},
+            {"id": "widget/list/widget-list-conf.js", "path": "WAF"},
+            {"id": "widget/list/css/widget-list.css", "path": "WAF"}
+
+        ]
+    },
+    {
+        "name": "Widget/popover",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Widget/container"},
+            {"id": "widget/popover/widget-popover.js", "path": "WAF"},
+            {"id": "widget/popover/widget-popover-conf.js", "path": "WAF"},
+            {"id": "widget/popover/css/widget-popover.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/navigationView",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Widget/container"},
+            {"id": "Widget/button"},
+            {"id": "Widget/richText"},
+            {"id": "widget/navigationView/widget-navigationView.js", "path": "WAF"},
+            {"id": "widget/navigationView/widget-navigationView-conf.js", "path": "WAF"},
+            {"id": "widget/navigationView/css/widget-navigationView.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/splitView",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Widget/container"},
+            {"id": "Widget/button"},
+            {"id": "Widget/richText"},
+            {"id": "widget/splitView/widget-splitView.js", "path": "WAF"},
+            {"id": "widget/splitView/widget-splitView-conf.js", "path": "WAF"},
+            {"id": "widget/splitView/css/widget-splitView.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/section",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Widget/sectionNavigation"},
+            {"id": "widget/section/widget-section-conf.js", "path": "WAF"},
+            {"id": "widget/section/widget-section.js", "path": "WAF"},
+            {"id": "widget/section/css/widget-section.css", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "Widget/sectionNavigation",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "widget/sectionNavigation/widget-sectionNavigation-conf.js", "path": "WAF"},
+            {"id": "widget/sectionNavigation/widget-sectionNavigation.js", "path": "WAF"}
+        ]
+    },
+    {
+        "name": "dataprovider",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Core/Native/Rest"},
+            {"id": "Core/Utils/DebugTools"},
+            {"id": "Core/Utils/Environment"},
+            {"id": "Core/Utils/Strings"},
+            {"id": "Core/Utils/Dates"},
+            {"id": "DataProvider"},
+            {"id": "DataSource/Selection"}
+        ]
+    },
+    {
+        "name": "allmodules",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Desktop_Core"},
+            {"id": "Widget/icon"},
+            {"id": "Widget/button"},
+            {"id": "Widget/buttonImage"},
+            {"id": "Widget/checkbox"},
+            {"id": "Widget/switchbox"},
+            {"id": "Widget/container"},
+            {"id": "Widget/richText"},
+            {"id": "Widget/errorDiv"},
+            {"id": "Widget/dataGrid"},
+            {"id": "Widget/autoForm"},
+            {"id": "Widget/queryForm"},
+            {"id": "Widget/image"},
+            {"id": "Widget/label"},
+            {"id": "Widget/slider"},
+            {"id": "Widget/textField"},
+            {"id": "Widget/googleMap"},
+            {"id": "Widget/yahooWeather"},
+            {"id": "Widget/progressBar"},
+            {"id": "Widget/matrix"},
+            {"id": "Widget/combobox"},
+            {"id": "Widget/select"},
+            {"id": "Widget/radioGroup"},
+            {"id": "Widget/menuBar"},
+            {"id": "Widget/menuItem"},
+            {"id": "Widget/login"},
+            {"id": "Widget/component"},
+            {"id": "Widget/chart"},
+            {"id": "Widget/idUpload"},
+            {"id": "Widget/tabView"},
+            {"id": "Widget/dialog"},
+            {"id": "Widget/wysiwyg"},
+            {"id": "Widget/frame"},
+            {"id": "Widget/video"},
+            {"id": "Widget/canvas"},
+            {"id": "Widget/calendar"},
+            {"id": "Widget/googleMaps"},
+            {"id": "Widget/accordion"}
+        ]
+    },
+    {
+        "name": "mobile",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Mobile_Core"},
+            {"id": "Widget/list"},
+            {"id": "Widget/popover"},
+            {"id": "Widget/icon"},
+            {"id": "Widget/button"},
+            {"id": "Widget/buttonImage"},
+            {"id": "Widget/checkbox"},
+            {"id": "Widget/switchbox"},
+            {"id": "Widget/container"},
+            {"id": "Widget/richText"},
+            {"id": "Widget/errorDiv"},
+            {"id": "Widget/dataGrid"},
+            {"id": "Widget/autoForm"},
+            {"id": "Widget/queryForm"},
+            {"id": "Widget/image"},
+            {"id": "Widget/label"},
+            {"id": "Widget/slider"},
+            {"id": "Widget/textField"},
+            {"id": "Widget/googleMap"},
+            {"id": "Widget/yahooWeather"},
+            {"id": "Widget/progressBar"},
+            {"id": "Widget/matrix"},
+            {"id": "Widget/combobox"},
+            {"id": "Widget/select"},
+            {"id": "Widget/radioGroup"},
+            {"id": "Widget/menuBar"},
+            {"id": "Widget/menuItem"},
+            {"id": "Widget/login"},
+            {"id": "Widget/chart"},
+            {"id": "Widget/idUpload"},
+            {"id": "Widget/navigationView"},
+            {"id": "Widget/tabView"},
+            {"id": "Widget/dialog"},
+            {"id": "Widget/wysiwyg"},
+            {"id": "Widget/frame"},
+            {"id": "Widget/video"},
+            {"id": "Widget/canvas"},
+            {"id": "Widget/splitView"},
+            {"id": "Widget/calendar"},
+            {"id": "Widget/googleMaps"},
+            {"id": "Widget/accordion"},
+            {"id": "Widget/section"}
+        ]
+    },
+    {
+        "name": "reporting",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "Core/Native/Rest"},
+            {"id": "Core/Utils"},
+            {"id": "Dataprovider"},
+            {"id": "DataSource"},
+            {"id": "Rpc"},
+            {"id": "Tags"},
+            {"id": "Lib/JQuery"},
+            {"id": "Lib/JQueryUI"},
+            {"id": "Lib/JQuerySVG"},
+            {"id": "Lib/GRaphael"},
+            {"id": "Lib/Selectbox"},
+            {"id": "Lib/Notify"},
+            {"id": "Widget/Widget"},
+            {"id": "Widget/richText"}
+        ]
+    }
+]

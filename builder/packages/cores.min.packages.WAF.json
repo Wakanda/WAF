@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Desktop_Core",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "minifiedCoresWAF/desktop.core.min.js", "path" : "WALIB"},
+            {"id": "minifiedCoresWAF/desktop.core.min.css", "path" : "WALIB"}
+        ]
+    },
+    {
+        "name": "Mobile_Core",
+        "version": "1.0.0",
+        "loadDependencies": [
+            {"id": "minifiedCoresWAF/mobile.core.min.js", "path" : "WALIB"},
+            {"id": "minifiedCoresWAF/mobile.core.min.css", "path" : "WALIB"}
+        ]
+    }
+]

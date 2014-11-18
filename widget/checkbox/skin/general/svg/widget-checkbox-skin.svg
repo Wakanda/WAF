@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<g>
+	<path class="waf-checkbox-icon-symbol-shadow" d="M6.467,14.264l-4.496-5.07C1.51,8.673,1.608,7.913,2.195,7.499C2.783,7.086,3.634,7.177,4.1,7.698l2.28,2.572l5.49-6.691
+		c0.442-0.536,1.289-0.658,1.893-0.265C14.366,3.707,14.499,4.461,14.061,5L6.467,14.264L6.467,14.264z"/>
+	<path class="waf-checkbox-icon-symbol" d="M6.467,12.917l-4.496-5.07C1.51,7.326,1.608,6.566,2.195,6.153C2.783,5.739,3.634,5.83,4.1,6.352l2.28,2.572l5.49-6.691
+		c0.442-0.536,1.289-0.659,1.893-0.265c0.604,0.393,0.737,1.147,0.299,1.686L6.467,12.917L6.467,12.917z"/>
+</g>
+</svg>
